@@ -1,0 +1,193 @@
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script>
+<section class="content-header">
+    <h1>
+        Quality Management System
+    </h1>
+    <ol class="breadcrumb">
+        <li>
+            </b><a href="#" onclick="changeContent('qmsMain')"><i class="fa fa-home"></i> Home</a></b>
+        </li>
+        <li class="active"><b><a href="#" onclick="changeContent('isecure')" >iSecure</a></b></li>
+        <li class="active"><b><a href="#" onclick="changeContent('ISPolicyDocs')" >Control Policy Documents</a></b></li>
+
+    </ol>
+</section>
+
+<section class="content">
+    <div class="box">
+
+        <div class="box-body">
+            <table class="table table-bordered">
+                <tr align="center">
+                    Management of technical vulnerabilities policy</tr>
+                <tr>
+                    <th>ISMS Clause / Control: A 12.6.1</th>
+                    <th>
+
+
+
+
+
+
+
+                        ICPo19</th>
+                    <th>
+                        Version: 1.00</th>
+                    <th>
+
+                        Date: 10th April, 2017</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="Section1">
+        <p><b>19.0      Purpose and Scope</b></p>
+        <p>The purpose of this documented information is to provide an overview of the various policies. The required policies to be adhered in all processes preserve the Confidentiality, Integrity and Availability of the information system of the organization.
+            Applicable to all activities, personnel performing the activities, personnel responsible for the activity to be performed in the defined manner covering the scope of activities at organization.</p>
+        <p><b>19.1.    Terms and Definition</b></p>
+        <p>Please refer to ISM01_ IS01_03_T&D document for appropriate terms and their definition.</p>
+        <p><b>19.2.    Abbreviations</b></p>
+        <p>Please refer to ISM01_IS01_Annexure_B document for appropriate abbreviations.</p>
+        <p><b>19.3.    Responsibilities</b></p>
+        <p><b>19.3.1.    Primary Responsibility:</b>ISMS Core Team, Process Heads</p>
+
+        <p><b>19.3.2.    Contributory Responsibility:</b>ISMS MR</p>
+        <p><b>19.4.    Procedure</b></p>
+        <p><b>19.4.1.    General</b></p>
+        <p>The policy for information security defined below has been approved by management for publication and communication to employees along with relevant external parties.</p>
+
+        <p><b>19.4.2. Management of technical vulnerabilities policy</b></p>
+        <p>19.4.2.1. The process for vulnerability management must be identified in the organization.</p>
+
+        <p>19.4.2.2. Authorized IT personnel can conduct the vulnerability scan's using approved tools and software's that does not violate IPR.</p>
+
+        <p>19.4.2.3. If Vulnerability assessments are done internally in an organization, it must be carried out every quarter.</p>
+
+        <p>CERT-IN Security Tools</p>
+
+        <p>19.4.2.4. In a planned manner, whenever critical infrastructure changes are carried out an external vulnerability is carried out by the organization.</p>
+
+        <p>19.4.2.5. Appropriate security agreements must be entered with external service provider carrying out the vulnerability scans.</p>
+
+        <p>19.4.2.6. Competency of such external providers must be maintained.</p>
+
+        <p>19.4.2.7. Actions must be taken on timely basis, to ensure that vulnerabilities in the system are appropriately addressed.</p>
+
+        <p>19.4.2.8. Vulnerability classifications must be done as follows for desktops, servers and any other systems considered in vulnerability scan:</p>
+        <div class="box-body">
+            <ul>
+                <li> Urgent: denotes a vulnerability through which an intruder can easily gain control at the administrator level of any affected host. This class of vulnerabilities poses the highest risk for a system-wide compromise of the organization's
+                    network.</li>
+
+                <li> Critical: denotes a vulnerability through which an intruder could gain access to the host at the administrator level or could possibly access sensitive information stored on the host. While this class of vulnerabilities is extremely serious,
+                    the risk of a breach or compromise is not as urgent as with a critical vulnerability.</li>
+
+                <li> Serious: denotes a vulnerability that may allow an intruder to gain access to specific information stored on the host, including security settings. While not immediately associated with a compromise of an affected host, these vulnerabilities
+                    allow intruders to gain access to information that may be used to compromise the host in the future.</li>
+
+                <li> Medium: Intruders may be able to collect sensitive information from the host, such as the precise version of software installed. With this information, intruders can easily exploit known vulnerabilities specific to software versions.</li>
+
+                <li> Minimal: denotes vulnerabilities that do not pose an immediate threat to the host or the organization network. These vulnerabilities refer mostly to weaknesses in a device that allow an intruder access to information that may be used in
+                    the future to compromise the host Intruders can collect information about the host (open ports, services, etc.) and may be able to use this information to find other vulnerabilities. Departments may opt to mitigate these vulnerabilities
+                    based on their network architecture or set up a timeframe for remediation based on the information stored on the device.</li>
+            </ul>
+        </div>
+        <p>19.4.2.9. Any identified vulnerabilities, either related to missing patches or improper configuration, must be remediated within the timeframes specified below based on the degree of associated severity.</p>
+
+        <div class="box-body">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Type of vulnerability</th>
+                        <th>Time for addressing the vulnerability</th>
+                        <th>Responsibility</th>
+                        <th>Authorizer for exception approval
+                            <th>
+                                <tr>
+                                    <td>Authorizer for exception approval
+                                        <td>For asset valuation, less than 4</td>
+                                        <td>For asset valuation, more than 4</td>
+                                    </td>
+                                </tr>
+                            </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Urgent:</td>
+                        <td>20 working days</td>
+                        <td>
+                            System Admin
+                        </td>
+                        <td>
+                            CTO
+                        </td>
+                        <td>CEO</td>
+                    </tr>
+                    <tr>
+                        <td>Critical</td>
+                        <td>30 working days</td>
+                        <td>
+                            IT Manager
+                        </td>
+                        <td>
+                            IT Head
+                        </td>
+                        <td>
+                            CTO</td>
+                    </tr>
+                    <tr>
+                        <td>Serious</td>
+                        <td>45 working days</td>
+                        <td>
+
+                            IT Manager
+                        </td>
+                        <td>
+                            IT Head
+                        </td>
+                        <td>CTO</td>
+                    </tr>
+                    <tr>
+                        <td>Medium</td>
+                        <td>60 working days</td>
+                        <td>
+                            System Administrators
+                        </td>
+                        <td>
+                            IT Manager
+                        </td>
+                        <td>
+                            IT Head</td>
+                    </tr>
+                    <tr>
+                        <td>Minimal</td>
+                        <td>90 working days</td>
+                        <td>
+                            System Administrators
+                        </td>
+                        <td>
+                            IT Manager
+                        </td>
+                        <td>
+                            IT Head</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p><b>19.5.References and Records</b></p>
+
+        <p>19.5.1. Cabling Security Verification</p>
+
+        <p><b>19.6.Annexure</b></p>
+
+        <p>19.6.1. IS03_Annexure_1</p>
+    </div>
+
+</section>
+
+<!-- Main content -->
+<!-- design ends here ...-->

@@ -1,0 +1,258 @@
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script>
+<!-- design starts here ...-->
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Quality Management System
+    </h1>
+    <ol class="breadcrumb">
+        <li>
+            </b><a href="#" onclick="changeContent('home')"><i class="fa fa-dashboard"></i> Home</a></b>
+        </li>
+        <li><b><a href="#" onclick="changeContent('qmsMain')" >Integra Quality Manual</a></b></li>
+        <li><b><a href="#" onclick="changeContent('FuncProc')" >Functional Procedures</a></b></li>
+    </ol>
+</section>
+
+<table class="table table-bordered">
+    <thead>
+        <tr align="center">
+            <th colspan="4">Measurement And Analysis</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>ISO Clause: 8.2.3</th>
+            <th>FP11</th>
+            <th>Version : 3.60</th>
+            <th>Date : 30th March 2015</th>
+        </tr>
+    </tbody>
+</table>
+<div class="Section1">
+
+    <p><b>11.1 Introduction</b></p>
+    <p><b>11.1.1  Purpose</b></p>
+    <p>The purpose of the measurement and analysis process is to develop organizational capability to support the information needs of the organization. This process involves the following activities:</p>
+    <div class="box-body">
+        <ol>
+            <li>Specifying the objectives of measurement and analysis such that they are aligned with the information needs identified by the organization</li>
+            <li> Specifying the attributes to be measured, mechanisms for data collection and storage, analysis techniques, and mechanisms for reporting and feedback</li>
+            <li> Implementing the collection, storage and analysis of data, and reporting the interpretation</li>
+            <li> Providing objective data for making informed decisions and taking appropriate corrective actions</li>
+        </ol>
+    </div>
+    <p><b>11.1.2  Policy</b></p>
+    <p>The Leadership Group sets performance goals for the organization based on the business objectives and uses the MA process to monitor the performance of the projects and support functions to ensure that the goals are achieved. The results of the analysis
+        are used for corrections and improvements. The goals are reviewed once in a quarter.</p>
+    <p>Defect density and variation in schedule, effort and cost are measured for all the services offered by the organization. Additional measurements might be defined as necessary.</p>
+    <p><b>11.1.3  Scope</b></p>
+    <p>This process is applicable to all projects [1], services and support functions across the organization. </p>
+    <p><b>11.1.4  Entry criteria</b></p>
+    <p>The following are the criteria:</p>
+    <div class="box-body">
+        <ol>
+            <li>Defined business objectives and organisational goals for initiating the MA process</li>
+            <li>Defined customer requirements and project initiation for measuring the performance (For services and support functions, the measurement is not initiated explicitly).</li>
+        </ol>
+    </div>
+    <p><b>11.2 Stakeholders</b></p>
+    <p><b>11.2.1 Roles and Responsibilities</b></p>
+    <p>The roles, along with the responsibilities and authorities, are defined in the table below:</p>
+    <div class="box-body">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+
+                    <th>Role</th>
+                    <th>Responsibilities</th>
+                    <th>Authorities</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+
+                    <td>Leadership Group</td>
+                    <td>
+                        <div class="box-body">
+                            <ul>
+                                <li> Define business objectives with respect to measurement and set goals</li>
+                                <li> Review the information obtained from the monthly analysis and take actions when necessary</li>
+                                <li>Resolve non-conformance issues when necessary</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="box-body">
+                            <ul>
+                                <li>Approve the MA framework</li>
+                                <li>Approve Corrective Actions</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>Quality Manager
+                    </td>
+                    <td>
+
+                        <div class="box-body">
+                            <ul>
+                                <li> Develop metric plan as per the goals</li>
+                                <li>Ensure implementation of plan</li>
+                                <li>Verify the authenticity of the collected data</li>
+                                <li>Analyze and interpret the data based on the reports from the PM’s and FH’s</li>
+                                <li>Report the results to leadership group</li>
+                                <li>Plan corrections and improvements.</li>
+                                <li> Measure effectiveness of the corrections and improvements, report the same to leadership group</li>
+                                <li> Maintain Organizational Process Database.</li>
+                                <li> Ensure access to the OPD as per needs</li>
+
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="box-body">
+                            <ul>
+                                <li>Report inconsistencies in the implementation of the plan to the leadership group.</li>
+                                <li> Demand for correct data at defined intervals form the PM’s & FH’s</li>
+                                <li>Demand implementation of relevant metric plan</li>
+                                <li>Approve the customized metric plans for the projects.</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>Project Manager</td>
+                    <td>
+                        <div class="box-body">
+                            <ul>
+                                <li>Define metric plan based on the project requirements & the organizational metric plan.</li>
+                                <li>Ensure measurement as per the approved plan & SPMP</li>
+                                <li>Generate reports</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="box-body">
+                            <ul>
+                                <li> Demand correct data from team members</li>
+
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>Function Head</td>
+                    <td>
+                        <div class="box-body">
+                            <ul>
+                                <li>Define metric plan for the function</li>
+                                <li>Ensure measurement as per the approved plan</li>
+                                <li>Ensure data authenticity</li>
+
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="box-body">
+                            <ul>
+                                <li> Demand correct data from team members</li>
+
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>PQA</td>
+                    <td>
+                        <div class="box-body">
+                            <ul>
+                                <li>Verify the collection of data</li>
+
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="box-body">
+                            <ul>
+                                <li> Report inconsistencies in the data collection to the QM</li>
+
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>Team members</td>
+                    <td>
+                        <div class="box-body">
+                            <ul>
+                                <li>Provide data as defined in the metric plan</li>
+
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        Nil
+                    </td>
+                </tr>
+
+
+
+            </tbody>
+        </table>
+    </div>
+
+    <p><b>11.3 Process Description</b></p>
+    <p><b>11.3.1  Measurement and analysis process flow</b></p>
+    <p>The process flow diagram is given below.</p>
+    <img border="0" width="497" height="506" src="/QMS/pages/QMS/Downloads/FunctionalProcedures/fpms_image005.gif" alt="fp11_1" v:shapes="Picture_x0020_5">
+    <p><b>11.3.2        Tasks</b></p>
+    <p>The tasks of the MA process are described below:</p>
+    <p><b>11.3.2.1   Identify the organizational goals and information needs</b></p>
+    <p>The senior management (Leadership Group) defines business objectives and the information required to verify whether the objectives are being met.</p>
+    <p><b>11.3.2.2   Define measurement objectives</b></p>
+    <p>The Leadership Group defines the measurement objectives for the organization.</p>
+    <p><b>11.3.2.3   Prepare metric plan</b></p>
+    <p>MR with the help of SQA team create and maintains the metric plan available under section 4 of Integra Quality Manual.</p>
+    <p><b>11.3.2.4   Review and approve the metric plan</b></p>
+    <p>The Leadership Group reviews the metric plan and approves the plan when the plan meets the requirements. The Quality manager baselines the approved metric plan.</p>
+    <p><b>11.3.2.5   Collect data</b></p>
+    <p>The project managers and function heads perform the following activities:</p>
+    <div class="box-body">
+        <ul>
+            <li>Collect data as per the metric plan</li>
+            <li>Compute the derived measures as per the metric plan</li>
+            <li>Ensure data authenticity</li>
+            <li>Generate reports as per the plan using the specified tools</li>
+            <li>Store data as per the specified mechanisms</li>
+
+
+        </ul>
+    </div>
+    <p>The Project Managers (for projects and services) inform the Quality Manager if any additional information is required or if any measure is irrelevant to the specific project. The frequency of data collection is redefined based on the duration of the
+        project. The QAP in the SPMP describes the customisation of the metric plan.</p>
+    <p>The Metric Council and the QM approve the customised version.</p>
+    <p><b>11.3.2.6   Analyse the data</b></p>
+    <p>The PQA verify whether data is being collected as per the plan and verify the authenticity of the data collected. </p>
+    <p>Quality Manager helps the PMs and Function Heads to analyse the data with the prescribed statistical techniques. Refer to the Guidelines for Verifying the Data Authenticity.</p>
+    <p><b>11.3.2.7   Review the analysis and interpretation</b></p>
+    <p>The MR with SQA team reviews the analysis and interpretation of the data from all the projects, functions and services.</p>
+    <p><b>11.3.2.8   Communicate information</b></p>
+    <p>The Quality Manager, with the help of the PQAs, consolidates the data across all the projects once a month, and creates reports. The PQA along with the PMs and FHs identifies the corrections and improvements. </p>
+    <p>After ensuring that the specified information needs are met, the QM sends the reports along with the corrections and improvements identified for each project to the Leadership Team and the other relevant stakeholders. The Leadership team reviews the
+        information and approves the plan for corrections and improvements.
+
+    </p>
+    <p>[1] Project in this document means software projects or products and services like testing, language services and resource augmentation.</p>
+
+
+</div>

@@ -1,0 +1,281 @@
+<script>
+  document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script>
+  <!-- design starts here ...-->
+
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+              Quality Management System
+            </h1>
+            <ol class="breadcrumb">
+              <li></b><a href="#" onclick="changeContent('qmsMain')" ><i class="fa fa-dashboard"></i> Home</a></b></li>
+              <li><b><a href="#" onclick="changeContent('qmsMain')" >Integra Quality Manual</a></b></li>
+              <li class="active"><b><a href="#" onclick="changeContent('ProjProc')" >Project Procedures</a></b></li>
+            </ol>
+            </section>
+        
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th align="center" colspan="4">Configuration Management</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ISO Clause: 7.5</td>
+                        <td>PR04</td>
+                        <td>Version: 3.00</td>
+                        <td>Date: 17th May 2010</td>
+                    </tr>
+                </tbody>
+            </table>
+
+              <div class="Section1">
+              
+            <p><b>4.0 Introdution </b></p>
+                    <p><b>4.1.1 Purpose </b><br/>This process defines the method used within Integra for Configuration Management (CM) of work products. CM helps in establishing and maintaining the integrity of work products using configuration identification, configuration control, configuration status accounting, and configuration audits.</p>
+                            
+                    <p><b>4.1.2 Policy </b><br/>All work products developed as part of the product development or service delivery will follow the configuration management procedure.</p>
+                    
+                    <p><b>4.1.3 Scope</b><br/>The scope of Configuration Management involves identifying controlling, and tracking all versions of hardware, software, documentation, processes and procedures. This Process Area discusses the main processes and activities involved in configuration management for projects throughout their life-cycle.</p>
+                            
+                   <p><b>4.1.4 Entry criteria </b></p>
+                     <div class="box-body">
+                      <ul>
+                        <li>  Project Kick-off and Configuration Management Plan.</li>				
+                        <li>Training for the stake holders on the level of knowledge required to work with the tool</li>
+                      </ul>
+                    </div>		
+                        <!-- /.box-body -->   
+                    <p><b>4.2 Stakeholders </b></p>
+                    <p><b>4.2.1 Responsibilities </b><br/>
+                    <p>The roles, responsibilities and authorities for the CM process are defined in the table below. The Project Manager/Functional Head and the Configuration Controller will be responsible for this process.</p>
+                   
+                  <table class="table table-bordered">
+                    <thead>
+                            <tr>
+                              <th>Sl.No.</th>
+                              <th>Role</th>
+                              <th>Responsibilities</th>
+                              <th>Authority</th>
+                            </tr>  
+                  </thead>	
+                  <tbody>			
+                    <tr>
+                      <td>1.</td>
+                      <td>Delivery Head</td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li>    Responsible for periodic review of CM activities</li>		
+                            <li>Review change request</li>
+                            <li>Review corrective and preventive actions</li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li> Approve change request</li>				
+                            <li> Approve corrective and preventive actions</li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2.</td>
+                      <td>Project Manager (PM)</td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li>  Responsible for the configuration management process of the project</li>				
+                          </ul>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li>Approve internal Change Request in support with Delivery Head</li>				
+                            <li>Ensure successful implementation of Change Request to closure.</li>
+                            <li>Approve baseline record</li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3.</td>
+                      <td>Configuration Controller (CC)</td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li> Implementing all the CM activities of the project</li>
+                            <li>Establishing directories as per CMP</li>
+                            <li>Maintaining Configuration Management directories to manage CIs and Non-CIs</li>
+                            <li>Check-in an check-out of all CIs</li>	
+                            <li>Manage and Control Non-CIs</li>
+                            <li> Involved in backup of baseline directory as per CMP</li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li> Update/Modify and manage Project and related repository content after subsequent approval.</li>				
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>4.</td>
+                      <td>Quality Assurance (QA)</td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li>   Configuration audits of project</li>				
+                            <li> Metrics analysis for improvement</li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li>Schedule internal audit with or without notice.</li>
+                            <li>To ensure functional and physical audit during/after the baseline.</li>
+                            <li>   Escalation of issue relating to this process area</li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>5.</td>
+                      <td>Change Control Board (CCB)</td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li>Evaluates and makes decisions that affect baselines</li>				
+                            <li>Re-usable components</li>				
+                          </ul>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li>To decide on change request acceptance, rejection or defer the change</li>	
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>6.</td>
+                      <td>Project Team Members</td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li>  Follow required procedures as defined in the project plan.</li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li>NIL</li>	
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                          
+                    </tbody>
+                          </table>
+               
+                    <p><b>4.3  Task Details</b></p>
+                    <p><b>4.3.1 Process Flow Diagram</b><br/>The Process flow of CM is given below.</p>
+                   
+                      <img class="img-responsive pad" alt="Photo" src="/QMS/pages/QMS/Downloads/ProjectProcedures/PR04-Flow.jpg">
+                  				
+                    <p><b>4.3.2 Tasks</b><br/>The steps of the CM process are described below:</p>
+                    <p><b>4.3.2.1     Identify configuration item</b><br/>				
+                  
+                      <img class="img-responsive pad" alt="Photo" src="/QMS/pages/QMS/Downloads/ProjectProcedures/PR04-Identity.gif">
+                 		
+                    <div class="box-body">
+                      <ul>
+                        <li> Configuration items (CIs) and Non-Configuration items (non-CIs) for projects will be identified and documented in the Configuration Management Plan based on the Contract, SOW, URS and other relevant document available at the start of the project. All work products that would exist and may require modification during the life time of the product will be treated as CIs.</li>
+                        <li> Project Manager and Configuration Controller will be responsible for identifying the CIs and non-CIs for the project.</li>
+                      </ul>
+                    </div>
+                    <p><b>4.3.2.2   Establish a Configuration Management System</b></p>
+                    <div class='box-body'>
+                      <img class="img-responsive pad" alt="Photo" src="/QMS/pages/QMS/Downloads/ProjectProcedures/PR04-ConfigMgm.gif">
+                    </div>
+                    <div class="box-body">
+                      <ul>
+                        <li>Project Manager will identify and allocate a resource as Configuration Controller (CC). The Configuration Controller could be also a person who is common for more than one project.</li>
+                        <li> The CC will be responsible for the configuration management activities along with their well defined responsibilities in CMP.</li>
+                        <li>CMP will be reviewed and duly approved by Delivery Head.</li>
+                        <li>  The dynamic and controlled directory structure along with the access control as per the approved CMP will be established to manage CIs and NonCIs.</li>
+                        <li>Relevant team members will be responsible for all check-in and check-outs of the CI’s in dynamic directory structure of the configuration management system of the project</li>
+                        <li>The version numbers of documents will be maintained as per the Version Numbering procedure <u><a href="#" onclick="changeContent('MP01CD')">(MP01 Section 1.3.1.2.1)</a></u></li>
+                        <li> Identify and document non-compliance</li>
+                      </ul>
+                    </div>	
+                    <p><b>4.3.2.3   Create or Release Baselines</b></p>
+                  
+                      <img class="img-responsive pad" alt="Photo" src="/QMS/pages/QMS/Downloads/ProjectProcedures/PR04-BaseLines.gif">
+              
+                    <div class="box-body">
+                      <ul>
+                        <li>Reviewed and approved CIs will be baseline by Configuration Controller/Project Manager and thus will serve as basis for any further development.</li>
+                        <li>A baseline record will be prepared by Configuration Controller using baseline record form <u><a href='downloads/projectProcedures/FRCON02.doc' download>(FRCON02)</a></u> every time a CI is baseline.</li>
+                        <li>Project Manager will review the baseline record for its completeness and correctness.</li>
+                        <li>DH will authorize every release of baselines.</li>
+                        <li> All the deliveries to the customer will be made from the baseline directory.</li>
+                      </ul>
+                    </div>
+                            
+                    <p><b>4.3.2.4  Track Change Requests</b></p>
+               
+                      <img class="img-responsive pad" alt="Photo" src="/QMS/pages/QMS/Downloads/ProjectProcedures/PR04-TrackChange.gif">
+                  
+                    <div class="box-body">
+                      <ul>
+                        <li>Changes for baselines could be raised internally or externally by customer. These changes could be indicated through E-mail, Fax or Telecom minutes. The changes could be of new or modified requirements or due to the result of document review or testing. The change request categories include Hardware, Software, Documentation, COTS packages and Operating System used in the current project.</li>				
+                        <li>Depending on the result of impact analysis CRs acquire the status as accepted, rejected, on hold/deferred, duplicate or forward.</li>
+                        <li>   All the deliveries to the customer will be made from the baseline directory.</li>
+                      </ul>
+                    </div>
+                    <p><b>3.3.2.5   Control Configuration Items</b></p>
+              
+                      <img class="img-responsive pad" alt="Photo" src="/QMS/pages/QMS/Downloads/ProjectProcedures/PR04-ControlConfig.gif">
+                  
+                    <div class="box-body">
+                      <ul>
+                        <li>  Accepted CRs will be assigned for resolution and corresponding work product is identified for implementation.</li>
+                        <li>  Configuration Controller ensures that the correct work product is delivered for implementing change request. Configuration controller will manage and control these CIs, version control of the documents will be done as per <u><a href="#" onclick="changeContent('QMS03PR13')">PR 13, Project Document Management procedure.</a></u></li>
+                        <li>PM would review and ensure that the change request implementation has not caused unintended effects on the baselines</li>
+                      </ul>
+                    </div>
+                    <p><b>4.3.2.6  Establish Configuration Management Records</b></p>				
+                    <div class="box-body">
+                      <ul>
+                        <li>Completed CR will be verified for correctness of its implementation by PM/CC and will be marked as closed. Change Control Record will be accordingly updated or the same will be generated using PCC.</li>
+                        <li>   PM will track the changes to various CIs and maintain their revision history using Configuration Status Record.</li>
+                        <li>   CC will prepare <u><a href='downloads/projectProcedures/TPCON01.xls' download>Configuration Management Plan(TPCON01)</a></u> for the latest versions of all CIs</li>
+                      </ul>
+                    </div>
+                    <p><b>4.3.2.7  Perform Configuration Audit</b></p>
+            
+                      <img class="img-responsive pad" alt="Photo" src="/QMS/pages/QMS/Downloads/ProjectProcedures/PR04-PerformConfig.gif">
+            
+                    <div class="box-body">
+                      <ul>
+                        <li>The QA member will conduct the Configuration Audits on CC and in his absence on Project Manager at the time of each baseline to verify the compliance to configuration management activities defined in the CMP for the project. The audit can involve other stakeholders, if required.</li>
+                        <li>All non-conformances will be reported in a <u><a href='downloads/projectProcedures/FRCON05.doc' download>Configuration Audit Report (FRCON05),</a></u> and tracked to closure by the QA member.</li>						
+                      </ul>
+                    </div>		
+                    
+            </div>
+            
+  
+            

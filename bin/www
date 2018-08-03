@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+var app = require('../app'),
+    logger = require('../services/loggerService').infoLog,
+    config = require('../config/config.js'),
+    express = require('express'),
+    passport = require('passport');
+    cluster  =require('cluster');
+
+if (config.usecluster === 0 || cluster.isWorker) {
+    app.set('port', process.env.PORT || config.port);
+
+    var server = app.listen(app.get('port'), function () {
+        logger.info('Server listening on port ' + server.address().port);
+    });
+}

@@ -1,0 +1,614 @@
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script><!-- design starts here ...-->
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Quality Management System
+    </h1>
+    <ol class="breadcrumb">
+        <li>
+            </b><a href="#" onclick="changeContent('qmsMain')"><i class="fa fa-dashboard"></i> Home</a></b>
+        </li>
+        <li><b><a href="#" onclick="changeContent('qmsMain')" >Integra Quality Manual</a></b></li>
+        <li class="active"><b><a href="#" onclick="changeContent('QualityManual')" >Quality Manual</a></b></li>
+    </ol>
+</section>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th align="center" colspan="3">Acronyms</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>QM-A01</td>
+            <td>Version: 3.00</td>
+            <td>Date: 17th May 2010</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="Section1">
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Expression</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>AIC</td>
+                <td>Account In-Charge</td>
+            </tr>
+            <tr>
+                <td>ATP</td>
+                <td>Acceptance Test Plan</td>
+            </tr>
+            <tr>
+                <td>ATR</td>
+                <td>Acceptance Test Report</td>
+            </tr>
+            <tr>
+                <td>ATS</td>
+                <td>Acceptance Test Specification</td>
+            </tr>
+            <tr>
+                <td>BCC</td>
+                <td>Bug Control Centre</td>
+            </tr>
+            <tr>
+                <td>BO </td>
+                <td>Business Objectives</td>
+            </tr>
+            <tr>
+                <td>BUH</td>
+                <td>Business Unit Head</td>
+            </tr>
+            <tr>
+                <td>CC</td>
+                <td>Configuration Controller</td>
+            </tr>
+            <tr>
+                <td>CE</td>
+                <td>Chief Executive</td>
+            </tr>
+            <tr>
+                <td>CH</td>
+                <td>Consulting Head</td>
+            </tr>
+            <tr>
+                <td>CI</td>
+                <td>Configuration Item</td>
+            </tr>
+            <tr>
+                <td>CIC</td>
+                <td>Commercial In-Charge</td>
+            </tr>
+            <tr>
+                <td>CMG</td>
+                <td>Core Management Group</td>
+            </tr>
+            <tr>
+                <td>CMMI</td>
+                <td>Capability Maturity Model Integration</td>
+            </tr>
+            <tr>
+                <td>CMP</td>
+                <td>Configuration Management Plan</td>
+            </tr>
+            <tr>
+                <td>CPC</td>
+                <td>Customer Project Co-ordinator</td>
+            </tr>
+            <tr>
+                <td>CR</td>
+                <td>Change Request</td>
+            </tr>
+            <tr>
+                <td>CSM</td>
+                <td>Customer Supplied Material</td>
+            </tr>
+            <tr>
+                <td>CTL</td>
+                <td>Configuration Team Leader</td>
+            </tr>
+            <tr>
+                <td>CV</td>
+                <td>Curriculum Vitae</td>
+            </tr>
+            <tr>
+                <td>CVS</td>
+                <td>Concurrent Version Control System</td>
+            </tr>
+            <tr>
+                <td>DAR</td>
+                <td>Decision Analysis Report</td>
+            </tr>
+            <tr>
+                <td>DAR</td>
+                <td>Decision Analysis And Resolution</td>
+            </tr>
+            <tr>
+                <td>DH</td>
+                <td>Delivery Head</td>
+            </tr>
+            <tr>
+                <td>DN</td>
+                <td>Delivery Note</td>
+            </tr>
+            <tr>
+                <td>DOU</td>
+                <td>Document Of Understanding</td>
+                <tr>
+                    <td>ED</td>
+                    <td>Executive Director</td>
+                </tr>
+                <tr>
+                    <td>EIM</td>
+                    <td>Employee Interactive Meet</td>
+                </tr>
+                <tr>
+                    <td>ELTS</td>
+                    <td>Enquiry Logging and Tracking system</td>
+                </tr>
+                <tr>
+                    <td>EPG</td>
+                    <td>Engineering Process Group</td>
+                </tr>
+                <tr>
+                    <td>EVM</td>
+                    <td>Earned Value Management</td>
+                </tr>
+                <tr>
+                    <td>FH</td>
+                    <td>Functional Head</td>
+                </tr>
+                <tr>
+                    <td>FMEA</td>
+                    <td>Failure Mode and Effect Analysis</td>
+                </tr>
+                <tr>
+                    <td>FTP</td>
+                    <td>File Transfer Protocol</td>
+                </tr>
+                <tr>
+                    <td>GAR</td>
+                    <td>Gap Analysis Report</td>
+                </tr>
+                <tr>
+                    <td>GH</td>
+                    <td>Group Head</td>
+                </tr>
+                <tr>
+                    <td>HLDD</td>
+                    <td>High Level Design Document</td>
+                </tr>
+                <tr>
+                    <td>HR</td>
+                    <td>Human Resources</td>
+                </tr>
+                <tr>
+                    <td>HRD</td>
+                    <td>Human Resource Department</td>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Hyper Text Mark-up Language</td>
+                </tr>
+                <tr>
+                    <td>ID</td>
+                    <td>Identification</td>
+                </tr>
+                <tr>
+                    <td>i-FI Model</td>
+                    <td>Integra Fractal Integrated Model</td>
+                </tr>
+                <tr>
+                    <td>i-LANG Model</td>
+                    <td>Integra Language Model</td>
+                </tr>
+                <tr>
+                    <td>IMSSPL</td>
+                    <td>Integra Micro Software Services Pvt. Ltd.</td>
+                </tr>
+                <tr>
+                    <td>IP</td>
+                    <td>Internet Protocol</td>
+                </tr>
+                <tr>
+                    <td>IPM</td>
+                    <td>Integrated Project Management</td>
+                </tr>
+                <tr>
+                    <td>IQA</td>
+                    <td>Internal Quality Audit</td>
+                </tr>
+                <tr>
+                    <td>IRR</td>
+                    <td>Internal Review Record</td>
+                </tr>
+                <tr>
+                    <td>ISO</td>
+                    <td>International Organization For Standardization</td>
+                </tr>
+                <tr>
+                    <td>ISR</td>
+                    <td>Invoice Status Record</td>
+                </tr>
+                <tr>
+                    <td>ITP</td>
+                    <td>Integration Test Plan</td>
+                </tr>
+                <tr>
+                    <td>ITR</td>
+                    <td>Integration Test Report</td>
+                </tr>
+            </tr>
+            <tr>
+                <td>ITS</td>
+                <td>Integration Test Specifications</td>
+            </tr>
+            <tr>
+                <td>LLDD</td>
+                <td>Low Level Design Document</td>
+            </tr>
+            <tr>
+                <td>LOI</td>
+                <td>Letter Of Indent</td>
+            </tr>
+            <tr>
+                <td>MD</td>
+                <td>Managing Director</td>
+            </tr>
+            <tr>
+                <td>MH</td>
+                <td>Marketing Head</td>
+            </tr>
+            <tr>
+                <td>MLD</td>
+                <td>Master List of Documents</td>
+            </tr>
+            <tr>
+                <td>MLR</td>
+                <td>Master List of Records</td>
+            </tr>
+            <tr>
+                <td>MOM</td>
+                <td>Minutes of Meeting</td>
+            </tr>
+            <tr>
+                <td>MR</td>
+                <td>Management Representative</td>
+            </tr>
+            <tr>
+                <td>MSA</td>
+                <td>Master Service Agreement</td>
+            </tr>
+            <tr>
+                <td>MSR</td>
+                <td>Monthly Status Report</td>
+            </tr>
+            <tr>
+                <td>MT</td>
+                <td>Marketing Team</td>
+            </tr>
+            <tr>
+                <td>NA</td>
+                <td>Not Applicable</td>
+            </tr>
+            <tr>
+                <td>NCR</td>
+                <td>Non-Conformance Report</td>
+            </tr>
+            <tr>
+                <td>NDA</td>
+                <td>Non-Disclosure Agreement</td>
+            </tr>
+            <tr>
+                <td>NHA</td>
+                <td>Non Hire Agreement</td>
+            </tr>
+            <tr>
+                <td>OLH</td>
+                <td>Online Help</td>
+            </tr>
+            <tr>
+                <td>OPD</td>
+                <td>Organizational Process Definition</td>
+            </tr>
+            <tr>
+                <td>OPD</td>
+                <td>Organizational Process Database</td>
+            </tr>
+            <tr>
+                <td>ORM</td>
+                <td>Operational Review Meeting</td>
+            </tr>
+            <tr>
+                <td>OSSP</td>
+                <td>Organizational Set of Standard Processes</td>
+            </tr>
+            <tr>
+                <td>PAL</td>
+                <td>Process Asset Library</td>
+            </tr>
+            <tr>
+                <td>PC</td>
+                <td>Personal Computer</td>
+            </tr>
+            <tr>
+                <td>PCC</td>
+                <td>Process Control Centre</td>
+            </tr>
+            <tr>
+                <td>PCN</td>
+                <td>Project Closure Note</td>
+            </tr>
+            <tr>
+                <td>PD</td>
+                <td>Process Document</td>
+            </tr>
+            <tr>
+                <td>PIAR</td>
+                <td>Process Implementation Analysis Report</td>
+            </tr>
+            <tr>
+                <td>PIP</td>
+                <td>Pilot Implementation plan</td>
+            </tr>
+            <tr>
+                <td>PL</td>
+                <td>Project Lead</td>
+            </tr>
+            <tr>
+                <td>PM</td>
+                <td>Project Manager</td>
+            </tr>
+            <tr>
+                <td>PM</td>
+                <td>Project Management</td>
+            </tr>
+            <tr>
+                <td>PMC</td>
+                <td>Process And Product Quality Assurance</td>
+            </tr>
+            <tr>
+                <td>PMP</td>
+                <td>Project Management Plan</td>
+            </tr>
+            <tr>
+                <td>PNCR</td>
+                <td>Potential Non-Conformance Report</td>
+            </tr>
+            <tr>
+                <td>PO</td>
+                <td>Purchase Order</td>
+            </tr>
+            <tr>
+                <td>PPQA</td>
+                <td>Process and Product Quality Assurance</td>
+            </tr>
+            <tr>
+                <td>PQA</td>
+                <td>Process Quality Analyst</td>
+            </tr>
+            <tr>
+                <td>PR</td>
+                <td>Personnel</td>
+            </tr>
+            <tr>
+                <td>QAP</td>
+                <td>Quality Assurance Plan</td>
+            </tr>
+            <tr>
+                <td>QC</td>
+                <td>Quality control</td>
+            </tr>
+            <tr>
+                <td>QFT</td>
+                <td>Quality Fundamental Table</td>
+            </tr>
+            <tr>
+                <td>QIP</td>
+                <td>QMS Improvement Platform</td>
+            </tr>
+            <tr>
+                <td>QM</td>
+                <td>Quality Management</td>
+            </tr>
+            <tr>
+                <td>QM</td>
+                <td>Quality Manager</td>
+            </tr>
+            <tr>
+                <td>QMS</td>
+                <td>Quality Management System</td>
+            </tr>
+            <tr>
+                <td>QR</td>
+                <td>Questionnaire</td>
+            </tr>
+            <tr>
+                <td>RC</td>
+                <td>Review Cycle</td>
+            </tr>
+            <tr>
+                <td>REQM</td>
+                <td>Requirements Management</td>
+            </tr>
+            <tr>
+                <td>RFC</td>
+                <td>Request for Consultant</td>
+            </tr>
+            <tr>
+                <td>RFI</td>
+                <td>Request For Information</td>
+            </tr>
+            <tr>
+                <td>RFP</td>
+                <td>Request for Proposal</td>
+            </tr>
+            <tr>
+                <td>RL</td>
+                <td>Review Leader</td>
+            </tr>
+            <tr>
+                <td>RMP</td>
+                <td>Risk Management Plan</td>
+            </tr>
+            <tr>
+                <td>RN</td>
+                <td>Release Note</td>
+            </tr>
+            <tr>
+                <td>RSKM</td>
+                <td>Risk Management</td>
+            </tr>
+            <tr>
+                <td>RTM</td>
+                <td>Requirement Traceability Matrix</td>
+            </tr>
+            <tr>
+                <td>SBU</td>
+                <td>Strategic Business Unit</td>
+            </tr>
+            <tr>
+                <td>SCCB</td>
+                <td>Software Configuration Control Board</td>
+            </tr>
+            <tr>
+                <td>SCM</td>
+                <td>Software Configuration Management</td>
+            </tr>
+            <tr>
+                <td>SDD</td>
+                <td>Software Design Document</td>
+            </tr>
+            <tr>
+                <td>SEPG</td>
+                <td>Software Engineering Process Group</td>
+            </tr>
+            <tr>
+                <td>SM</td>
+                <td>Senior management</td>
+            </tr>
+            <tr>
+                <td>SOW</td>
+                <td>Statement of Work</td>
+            </tr>
+            <tr>
+                <td>SPC</td>
+                <td>Statistical Process Control</td>
+            </tr>
+            <tr>
+                <td>SPMP</td>
+                <td>Software Project Management Plan</td>
+            </tr>
+            <tr>
+                <td>SPR</td>
+                <td>Software Problem Report</td>
+            </tr>
+            <tr>
+                <td>SQA</td>
+                <td>Software Quality Assurance</td>
+            </tr>
+            <tr>
+                <td>SRM</td>
+                <td>System Review Meeting</td>
+            </tr>
+            <tr>
+                <td>SRS</td>
+                <td>Software Requirements Specification</td>
+            </tr>
+            <tr>
+                <td>SSR</td>
+                <td>System Study Report</td>
+            </tr>
+            <tr>
+                <td>STP</td>
+                <td>Software Test Plan</td>
+            </tr>
+            <tr>
+                <td>STPI</td>
+                <td>Software Technology Park Of India</td>
+            </tr>
+            <tr>
+                <td>STR</td>
+                <td>Software Test Report</td>
+            </tr>
+            <tr>
+                <td>STS</td>
+                <td>System Test Specification</td>
+            </tr>
+            <tr>
+                <td>Sys. Admin</td>
+                <td>System Administration</td>
+            </tr>
+            <tr>
+                <td>TA</td>
+                <td>Technical Architect</td>
+            </tr>
+            <tr>
+                <td>TL</td>
+                <td>Test Lead</td>
+            </tr>
+            <tr>
+                <td>TM</td>
+                <td>Team Member</td>
+            </tr>
+            <tr>
+                <td>TRS</td>
+                <td>Test Requirement Specification</td>
+            </tr>
+            <tr>
+                <td>TS</td>
+                <td>Technical Solution</td>
+            </tr>
+            <tr>
+                <td>UCD</td>
+                <td>Use Case Diagrams</td>
+            </tr>
+            <tr>
+                <td>UM</td>
+                <td>User Manual</td>
+            </tr>
+            <tr>
+                <td>URS</td>
+                <td>User Requirements Specification</td>
+            </tr>
+            <tr>
+                <td>USD</td>
+                <td>United States Dollar</td>
+            </tr>
+            <tr>
+                <td>UTR</td>
+                <td>Unit Test Report</td>
+            </tr>
+            <tr>
+                <td>UTS</td>
+                <td>Unit Test Specification</td>
+            </tr>
+            <tr>
+                <td>UTSC</td>
+                <td>Unit tested Source code</td>
+            </tr>
+            <tr>
+                <td>VER</td>
+                <td>Verification</td>
+            </tr>
+            <tr>
+                <td>WBS</td>
+                <td>Work Breakdown Structure</td>
+            </tr>
+            <tr>
+                <td>WO</td>
+                <td>Work Order</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

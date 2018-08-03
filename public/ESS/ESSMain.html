@@ -1,0 +1,272 @@
+<div class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title"><b>ESS</b></h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+					<div class="wizard">
+						<div class="wizard-inner">
+							<div class="nav-tabs-custom" id="customTabDtl">
+								<ul class="nav nav-tabs" role="tablist" id="ulHtml">
+								
+								</ul>
+								<div class="tab-content" id="divWizHtml">
+									
+								</div>
+							</div> 
+							<div class="form-group" id="partTabDtl" style="display: none;">
+								
+							</div>
+							<div class="form-group" id="finalTabDtl" style="display: none;">
+								
+							</div>
+						</div>
+					</div>                
+                </div>
+            </div>
+        </div>
+	</div>		
+</div>
+<script>
+if(navigator.onLine) { 		
+	$.notify("You were on online", 'info', {
+		autoHide: true,
+		autoHideDelay: 5000,
+		clickToHide: true
+	});
+}else{	
+	$.notify("You were on offline", 'error', {
+		autoHide: true,
+		autoHideDelay: 5000,
+		clickToHide: true
+	});
+}	
+localStorage.setItem("ess",null);
+var url = localStorage.getItem("url");
+var session = localStorage.getItem("session");
+$.ajax({
+	type: "GET",
+	url: url + "/getEssQue",
+	headers: { Authorization: session },
+	success: function(data, textStatus) {	
+		console.log(data);
+		if (data.status == 200) {
+			console.log(data.data.Questions.length);
+			console.log(data.data.Rating.length);
+			console.log(data.data.Importance.length);
+			var questions = data.data.Questions;
+			var rating = data.data.Rating;
+			var importance = data.data.Importance;
+			var attitude = data.data.Attitude;
+
+			var attiSelect = "<select class='form-control' id='attitudeDtl'>";
+			attiSelect += "<option selected>Select One</option>";
+			$.each(attitude, function(k1, v1) {
+				attiSelect += "<option value="+v1.att_code+" >"+v1.att_desc+"</option>";
+			});
+			attiSelect += "</select>";
+
+			var html = "";	
+			var ulHtml = "";			
+      		var divWizHtml = "";
+      
+			var sectionDivision = "B:C:D:E|F:G:H:I|J:K:L";
+			//var sectionDivision = "B";
+			var pageDiv = sectionDivision.split("|");
+			
+			for(var i=0; i<pageDiv.length; i++){
+				if(i==0 && pageDiv.length-1 == 0){
+					ulHtml += '<li class="active"><a title="'+(i+1)+'" href="#'+(i+1)+'" data-toggle="tab"  role="tab">'+(i+1)+'</a></li>';
+					divWizHtml += '<div class="tab-pane active" role="tabpanel" id="'+(i+1)+'"><ul class="list-inline pull-right"><li><a href="#"><button type="button" class="btn btn-primary" onclick="btnSubmit('+(i+1)+');">Submit</button></a></div></li></ul>';
+				}else if(i==0 && pageDiv.length != 0){
+					ulHtml += '<li class="active"><a title="'+(i+1)+'" href="#'+(i+1)+'" data-toggle="tab"  role="tab">'+(i+1)+'</a></li>';
+					divWizHtml += '<div class="tab-pane active" role="tabpanel" id="'+(i+1)+'"><ul class="list-inline pull-right"><li><a href="#"><button type="button" class="btn btn-primary" onclick="btnNext('+(i+1)+');">Next</button></a></div></li></ul>';
+				}else if(i == pageDiv.length-1){
+					ulHtml += '<li class="disabled"><a title="'+(i+1)+'" href="#'+(i+1)+'" data-toggle="tab"  role="tab">'+(i+1)+'</a></li>';
+					divWizHtml += '<div class="tab-pane" role="tabpanel" id="'+(i+1)+'"><ul class="list-inline pull-right"><li><a href="#"><button type="button" class="btn btn-primary" onclick="btnSubmit('+(i+1)+');">Submit</button></a></div></li></ul>';
+				}else{
+					ulHtml += '<li class="disabled"><a title="'+(i+1)+'" href="#'+(i+1)+'" data-toggle="tab"  role="tab">'+(i+1)+'</a></li>';
+					divWizHtml += '<div class="tab-pane" role="tabpanel" id="'+(i+1)+'"><ul class="list-inline pull-right"><li><a href="#"><button type="button" class="btn btn-primary" onclick="btnNext('+(i+1)+');">Next</button></a></div></li></ul>';
+				}
+			}
+			document.getElementById("ulHtml").innerHTML = ulHtml;
+			document.getElementById("divWizHtml").innerHTML = divWizHtml;
+			
+			for(var p=0; p<pageDiv.length; p++){
+				var secSplit = pageDiv[p].split(":");
+				for(var i=0; i<secSplit.length; i++){
+					var sectionNameHeading = "";
+					
+					if(secSplit[i] == "F"){
+						sectionNameHeading = "F";
+						secSplit[i] = "H";
+					}else
+					if(secSplit[i] == "G"){
+						sectionNameHeading = "G";
+						secSplit[i] = "I";
+					}else if(secSplit[i] == "H"){
+						sectionNameHeading = "H";
+						secSplit[i] = "J";
+					}else if(secSplit[i] == "I"){
+						sectionNameHeading = "I";
+						secSplit[i] = "K";
+					}else if(secSplit[i] == "J"){
+						sectionNameHeading = "J";
+						secSplit[i] = "L";
+					}else if(secSplit[i] == "K"){
+						sectionNameHeading = "K";
+						secSplit[i] = "M";
+					}else if(secSplit[i] == "L"){
+						sectionNameHeading = "L";
+						secSplit[i] = "N";
+					}
+					else if(secSplit[i] == "M"){
+						break;
+					}else if(secSplit[i] == "N"){
+						break;
+					}
+					else{
+						sectionNameHeading = secSplit[i];
+					}
+					
+					var secValue = "";
+					if(sectionNameHeading == "B"){
+						secValue = "A";
+					}else if(sectionNameHeading == "C"){
+						secValue = "B";
+					}else if(sectionNameHeading == "D"){
+						secValue = "C";
+					}else if(sectionNameHeading == "E"){
+						secValue = "D";
+					}else if(sectionNameHeading == "F"){
+						secValue = "E";
+					}else if(sectionNameHeading == "G"){
+						secValue = "F";
+					}else if(sectionNameHeading == "H"){
+						secValue = "G";
+					}else if(sectionNameHeading == "I"){
+						secValue = "H";
+					}else if(sectionNameHeading == "J"){
+						secValue = "I";
+					}else if(sectionNameHeading == "K"){
+						secValue = "J";
+					}else if(sectionNameHeading == "L"){
+						secValue = "K";
+					}else if(sectionNameHeading == "M"){
+						secValue = "L";
+					}
+					else{
+						secValue = sectionNameHeading;
+					}
+					
+					var secDivHtml = "<div class='row'> <h3 class='box-title'>"+ secValue +". " +getSectionName(sectionNameHeading)+"</h3></div><div class='row' style='padding-bottom:10px;' id='"+secSplit[i]+"'></div>";
+									
+					var pHtml = document.getElementById(p+1).innerHTML;	
+					
+					var secDivFooterHtml = "<div class='row'><div class='form-group'><div class='col-md-12'><label>Considering the changes underway in Integra, which of the following best describes your attitude? </label></div><div class='row'> <div class='col-md-12'>"+ attiSelect + "</div></div></div></div>";
+					secDivFooterHtml += "<div class='row'><div class='form-group'><div class='col-md-12'><label>List atleast three things you like or satisfying about Integra: </label></div><div class='row'> <div class='col-md-12'><textarea value='' id='satisfyDtl' class='form-control' rows='3' placeholder=''></textarea></div></div></div></div>";
+					secDivFooterHtml += "<div class='row'><div class='form-group'><div class='col-md-12'><label>List atleast three things in Integra that are least statisfying and you would like changed: </label></div><div class='row'> <div class='col-md-12'><textarea value='' id='leastSatisfyDtl' class='form-control' rows='3' placeholder=''></textarea></div></div></div></div>";
+					secDivFooterHtml += "<div class='row'><div class='form-group'><div class='col-md-12'><label>What is your contribution/Initiative towards improvement of any weak areas observed in the organization? </label></div><div class='row'> <div class='col-md-12'><textarea value='' id='contributeDtl' class='form-control' rows='3' placeholder=''></textarea></div></div></div></div>";
+					secDivFooterHtml += "<div class='row'><div class='form-group'><div class='col-md-12'><label>Other suggestions, if any: </label></div><div class='row'> <div class='col-md-12'><textarea value='' id='suggestionDtl' class='form-control' rows='3' placeholder=''></textarea></div></div></div></div>";
+					
+					if(p == pageDiv.length - 1 && i == secSplit.length-1){
+						document.getElementById(p+1).innerHTML = pHtml+secDivHtml + secDivFooterHtml;				
+					}else{
+						document.getElementById(p+1).innerHTML = pHtml+secDivHtml;				
+					}
+				
+					$.each(questions, function(k1, v1) {					
+						console.log("value is : "+v1.ques_section.trim());
+						if(secSplit[i] == v1.ques_section.trim()){
+							var imp = "<select class='form-control' id='i"+v1.ques_code+"'>";
+							var rate = "<select class='form-control' id='r"+v1.ques_code+"'>";
+							imp += "<option selected>Select Importance</option>";
+							rate += "<option selected>Select Rating</option>";
+							
+							$.each(importance, function(k2, v2) {
+								imp += "<option value="+v2.imp_code+" >"+v2.imp_desc+"</option>";
+							});
+							imp += "</select>";
+							$.each(rating, function(k3, v3) {					
+								if(v1.ques_section.trim() == v3.rat_code.trim()){
+									rate += "<option value="+v3.rat_value+" >"+v3.rat_desc+"</option>";
+								}
+							});
+							rate += "</select>";
+							html += "<div class='form-group'><div class='col-md-12'><label>"+v1.ques_num + ". "+v1.ques_desc +"</label></div> <div class='row'><div class='col-md-6'>"+ rate + "</div><div class='col-md-6'> " + imp+"</div></div></div>";						
+							var value = document.getElementById(secSplit[i]).innerHTML;
+							value += html;
+							console.log("innerData ;::"+html);
+							document.getElementById(secSplit[i]).innerHTML = value;	
+							rate = "";
+							imp = "";
+							html = "";
+						}						
+					});
+				}
+			}			
+		}
+	}
+});
+</script>
+<script>
+Array.prototype.unique = function() {
+    var arr = [];
+    for(var i = 0; i < this.length; i++) {
+        if(!arr.includes(this[i])) {
+            arr.push(this[i]);
+        }
+    }
+    return arr; 
+}	
+function disFun(){
+	console.log("calling disfun");
+	$('.nav-tabs > .active').prev('li').find('a').trigger('click');
+}	
+
+function btnNext(idVal){
+	var selectEle = $("#"+idVal).find("select");
+	var flag = false;
+	var json = [];
+	for(var i=0; i<selectEle.length; i++)
+	{ 
+		var id = selectEle[i].id; 
+		console.log("id :::: "+id);
+		var chkVal = $("#"+id).val();
+		if(chkVal.trim() == "Select One" || chkVal.trim() == "Select Rating" || chkVal.trim() == "Select Importance"){			
+			flag = true;
+			localStorage.setItem("ess",null);
+			$("#"+id).css("border-color","red");
+			$("#"+id).notify("Select Option", 'error', {
+				autoHide: true,
+				autoHideDelay: 5000,
+				clickToHide: true
+			});
+		}else if(id != "attitudeDtl"){			
+			json.push(id.substr(1));
+			$("#"+id).css("border-color","#d2d6de");
+		}
+	}
+	if(flag == false){
+		var finalArray = json.unique();
+		console.log(finalArray);
+		if(localStorage.getItem("ess") == null || localStorage.getItem("ess") == "null"){
+			localStorage.setItem("ess",finalArray);
+		}else{
+			var prevArray = localStorage.getItem("ess").split(",");
+			console.log("previous array;;;");
+			console.log(prevArray);
+			var finalMapArray = finalArray.concat(prevArray).unique();
+			console.log("finalmap array :::");
+			console.log(finalMapArray);
+			localStorage.setItem("ess",finalMapArray);
+		}
+		$('.nav-tabs > .active').next('li').find('a').trigger('click');
+	}else{
+		json = [];
+	}	
+}
+</script>

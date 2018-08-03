@@ -1,0 +1,33 @@
+{
+    "message": "Success",
+    "status": 200,
+	"refNum":123,
+    "data": {
+        "Result": [
+            {
+                "que_code": "A2",
+                "rating": 1,
+                "important": 3,
+                "ratingDes": "Strongly Disagree",
+                "importantDes": "Important",
+                "ques_desc": "I understand Integra's Vision / Mission & Values."
+            },
+            {
+                "que_code": "B1",
+                "rating": 1,
+                "important": 1,
+                "ratingDes": "Strongly Disagree",
+                "importantDes": "Not Applicable",
+                "ques_desc": "Integra fulfils its customer needs and expectations."
+            },
+            {
+                "que_code": "B3",
+                "rating": 1,
+                "important": 1,
+                "ratingDes": "Strongly Disagree",
+                "importantDes": "Not Applicable",
+                "ques_desc": "Integra cares about its people."
+            }
+        ]
+    }
+}

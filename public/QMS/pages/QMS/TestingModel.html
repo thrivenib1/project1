@@ -1,0 +1,296 @@
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script><link rel="stylesheet" type="text/css" href="css/custom.css" />
+<section class="content-header">
+    <h1>
+        Quality Management System
+    </h1>
+    <ol class="breadcrumb">
+        <li>
+            </b><a href="#" onclick="changeContent('home')"><i class="fa fa-dashboard"></i> Home</a></b>
+        </li>
+        <li><b><a href="#" onclick="changeContent('qmsMain')" >Integra Quality Manual</a></b></li>
+
+    </ol>
+</section>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th align="center" colspan="4">Testing Model</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ISO Clause: 7.1</td>
+            <td>PM02</td>
+            <td>Version: 3.00</td>
+            <td>Date: 17th May 2010</td>
+        </tr>
+    </tbody>
+</table>
+<div class="Section1">
+    <div id="centertext">
+        <br/>
+        <h3><b>Introduction</b></h3>
+    </div>
+    <div>
+        <p>The Testing Process Model is used when scope of the work is limited to only testing the software. The main phases in this model are:</p>
+
+        <p><b><span style="display:inline-block; width: 50px;"></span>1.     Requirement Phase,</b></p>
+
+        <p><b><span style="display:inline-block; width: 50px;"></span>2.     Analysis Phase,</b></p>
+
+        <p><b><span style="display:inline-block; width: 50px;"></span>3.     Testing Phase</b></p>
+
+        <p><b><span style="display:inline-block; width: 50px;"></span>4.     Closure Phase</b></p>
+
+        <p>A brief discussion and detail activity involved in each of these phases are given below:</p>
+    </div>
+    <center>
+        <img border="0" width="435" height="338" src="/QMS/pages/QMS/Downloads/ProcessModels/TM-Fig1.gif" alt="pm02_1" v:shapes="Picture_x0020_3">
+    </center>
+    <div id="centertext">
+        <p><b>1. Requirement Phase</b></p>
+    </div>
+    <div>
+        <p>
+            On signing the contract the CMG will create PCC entry for the project. The Marketing In-Charge of the project or the PM of the project will call for project kick-off meeting. (Refer to
+            <u><a href="#" onclick="changeContent('FP01')">FP01 Sales Procedure</a></u> Business Development Procedure.) The PM will present the schedule, effort, risks and the requirements from other support groups in the kick-off meeting. On formation of the
+            project team, work on requirement phase begins. The PM will create a Project Folder for the project as per
+            <u><a href="#" onclick="changeContent('MP01CD')">Control of Documents MP01</a></u> Document (MP01). Use <u><a href='/QMS/pages/workaids/downloads/checklists/CHPPL04 (1).doc' download>Project Kick-off Checklist, CHPPL04.</a></u></p>
+    </div>
+    <div id="centertext1">
+        <p><b>1.1     Requirements Study</b></p>
+    </div>
+    <div>
+        <p>On signing the contract, the customer provides the Requirements for testing.</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>. PM will study the scope of the project and understand the customer requirements</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>. PM will review the customer-supplied material and identify the process to control the same as per the procedure for
+            <u><a href="#" onclick="changeContent('QMS03PR12')">Control of customer-supplied material, (PR12).</a></u></p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>. The PM will maintain the MOM of the Kick-off meeting using PCC /
+            <u><a href='/QMS/pages/workaids/downloads/forms/FRMMR02.doc' download>FRMMR02</a></u></p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>. PM will identify the training needs for the TM and co-ordinate with the Training Co-ordinator for the training.</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>. PM will raise a Training request by using
+            <u><a href='/QMS/pages/workaids/downloads/forms/FROTR08.xls' download>FROTR08.</a></u></p>
+    </div>
+    <center>
+        <img border="0" width="413" height="403" src="images\QMS\image006.gif" alt="pm02_2" v:shapes="Picture_x0020_5">
+        <img border="0" width="646" height="279" src="/QMS/pages/QMS/Downloads/ProcessModels/TM-IORequirement.gif" alt="pm02_3" v:shapes="Picture_x0020_6">
+    </center>
+    <center> Input Output of the Requirement Phase </center>
+    <div>
+        <p><b>1.2 Project Management Plan</b></p>
+    </div>
+    <div>
+        <p><b>1.2.1 Preparation of SPMP</b></p>
+    </div>
+    <div>
+        <p> The PM will prepare the SPMP, using the SPMP Template
+            <u><a href='/QMS/pages/workaids/downloads/templates/TPTST02.doc' download>TPTST02 .</a></u>The PM can tailor the SPMP to meet the project requirement with approval from the SQA. The PM will update the schedule and the effort section in SPMP
+            for different cycles of the project. For multiple projects, the PM will prepare a Sub-project plan using template
+            <u><a href='/QMS/pages/workaids/downloads/templates/TPTST03.doc' download>(TPTST03)</a></u> and customise the document as per requirement for the project. While executing sub-projects the procedure for Sub-project PR-18 will be referred.</p>
+
+        <p>For device testing, the PM will prepare a sub-project for each device using TP-03, if more than one device needs to be tested in the scope of the project. Subsequently, if the same device is tested for different builds, the TP-03 will be updated
+            with the schedule and effort for different cycles.</p>
+    </div>
+    <div>
+        <p><b>1.2.2 Review & Approval of SPMP</b></p>
+    </div>
+    <div id="content">
+        <p> The DH will review and approve the SPMP and sub-project plan (if applicable) to ensure that the commitments stated in the plan are pragmatic and can be met. DH will record the review findings using PCC / IRR
+            <u><a href='/QMS/pages/workaids/downloads/forms/FRVER01.xls' download>(FRVER01)</a></u> and the record will be kept in the Project folder as per
+            <u><a href="#" onclick="changeContent('MP01CD')">Document Control procedure.</a></u></p>
+    </div>
+    <div>
+        <p><b>1.2.3 Amendment to SPMP</b></p>
+    </div>
+    <div id="content">
+        <p>The SPMP will be updated under the following conditions:</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>· Re-estimation of the project occurs</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>· Major scope changes to the contract occur</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>· Changes occur due to Formal / Informal Reviews and Audits (Internal/External)</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>· Changes occur due to Requirement Change Request</p>
+
+        <p>The revisions made in the SPMP will be reflected in the Revision History and will require approval from the same authorities that reviewed and approved the plan initially.</p>
+    </div>
+    <div>
+        <p><b>1.3     Resource planning</b></p>
+    </div>
+    <div id="content">
+        <p><span style="display:inline-block; width: 50px;"></span>· The PM will request for human resources as per
+            <u><a href="#" onclick="changeContent('iFiInfraHR')">Infrastructure and Human Resource Request and Release process.</a></u></p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>· PM ensures that required testing tools are identified and procured.</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>· All customer supplied materials will be controlled as per the
+            <u><a href="#" onclick="changeContent('QMS03PR12')">Control of Customer Supplier Material (PR12)</a></u></p>
+    </div>
+    <div>
+        <p><b>1.4     Baseline</b></p>
+    </div>
+    <div id="content">
+        <p>At the end of this phase, PM will baseline the SPMP and any customer supplied material (if applicable) as per the
+            <u><a href="#" onclick="changeContent('QMS03PR04')">Configuration Management (PR04).</a></u></p>
+    </div>
+    <div>
+        <p><b>1.5     Progress Monitoring</b></p>
+    </div>
+    <div>
+        <p>The Progress of the project will be tracked as per
+            <u><a href="#" onclick="changeContent('QMS03PR03')">Project monitoring and Control (PR03).</a></u></p>
+    </div>
+    <div>
+        <p><b> 2 Analysis Phase</b></p>
+    </div>
+    <div>
+        <p><b> 2.1 Analysis</b></p>
+    </div>
+    <div>
+        <p><b> 2.1.1 Requirements from customer</b></p>
+    </div>
+    <div id="content">
+        <p>If customer supplies a document specifying the test requirements, the Architect/PM/TL will review the same using the IRR(FRVER01) and the record will be kept in the Project folder as per Document Control procedure. If there is any discrepancy,
+            the Review record, FRVER01 will be sent to the customer. After getting concurrence from the customer, PM will resolve the issue and the test requirement document will be baseline.</p>
+    </div>
+    <div>
+        <p><b>2.1.2 Requirements Specification developed by the Integra</b></p>
+    </div>
+    <div>
+        <p>In case the customer does not provide the test requirements Integra will prepare the test specification as follows:</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>1. PM will conduct a meeting with the Architect, TL to study the customer’s inputs (like code, User manual, etc). The minutes of meeting will be kept using
+            <u><a href='/QMS/pages/workaids/downloads/forms/FRMMR02.doc' download>FRMMR02.</a></u></p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>2. TL will prepare the Software Test Specification (STS) by using
+            <u><a href='/QMS/pages/workaids/downloads/templates/TPVAL02.xls' download>Test Specification template (TPVAL02),</a></u> during this activity all necessary clarifications are obtained from CPC.</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>3. The STS will be reviewed by PM and review findings will be recorded using
+            <u><a href='/QMS/pages/workaids/downloads/forms/FRVER01.xls' download>IRR (FRVER01) ,</a></u> and the record will be kept in the Project Quality folder</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>4. After review, updated STS will be sent to the customer for approval.</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>5. Version numbering of STS will be done as per procedure for Document Control MP01</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>6. If the customer requests any change it will be incorporated in the STS and then it will be baselined as per Configuration Management (PR04). The record (e-mail, any other written communication)
+            for Customer approval will be kept in Project folder.</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>7. Configuration Management procedure, PR-04 will be applicable throughout the lifecycle of the STS.</p>
+    </div>
+    <div>
+        <p><b>2.1.3 Acquisition of testing tools</b></p>
+    </div>
+    <div>
+        <p>
+            PM ensures that required testing tools are acquired before the start of the testing. After acquiring these tools they are validated for their adequacy before use by PM/TL.</p>
+    </div>
+
+    <center>
+        <img border="0" width="679" height="197" src="/QMS/pages/QMS/Downloads/ProcessModels/TM-Analysis.gif" alt="pm02_6" v:shapes="Picture_x0020_7">
+    </center>
+    <center>
+        <p><b>Input Output of Analysis Phase</b></p>
+    </center>
+
+    <div>
+        <p><b> 2.2 Re-estimation</b></p>
+    </div>
+    <div>
+        <p>After completion of STS, PM will re-estimate the effort and the schedule of the project. Re-estimation will be also carried out whenever there is any change request, either from the customer side or by the project team itself. The SPMP will be
+            modified to include all the affects arising out of re-estimation. The same person who approved the SPMP earlier approves it once again and the revision history will be updated in the document.</p>
+    </div>
+    <div>
+        <p><b>3.  Testing Phase</b></p>
+    </div>
+    <div>
+        <p> <span style="display:inline-block; width: 50px;"></span>&#10147; The testing team will execute the test cases using the STS as per
+            <u><a href="#" onclick="changeContent('QMS03PR08')">Validation Procedure (PR08).</a></u></p>
+
+        <p> <span style="display:inline-block; width: 50px;"></span>&#10147; The test report will be recorded using
+            <u><a href='/QMS/pages/workaids/downloads/forms/FRVER02.xls' download>(FRVER02)</a></u> / BCC. If the customer specifies a particular format /tool, this will be mentioned in the SPMP and the same will be used for recoding the test report.</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>&#10147 TMs will submit the test report to the TL.</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>&#10147 TL reviews the Test report (FRVER02) and will maintain the review records by using Inspection and review record (FRVER01)</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>&#10147 At the end of testing of every module (i.e. before sending the report to the customer), TL will ensure that False pass testing* is carried out and record will be maintained in the
+            same format as above.</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>&#10147 TL will discuss with the team members about the test results and finalises the test report (FRVER02)</p>
+
+        <p><b>(*False pass testing</b> – Test cases will be selected at random (5% or as specified in the SPMP) from the passed test cases and TL allocates them to other members of the team for testing and the results are cross checked.)</p>
+    </div>
+    <center>
+        <img border="0" width="684" height="193" src="/QMS/pages/QMS/Downloads/ProcessModels/TM-IOTestingPhase.gif" alt="pm02_7" v:shapes="Picture_x0020_8">
+    </center>
+    <center>
+        <p><b>Input Output of the Testing Phase</b></p>
+    </center>
+    <p>PM will ensure that regular backup of the product work items is taken using the
+        <u><a href="#/ifi_BackupRestoreandArchivalMaintenance">Backup, Recovery and Archival procedure (PR10).</a></u></p>
+    <div>
+        <p><b> 4.  Closure Phase</b></p>
+    </div>
+    <div>
+        <p><b> 4.1 Packaging and delivery</b></p>
+    </div>
+    <div>
+        <p><span style="display:inline-block; width: 50px;"></span>&#10147 The PM will send the test report to the customer as per the contractual agreement.</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>&#10147 TL will generate DN, RN (available in PCC) and send it to the PM along with the package of test data and test results.</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>&#10147 The SQA team and DH will verify that all deliverables have passed through the required tests and verification processes.</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>&#10147 The Deliverables will be packed as per the contract agreement and sent to the customer.</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>&#10147 The PM will advise the commercial dept for raising the invoice as per the agreement.</p>
+    </div>
+
+    <center>
+        <img border="0" width="703" height="248" src="/QMS/pages/QMS/Downloads/ProcessModels/TM-IOClosurePhase.gif" alt="pm02_8" v:shapes="Picture_x0020_9">
+    </center>
+    <center>
+        <p><b>Input Output of the Closure Phase</b></p>
+    </center>
+    <div>
+        <p><b> 4.2 Customer Signoff</b></p>
+    </div>
+    <div>
+        <p>Customer Signoff is obtained after delivering the Test Report to the customer through either e-mail or written confirmation. These documents will be kept in the Project folder</p>
+    </div>
+    <div>
+        <p><b> 4.3 Archiving</b></p>
+    </div>
+    <div>
+        <p>The Test Specification and Test report is archived or disposed as per the contract agreement. Refer to Backup, Restore and Archival Maintenance Procedure (PR10)</p>
+    </div>
+    <div>
+        <p><b>4.4 Project Closure</b></p>
+    </div>
+    <div>
+        <p>Infrastructure will be released as per
+            <u><a href="#" onclick="changeContent('QMS03PR11')">Infrastructure and HR Request and Release (PR11)</a></u></p>
+
+        <p>Customer supplied material will be returned as per the
+            <u><a href="#" onclick="changeContent('QMS03PR12')">Control of Customer Supplied Material (PR12)</a></u></p>
+
+        <p>The PM will collate Project metrics
+            <u><a href="#" onclick="changeContent('FP11')">(FP11)</a></u> and call for Project Closure meeting as per
+            <u><a href="#" onclick="changeContent('QMS03PR15')">Project Closure Procedure PR15.</a></u></p>
+    </div>
+    <div>
+        <p><b>4.5 Customer Complaints</b></p>
+    </div>
+    <div>
+        <p>All customer complaints will be handled as per procedure for
+            <u><a href="#" onclick="changeContent('QMS03PR14')">handling customer complaints (PR14)</a></u> and will be tracked till closure.</p>
+    </div>
+</div>

@@ -1,0 +1,420 @@
+
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script>
+<!-- design starts here ...-->
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Quality Management System
+    </h1>
+    <ol class="breadcrumb">
+        <li>
+            </b><a href="#" onclick="changeContent('home')"><i class="fa fa-dashboard"></i> Home</a></b>
+        </li>
+        <li class="active"><b><a href="#" onclick="changeContent('qmsMain')" >Integra Quality Manual</a></b></li>
+    </ol>
+</section>
+
+<section class="content">
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th align="center" colspan="4">i-LANG Model</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ISO Clause: 7.1</td>
+                <td>PM03</td>
+                <td>Version: 3.10</td>
+                <td>Date: 17th May 2010</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="Section1">
+
+        <div id="centertext">
+            <p><b>Introduction</b></p>
+        </div>
+        <div id="content">
+            <p>Any comprehensive software is expected to be user-friendly across the globe. Localizing the software into multiple languages and creating technical documentation for the software are inherent parts of software development. Integra has been
+                involved very actively with various IT companies across the globe, in Localization and technical documentation for various SW applications. Hence, a life cycle model, called <b>i-LANG model, (Integra Language Model)</b> is developed to
+                carry out such activities.</p>
+        </div>
+        <center>
+            <img border="0" width="355" height="223" src="/QMS/pages/QMS/Downloads/ProcessModels/iLang-Dev.jpg" alt="pm03_1" v:shapes="Picture_x0020_3">
+        </center>
+        <div id="content">
+            <p>The basic framework of this model is shown in the figure above. This model will be applicable for both localization and documentation activities.</p>
+
+            <p>The development framework has four stages: <b>Input, Transform, Verify</b> and <b>Output.</b> Every work item goes through these four stages. The input is processed, and the “transformed” item is verified to examine whether it meets the implicit
+                and explicit requirements. If it meets the requirement, it is passed to the Output stage; else, it is looped back to the Transform stage. This process is repeated until the work item meets the quality requirements. From the Output stage,
+                a feedback is sent to the Input stage to improve the process.</p>
+
+            <p>The lifecycle is divided into five phases;</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span><b>1.     Requirement,</b></p>
+
+            <p><span style="display:inline-block; width: 50px;"></span><b>2.     Analysis and Design,</b></p>
+
+            <p><span style="display:inline-block; width: 50px;"></span><b>3.     Development,</b></p>
+
+            <p><span style="display:inline-block; width: 50px;"></span><b>4.     Verification and</b></p>
+
+            <p><span style="display:inline-block; width: 50px;"></span><b>5.     Delivery.</b></p>
+
+            <p>These fives phases are shown in Fig – 2. In each phase, the basic development framework (Figure –1) is applied. This model provides the same basic framework for technical writing as well as localization activities. The way the model is applied
+                in each case, for each phase is explained in the following sections.</p>
+        </div>
+        <div id="centertext">
+            <p><b>1 Requirement Phase</b></p>
+        </div>
+        <div id="centertext1">
+            <p><b>1.1    Requirements</b></p>
+        </div>
+        <div id="content">
+            <p>On signing the contract the CMG will create PCC entry for the project. The Marketing In-Charge of the project or the PM of the project will call for project kick-off meeting. (Refer to ,<u><a href='/QMS/pages/workaids/downloads/forms/FRPPL01.doc' download>FP18 Business Development Management.)</a></u>                The PM will present the schedule, effort, risks and the requirements from other support groups in the kick-off meeting. On formation of the project team, work on requirement phase begins. The PM will create a Project Folder for the project
+                as per <u><a href='/QMS/pages/workaids/downloads/forms/FRPDM01.xls' download>FRPDM01.</a></u> Refer to <u><a href="#" onclick="changeContent('MP01CD')">MP01 Document Control Procedure.</a></u> Use <u><a href='/QMS/pages/workaids/downloads/checklists/CHPPL04.doc' download>Project Kick-off Checklist, CHPPL04.</a></u></p>
+
+            <p>The first step in any developmental effort is to determine exactly the scope of the project. The requirements stipulate the inputs and outputs. Any standards or specifications to be followed are also stipulated in this phase. </p>
+        </div>
+        <center>
+            <img border="0" width="611" height="339" src="/QMS/pages/QMS/Downloads/ProcessModels/iLang-Model.jpg" alt="pm03_2" v:shapes="Picture_x0020_4">
+        </center>
+        <div id="content">
+            <p>The requirements are documented in explicit terms and approval is obtained from the customer, through e-mail or hand-written confirmation. The customer-accepted requirement is baseline. Customer approval record is put in the project folder.</p>
+        </div>
+        <div id="centertext1">
+            <p><b>1.2    Software Project Management Plan</b></p>
+        </div>
+        <div id="content">
+            <p>The PM prepares the SPMP by using the PMP (TPPPL03). The PM can tailor the SPMP to meet specific project requirements with approval from the SEPG. Deviation, if any, will be mentioned in the SPMP.</p>
+
+            <p>The DH reviews and approves the SPMP to ensure that the commitments stated in the plan are pragmatic and can be met. The review is done through PCC / IRR <u><a href='/QMS/pages/workaids/downloads/forms/FRVER01.xls' download>(FRVER01).</a></u></p>
+
+            <p>The SPMP has to be updated under the following conditions:</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>1. Re-estimation of the project </p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>2. Major scope changes to the contract </p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>3. Formal / Informal reviews and audits (Internal/External)</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>4. Change request for requirements</p>
+
+            <p>The Revision History section in the SPMP will reflect the revisions made in the SPMP, and all the revisions require approval from the same authorities that reviewed and approved the earlier version of the plan.</p>
+
+            <p>If the multiple cycles of work needs to be carried out under the same project the PM will update the schedule and effort section of the SPMP and get approval of the same.</p>
+        </div>
+        <div id="centertext1">
+            <p><b>1.3    Resource Procurement</b></p>
+        </div>
+        <div id="content">
+            <p><span style="display:inline-block; width: 50px;"></span>· The PM requests for human resources using PCC as per the <u><a href="#" onclick="changeContent('QMS03PR11')">PR11 Infrastructure and Human Resource Request and Release procedure</a></u></p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>· The DH/CMG reviews the requests, and allots the human and infrastructure resources as per the requirement.</p>
+        </div>
+        <div id="centertext1">
+            <p><b>1.4    Project Induction</b></p>
+        </div>
+        <div id="content">
+            <p><span style="display:inline-block; width: 50px;"></span>&#10147; The PM organises project induction for all the team members. Induction covers: Project overview, Process Model, client overview, milestones, and responsibilities.</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>&#10147; The PM invites the DH, Quality Manager and other members as per the need.</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>&#10147; The meeting is to be organised through PCC. If not possible, records of attendance <u><a href='/QMS/pages/workaids/downloads/forms/FRMMR01.doc' download>(FRMMR01)</a></u> and
+                <u><a href='/QMS/pages/workaids/downloads/forms/FRMMR02.doc' download>MOM (FRMMR02)</a></u> will be kept in the project folder.</p>
+        </div>
+        <div id="centertext1">
+            <p><b>1.5    Training</b></p>
+        </div>
+        <div id="content">
+            <p>Technical training as identified in the SPMP is conducted. The PM makes a training request to the Training Co-ordinator using <u><a href='/QMS/pages/workaids/downloads/forms/FROTR01.xls' download>FROTR01</a></u> for project specific training
+                requirements.</p>
+        </div>
+        <div id="centertext1">
+            <p><b>1.6    Baseline</b></p>
+        </div>
+        <div id="content">
+            <p>At the end of this phase, the PM ensures that the following configuration items (CI) are baseline using the <u><a href="#" onclick="changeContent('QMS03PR04')">Configuration Management procedure (PR04):</a></u></p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>· Requirements document</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>· SPMP</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>· Customer supplied material which is used as input</p>
+        </div>
+        <div id="centertext1">
+            <p><b>1.7    Customer Supplied Material</b></p>
+        </div>
+        <div id="content">
+            <p>All customer-supplied material is handled as per the <u><a href="#" onclick="changeContent('QMS03PR12')">Control of Customer Supplied Material  (PR12).</a></u> The customer-supplied material can be: Translation guidelines, sources in the form of
+                documents and resources, and glossary lists</p>
+
+            <p>All the customer-supplied material is to be listed in the Master List of Documents through PCC/ <u><a href='/QMS/pages/workaids/downloads/forms/FRPDM01.xls' download>FRPDM01.</a></u> Refer to <u><a href="#" onclick="changeContent('MP01CD')">Document Control procedure MP01 .</a></u></p>
+        </div>
+        <div id="centertext1">
+            <p><b>1.8    ITVO Framework</b></p>
+        </div>
+        <div id="content">
+            <p>The ITVO framework for the Requirement phase is carried out in the following way:</p>
+        </div>
+        <center>
+            <img border="0" width="649" height="251" src="/QMS/pages/QMS/Downloads/ProcessModels/iLang-ITVO.jpg" alt="pm03_8" v:shapes="Picture_x0020_11">
+        </center>
+        <div id="centertext">
+            <p><b>2 Analyses and Design Phase</b></p>
+        </div>
+        <div id="centertext1">
+            <p><b>2.1    Analysis</b></p>
+        </div>
+        <div id="content">
+            <p>The requirement document contains all the requirements of the project. It communicates the customer’s needs, wishes, and expectations.</p>
+
+            <p>The requirement document forms the basis for determining whether the developed system is complete. The verification of the system against the requirement document serves to demonstrate that the contractual agreement between the customer and
+                Integra has been met, and generally implies the end of the development phase. This verification requires the construction of test situations i.e. ATP to objectively prove the system compliance with the requirements specified.</p>
+
+            <p>All requirements identified during the Analysis phase are documented in the Requirements Specification (RS). The main elements of an RS are: List of deliverables, list of languages to be localized into, and translation guidelines and glossary
+                lists to be used (if any)</p>
+
+            <p>The Requirement Specification document is expected to be brief.</p>
+        </div>
+        <div id="centertext1">
+            <p><b>2.2    Re-estimation</b></p>
+        </div>
+        <div id="content">
+            <p>After completion of RS the PM re-estimates the effort and the schedule for the project. The estimation is revalidated after preparing a detailed WBS for the entire project and recorded using <u><a href='/QMS/pages/workaids/downloads/templates/TPPPL02.xls' download>Estimation Worksheet TPPPL02 .</a></u>                (Also refer to Business Development FP01)</p>
+
+            <p>Re-estimation is also carried out whenever there is any change request, either from the customer’s side or by the project team itself. The SPMP is modified to include all the affects arising out of re-estimation. The same person that approved
+                the earlier version of the SPMP approves it once again, and the revision history is updated in the document.</p>
+        </div>
+        <div id="centertext1">
+            <p><b>2.3    Test Plans</b></p>
+        </div>
+        <div id="content">
+            <p>In case of the existence of a Master Service Agreement, in which the acceptance conditions are mentioned clearly, and the specific project has no deviation from the standard project, creation and approval of the ATP from the customer can be
+                omitted.</p>
+
+            <p>Checklists are prepared for checking the correctness and completeness of the project work item. Generic checklists are reviewed and improved to cater to the needs of the specific project. Special checklists also can be created to verify adherence
+                to standard localization glossaries. This will be mentioned in the SPMP.</p>
+        </div>
+        <div id="centertext1">
+            <p><b>2.4    Baseline</b></p>
+        </div>
+        <div id="content">
+            <p>The PM ensures that the approved RS, and the checklists are put in the controlled library (baseline) of the project as per <u><a href="#" onclick="changeContent('QMS03PR04')">Configuration Management procedure PR04.</a></u></p>
+        </div>
+        <div id="centertext1">
+            <p><b>2.5    ITVO Framework</b></p>
+        </div>
+        <div id="content">
+            <p>The ITVO framework for the Analysis phase is carried out in the following way:</p>
+        </div>
+        <center>
+            <img border="0" width="684" height="245" src="/QMS/pages/QMS/Downloads/ProcessModels/iLang-AnalysisDesign.jpg" alt="pm03_4" v:shapes="Picture_x0020_6">
+        </center>
+        <div id="centertext">
+            <p><b>3 Development</b></p>
+        </div>
+        <div id="centertext1">
+            <p><b>Documentation</b></p>
+        </div>
+        <div id="centertext1">
+            <p><b>3.1   Creation of the document</b></p>
+        </div>
+        <div id="content">
+            <p>TM will create the document based on the document design. Requirements such as style sheets, writing style guidelines and file formats will be adhered to. In the absence of standards provided by the customer, Integra’s standards are followed.
+                – Documentation guidelines (GLDES03, GLDES04, GLDES05). The checklist will be used for verifying the work item.</p>
+
+            <p>The Architect will provide guidance on technology and domain related issues during the preparation of documents.</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>· <b>Self-review:</b> After completing the work item the team members will do a self-review and fix the defects. The defects need not be logged, but all defects must be removed.</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>· <b>Peer-review:</b> One or more team members at a peer level will review the document for content, language, formatting and conformance with customer standards as well as Integra’s
+                standards. The IRR module of PCC/ <u><a href='/QMS/pages/workaids/downloads/templates/TPPPL02.xls' download>FRVER01</a></u> is to be used for recording the defects.</p>
+        </div>
+        <div id="centertext1">
+            <p><b>Localization:</b></p>
+        </div>
+        <div id="centertext1">
+            <p><b>3.2   Translation</b></p>
+        </div>
+        <div id="content">
+            <p>The translators will translate the source documents or resource files and will follow the guidelines provided by the Customer or specified by Integra, as per RS.</p>
+
+            <p>Translators will do a self-review of their work items to check for:</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>&#10147; Completion of translation,</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>&#10147; Adherence to guidelines,</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>&#10147; Basic spelling and grammar checks,</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>&#10147; Adherence to normal translation conventions.</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>&#10147; After completion of self-review the work item will be put for peer review. Review record of peer review will be maintained using <u><a href='/QMS/pages/workaids/downloads/templates/TPPPL02.xls' download>FRVER01.</a></u></p>
+
+            <p>If translation is done through subcontractors, the activities will be carried out as per Purchase procedure FP08</p>
+        </div>
+        <div id="centertext1">
+            <p><b>3.3   ITVO Framework</b></p>
+        </div>
+        <div id="content">
+            <p>The ITVO framework for the Development phase is carried out in the following way</p>
+        </div>
+        <center>
+            <img border="0" width="684" height="243" src="/QMS/pages/QMS/Downloads/ProcessModels/iLang-ITVODev.jpg" alt="pm03_5" v:shapes="Picture_x0020_7">
+        </center>
+        <div id="centertext">
+            <p><b>Development Phase</b></p>
+        </div>
+        <div id="centertext1">
+            <p><b>4 Verification Phase</b></p>
+        </div>
+        <div id="centertext1">
+            <p><b>Documentation</b></p>
+        </div>
+        <div id="content">
+            <p>The Architect or PL reviews the documents created by the team members. Correctness, completeness, and clarity of the content, correctness of the language, presentation of the material and formatting of the document are verified using <u><a href='/QMS/pages/workaids/downloads/checklists/CHLAN02.doc' download>Technical writing Checklist CHLAN02.</a></u></p>
+
+            <p>In addition, adherence to the document design, the standards and guidelines, and technical writing conventions, suitability of the content and presentation to the type of document being created are also verified.</p>
+        </div>
+        <div id="centertext1">
+            <p><b>Localization</b></p>
+        </div>
+        <div id="content">
+            <p>Team members of the localization team will verify the translations received from the translators for completion of the translation, adherence to the translation guidelines, and formatting of the documents. The verification is carried out as
+                per the checklists particularly designed for the verification of the specific work. In absence of these, the team members will use <u><a href='/QMS/pages/workaids/downloads/checklists/CHLAN01.docx' download>Localization Checklist CHLAN01.</a></u>                </p>
+        </div>
+        <div id="centertext1">
+            <p><b>4.1   Verification </b></p>
+        </div>
+        <div id="content">
+            <p>The verification activities involve:</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>&#10147; Verification of completeness of the translation</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>&#10147; Verification of correct replacements of segments/strings in the respective file.</p>
+
+            <p>Generally, integration will be required when:</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>1. Technical documents are created for multiple modules of a software by multiple technical writers</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>2. Document creation will be done in parts</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>3. Localization will be done in parts</p>
+        </div>
+        <div id="centertext1">
+            <p><b>4.2   Verification process</b></p>
+        </div>
+        <div id="content">
+            <p><span style="display:inline-block; width: 50px;"></span>&#10147; The defects found will be entered in BCC.</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>&#10147; The PL will allocate the defects, logged in BCC, to team members for fixing the defects.</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>&#10147; TM will log into BCC to find the defects allotted to them, fix the defects and log the fix.</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>&#10147; The PL will review the changed work items, and will follow up to closure.</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>&#10147; After completion of verification process the work item will baseline by the CTL/ PM.</p>
+
+            <p><span style="display:inline-block; width: 50px;"></span>&#10147; A release readiness check will be done, and when all the defects are closed, the work items are sent for delivery.</p>
+        </div>
+        <div id="centertext1">
+            <p><b>4.3   ITVO Framework</b></p>
+        </div>
+        <div id="content">
+            <p>The above table shows the generic way in which the ITVO will be carried out for a verification phase.</p>
+        </div>
+        <center>
+            <img border="0" width="703" height="284" src="/QMS/pages/QMS/Downloads/ProcessModels/iLang-ITVOVerification.jpg" alt="pm03_6" v:shapes="Picture_x0020_8">
+        </center>
+        <div id="centertext">
+            <p><b>5 Deliveries</b></p>
+        </div>
+        <div id="centertext1">
+            <p><b>5.1   Packaging and Delivery</b></p>
+        </div>
+        <div id="content">
+            <p>After successful completion of the testing phase, the PL will generate the DN (Delivery Note) and RN (Release Note) by using PCC / Delivery Note <u><a href='/QMS/pages/workaids/downloads/forms/FRPRI03.doc' download>(FRPRI03)</a></u> and sends
+                them to the PM along with the System Test Report.</p>
+
+            <p>The SQA team will verify that all deliverables have passed through the required tests and the verification processes by carrying out a release readiness check. This has to be approved by DH</p>
+
+            <p>The Deliverables will be are packed as per the contract agreement and sent to the customer.</p>
+
+            <p>The PM will request the commercial dept for raising the invoice as per the agreement.</p>
+        </div>
+        <div id="centertext1">
+            <p><b>5.2   Acceptance Test</b></p>
+        </div>
+        <div id="content">
+            <p>Acceptance test is carried out in the customer’s place/environment as per the acceptance test plan.</p>
+
+            <p>Defects found during the acceptance test are logged using BCC or <u><a href='/QMS/pages/workaids/downloads/forms/FRVAL01.xls' download>FRVAL01</a></u> or in customer’s own format and fixed and installation plan will be updated accordingly.</p>
+        </div>
+        <div id="centertext1">
+            <p><b>5.3   Customer Signoff</b></p>
+        </div>
+        <div id="content">
+            <p>Customer Signoff will be obtained after completing the Acceptance Test successfully. (Refer <a href="#" onclick="changeContent('FP01')">Business Development FP01 )</a></p>
+        </div>
+        <div id="centertext1">
+            <p><b>5.4   Warranty Support</b></p>
+        </div>
+        <div id="content">
+            <p>Deliverables are supported as per the contract.</p>
+        </div>
+        <div id="centertext1">
+            <p><b>5.5   Project Closure</b></p>
+        </div>
+        <div id="content">
+            <p>Infrastructure will be released as per <u><a href="#" onclick="changeContent('QMS03PR11')">Infrastructure and HR request and Release procedure PR11 .</a></u></p>
+
+            <p>Customer supplied material will be returned as per <u><a href="#" onclick="changeContent('QMS03PR12')">Control of customer supplied material PR12 .</a></u></p>
+
+            <p>The PM collates project metrics (Refer to <u><a href="#" onclick="changeContent('FP11')">FP11)</a></u> and calls for Project Closure meeting as per <u><a href="#" onclick="changeContent('QMS03PR15')">PR15 Project Closure Procedure.</a></u></p>
+        </div>
+        <div id="centertext1">
+            <p><b>5.6   ITVO Framework</b></p>
+        </div>
+        <div id="content">
+            <p>The ITVO framework for the delivery phase will be carried out in the following way:</p>
+        </div>
+        <center>
+            <img border="0" width="684" height="326" src="/QMS/pages/QMS/Downloads/ProcessModels/iLang-ITVODelivery.jpg" alt="pm03_7" v:shapes="Picture_x0020_9">
+        </center>
+        <div id="centertext1">
+            <p><b>6 Defect Traceability</b></p>
+        </div>
+        <div id="content">
+            <p>Metric analysis performed during a project is primarily intended to maintain good control on the project. These analyses can be complemented by focused defect analysis that helps understand the defect and also trace the defect to different
+                stages or phases of the project lifecycle. The following diagram explains the defect trace-ability of a project.</p>
+        </div>
+        <div id="centertext1">
+            <p><b>Defect Traceability:</b></p>
+        </div>
+        <div id="content">
+            <p>This defect traceability process is used to trace the origin of the defect.</p>
+
+            <p>The defects found during review, their root causes, corrective and preventive actions to be taken are recorded using IRR <u><a href='downloads\QMS\ilang\FRVER01.xls' download>(FRVER01.)</a></u></p>
+        </div>
+        <center>
+            <img border="0" width="717" height="324" src="/QMS/pages/QMS/Downloads/ProcessModels/iLang-DefectTrace.jpg" alt="pm03_9" v:shapes="Picture_x0020_10">
+        </center>
+
+
+
+
+
+
+
+    </div>
+
+</section>
+
+<!-- Main content -->
+<!-- design ends here ...-->

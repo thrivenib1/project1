@@ -1,0 +1,1259 @@
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script><section class="content-header">
+    <h1>
+        Quality Management System
+    </h1>
+    <ol class="breadcrumb">
+        <li>
+            </b><a href="#" onclick="changeContent('qmsMain')"><i class="fa fa-dashboard"></i> Home</a></b>
+        </li>
+        <li class="active"><b><a href="#" onclick="changeContent('WorkAids')" >Work Aids</a></b></li>
+        <li class="active"><b><a href="#" onclick="changeContent('WA_Code_STD')" >Coding Stadards</a></b></li>
+    </ol>
+</section>
+
+<div class="Section1">
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th align="center" colspan="4">Coding Standard for C Language</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CS-02</td>
+                <td>Version: 3.00</td>
+                <td>Date: 17th May 2010</td>
+            </tr>
+        </tbody>
+    </table>
+    <p style="margin-left:9.0pt"><b><span style="font-size:13.5pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1">2.0 Introduction<o:p></o:p></span></b></p>
+
+    <p style="margin-left:9.0pt"><b><span style="mso-bidi-font-size:13.5pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1">2.1
+Purpose<o:p></o:p></span></b></p>
+
+    <p style="margin-left:9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">The purpose of this Standard is to
+provide coding standard for C language.</span><span style="mso-bidi-font-size:
+13.5pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-left:9.0pt">
+        <a name="_Toc454274866"></a><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">2.2 Scope<o:p></o:p></span></b></p>
+
+    <p style="margin-left:9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">This Standard is applicable for
+developing C language based applications.</span><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-left:27.0pt;text-indent:-.25in;mso-list:l1 level2 lfo2">
+        <a name="_Toc454274867"></a>
+        <!--[if !supportLists]--><b><span style="mso-bidi-font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Arial;
+color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">2.3<span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span></span></b>
+        <!--[endif]--><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><span style="mso-spacerun:yes">&nbsp;</span>File
+Organization<a name="_Toc454274868"></a><o:p></o:p></span></b></p>
+
+    <p style="margin-left:9.0pt"><b><span style="mso-bidi-font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4F81BD;mso-themecolor:accent1">2.3.1 File Contents <o:p></o:p></span></b></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo4">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Files should be used to organize
+related code modules, at a function level..</span><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo4">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Any structure must be in the header file
+(.h). Function prototypes must be used, and will be in the header file also.
+Function definitions will be in the implementation file (.c).</span>
+        <a name="_Toc454274869"></a><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+40.5pt;text-indent:-31.5pt;mso-list:l2 level3 lfo6">
+        <!--[if !supportLists]--><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial;color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">2.3.2<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;
+</span></span></span></b>
+        <!--[endif]--><b><span style="mso-bidi-font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4F81BD;mso-themecolor:accent1">Source File Layout</span></b><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l0 level1 lfo8">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Source files should contain the
+following components in the order shown below:</span><span style="font-size:
+16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l0 level1 lfo8">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">A prologue that tells what is in the
+file.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l0 level1 lfo8">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Any Header files.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l0 level1 lfo8">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Any defines and typedefs.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l0 level1 lfo8">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">External data declarations (externs,
+non-static globals, static globals).</span><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l0 level1 lfo8">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Functions (Should be in some sort of
+meaningful order).</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l0 level1 lfo8">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Global declarations should begin in
+column 1.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l0 level1 lfo8">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">All external data declaration should
+be preceded by the extern keyword.</span><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l0 level1 lfo8">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">If an external variable is an array
+that is defined with an explicit size, then the array bounds must be repeated
+in the extern declaration unless the size is always encoded in the array.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l0 level1 lfo8">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Unrelated declarations, even of the
+same type, should be on separate lines. </span><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l0 level1 lfo8">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">For structure and union template
+declarations, each element should be in a separate line. The closing brace (})
+should be in column 1 of subsequent lines</span><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l0 level1 lfo8">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">When it's possible to put a needed
+#include line in the source file instead of in the header file, do so. This
+will reduce unnecessary file dependencies and save a little compile time.</span>
+        <a name="_Toc454274870"></a><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt;text-indent:-.5in;mso-list:l2 level3 lfo6">
+        <!--[if !supportLists]--><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial;color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">2.3.3<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></b>
+        <!--[endif]--><b><span style="mso-bidi-font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4F81BD;mso-themecolor:accent1">Header File Layout </span></b><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Header files should contain the
+following components in the order shown below:</span><span style="font-size:
+16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">File Guard</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">System # includes </span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Application # includes</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">#defines</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Macros</span><span style="font-size:
+16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Constant</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">External Functions </span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">External variables</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Structs </span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:5.0pt;margin-right:56.9pt;margin-bottom:5.0pt;margin-left:
+.5in;text-indent:-27.0pt;mso-list:l2 level2 lfo6">
+        <a name="_Toc454274871"></a>
+        <!--[if !supportLists]--><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">2.4<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b>
+        <!--[endif]--><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">Function Declarations<a name="_Toc454274872"></a><o:p></o:p></span></b></p>
+
+    <p style="margin-top:5.0pt;margin-right:56.9pt;margin-bottom:5.0pt;margin-left:
+40.5pt"><b><i><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Header File Guard<o:p></o:p></span></i></b></p>
+
+    <p style="margin-top:5.0pt;margin-right:56.9pt;margin-bottom:5.0pt;margin-left:
+40.5pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">All header files should contain a
+file guard mechanism to prevent multiple inclusion. This mechanism is
+implemented as shown by the following lines:<o:p></o:p></span></p>
+
+    <p style="margin-top:5.0pt;margin-right:56.9pt;margin-bottom:5.0pt;margin-left:
+40.5pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">#ifndef Meaningful NameH /* first
+line of the header file */<o:p></o:p></span></p>
+
+    <p style="margin-top:5.0pt;margin-right:56.9pt;margin-bottom:5.0pt;margin-left:
+40.5pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">#define Meaningful NameH /* second
+line of the header file */<o:p></o:p></span></p>
+
+    <p style="margin-top:5.0pt;margin-right:56.9pt;margin-bottom:5.0pt;margin-left:
+40.5pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">/* body of the header file */<o:p></o:p></span></p>
+
+    <p style="margin-top:5.0pt;margin-right:56.9pt;margin-bottom:5.0pt;margin-left:
+40.5pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">#endif /* last line of the header
+file; note comment */</span><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-left:40.5pt;text-indent:-.5in;mso-list:l2 level2 lfo6;
+tab-stops:27.0pt">
+        <a name="_Toc454274873"></a>
+        <!--[if !supportLists]--><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial;color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">2.5<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;
+</span></span></span></b>
+        <!--[endif]--><b><span style="mso-bidi-font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1">Naming
+Conventions</span></b><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-left:40.5pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">#define constants should be all
+CAPS.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-left:40.5pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Enum constants are Capitalized or in
+all CAPS.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-left:40.5pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Function, typedef, and variable
+names, as well as struct, union, and enum tag names should be in lower case.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-left:40.5pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Names should give some indication of
+its use in a program.</span><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-left:40.5pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Avoid names that differ only in
+case. Similarly, avoid names that look like each other.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-left:40.5pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Prefixes and suffixes in variable
+names and constants should be separated by "_".</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:9.0pt;
+margin-bottom:.0001pt">
+        <a name="_Toc454274874"></a><b><span style="mso-bidi-font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1">2.6
+Style Guidelines</span></b><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify">
+            <a name="_Toc454274875"></a><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Line Length</span></b><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">All lines should be displayable without wrapping on a
+72-character display. If wrapping is required, try to break at an operator, and
+start the next line with the operator vertically aligned. </span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Example:</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-left:113.05pt;margin-top:5.0pt;margin-right:113.05pt;
+margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">printf("I am an Integran ");</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-left:113.05pt;margin-top:5.0pt;margin-right:113.05pt;
+margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify">
+            <a name="_Toc454274876"></a><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Statements Per Line</span></b><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-left:113.05pt;margin-top:5.0pt;margin-right:113.05pt;
+margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">There should be only one statement per line unless the
+statements are very closely related.</span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-left:113.05pt;margin-top:5.0pt;margin-right:113.05pt;
+margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">The null body of a "for" or "while" loop
+should be on a separate line and commented.</span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-left:113.05pt;margin-top:5.0pt;margin-right:113.05pt;
+margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">When a block of code has several labels, the labels are
+placed on separate lines.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <p style="margin-left:9.0pt">
+        <a name="_Toc454274877"></a><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">2.7 Comments</span></b><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">All comments must precede the actual program code described,
+except for the line comments on the same line as that of the code they
+describe.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">The comment should describe what is happening, how it is
+being done, what parameters mean, which globals are used and which are
+modified, and any restrictions or bugs. </span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Comments that describe data structures, algorithms, etc.,
+should be in block comment form with the opening /* in columns 1-2, a * in
+column 2 before each line of comment text, and closing */ in columns 2-3. An
+alternative is to have ** in columns 1-2, and put the closing */ also in 1-2.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Example:</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">/* </span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Here is a block comment.</span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">The comment text should be creating using tab or spaced over
+uniformly.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">The opening slash-star and closing star-slash are alone on a
+line.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">*/ </span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">/*</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">** Alternate format for block comments</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">*/</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Block comments should be aligned to the code that they
+describe.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Very short comments may appear on the same line as the code
+they describe, and should provide a tab space to separate them from the
+statements.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Comments should be placed at the same indentation level as
+that of the code they describe.</span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Code, which is machine dependent, should be commented to
+facilitate its portability.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Deliberate fall-through in switch statements should be
+commented<span style="color:red">.</span></span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <p style="margin-left:9.0pt">
+        <a name="_Toc454274878"></a><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">2.8 Blank Lines</span></b><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">If it makes the code more readable, use a single blank line
+to separate logical groups of code to improve readability. In source files, use
+two blank lines to separate each function definition, or in some way make it
+easy to tell where the new function begins.</span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <p style="margin-left:9.0pt">
+        <a name="_Toc454274879"></a><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">2.9 Indentation and Braces</span></b><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">The contents of all code blocks should be indented to
+improve readability. A single tab or four spaces are recommended as the
+standard indentation. Braces should be placed to show the level of indentation
+of the code block. Make it as readable as possible.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">int main() </span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">{</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">doSomething()</span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">}</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">struct myStruct </span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">{</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">int x;</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">int y;</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">}</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">if ( value == 0 ) </span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">{</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">doSomething();</span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">}</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">else if ( value == 2 ) /* note position of cascaded if
+statement */</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">{ </span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">doSomething2();</span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">} </span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">else </span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">{</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">doSomething3(); </span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">}</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">while ( value &lt; 300 ) </span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">{</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">doSomething();</span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">}</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">do </span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">{</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">doSomething();</span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">} while ( value &lt; 300 ) /* ending brace and control on
+same line*/</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">switch ( value ) </span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">{</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">case 1:</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">doSomething();</span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">break;</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">case 2:</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">case 3:</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">doSomething2();</span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">break;</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">default:</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">break;</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">}</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <p style="margin-left:9.0pt">
+        <a name="_Toc454274880"></a><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">2.10 Programming Practices</span></b><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Hard-coding should be avoided.</span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Do not check a boolean value for equality with 1 (TRUE, YES,
+etc); instead test for inequality with 0 (FALSE, NO, etc.)</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <p style="margin-left:9.0pt">
+        <a name="_Toc454274881"></a><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">2.11 Switch Statements</span></b><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">When a block of code has several labels (unless there are a
+lot of them), the labels are placed on separate lines. The fall-through feature
+of the C switch statement, (that is, when there is no break between a code
+segment and the next case statement) must be commented for future maintenance.
+Switch statements should always have a default case.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Example: </span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">switch (expr) </span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">{</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">case ABC:</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">statement;</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">case DEF:</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">statement;</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">break;</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">case UVW:</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">statement;</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">/*FALLTHROUGH*/</span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">case XYZ:</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">statement;</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">break;</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">default: </span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">printf("Unknown Case Encountered");</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">break</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">}</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <p style="margin-left:9.0pt">
+        <a name="_Toc454274882"></a><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">2.12 Return Statements</span></b><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Where practical, have only one return from a function or method
+as the last statement. Otherwise, minimize the number of returns. Possibly
+highlight returns with comments and/or blank lines to keep them from being lost
+in other code. Multiple returns are generally not needed except for error or
+exception handling.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <p style="margin-left:9.0pt">
+        <a name="_Toc454274883"></a><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">2.13 Casts</span></b><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Avoid the use of explicit (older style) casts except where
+unavoidable, since this can introduce run-time bugs by defeating compiler
+type-checking. Working with third-party libraries (e.g., X or Motif) often
+requires the use of casts. When you need to cast, comment the reasons.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <p style="margin-left:9.0pt">
+        <a name="_Toc454274884"></a><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">2.14 Use constants instead of literal values wherever
+reasonable</span></b><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">For example:</span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">const double PI = 3.141592; // right</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">const char* APP_NAME = "ACME Spreadsheet 1.0"; //
+right</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">area = 3.141592 * radius * radius; // not recommended</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">printf("ACME Spreadsheet 1.0"); // not recommended
+</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <p style="margin-left:9.0pt">
+        <a name="_Toc454274885"></a><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">2.15 Explicit Initialization</span></b><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">In general, explicitly initialize all variables before use.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <p style="margin-left:9.0pt">
+        <a name="_Toc454274886"></a><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">2.16 Debug Compile-time Switch</span></b><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Code used only during development for debugging or
+performance monitoring should be conditionally compiled using #ifdef
+compile-time switches. These should not be present in the include files
+(because it is too easy to have a library get out of synch' with the programs
+that use it). </span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <p style="margin-left:9.0pt">
+        <a name="_Toc454274887"></a><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">2.17 Goto and Labels</span></b><span style="font-size:
+16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Avoid using "goto" and "label"
+statements.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <p>&nbsp;</p>
+
+</div>

@@ -1,0 +1,212 @@
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script><!-- design starts here ...-->
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Quality Management System
+    </h1>
+    <ol class="breadcrumb">
+        <li>
+            </b><a href="#" onclick="changeContent('qmsMain')"><i class="fa fa-dashboard"></i> Home</a></b>
+        </li>
+        <li><b><a href="#" onclick="changeContent('qmsMain')" >Integra Quality Manual</a></b></li>
+        <li class="active"><b><a href="#" onclick="changeContent('ProjProc')" >Project Procedures</a></b></li>
+    </ol>
+</section>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th align="center" colspan="4">Backup, Recovery and Archival</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ISO Clause: 7.5.5</td>
+            <td>PR10</td>
+            <td>Version: 3.00</td>
+            <td>Date: 17th May 2010</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="Section1">
+
+
+    <p><b>10.0 Introduction</b></p>
+
+    <p><b>10.1.1 Purpose</b></p>
+
+
+    <p>The purpose of this procedure is to define the mechanism for backup of all work products.</p>
+
+    <p><b>10.1.2 Policy</b></p>
+
+    <p>This process is applicable for disaster recovery of the data relating to projects. The system administrator will maintain backups of data as stated in this process.</p>
+
+    <p><b>10.1.3 Scope</b></p>
+
+    <p>This procedure is applicable to project software items on the following:</p>
+    <div class="box-body">
+        <ul>
+            <li>Desktop PCs</li>
+
+            <li>Common server</li>
+        </ul>
+    </div>
+
+    <p><b>10.2 Stakeholders</b></p>
+
+
+    <p><b>10.2.1 Responsibilities</b></p>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Sl. No.</th>
+                <th>Role</th>
+                <th>Responsibility</th>
+                <th>Authority</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>All Team Members</td>
+                <td>
+                    Prepare Desktop PC for Backup
+                </td>
+                <td>
+                    NIL
+                </td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>PM / PL</td>
+                <td>
+                    Prepare Project Server for Backup
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>System Administrator</td>
+                <td>
+                    Backup Common Server and Restoration Check
+                </td>
+                <td>
+                    Approve backup
+                </td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>General Admin In-Charge</td>
+                <td>
+                    Maintain / Store / Archive & Issue Control of archive
+                </td>
+                <td>
+                    Approve access to archive
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <p><b>10.3. Task Details</b></p>
+
+    <p><b>10.3.1 Backup</b></p>
+
+
+    <p><b>10.3.1.1 Prepare desktop PC for backup</b></p>
+
+    <p>The project team will plan for their backup activities based on the CMP.</p>
+
+    <p>All team members will prepare the source items / other project documents for backup by copying them on to the designated area on the Common server by end of the day. The source items can be compressed, if required.</p>
+</div>
+
+<p><b>10.3.1.2 Prepare project server for backup</b></p>
+<div class="box-body">
+    <ul>
+        <li>The project team plans for their backup activities based on the CMP.</li>
+
+        <li>The PM /PL will copy the controlled and dynamic libraries on the project server to the designated area on the specified common server everyday before end of day’s work. The source items can be compressed, if required. Project backup is taken by
+            the PM/PL before end of the day by copying the controlled and dynamic libraries from the configuration management tool into RWCD / RWDVD or a specific location in their machine. The PM/PL will retain the backup for only one working day.</li>
+    </ul>
+</div>
+
+<p><b>10.3.1.3 Backup common server</b></p>
+<div class="box-body">
+    <ul>
+        <li> Weekly backup: On the last working day (Friday) of the week, the system administrator will back up the common backup server in to CDs/DVDs.</li>
+
+        <li> Monthly backup: On the last Friday of every month, the System Administrator will back up the common backup server in to CDs/DVDs. These CDs/DVDs will be stored off-site to ensure retrieval of data in case of any disaster happening at the development
+            site.
+        </li>
+        <li> The following label format will be used to identify the backup CDs/DVDs:</li>
+        <table class="table table-bordered">
+
+            <tbody>
+                <tr>
+                    <td>Backup Date: CD No.: Contents:
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Integra</td>
+
+                </tr>
+
+
+            </tbody>
+        </table>
+        <li> Multiple CDs/DVDs can be used to perform a full backup if data cannot be accommodated in a single CDs/DVDs and CDs/DVDs will be labelled as x of y. (For example, CD/DVD 1 of 3.)</li>
+        <li> Once the backup is done, a record is created in the Backup Log.</li>
+    </ul>
+</div>
+<p><b>10.3.2 Restoration</b></p>
+
+
+<p>After taking the backup the system administrator will restore the backup files to verify whether the backup files are retrievable or not. A new backup will be taken if it is not possible to restore from the first backup.</p>
+
+<p><b>10.3.3 Archival</b></p>
+
+<p><b>10.3.3.1 Prepare package for archival</b></p>
+
+<div class="box-body">
+    <ul>
+        <li>The PM will prepare the package for archival by copying the source items to the archival media.</li>
+
+        <li>The entire repository of the source should be prepared for archival.</li>
+
+        <li>The source items can be compressed before copying, if required. The Project Folder, Quality Folder and Configuration Folder will be archived through suitable archival media.</li>
+
+        <li>The PM will prepare the list of items going for archival.</li>
+
+        <li>The archived material of the project will be indexed <u><a href='downloads/projectProcedures/FRVER01.xls' download>using Archival Register (FRARC01).</a></u></li>
+
+        <li>The index No will be A-yyyy-nnn where, yyyy is the archival year and nnn is a running serial no. 'nnn' will start from 001 in the beginning of the year.</li>
+
+        <li>The Index No will be written on the media on which the archival is made.</li>
+
+        <li>All project documents in Hard copy format will be converted into electronic format before archival and the hard copy will be destroyed.</li>
+    </ul>
+</div>
+<p><b>10.3.3.2 Maintain/Storage of Archival</b></p>
+
+<li>The General Admin will make an entry in the <u><a href='downloads/projectProcedures/FRVER01.xls' download>Archival Register (FRARC01).</a></u> when an archival is received and will maintain/store the archival in a location so as to prevent physical and
+    environmental damage. For any reason the archival for the internal projects must not be destroyed.</li>
+
+<li>The General Admin will, at the beginning of every year (January), identify the external project archives that are more than three years old from the date of archival and destroy them.</li>
+</ul>
+</div>
+
+<p><b>10.3.3.3 Issue Control of Archival</b></p>
+
+<p>The General Admin will maintain the record of archival issue and return of archival using <u><a href='downloads/projectProcedures/FRVER01.xls' download>Archival Access Request (FRARC02).</a></u> All the Archival Issue requests need to be closed within
+    5 working days after the issue request. If the Archival Issue requests is not closed within 5 working days then Admin team has to follow up the person who has taken the Archival and ask him/her to close the request or if it is needed for some more
+    time then extend the Archival issue period after getting the justification. If the archival is needed for a period of more than five days it should be specified along with the justification.</p>
+
+
+</div>

@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <title>IMSSWiki-Login</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="/QMS/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="/images/icon.png" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <link rel="stylesheet" href="/QMS/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/QMS/bower_components/Ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="/QMS/bower_components/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="/imswiki.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <script src="/QMS/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/QMS/bower_components/bootstrap/dist/js/validator.js"></script>
+    <script src="/QMS/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/dependency/script.js"></script>
+    <script src="/QMS/bower_components/bootstrap/dist/js/notify.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(document).bind('keypress', function(e) {
+                if (e.keyCode == 13) {
+                    $('#login').trigger('click');
+                }
+            });
+            $.notify('Welcome to IMSSWiki', 'info', {
+                autoHide: true,
+                autoHideDelay: 5000,
+                clickToHide: true
+            });
+        });
+    </script>
+</head>
+
+<body class="hold-transition login-page ">
+    <div class="row" style="background-color: #061743">
+        <div class="col-lg-6 col-md-8 col-sm-9 col-xs-12 loginBack">
+
+        </div>
+
+        <div class="col-lg-6 col-md-8 col-sm-9 col-xs-12" style="margin-bottom:1px">
+            <div style="margin-top:22%" class="login-box">
+                <div class="login-box-body">
+                    <p class="login-box-msg">IMSS Wiki</p>
+
+                    <div class="form-group">
+
+                        <label for="inputName" class="control-label">UserName</label>
+
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <input type="text" class="form-control" id="email" data-validation="required" name="email" placeholder="Enter Username" required/>
+                        </div>
+                    </div>
+                    <div class="form-group" id="pwd2" style="padding-top: 15px;">
+                        <label for="inputName" class="control-label">Password</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-key"></i>
+                            </div>
+                            <input type="password" id="pwd" class="form-control" placeholder="Enter Password" name="password" required>
+                        </div>
+                    </div>
+                    <div class="form-group pull-right">
+                        <div>
+                            <button type="submit" class="btn btn-primary btn-block" onclick="login()" name="login" id="login">LOGIN <span class="fa fa-sign-in"></span></button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-4"></div>
+                <div class="col-xs-4">
+                    <span style="font-weight: bold;color:#cccccc">Powered By</span>
+                    <span style="color:#cccccc">IMSS (P) Ltd.</span></div>
+                <div class="col-xs-4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

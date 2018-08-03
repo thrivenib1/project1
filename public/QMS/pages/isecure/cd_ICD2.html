@@ -1,0 +1,99 @@
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script>
+<section class="content-header">
+    <h1>
+        Quality Management System
+    </h1>
+    <ol class="breadcrumb">
+        <li>
+            </b><a href="#" onclick="changeContent('qmsMain')"><i class="fa fa-home"></i> Home</a></b>
+        </li>
+        <li class="active"><b><a href="#" onclick="changeContent('isecure')" >iSecure</a></b></li>
+        <li class="active"><b><a href="#" onclick="changeContent('ISControlDocs')" >Control Documents</a></b></li>
+
+    </ol>
+</section>
+
+<table class="table table-bordered">
+    <tr align="center">Segregation of Duties</tr>
+    <tr>
+        <th>ISMS Clause: A 6.1.2</th>
+        <th>
+            ICD2</th>
+        <th>Version: 1.00</th>
+        <th>
+            Date: 10th April, 2017</th>
+    </tr>
+</table>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Sl. No.</th>
+
+            <th>Responsibilities</th>
+            <th>Details of duty to be carried out</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1.</td>
+            <td>Development Staff</td>
+            <td>
+                should not have access to production data, unless specifically authorized by the functional data owner to repair a limited number of records.</br>
+
+                should not access system level technology or database management systems.
+            </td>
+
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>
+                End Users</td>
+            <td>
+                should not have access to production data except through the features and functions of the administrative applications; in particular, they should not have the ability to bypass or circumvent the applications validation and audit procedures.
+            </td>
+
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>
+                Functional Users</td>
+            <td>
+                should not access or modify application code.
+            </td>
+
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>Systems programmers</td>
+            <td>
+                should not access application code.
+            </td>
+
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>System Admin</td>
+            <td>
+                Accounts should be approved by the HOD and subsequently created by a separate, independent system security administrator.</br>
+
+                Access to system logs and system audits will be limited to the system security analysts, and all such access should be reviewed.</br>
+
+                Access to firewalls and other network security systems will be limited to the network security analysts, and all such access should be reviewed.
+            </td>
+
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td>ISMS MR</td>
+            <td>
+                Appropriate verification of Segregation of duties will be done on annual basis.</br>
+
+                Event Initiator, Event Reviewer and Event Approver cannot be the same entity (individual or designation) for any business activity carried out in the Organization, unless the entity is the Top Management of the organization.
+            </td>
+
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,24 @@
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "ESS - Employee Satisfaction Survey";
+    var data = JSON.parse(localStorage.getItem('userDetails'));
+    document.getElementById("essEmpName").innerHTML = data.emp_name+",";
+</script>
+<Div class="row col-lg-12">
+    <div class="box">
+
+        <div class="box-body" style="padding:20px;margin:20px">
+            Dear <label style="color:rgb(2, 2, 163)" name="essEmpName" id="essEmpName"></label>
+            <p>&nbsp;</p>
+            <p>We thank you for taking your precious time for the Annual Employee Satisfaction Survey. IMSS believes that satisfaction level within an organization plays an important role in achieving customer satisfaction. Please take a few moments to answer
+                the questions in survey, as relevant to you, and share your opinion about the work at Integra.</p>
+            <p><b>GUIDELINES:</b></p>
+            <p>The overall questionaire is in two parts.</p>
+            <p> <b>Part1</b> - Give your ratings and importance for all the questions in a 5 point scale, and general comments. </p>
+            <p><b>Part2</b> - If you have selected rating and importance Very Dissatisfied or Strongly Disagree, you are taken to the next screen where you must enter examples/instances to justify your ratings.</p>
+        </div>
+
+        <div class="box-footer" style="text-align:center">
+            <button type="submit" class="btn btn-primary btn-normal" onclick="changeContent('essMain')" name="btnUpdate" id="btnUpdate">Employee Satisfaction Survey</button>
+        </div>
+    </div>
+</Div>

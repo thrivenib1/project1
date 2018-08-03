@@ -1,0 +1,196 @@
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script>
+  <!-- design starts here ...-->
+
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+              Quality Management System
+            </h1>
+            <ol class="breadcrumb">
+              <li></b><a href="#" onclick="changeContent('qmsMain')" ><i class="fa fa-dashboard"></i> Home</a></b></li>
+              <li><b><a href="#" onclick="changeContent('qmsMain')" >Integra Quality Manual</a></b></li>
+              <li class="active"><b><a href="#" onclick="changeContent('ProjProc')" >Project Procedures</a></b></li>
+            </ol>
+            </section>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th align="center" colspan="4">Validation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ISO Clause: 8.2.4</td>
+                        <td>PR08</td>
+                        <td>Version: 3.00</td>
+                        <td>Date: 17th May 2010</td>
+                    </tr>
+                </tbody>
+            </table>
+      
+                  <div class="Section1">
+              
+                    <p><b>8.0 Introdution </b></p>
+                    <p><b>8.1.1 Purpose </b><br/>To ensure that the product has met all objectives set in the contract comprising of functional and non-functional requirements.</p>
+                            
+                    <p><b>8.1.2 Policy </b><br/>To provide assurance to the customer of having delivered the software product meeting all its objectives successfully, through a rugged and stable process which encompasses various proven methods, tools and techniques identified to closely match, simulate and ward-off all possible software problems post deployment.</p>
+                    
+                    <p><b>8.1.3 Scope</b><br/>The scope of the validation process is to verify and ensure that the product, as provided, will fulfil its intended use. System testing and acceptance testing is carried out to validate that the correct product has been developed.</p>
+                          
+                   <p><b>8.1.4 Entry criteria </b></p>
+                   <p>The activities listed in this process area will happen at two different stages of a PLC (project life cycle):</p>
+                     <div class="box-body">
+                      <ol>
+                        <li>During contract negotiation
+                          <div class="box-body">
+                           <ul>
+                              <li>URS, GAR, acceptance criteria</li>
+                           </ul>
+                          </div>
+                        </li>
+                        <li> During product testing</li>
+                          <div class="box-body">
+                            <ul>
+                              <li>  SSR and SRS in addition to URS, GAR.</li>
+                              <li>  Completion of Unit and Integration testing (with reports). These should have passed their EXIT criteria.</li>
+                              <li>  Software build identified for system testing</li>
+                         </ul>
+                          </div>
+                        </li>
+                     </ol>
+                    </div>		
+                        <!-- /.box-body -->   
+                    <p><b>8.2 Stakeholders </b></p>
+                    <p><b>8.2.1 Responsibilities </b><br/>
+                    <p>The roles, responsibilities and authorities for the Validation process are defined in the table below.</p>
+               
+                  <table class="table table-bordered">
+                    <thead>
+                            <tr>
+                              <th>Sl. No.</th>
+                              <th>Role</th>
+                              <th>Responsibilities</th>
+                              <th>Authority</th>
+                            </tr>  
+                  </thead>	
+                  <tbody>			
+                    <tr>
+                      <td>1.</td>
+                      <td>Customer</td>
+                      <td>
+                        Provide their requirements specification document
+                      </td>
+                      <td>
+                        Requirements of the solution
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2.</td>
+                      <td>Business Delivery Head</td>
+                      <td>
+                        Coordinate and resolve interactions between the customer and the home team
+                      </td>
+                      <td>
+                        Business Contract
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3.</td>
+                      <td>Architect</td>
+                      <td>
+                        Review and suggest improvements to STP
+                      </td>
+                      <td>
+                        Approve STP
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>4.</td>
+                      <td>Project Manager</td>
+                      <td>
+                        Study customer requirements, provide technical solutions, delegate team to prepare the requirement document.
+                      </td>
+                      <td>
+                        Test Plan, Test Execution and team’s performance
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>5.</td>
+                      <td>Test Lead</td>
+                      <td>
+                        Preparation of STP, STS, Participate in reviews, test execution and reporting.
+                      </td>
+                      <td>
+                        STS and deliverables
+                      </td>
+                    </tr>	
+                    <tr>
+                      <td>6.</td>
+                      <td>Test Engineers</td>
+                      <td>
+                        Test Cases, Test execution, Bug Identification
+                      </td>
+                      <td>
+                        Test results and bugs
+                      </td>
+                    </tr>
+                    </tbody>
+                          </table>
+               
+                    <p><b>8.3  Process Description</b></p>
+                    <p><b>8.3.1 Process Flow Diagram</b><br/>The Process flow of Validation process is given below.</p>
+                   
+                      <img class="img-responsive pad" alt="Photo" src="/QMS/pages/QMS/Downloads/ProjectProcedures/PR08-Validation.gif">
+                  			
+                    <p><b>8.3.2 Tasks</b><br/>The steps of the Validation process are described below:</p>
+                    <p><b>8.3.2.1  Select Products for validation (SP 1.1) and Establish validation environment (SP 1.2)</b><br/>			
+                    <div class="box-body">
+                      <ul>
+                        <li>Define the scope of validation by identifying the types of testing that would be involved for the given project. Viz., System Testing, UAT.</li>
+                        <li>If UAT is included in the contract, then a customer supplied ATP/ATS should be available. Else, we have to develop the ATP/ATS incorporating the plan and procedure to prove the objectives put down as the criteria for user acceptance in the contract document (PO/SOW).</li>
+                        <li>Also develop the <u><a href='downloads/projectProcedures/TPVAL01.doc' download>STP (TPVAL01)</a></u> that will cover the scope, approach, methods of testing, tools, environment, and expectations from different stakeholders, deliverables and closure criteria.</li>
+                        <li> Other non-technical aspects such as information security, movement of bonded equipment, client interface, escalation points, etc., will have to be documented in the STP.</li>
+                      </ul>
+                    </div>
+                    <p><b>8.3.2.2  Establish validation procedures and criteria (SP 1.3)</b></p>
+                    <div class="box-body">
+                      <ul>
+                        <li>Develop test cases using <u><a href='downloads/projectProcedures/TPVAL02.xls' download>STS (TPVAL02)</a></u> template for all the functional and non-functional requirements captured in the URS/SRS. ATS have to be developed if customer has not provided the same.</li>
+                        <li>Review the test case documents through peer review and with customer(for ATS only).</li>
+                        <li>In case of changes in the requirements during the TLC, a request for change should be logged-in first, get the approval from the TL and then modify the test cases. Review of the modified document is a must with correct closure.</li>
+                        <li>Follow the configuration management procedures for ensuring change control.</li>
+                        <li> Test environment has to be setup based on the testing method. This will include test engineers, product under test, bug logging and tracking software, test management and reporting systems, any other hardware or software that would be required to simulate/emulate components of the test environment in lieu of real-time equipments, connectivity and networking. It is very important to first bring up the test environment before every execution cycle.</li>
+                      </ul>
+                    </div>	
+                    <p><b>8.3.2.3 Perform validation (SP 2.1)</b></p>
+                    <div class="box-body">
+                      <ul>
+                        <li> Identify the test suite for the given test cycle from the repository of STS.</li>
+                        <li>Execute the test cases on the product under test as per the steps provided in the STS document in the identified environment and software version.</li>
+                        <li>All bugs identified during execution should be submitted through the software identified for the same.</li>
+                        <li>On analysis of its validity, the bug will be assigned to the relevant development engineer/team for resolution. On resolution, the test team will have to verify if the fix is indeed solved the problem seen earlier.</li>
+                        <li>Every test cycle will have to be accompanied with reports <u><a href='downloads/projectProcedures/FRVAL01.xls' download>(FRVAL01)</a></u> providing information about the no. of test cases executed, no. of bugs reported, no. of bugs fixed, effort of the team, slippages by the team.</li>
+                      </ul>
+                    </div>
+                            
+                    <p><b>8.3.2.4 Analyze validation results (SP 2.2)</b></p>
+                    <p>The test results provided at the end of the testing activity should be verified for correctness based on</p>
+                    <div class="box-body">
+                      <ul>
+                        <li> Coverage of test specifications wrt the requirements (Traceability).</li>				
+                        <li>    Proof to support the non-functional requirements identified in the SRS.</li>
+                        <li>Bug fix verification confirmation to ensure that there are no slippages.</li>
+                        <li>Documents and evidences to prove conformance to process (review records, rework effort, change control documents, etc.,)</li>
+                      </ul>
+                      <p>Conduct effectiveness on the entire testing activity. Some parameters could be - No. of valid bugs captured per module/feature +</p>
+                      <ul>
+                        <li>No. of bugs declared invalid or redundant by the developer community.</li>
+                        <li>  No. of bugs in the test case documents identified during test execution.</li>
+                        <li>No. of bugs that could have been caught in earlier verification processes such as unit testing or integration testing. This will strengthen the need for validation during PLC.</li>
+                      </ul>
+                    </div>
+            </div>
+   
+            

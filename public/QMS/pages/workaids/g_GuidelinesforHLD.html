@@ -1,0 +1,1806 @@
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script><section class="content-header">
+    <h1>
+        Quality Management System
+    </h1>
+    <ol class="breadcrumb">
+        <li>
+            </b><a href="#" onclick="changeContent('qmsMain')"><i class="fa fa-dashboard"></i> Home</a></b>
+        </li>
+        <li class="active"><b><a href="#" onclick="changeContent('WorkAids')" >Work Aids</a></b></li>
+        <li class="active"><b><a href="#" onclick="changeContent('WA_Guidelines')" >Guidelines</a></b></li>
+    </ol>
+</section>
+
+<section class="content">
+    <div class="Section1">
+
+        <p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+display:none;mso-hide:all"><o:p>&nbsp;</o:p></span></p>
+
+        <table class="MsoNormalTable" border="1" cellspacing="1" cellpadding="0" align="left" width="97%" style="width:97.92%;mso-cellspacing:.7pt;mso-yfti-tbllook:1184;
+ mso-table-lspace:9.0pt;margin-left:6.75pt;mso-table-rspace:9.0pt;margin-right:
+ 6.75pt;mso-table-anchor-vertical:paragraph;mso-table-anchor-horizontal:margin;
+ mso-table-left:left;mso-table-top:.8pt;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt">
+            <tbody>
+                <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+                    <td width="964" colspan="3" valign="top" style="width:722.7pt;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p class="MsoNormal" align="center" style="text-align:center;mso-element:frame;
+  mso-element-frame-hspace:9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:margin;mso-element-top:.8pt;
+  mso-height-rule:exactly"><b><span style="font-size:14.0pt;mso-bidi-font-size:
+  12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  color:#1F497D;mso-themecolor:text2">Software Design Document Specification
+  Guidelines</span></b><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+  color:#1F497D;mso-themecolor:text2"><o:p></o:p></span></p>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes">
+                    <td width="144" style="width:108.25pt;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="mso-element:frame;mso-element-frame-hspace:9.0pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:.8pt;mso-height-rule:exactly"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#1F497D;
+  mso-themecolor:text2">GLDES01/02</span></b><span style="color:#1F497D;
+  mso-themecolor:text2"><o:p></o:p></span></p>
+                    </td>
+                    <td width="596" style="width:446.95pt;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="mso-element:frame;mso-element-frame-hspace:9.0pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:.8pt;mso-height-rule:exactly"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#1F497D;
+  mso-themecolor:text2">Version: 3.00</span></b><span style="color:#1F497D;
+  mso-themecolor:text2"><o:p></o:p></span></p>
+                    </td>
+                    <td width="221" style="width:166.1pt;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="mso-element:frame;mso-element-frame-hspace:9.0pt;mso-element-wrap:
+  around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:.8pt;mso-height-rule:exactly"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#1F497D;
+  mso-themecolor:text2">Date: 17- May-2010</span></b><span style="color:#1F497D;
+  mso-themecolor:text2"><o:p></o:p></span></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="margin-left:9.0pt">
+            <o:p>&nbsp;</o:p>
+        </p>
+
+        <p style="margin-left:9.0pt;text-indent:0in;mso-list:l4 level1 lfo2">
+            <!--[if !supportLists]--><b style="mso-bidi-font-weight:normal"><span style="font-size:13.5pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Arial;color:#4F81BD;mso-themecolor:
+accent1"><span style="mso-list:Ignore">1.0<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;
+</span></span></span></b>
+            <!--[endif]--><b><span style="font-size:13.5pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1">Overview and
+Objectives</span></b><b><span style="font-size:13.5pt;color:#4F81BD;mso-themecolor:
+accent1"> </span></b><span style="font-size:13.5pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+        <blockquote style="margin-left:0in;margin-top:5.0pt;margin-right:0in;
+margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">The SDD should
+be modular; that is the software is divided into separately named and
+addressable components that are integrated to satisfy the entire set of
+software requirements. SDD also contains the internal details of each component
+and describes the inputs, outputs, local data, global data, and the algorithm
+for each component. The programmers prior to coding need these details, for
+developing the components. The design could be broadly divided into following
+types:</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+            <p class="MsoListParagraphCxSpFirst" style="margin-top:0in;margin-right:0in;
+margin-bottom:12.0pt;margin-left:45.0pt;mso-add-space:auto;text-align:justify;
+text-indent:-.25in;mso-list:l5 level1 lfo4">
+                <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+                </span>
+                <!--[endif]--><b><span style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">GUI Design</span></b><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"> </span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">focuses on the user interface.</span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+            <p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:12.0pt;margin-left:45.0pt;mso-add-space:auto;text-align:justify;
+text-indent:-.25in;mso-list:l5 level1 lfo4">
+                <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+                </span>
+                <!--[endif]--><b><span style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">Architectural
+Design</span></b><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"> </span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">involves breaking of the system into components. This
+process of analyzing and identification of components is termed as
+decomposition. The components could be a program, sub-routine or a function
+depending on the degree of decomposition. The decomposition should be such that
+each component addresses a specific sub-function of the requirement and has a
+simple interface.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+            <p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:12.0pt;margin-left:45.0pt;mso-add-space:auto;text-align:justify;
+text-indent:-.25in;mso-list:l5 level1 lfo4">
+                <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+                </span>
+                <!--[endif]--><b><span style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">Data Design</span></b><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"> </span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">involves identifying the data elements and defining the data
+structures appropriate to hold the data elements. It may also specify the data
+storage (e.g. memory), and the routines that are required to access them.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+            <p class="MsoListParagraphCxSpLast" style="margin-top:0in;margin-right:0in;
+margin-bottom:12.0pt;margin-left:45.0pt;mso-add-space:auto;text-align:justify;
+text-indent:-.25in;mso-list:l5 level1 lfo4">
+                <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+                </span>
+                <!--[endif]--><b><span style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">Logic Design</span></b><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"> </span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">(also called program specification) focuses on processing
+details of each component individually. The processing details include the sequence
+of events, repetitive operations, decision points and data organization. </span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-left:0in;margin-top:5.0pt;margin-right:0in;
+margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">The main
+objectives of the SDD document are:</span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+            <p class="MsoListParagraphCxSpFirst" style="margin-top:0in;margin-right:0in;
+margin-bottom:12.0pt;margin-left:45.0pt;mso-add-space:auto;text-align:justify;
+text-indent:-.25in;mso-list:l5 level1 lfo4">
+                <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+                </span>
+                <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">To identify the framework based on
+which the system will be built</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+            <p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:12.0pt;margin-left:45.0pt;mso-add-space:auto;text-align:justify;
+text-indent:-.25in;mso-list:l5 level1 lfo4">
+                <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+                </span>
+                <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">To identify the components and their
+interfaces</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+            <p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:12.0pt;margin-left:45.0pt;mso-add-space:auto;text-align:justify;
+text-indent:-.25in;mso-list:l5 level1 lfo4">
+                <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+                </span>
+                <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">To identify common/reusable
+components</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+            <p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:0in;
+margin-bottom:12.0pt;margin-left:45.0pt;mso-add-space:auto;text-align:justify;
+text-indent:-.25in;mso-list:l5 level1 lfo4">
+                <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+                </span>
+                <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">To form the basis for integration
+test plan</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+            <p class="MsoListParagraphCxSpLast" style="margin-top:0in;margin-right:0in;
+margin-bottom:12.0pt;margin-left:45.0pt;mso-add-space:auto;text-align:justify;
+text-indent:-.25in;mso-list:l5 level1 lfo4">
+                <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+                </span>
+                <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">To form the basis for Unit Test Plan</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><b><span style="font-size:13.5pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1">2 Document Structure</span></b><b><span style="font-size:13.5pt;color:#4F81BD;mso-themecolor:accent1"> <o:p></o:p></span></b></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+40.5pt;text-indent:-13.5pt;mso-list:l3 level1 lfo6">
+            <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span>
+            </span>
+            <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Introduction</span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+1.0in;text-indent:-.25in;mso-list:l1 level2 lfo8">
+            <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial"><span style="mso-list:Ignore">1.1<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span></span>
+            </span>
+            <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Background</span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+1.0in;text-indent:-.25in;mso-list:l1 level2 lfo8">
+            <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial"><span style="mso-list:Ignore">1.2<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span></span>
+            </span>
+            <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Purpose of the document</span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+1.0in;text-indent:-.25in;mso-list:l1 level2 lfo8">
+            <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial"><span style="mso-list:Ignore">1.3<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span></span>
+            </span>
+            <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">References</span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+1.0in;text-indent:-.25in;mso-list:l1 level2 lfo8">
+            <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial"><span style="mso-list:Ignore">1.4<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span></span>
+            </span>
+            <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Structure of the document</span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+40.5pt;text-indent:-13.5pt;mso-list:l3 level1 lfo6">
+            <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial"><span style="mso-list:Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span>
+            </span>
+            <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Design Architecture</span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">2.1 System architecture<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">2.2 Development and production
+environment<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">2.3 Application architecture<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">2.4 Component description<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">2.5 Component Interfaces.<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+40.5pt;text-indent:-13.5pt;mso-list:l3 level1 lfo6">
+            <!--[if !supportLists]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial"><span style="mso-list:Ignore">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;
+</span></span>
+            </span>
+            <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Physical Data Architecture.<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+1.0in;text-indent:-.25in;mso-list:l0 level2 lfo10">
+            <!--[if !supportLists]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial"><span style="mso-list:Ignore">3.1.<span style="font:7.0pt &quot;Times New Roman&quot;">
+</span></span>
+            </span>
+            <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">List of tables<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+1.0in;text-indent:-.25in;mso-list:l0 level2 lfo10">
+            <!--[if !supportLists]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial"><span style="mso-list:Ignore">3.2.<span style="font:7.0pt &quot;Times New Roman&quot;">
+</span></span>
+            </span>
+            <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Table structures<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+40.5pt;text-indent:-13.5pt;mso-list:l3 level1 lfo6">
+            <!--[if !supportLists]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial"><span style="mso-list:Ignore">4.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;
+</span></span>
+            </span>
+            <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Logic Design<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">4.1 Design for C/C++<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">4.2 Design for Front End<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">4.3 Middleware<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">4.4 Stored Procedure<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">4.5 Process Logic<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">4.6 Errors and Exception<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+27.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">5. Design Constraints<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">5.1 Assumptions<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">5.2 Dependencies<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">5.3 Constraints<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+27.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">6. Common Components/Functions<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+27.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">7. Naming Conventions<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">7.1 File naming convention<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">7.2 Variable naming convention<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">7.3 Table naming convention<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">7.4 Column naming convention<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">7.5 Function naming convention<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+27.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">8. Definitions and Acronyms<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><b><span style="font-size:13.5pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1">3 Document Contents</span></b><span style="font-size:13.5pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1">3.1 Introduction<o:p></o:p></span></b></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#4F81BD;mso-themecolor:accent1">3.1.1
+Background<o:p></o:p></span></b></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">This section gives a brief summary
+of client's business and events that led to the project. <o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt;text-indent:-.5in;mso-list:l6 level3 lfo12">
+            <!--[if !supportLists]--><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">3.1.2<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b>
+            <!--[endif]--><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#4F81BD;mso-themecolor:accent1">Purpose of the Document<o:p></o:p></span></b></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">The purpose of the document is:<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l2 level1 lfo14">
+            <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+            </span>
+            <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">To identify the framework based on
+which the system will be built</span><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt"><o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l2 level1 lfo14">
+            <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+            </span>
+            <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">To identify the components &amp;
+their interfaces</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt"><o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l2 level1 lfo14">
+            <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+            </span>
+            <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">To identify common/reusable
+components</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt"><o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l2 level1 lfo14">
+            <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+            </span>
+            <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">To form the basis for integration
+test plans</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt"><o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt;text-indent:-.5in;mso-list:l6 level3 lfo12">
+            <!--[if !supportLists]--><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">3.1.3<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b>
+            <!--[endif]--><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#4F81BD;mso-themecolor:accent1">References<o:p></o:p></span></b></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">All references either in whole or in
+parts that are used in creation of the HLD document such as Requirements
+Specification, Functional Specifications etc. are specified in this section.<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt;text-indent:-.5in;mso-list:l6 level3 lfo12">
+            <!--[if !supportLists]--><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">3.1.4<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b>
+            <!--[endif]--><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#4F81BD;mso-themecolor:accent1">Structure of the
+Document<o:p></o:p></span></b></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">This section lists all the sections
+included in this document maintaining the order of appearance. </span><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></b></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1">3.2</span></b><b><span style="mso-bidi-font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"> <span style="color:#4F81BD;
+mso-themecolor:accent1">Design Architecture</span><o:p></o:p></span></b></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#4F81BD;mso-themecolor:accent1">3.2.1</span></b><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;"> <span style="color:#4F81BD;mso-themecolor:accent1">System
+Architecture</span><o:p></o:p></span></b></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Diagrammatic presentation of the
+system is given in this section.<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#4F81BD;mso-themecolor:accent1">3.2.2
+Development and Production Environment<o:p></o:p></span></b></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">The development environment
+(Hardware, Software and Interface) for the system should be given in this
+section. This is particularly necessary if there are differences between the
+target environment and the development environment. <o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#4F81BD;mso-themecolor:accent1">3.2.3
+Application Architecture<o:p></o:p></span></b></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Pictorial representation of the
+application (product) is included in this section. <o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#4F81BD;mso-themecolor:accent1">3.2.4
+Component Description<o:p></o:p></span></b></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">All components are described here in
+detail. <o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#4F81BD;mso-themecolor:accent1">3.2.5
+Component Interface<o:p></o:p></span></b></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">All interfaces between the
+components are shown in this document.</span><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt"><o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1">3.3 Physical Data Architecture<o:p></o:p></span></b></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#4F81BD;mso-themecolor:accent1">3.3.1
+List of Tables<o:p></o:p></span></b></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">All the tables used in the system
+are listed mentioning the purpose of each table.<o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:#4F81BD;mso-themecolor:accent1">3.3.2
+Table Structures<o:p></o:p></span></b></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">The structure of each table is
+explained in detail. </span><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt"><o:p></o:p></span></p>
+
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">3.4 Logic Design</span></b><span style="color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></p>
+
+        <table class="MsoNormalTable" border="1" cellspacing="3" cellpadding="0" align="left" width="839" style="width:629.6pt;mso-cellspacing:2.2pt;mso-yfti-tbllook:1184;
+ mso-table-lspace:9.0pt;margin-left:6.75pt;mso-table-rspace:9.0pt;margin-right:
+ 6.75pt;mso-table-anchor-vertical:paragraph;mso-table-anchor-horizontal:margin;
+ mso-table-left:center;mso-table-top:.1pt;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt">
+            <tbody>
+                <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+                    <td width="322" valign="top" style="width:241.65pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-left:center;mso-element-top:.1pt;mso-height-rule:exactly"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Component Name</span></b></p>
+                    </td>
+                    <td width="508" valign="top" style="width:381.35pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                </tr>
+                <tr style="mso-yfti-irow:1">
+                    <td width="322" valign="top" style="width:241.65pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-left:center;mso-element-top:.1pt;mso-height-rule:exactly"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Description</span></b></p>
+                    </td>
+                    <td width="508" valign="top" style="width:381.35pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                </tr>
+                <tr style="mso-yfti-irow:2">
+                    <td width="322" valign="top" style="width:241.65pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-left:center;mso-element-top:.1pt;mso-height-rule:exactly"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Author</span></b></p>
+                    </td>
+                    <td width="508" valign="top" style="width:381.35pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                </tr>
+                <tr style="mso-yfti-irow:3;mso-yfti-lastrow:yes">
+                    <td width="322" valign="top" style="width:241.65pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-left:center;mso-element-top:.1pt;mso-height-rule:exactly"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Version</span></b></p>
+                    </td>
+                    <td width="508" valign="top" style="width:381.35pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="margin-left:9.0pt"><b><span style="mso-bidi-font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p>&nbsp;</o:p></span></b></p>
+
+        <p style="margin-left:9.0pt"><b><span style="mso-bidi-font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p>&nbsp;</o:p></span></b></p>
+
+        <p style="margin-left:9.0pt"><b><span style="mso-bidi-font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p>&nbsp;</o:p></span></b></p>
+
+        <p style="margin-left:9.0pt"><b><span style="mso-bidi-font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p>&nbsp;</o:p></span></b></p>
+
+        <p style="margin-left:9.0pt"><b><span style="mso-bidi-font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1">3.4.1
+Design for C/C++<o:p></o:p></span></b></p>
+
+        <p style="margin-left:9.0pt"><b><span style="mso-bidi-font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">Identification</span></b><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt"><o:p></o:p></span></p>
+
+        <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+            <table class="MsoNormalTable" border="1" cellspacing="3" cellpadding="0" align="left" width="839" style="width:629.6pt;mso-cellspacing:2.2pt;mso-yfti-tbllook:1184;
+ mso-table-lspace:9.0pt;margin-left:6.75pt;mso-table-rspace:9.0pt;margin-right:
+ 6.75pt;mso-table-anchor-vertical:paragraph;mso-table-anchor-horizontal:margin;
+ mso-table-left:left;mso-table-top:2.35pt;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt">
+                <tbody>
+                    <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+                        <td width="332" valign="top" style="width:249.35pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                            <p style="margin-left:9.0pt;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:2.35pt;mso-height-rule:exactly"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Modified by</span></b></p>
+                        </td>
+                        <td width="230" valign="top" style="width:172.7pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                            <p style="margin-left:9.0pt;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:2.35pt;mso-height-rule:exactly"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Modifications</span></b></p>
+                        </td>
+                        <td width="265" valign="top" style="width:198.75pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                            <p style="margin-left:9.0pt;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:2.35pt;mso-height-rule:exactly"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Date</span></b></p>
+                        </td>
+                    </tr>
+                    <tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes">
+                        <td width="332" valign="top" style="width:249.35pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                        <td width="230" valign="top" style="width:172.7pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                        <td width="265" valign="top" style="width:198.75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p>&nbsp;</o:p></span></b></p>
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p>&nbsp;</o:p></span></b></p>
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p>&nbsp;</o:p></span></b></p>
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p>&nbsp;</o:p></span></b></p>
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Modification History</span></b><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:197.3pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Inheritance
+Details</span></b><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:197.3pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Give the inheritance details of the class (if any).</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:197.3pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Structures Used</span></b><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <table class="MsoNormalTable" border="1" cellspacing="3" cellpadding="0" width="840" style="width:8.75in;mso-cellspacing:2.2pt;margin-left:8.6pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt">
+            <colgroup>
+                <col width="308">
+                <col width="217">
+                <col width="378">
+            </colgroup>
+            <tbody>
+                <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+                    <td width="310" valign="top" style="width:232.6pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Structure Name</span></b></p>
+                    </td>
+                    <td width="227" valign="top" style="width:170.35pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Parameters</span></b></p>
+                    </td>
+                    <td width="291" valign="top" style="width:218.25pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Description</span></b></p>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes">
+                    <td width="310" valign="top" style="width:232.6pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    <td width="227" valign="top" style="width:170.35pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    <td width="291" valign="top" style="width:218.25pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <blockquote style="margin-top:5.0pt;margin-right:225.35pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Variables</span></b><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <table class="MsoNormalTable" border="1" cellspacing="3" cellpadding="0" width="840" style="width:8.75in;mso-cellspacing:2.2pt;margin-left:8.6pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt">
+            <colgroup>
+                <col width="307">
+                <col width="220">
+                <col width="131">
+                <col width="230">
+            </colgroup>
+            <tbody>
+                <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:17.25pt">
+                    <td width="313" valign="top" style="width:234.65pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:17.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Variable Name</span></b></p>
+                    </td>
+                    <td width="220" valign="top" style="width:164.75pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:17.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Scope</span></b></p>
+                    </td>
+                    <td width="152" valign="top" style="width:114.2pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:17.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Data type</span></b></p>
+                    </td>
+                    <td width="141" valign="top" style="width:105.4pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:17.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Description</span></b></p>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes">
+                    <td width="313" valign="top" style="width:234.65pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    <td width="220" valign="top" style="width:164.75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&lt;Private
+  / Public / Protected&gt;</span></p>
+                    </td>
+                    <td width="152" valign="top" style="width:114.2pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    <td width="141" valign="top" style="width:105.4pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <blockquote style="margin-top:5.0pt;margin-right:254.15pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Functions/Stored Procedures Called</span></b><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <table class="MsoNormalTable" border="1" cellspacing="3" cellpadding="0" width="840" style="width:8.75in;mso-cellspacing:2.2pt;margin-left:8.6pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt">
+            <colgroup>
+                <col width="106">
+                <col width="183">
+                <col width="223">
+                <col width="376">
+            </colgroup>
+            <tbody>
+                <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+                    <td width="101" valign="top" style="width:75.75pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Function Name</span></b></p>
+                    </td>
+                    <td width="195" valign="top" style="width:146.25pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Scope </span></b></p>
+                    </td>
+                    <td width="238" valign="top" style="width:178.25pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Parameters</span></b></p>
+                    </td>
+                    <td width="292" valign="top" style="width:218.75pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Description</span></b></p>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes">
+                    <td width="101" valign="top" style="width:75.75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    <td width="195" valign="top" style="width:146.25pt;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&lt;Private
+  / Public / Protected&gt;</span></p>
+                    </td>
+                    <td width="238" valign="top" style="width:178.25pt;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-top:5.0pt;margin-right:0in;margin-bottom:0in;margin-left:
+  9.0pt;margin-bottom:.0001pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">IN
+  Parameters:</span></p>
+                        <p style="margin-top:5.0pt;margin-right:0in;margin-bottom:0in;margin-left:
+  9.0pt;margin-bottom:.0001pt">
+                            <o:p>&nbsp;</o:p>
+                        </p>
+                        <p style="margin-top:5.0pt;margin-right:0in;margin-bottom:0in;margin-left:
+  9.0pt;margin-bottom:.0001pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">OUT
+  Parameters:</span></p>
+                        <p style="margin-top:5.0pt;margin-right:0in;margin-bottom:0in;margin-left:
+  9.0pt;margin-bottom:.0001pt">
+                            <o:p>&nbsp;</o:p>
+                        </p>
+                        <p style="margin-top:5.0pt;margin-right:0in;margin-bottom:0in;margin-left:
+  9.0pt;margin-bottom:.0001pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">INOUT
+  Parameters:</span></p>
+                        <p style="margin-top:5.0pt;margin-right:0in;margin-bottom:0in;margin-left:
+  9.0pt;margin-bottom:.0001pt">
+                            <o:p>&nbsp;</o:p>
+                        </p>
+                        <p style="margin-left:9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Return
+  Type: </span></p>
+                    </td>
+                    <td width="292" valign="top" style="width:218.75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&lt;Along
+  with the description, mention all functions or PL/SQL stored procedures that
+  are being called by this function. Also, mention if any errors / exceptions
+  are handled or raised&gt;</span></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <blockquote style="margin-top:5.0pt;margin-right:282.25pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Exceptions</span></b><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <table class="MsoNormalTable" border="1" cellspacing="3" cellpadding="0" width="840" style="width:8.75in;mso-cellspacing:2.2pt;margin-left:8.6pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt">
+            <colgroup>
+                <col width="305">
+                <col width="617">
+            </colgroup>
+            <tbody>
+                <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+                    <td width="303" valign="top" style="width:227.25pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Exception</span></b></p>
+                    </td>
+                    <td width="528" valign="top" style="width:396.15pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Error Messages</span></b></p>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes">
+                    <td width="303" valign="top" style="width:227.25pt;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&lt;Give
+  the description about the exceptions raised on violation rules of Business
+  Rules&gt;</span></p>
+                    </td>
+                    <td width="528" valign="top" style="width:396.15pt;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&lt;Mention
+  the messages that are returned to the client&gt;</span></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <blockquote style="margin-top:5.0pt;margin-right:310.3pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><i><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Note: Repeat the above format for every class/function.</span></i><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:282.25pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt"><b><span style="mso-bidi-font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4F81BD;mso-themecolor:accent1">3.4.2 Design for Front End</span></b><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:310.3pt;margin-bottom:5.0pt">
+
+            <table class="MsoNormalTable" border="1" cellspacing="3" cellpadding="0" align="left" width="839" style="width:629.6pt;mso-cellspacing:2.2pt;mso-yfti-tbllook:1184;
+ mso-table-lspace:9.0pt;margin-left:6.75pt;mso-table-rspace:9.0pt;margin-right:
+ 6.75pt;mso-table-anchor-vertical:paragraph;mso-table-anchor-horizontal:margin;
+ mso-table-left:left;mso-table-top:8.35pt;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt">
+                <tbody>
+                    <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+                        <td width="209" valign="top" style="width:156.5pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                            <p style="margin-left:9.0pt;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:8.35pt;mso-height-rule:exactly"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Screen Name</span></b></p>
+                        </td>
+                        <td width="622" valign="top" style="width:466.5pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    </tr>
+                    <tr style="mso-yfti-irow:1">
+                        <td width="209" valign="top" style="width:156.5pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                            <p style="margin-left:9.0pt;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:8.35pt;mso-height-rule:exactly"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Description</span></b></p>
+                        </td>
+                        <td width="622" valign="top" style="width:466.5pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    </tr>
+                    <tr style="mso-yfti-irow:2">
+                        <td width="209" valign="top" style="width:156.5pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                            <p style="margin-left:9.0pt;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:8.35pt;mso-height-rule:exactly"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Author</span></b></p>
+                        </td>
+                        <td width="622" valign="top" style="width:466.5pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    </tr>
+                    <tr style="mso-yfti-irow:3;mso-yfti-lastrow:yes">
+                        <td width="209" valign="top" style="width:156.5pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                            <p style="margin-left:9.0pt;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:8.35pt;mso-height-rule:exactly"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Version</span></b></p>
+                        </td>
+                        <td width="622" valign="top" style="width:466.5pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p>&nbsp;</o:p></span></b></p>
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p>&nbsp;</o:p></span></b></p>
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p>&nbsp;</o:p></span></b></p>
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p>&nbsp;</o:p></span></b></p>
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p>&nbsp;</o:p></span></b></p>
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p>&nbsp;</o:p></span></b></p>
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p>&nbsp;</o:p></span></b></p>
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p>&nbsp;</o:p></span></b></p>
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p>&nbsp;</o:p></span></b></p>
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Identification</span></b><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:339.1pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Modification
+History</span></b><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <table class="MsoNormalTable" border="1" cellspacing="3" cellpadding="0" width="840" style="width:8.75in;mso-cellspacing:2.2pt;margin-left:8.6pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt">
+            <colgroup>
+                <col width="198">
+                <col width="390">
+                <col width="312">
+            </colgroup>
+            <tbody>
+                <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+                    <td width="196" valign="top" style="width:146.8pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Modified by</span></b></p>
+                    </td>
+                    <td width="409" valign="top" style="width:306.9pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Modifications</span></b></p>
+                    </td>
+                    <td width="223" valign="top" style="width:167.5pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-top:5.0pt;margin-right:77.75pt;margin-bottom:5.0pt;
+  margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Date</span></b></p>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes">
+                    <td width="196" valign="top" style="width:146.8pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    <td width="409" valign="top" style="width:306.9pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    <td width="223" valign="top" style="width:167.5pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <blockquote style="margin-top:5.0pt;margin-right:5.1in;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify">
+                <a name="_Toc447538686"></a><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Screen Layout </span></b><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:5.1in;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">In this section, give the screen layout. </span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:5.1in;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify">
+                <a name="_Toc447538687"></a><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Screen Elements</span></b><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <table class="MsoNormalTable" border="1" cellspacing="3" cellpadding="0" width="840" style="width:8.75in;mso-cellspacing:2.2pt;margin-left:8.6pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt">
+            <colgroup>
+                <col width="54">
+                <col width="72">
+                <col width="56">
+                <col width="61">
+                <col width="58">
+                <col width="67">
+                <col width="466">
+            </colgroup>
+            <tbody>
+                <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:12.0pt">
+                    <td width="72" valign="top" style="width:.75in;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:12.0pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Field Name (Caption)</span></b></p>
+                    </td>
+                    <td width="98" valign="top" style="width:73.5pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:12.0pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Field description</span></b></p>
+                    </td>
+                    <td width="81" valign="top" style="width:60.75pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:12.0pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Attribute</span></b></p>
+                    </td>
+                    <td width="84" valign="top" style="width:63.0pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:12.0pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Database Column / Source</span></b></p>
+                    </td>
+                    <td width="81" valign="top" style="width:60.75pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:12.0pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Datatype and Length</span></b></p>
+                    </td>
+                    <td width="91" valign="top" style="width:68.25pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:12.0pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Field Validation</span></b></p>
+                    </td>
+                    <td width="310" valign="top" style="width:232.15pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:12.0pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Error Handling</span></b></p>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes;height:29.25pt">
+                    <td width="72" valign="top" style="width:.75in;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:29.25pt"></td>
+                    <td width="98" valign="top" style="width:73.5pt;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:29.25pt"></td>
+                    <td width="81" valign="top" style="width:60.75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:29.25pt"></td>
+                    <td width="84" valign="top" style="width:63.0pt;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:29.25pt"></td>
+                    <td width="81" valign="top" style="width:60.75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:29.25pt"></td>
+                    <td width="91" valign="top" style="width:68.25pt;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:29.25pt"></td>
+                    <td width="310" valign="top" style="width:232.15pt;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:29.25pt"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <blockquote style="margin-top:5.0pt;margin-right:395.3pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify">
+                <a name="_Toc443739423"></a><i><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Note: Attribute will either be input
+or display.</span></i><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:395.3pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify">
+                <a name="_Toc447538688"></a><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Events</span></b><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <table class="MsoNormalTable" border="1" cellspacing="3" cellpadding="0" width="840" style="width:8.75in;mso-cellspacing:2.2pt;margin-left:8.6pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt">
+            <colgroup>
+                <col width="163">
+                <col width="158">
+                <col width="127">
+                <col width="189">
+                <col width="231">
+            </colgroup>
+            <tbody>
+                <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:12.0pt">
+                    <td width="165" valign="top" style="width:123.45pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:12.0pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Control Name (Caption)</span></b></p>
+                    </td>
+                    <td width="171" valign="top" style="width:128.4pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:12.0pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Control Type</span></b></p>
+                    </td>
+                    <td width="138" valign="top" style="width:103.2pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:12.0pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Event Name</span></b></p>
+                    </td>
+                    <td width="205" valign="top" style="width:153.55pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:12.0pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Event Description</span></b></p>
+                    </td>
+                    <td width="144" valign="top" style="width:108.2pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:12.0pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Error Handling</span></b></p>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes;height:29.25pt">
+                    <td width="165" valign="top" style="width:123.45pt;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:29.25pt"></td>
+                    <td width="171" valign="top" style="width:128.4pt;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:29.25pt"></td>
+                    <td width="138" valign="top" style="width:103.2pt;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:29.25pt"></td>
+                    <td width="205" valign="top" style="width:153.55pt;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:29.25pt">
+                        <p style="margin-left:9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&lt;Along
+  with the event description, mention the functions that are being called&gt;</span></p>
+                    </td>
+                    <td width="144" valign="top" style="width:108.2pt;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:29.25pt"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <blockquote style="margin-top:5.0pt;margin-right:395.3pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt">
+                <a name="_Toc447538689"></a><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#4F81BD;mso-themecolor:accent1">3.4.3 Middleware</span></b><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:424.1pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><i><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Note: Include if applicable.</span></i><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:424.1pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Mention all the class names and function names in the format
+mentioned below. </span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:424.1pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Class-name: Function Name ()</span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:424.1pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:9.0pt;text-align:justify;text-indent:0in;mso-list:l7 level1 lfo16;
+tab-stops:list .5in">
+                <!--[if !supportLists]--><span style="font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+                </span>
+                <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">IN Parameters:</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:424.1pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:9.0pt;text-align:justify;text-indent:0in;mso-list:l7 level1 lfo16;
+tab-stops:list .5in">
+                <!--[if !supportLists]--><span style="font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+                </span>
+                <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">OUT Parameters:</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:424.1pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:9.0pt;text-align:justify;text-indent:0in;mso-list:l7 level1 lfo16;
+tab-stops:list .5in">
+                <!--[if !supportLists]--><span style="font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+                </span>
+                <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">INOUT Parameters:</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:424.1pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:9.0pt;text-align:justify;text-indent:0in;mso-list:l7 level1 lfo16;
+tab-stops:list .5in">
+                <!--[if !supportLists]--><span style="font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+                </span>
+                <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Return Type:</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:424.1pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Function Description:</span></b><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:424.1pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Give a brief description of the function. </span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:424.1pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><i><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Note: Repeat the above for all the functions.</span></i><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:424.1pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify">
+                <a name="_Toc447538690"></a><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Tables used</span></b><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:424.1pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">List the table names and indicate the type of access with
+�Y�.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <table class="MsoNormalTable" border="1" cellspacing="3" cellpadding="0" width="937" style="width:702.75pt;mso-cellspacing:2.2pt;margin-left:8.6pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt">
+            <colgroup>
+                <col width="171">
+                <col width="211">
+                <col width="189">
+                <col width="180">
+                <col width="109">
+            </colgroup>
+            <tbody>
+                <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+                    <td width="173" valign="top" style="width:129.9pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><strong><span style="font-size:10.0pt;
+  font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Table Name</span></strong></p>
+                    </td>
+                    <td width="229" valign="top" style="width:171.4pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><strong><span style="font-size:10.0pt;
+  font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Select</span></strong></p>
+                    </td>
+                    <td width="205" valign="top" style="width:153.5pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><strong><span style="font-size:10.0pt;
+  font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Insert</span></strong></p>
+                    </td>
+                    <td width="195" valign="top" style="width:146.2pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><strong><span style="font-size:10.0pt;
+  font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Update</span></strong></p>
+                    </td>
+                    <td width="118" valign="top" style="width:88.55pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><strong><span style="font-size:10.0pt;
+  font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Delete</span></strong></p>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes">
+                    <td width="173" valign="top" style="width:129.9pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    <td width="229" valign="top" style="width:171.4pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    <td width="205" valign="top" style="width:153.5pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    <td width="195" valign="top" style="width:146.2pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    <td width="118" valign="top" style="width:88.55pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <blockquote style="margin-top:5.0pt;margin-right:452.15pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt"><b><span style="mso-bidi-font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4F81BD;mso-themecolor:accent1">3.4.4 Stored Procedures/Functions</span></b><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:452.15pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Identification</span></b><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <table class="MsoNormalTable" border="1" cellspacing="3" cellpadding="0" width="936" style="width:9.75in;mso-cellspacing:2.2pt;margin-left:8.6pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt">
+            <colgroup>
+                <col width="226">
+                <col width="683">
+            </colgroup>
+            <tbody>
+                <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+                    <td width="222" valign="top" style="width:166.15pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Program Name</span></b></p>
+                    </td>
+                    <td width="706" valign="top" style="width:529.25pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                </tr>
+                <tr style="mso-yfti-irow:1">
+                    <td width="222" valign="top" style="width:166.15pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Program Type</span></b></p>
+                    </td>
+                    <td width="706" valign="top" style="width:529.25pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                </tr>
+                <tr style="mso-yfti-irow:2">
+                    <td width="222" valign="top" style="width:166.15pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Description</span></b></p>
+                    </td>
+                    <td width="706" valign="top" style="width:529.25pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                </tr>
+                <tr style="mso-yfti-irow:3">
+                    <td width="222" valign="top" style="width:166.15pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Author</span></b></p>
+                    </td>
+                    <td width="706" valign="top" style="width:529.25pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                </tr>
+                <tr style="mso-yfti-irow:4;mso-yfti-lastrow:yes">
+                    <td width="222" valign="top" style="width:166.15pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Version</span></b></p>
+                    </td>
+                    <td width="706" valign="top" style="width:529.25pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <blockquote style="margin-top:5.0pt;margin-right:480.95pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Modification History</span></b><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <table class="MsoNormalTable" border="1" cellspacing="3" cellpadding="0" width="935" style="width:701.25pt;mso-cellspacing:2.2pt;margin-left:8.6pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt">
+            <colgroup>
+                <col width="226">
+                <col width="480">
+                <col width="185">
+            </colgroup>
+            <tbody>
+                <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+                    <td width="225" valign="top" style="width:168.9pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Modified by</span></b></p>
+                    </td>
+                    <td width="504" valign="top" style="width:377.9pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Modifications</span></b></p>
+                    </td>
+                    <td width="194" valign="top" style="width:145.65pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Date</span></b></p>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes">
+                    <td width="225" valign="top" style="width:168.9pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    <td width="504" valign="top" style="width:377.9pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    <td width="194" valign="top" style="width:145.65pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <blockquote style="margin-top:5.0pt;margin-right:509.05pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify">
+                <a name="_Toc449763728"></a><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Tables used</span></b><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:509.05pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">List the table names and indicate the type of access with
+�Y�.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <table class="MsoNormalTable" border="1" cellspacing="3" cellpadding="0" width="939" style="width:704.25pt;mso-cellspacing:2.2pt;margin-left:8.6pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt">
+            <colgroup>
+                <col width="106">
+                <col width="190">
+                <col width="190">
+                <col width="190">
+                <col width="186">
+            </colgroup>
+            <tbody>
+                <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+                    <td width="103" valign="top" style="width:77.1pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Table Name</span></b></p>
+                    </td>
+                    <td width="206" valign="top" style="width:154.3pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Select</span></b></p>
+                    </td>
+                    <td width="206" valign="top" style="width:154.3pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Insert</span></b></p>
+                    </td>
+                    <td width="206" valign="top" style="width:154.3pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Update</span></b></p>
+                    </td>
+                    <td width="201" valign="top" style="width:151.05pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Delete</span></b></p>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes">
+                    <td width="103" valign="top" style="width:77.1pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    <td width="206" valign="top" style="width:154.3pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    <td width="206" valign="top" style="width:154.3pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    <td width="206" valign="top" style="width:154.3pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    <td width="201" valign="top" style="width:151.05pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <blockquote style="margin-top:5.0pt;margin-right:537.1pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">Parameters Used</span></b><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <table class="MsoNormalTable" border="1" cellspacing="3" cellpadding="0" width="939" style="width:704.25pt;mso-cellspacing:2.2pt;margin-left:8.6pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt">
+            <colgroup>
+                <col width="106">
+                <col width="190">
+                <col width="190">
+                <col width="190">
+                <col width="186">
+            </colgroup>
+            <tbody>
+                <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+                    <td width="103" valign="top" style="width:77.1pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">SL. No.</span></b></p>
+                    </td>
+                    <td width="206" valign="top" style="width:154.3pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Parameter Name</span></b></p>
+                    </td>
+                    <td width="206" valign="top" style="width:154.3pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-top:5.0pt;margin-right:0in;margin-bottom:0in;margin-left:
+  9.0pt;margin-bottom:.0001pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Parameter Type</span></b></p>
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">(IN / OUT /INOUT)</span></b></p>
+                    </td>
+                    <td width="206" valign="top" style="width:154.3pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Datatype</span></b></p>
+                    </td>
+                    <td width="201" valign="top" style="width:151.05pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-left:9.0pt"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Description</span></b></p>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes">
+                    <td width="103" valign="top" style="width:77.1pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    <td width="206" valign="top" style="width:154.3pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    <td width="206" valign="top" style="width:154.3pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    <td width="206" valign="top" style="width:154.3pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                    <td width="201" valign="top" style="width:151.05pt;padding:5.25pt 5.25pt 5.25pt 5.25pt"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <blockquote style="margin-top:5.0pt;margin-right:565.9pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt;text-align:justify">
+                <a name="_Toc449763729"></a><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Stored Procedures/Functions Used
+(Called).</span></b><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <table class="MsoNormalTable" border="1" cellspacing="3" cellpadding="0" width="939" style="width:704.25pt;mso-cellspacing:2.2pt;margin-left:8.6pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:5.25pt 5.25pt 5.25pt 5.25pt">
+            <colgroup>
+                <col width="335">
+                <col width="230">
+                <col width="330">
+            </colgroup>
+            <tbody>
+                <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:8.25pt">
+                    <td width="340" valign="top" style="width:254.65pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:8.25pt">
+                        <p style="margin-left:9.0pt;mso-line-height-alt:8.25pt"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Name</span></b></p>
+                    </td>
+                    <td width="241" valign="top" style="width:181.05pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:8.25pt">
+                        <p style="margin-left:9.0pt;mso-line-height-alt:8.25pt"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Type</span></b></p>
+                    </td>
+                    <td width="346" valign="top" style="width:259.75pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:8.25pt">
+                        <p style="margin-left:9.0pt;mso-line-height-alt:8.25pt"><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Parameters </span></b></p>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes;height:9.75pt">
+                    <td width="340" valign="top" style="width:254.65pt;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:9.75pt">
+                        <p style="margin-left:9.0pt;mso-line-height-alt:9.75pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">None.</span></p>
+                    </td>
+                    <td width="241" valign="top" style="width:181.05pt;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:9.75pt"></td>
+                    <td width="346" valign="top" style="width:259.75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt;
+  height:9.75pt"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <blockquote style="margin-top:5.0pt;margin-right:8.25in;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt">
+                <a name="_Toc449763730"></a><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#4F81BD;mso-themecolor:accent1">3.4.5 Process Log</span></b><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:8.25in;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt"><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">Brief
+Description of the process flow.</span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:8.25in;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt"><b><span style="mso-bidi-font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4F81BD;mso-themecolor:accent1">3.4.6 Errors and Exceptions</span></b><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:8.25in;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt"><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">Mention
+errors and exceptions handled in case of violation of business rules.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:565.9pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt"><b><span style="font-size:13.5pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4F81BD;mso-themecolor:accent1">3.5 Design Constraints</span></b><span style="font-size:13.5pt;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:8.25in;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt"><b><span style="mso-bidi-font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4F81BD;mso-themecolor:accent1">3.5.1 Assumptions</span></b><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:8.25in;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt"><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">All
+the assumptions made while designing the system are listed in this section.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:8.25in;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt"><b><span style="font-size:11.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#4F81BD;mso-themecolor:accent1">3.5.2 Dependencies</span></b><span style="font-size:14.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:8.25in;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt"><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">This
+section describes all the dependencies (either full or partial) on other
+components or system.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:8.25in;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt"><b><span style="mso-bidi-font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4F81BD;mso-themecolor:accent1">3.5.3 Constraints</span></b><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:8.25in;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt"><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">This
+section lists all the limitations/restrictions of the system.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:8.25in;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt"><b><span style="mso-bidi-font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4F81BD;mso-themecolor:accent1">3.5.4 System Attributes</span></b><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:8.25in;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt"><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">This
+section describes how system attributes like Reliability, Availability,
+Security, Maintainability and portability are considered in the design of the
+system.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:565.9pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt"><b><span style="font-size:13.5pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4F81BD;mso-themecolor:accent1">3.6 Common Components/Functions</span></b><span style="font-size:13.5pt;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:8.25in;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt"><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">All
+the common components or functions in the system are identified and listed in
+this section.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:565.9pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt"><b><span style="font-size:13.5pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4F81BD;mso-themecolor:accent1">3.7 Naming Conventions</span></b><span style="font-size:13.5pt;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:8.25in;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt"><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">Naming
+conventions to be used throughout the system for naming files, variables,
+tables, columns and functions etc. are defined in this section.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:565.9pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt"><b><span style="font-size:13.5pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#4F81BD;mso-themecolor:accent1">3.8 Definitions and Acronyms</span></b><span style="font-size:13.5pt;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:8.25in;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-left:9.0pt"><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;">This
+section contains glossary of important terms and acronyms used in the specification.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+        </blockquote>
+
+        <blockquote style="margin-top:5.0pt;margin-right:565.9pt;margin-bottom:5.0pt">
+
+            <p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:9.0pt"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p>&nbsp;</o:p></span></p>
+
+        </blockquote>
+
+    </div>
+</section>

@@ -1,0 +1,894 @@
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script>
+  <!-- design starts here ...-->
+
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+                <h1>
+                  Quality Management System
+                </h1>
+                <ol class="breadcrumb">
+                  <li></b><a href="#" onclick="changeContent('qmsMain')" ><i class="fa fa-dashboard"></i> Home</a></b></li>
+                  <li><b><a href="#" onclick="changeContent('qmsMain')" >Integra Quality Manual</a></b></li>
+                  <li class="active"><b><a href="#" onclick="changeContent('ProjProc')" >Project Procedures</a></b></li>
+                </ol>
+                </section>
+                <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th align="center" colspan="4">Project Management Procedure</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ISO Clause: 7.1</td>
+                                <td>PR 17</td>
+                                <td>Version : 3.80</td>
+                                <td>Date : 1st August, 2016</td>
+                            </tr>
+                        </tbody>
+                    </table>
+             
+                            <div class="Section1">
+                  
+                                <p><b>17.0 Introduction</b></p>
+                                <p><b>17.1.1 Purpose<br/></b>The purpose of Project Management is to establish and maintain project plans that define project activities, track project progress, take corrective action when the performance deviates from the target, integrate relevant stakeholders according to an integrated process, form and sustain an integrated team for the development of work products.</p>
+                                
+                                <p><b>17.1.2 Policy (Plan the Process, and Establish a Defined Process (GP2.1, GP 2.2 and GP3.1))</b><br/></p>
+                                <p>The organization is committed to using the best practices of Project Management to achieve the organization’s strategic plan. Project Management processes include initiating, planning, executing, monitoring, controlling and closing project activities to successfully satisfy Customer requirements.</p>
+                
+                <p>The organization expects that every project establish and use a project defined process from the start of the project to the close of the project. The project’s defined process is used to manage the project and collaborate with Stakeholders. Every project will create a project plan to record the activities associated with the project defined process.</p>
+                
+                <p>Integrated Project Management will be used to coordinate and collaborate with stakeholders throughout the life of the product or deliverable to better satisfy Customer needs, expectations and requirements.</p>
+                
+                <p>The performance of the project will be monitored against the project plan and corrective actions are required when the performance results deviate from the plan. Project monitoring and controlling activities will be described in the project plan.</p>
+                
+                <p>The specific practice of “Establish and Maintain Project’s Defined Process” in Integrated Project Management (IPM) will support and implement the generic practice “Establish a Defined Process).</p> 
+                                
+                                <p><b>17.1.3 Scope</b><br/>The project management procedure encompasses the following CMMI process areas: Project Planning, Project Monitoring and Control, Integrated Project Management for Integrated Teaming</p>
+                                            
+                             <p><b>17.1.4 Entry criteria</b><br/>Project management commences as soon as the contract is signed. Project management activities follow after Requirements Development activities.</p>
+                        
+                             
+                                <p><b>17.1.5 Inputs</b><br/>
+                                <div class="box-body">
+                                <ol>
+                                <li>RFP, URS, SOW</li>
+                                <li>Contract, PO,</li>
+                                </ol>
+                                <p>Contract, Purchase Order, Statement of Work, User Requirement Specification, Estimates, RFP, and Proposal (technical and commercial) are the required inputs to start the project management activities. In some projects, all of these input documents may not be available.  The missing inputs should be mentioned in the project kick-off meeting for necessary action.</p>
+                                <p><b>17.2 Stakeholders</b><br/>
+                                <p><b>17.2.1 Identify and Involve Stakeholders (GP 2.7)</b><br/>
+                                <p>The stakeholders involved in the project planning, project monitoring and control and integrated project management processes are identified.</p>
+                
+                <p>Stakeholder involvement is necessary for planning the use of organizational process assets, contribution to the project plan and the other auxiliary plans, reviewing project performance to align current and projected needs, requirements, and objectives.</p>
+                
+                <p>Stakeholders from Integrated teams are required to create the shared vision, defining the integrated team structure and populating the integrated team.</p>
+                
+                <p>Refer to the specific practice of “Plan Stakeholder Involvement”, “Monitor Stakeholder Involvement” and “Manage Stakeholder Involvement” for comprehensive coverage of the generic practice “Identify and Involve Stakeholders”. Document the details in the project plan.</p>
+                      
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                  <th>
+                Stakeholders</th>
+                                  <th>Role</th>
+                                  
+                                </tr>  
+                            </thead>	
+                            <tbody>			
+                                <tr>
+                                    <td>Customer Project Manager</td>
+                                    <td>Project success </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Customer Project Lead</td>
+                                    <td>
+                                    Clarification of technical requirements of the project
+                                        
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                   
+                                    <td>Customer Project Team</td>
+                                    <td>
+                                    Technical clarification
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>BU Heads</td>
+                                    <td>Commitment of resources to the project, risk review, approval of project plan and shared vision of the project</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Business Development Manager</td>
+                                    <td>Commercial Agreement</td>
+                                
+                                </tr>
+                                <tr>
+                                    <td>Project Manager</td>
+                                    <td>Success of the project and delivery within the defined project defined process and quality parameters</td>
+                                
+                                </tr>
+                                <tr>
+                                    <td>Technical Architect</td>
+                                    <td>	
+                Technical Solution</td>
+                                
+                                </tr>
+                                <tr>
+                                    <td>Quality Manager</td>
+                                    <td>Quality process adherence and learning for improvement</td>
+                                
+                                </tr>
+                                <tr>
+                                    <td>Configuration Manager</td>
+                                    <td>Management of CI</td>
+                                
+                                </tr>
+                                <tr>
+                                    <td>Information Technology (IT) Manager</td>
+                                    <td></td>
+                                
+                                </tr>
+                                <tr>
+                                    <td>Project Lead</td>
+                                    <td></td>
+                                
+                                </tr>
+                                <tr>
+                                    <td>Project Team</td>
+                                    <td></td>
+                                
+                                </tr>
+                                <tr>
+                                    <td>Integrated Team</td>
+                                    <td></td>
+                                
+                                </tr>
+                                <tr>
+                                    <td>Technical Writer</td>
+                                    <td></td>
+                                
+                                </tr>
+                                <tr>
+                                    <td>Configuration Team Lead</td>
+                                    <td></td>
+                                
+                                </tr>
+                                <tr>
+                                    <td>Software Quality Analyst (SQA)</td>
+                                    <td></td>
+                                
+                                </tr>
+                                <tr>
+                                    <td>Admin Manager</td>
+                                    <td></td>
+                                
+                                </tr>
+                                <tr>
+                                    <td>Documentation Head</td>
+                                    <td></td>
+                                
+                                </tr>
+                                </tbody>
+                              </table>
+                            
+                                <p><b>17.2.2 Roles and Responsibilities</b></p>
+                                <p>The organization will provide adequate resources to perform the project planning, project monitoring and controlling and integrated project management processes. The list of human resources, roles, responsibilities and authorities to perform these processes are listed in the table below.</p>
+                
+                <p>The specific practice of “Plan for necessary resources to perform the project” supports the implementation of the generic practices “Provide Resources” and “Assign Responsibility”.</p>
+                
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                <tr>
+                                                  <th>Sl. No.</th>
+                                                  <th>Role</th>
+                                                  <th>Responsibilities</th>
+                                                  <th>Authority</th>
+                                                </tr>  
+                                            </thead>	
+                                            <tbody>			
+                                                <tr>
+                                                    <td>1.</td>
+                                                    <td>Project Manager</td>
+                                                    <td>
+                                                    <div class="box-body">
+                                                        <ul>
+                                                        <li>     Prepare Project Plan, QMP, RMP and CMP.</li>
+                <li>       Prepare Project Charter</li>
+                <li>       Initiate Project</li>
+                <li>       Execute Project</li>
+                <li>       Monitor Project</li>
+                <li>      Control Project</li>
+                <li>      Close Project</li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <ul>
+                                                        <li>   Project manager </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2.</td>
+                                                    <td>Project Lead</td>
+                                                    <td>
+                                                   <div class="box-body">
+                                                        <ul>
+                                                        <li>        Prepare Scope of the Project</li>
+                <li>        Prepare Effort Estimates</li>
+                <li>        Prepare WBS</li>
+                <li>       Identify Risks and Analyze</li>
+                <li>        Identify Skills and Knowledge required in the Integrated Team</li>
+                <li>       Qualify Team Member based on the skill requirement</li>
+                <li>       Identify Product Metrics (e.g. performance metrics)</li>
+                <li>       Identify Engineering Contributions to Organizational Process Assets (OPA)</li>
+                                                        </ul>
+                                                        
+                                                    </td>
+                                                    <td>
+                                                     
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3.</td>
+                                                    <td>Technical Architect</td>
+                                                    <td>
+                                                    <div class="box-body">
+                                                        <ul>
+                                                        <li>       Review Scope.</li>
+                <li>        Effort Estimates.</li>
+                <li>        WBS</li>
+                <li>       Risks</li>
+                <li>        Skills</li>
+                <li>        Product Metrics and Engineering Contributions to OPA.</li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <ul>
+                                                    <li>Technical Architect</li>
+                                                    </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4.</td>
+                                                    <td>	
+                Project Team</td>
+                                                    <td>
+                                                        <ul>
+                                                    <li>    Participates in building and reviewing the plan</li>
+                                                    </ul>
+                                                    </td>
+                                                    <td>
+                                                    <ul>
+                                                    <li> Project Manager</li>
+                                                    </ul>
+                                                        
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5.</td>
+                                                    <td>	
+                Configuration Management Manager / IT Manager</td>
+                                                    <td>
+                                                        <ul>
+                                                    <li>  Prepare Configuration Management Plan</li>
+                                                    </ul>
+                                                    </td>
+                                                    <td>
+                                                        <ul>
+                                                    <li> Project Manager</li>
+                                                    </ul>
+                                                    </td>
+                                                </tr>
+                                                      <td>6.</td>
+                                                    <td>	
+                    
+                Risk Manager/Project Manager</td>
+                                                    <td>
+                                                        <ul>
+                                                    <li> Prepare Risk Management Plan</li>
+                                                    </ul>
+                                                    </td>
+                                                    <td>
+                                                        <ul>
+                                                    <li> Project Manager</li>
+                                                    </ul>
+                                                    </td>
+                                                </tr>
+                                                      <td>7.</td>
+                                                    <td>	
+                Quality Manager</td>
+                                                    <td>
+                                                        <ul>
+                                                    <li>   Identify process contributions to the OPA database</li>
+                <li>        Reviews processes used in performing the project, to ensure the project plan and activities defined comply with the organization standards and processes.</li>
+                                                    </ul>
+                                                    </td>
+                                                    <td>
+                                                        <ul>
+                                                    <li>Quality Manager</li>
+                                                    </ul>
+                                                    </td>
+                                                </tr>
+                                                <td>8.</td>
+                                                    <td>	
+                BU Head / Delivery Head</td>
+                                                    <td>
+                                                        <ul>
+                                                    <li>Review and Approve the Project Plan</li>
+                <li>        Approve contributions to the OPA database</li>
+                <li>        Authorizes the project and provides personnel and other resources</li>
+                <li>        Reviews project progress against plan</li>
+                <li>       Approves changes to plans</li>
+                <li>        Approve change requests</li>
+                
+                                                    </ul>
+                                                    </td>
+                                                    <td>
+                                                        <ul>
+                                                    <li>BU Head</li>
+                                                    </ul>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                              </table>
+                                          	
+                <p>The infrastructure provided is listed in the table below:</p>
+                
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                  <th>Infrastructure Resources</th>
+                                  <th>Responsibilities</th>
+                                  <th>Authority</th>
+                                </tr>  
+                            </thead>	
+                            <tbody>			
+                                <tr>
+                                    <td>Project Control Centre / Enterprise Project Management Software/Tool</td>
+                                    <td>IT Manager</td>
+                                    <td>
+                                        BU Head
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Configuration Management System Foundation Server</td>
+                                    <td>IT Manager</td>
+                                    <td>
+                                        BU Head
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Email and Chat Facility for Integrated Team</td>
+                                    <td>IT Manager</td>
+                                    <td>
+                                        BU Head
+                                    </td>
+                                    
+                                </tr>
+                                </tbody>
+                              </table>
+                         
+                <p><b>17.2.3 Training Required (GP2.5)</b></p>	
+                <p>Training is provided to the project team to perform the project planning processes, project monitoring and controlling and integrated project management processes.</p>
+                
+                <p>The Organizational Training (OT) PA supports the generic practice “Train People”.  The Project Manager and project team will take the support of OT to avail of training to perform the processes of project planning, monitoring and control and integrated project management activities.</p>
+                
+                <p>The specific practice “Plan for Knowledge and Skills” along with OT PA is the processes used to train people.</p>
+              
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                  <th>
+                Role</th>
+                                  <th>Areas</th>
+                                </tr>  
+                            </thead>	
+                            <tbody>			
+                                <tr>
+                                    <td>Project Managerl</td>
+                                    <td>Project Management, Planning, Scheduling, Integra QMS, Tailoring Guidelines, Managing integrated teams, Using Organization Measurement Repository and Process Assets, Inter-group Coordination, Group Problem Solving, Building Shared Vision.</td>
+                                    
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Technical Architect/Project Lead/Project Team</td>
+                                    <td>Estimation, Work Breakdown, Risk Identification, Team Building, Configuration Management (data management), Integra QMS, Project Control Centre (PCC), Using Organization Measurement Repository and Process Assets,  Team Building, Integrated Team Work, Coordination and Group Problem Solving</td>
+                                    
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Quality Department</td>
+                                    <td>Integra QMS</td>
+                                    
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Configuration Management Team</td>
+                                    <td>Integra QMS</td>
+                                    
+                                    
+                                </tr>
+                                </tbody>
+                              </table>
+                      
+                <p><b>17.2.4 Manage Configuration (GP2.6)</b></p>
+                <p>The work products of project planning, project monitoring and control and integrated project management processes are placed under appropriate levels of control. Few of the Configuration Items are listed in the table below</p>
+                
+                <p>The Configuration Management PA to support the generic practice of “Manage Configuration” and record the details in the project plan.</p>
+               
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                  <th>
+                
+                Configuration Item</th>
+                                  <th>	
+                Owner</th>
+                                </tr>  
+                            </thead>	
+                            <tbody>			
+                                <tr>
+                                    <td>Project Shared Vision</td>
+                                    <td>Project Manager</td>
+                                    
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Project Plan</td>
+                                    <td>Project Manager</td>
+                                    
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Project Charter</td>
+                                    <td>Project Manager</td>
+                                    
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Integrated Team Charter</td>
+                                    <td>Project Lead – Integrated Team</td>
+                                    
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Estimation Sheet</td>
+                                    <td>Technical Lead / Project Lead</td>
+                                    
+                                    
+                                </tr>
+                                <tr>
+                                    <td>WBS</td>
+                                    <td>Technical Lead / Project Lead</td>
+                                    
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Risk Sheet</td>
+                                    <td>Technical Lead / Project Lead</td>
+                                    
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Quality Plan</td>
+                                    <td>Project Manager</td>
+                                    
+                                    
+                                </tr>
+                                <tr>
+                                    <td>SCM Plan</td>
+                                    <td>Configuration Manager</td>
+                                    
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Issue Sheet</td>
+                                    <td>Project Manager</td>
+                                    
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Change Request Sheet</td>
+                                    <td>Project Manager</td>
+                                    
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Process, Project and Product Metrics</td>
+                                    <td>Project Manager/Quality Manager</td>
+                                    
+                                    
+                                </tr>
+                                
+                                </tbody>
+                              </table>
+                           
+                <p><b>17.3 Process Description</b></p>
+                <p><b>17.3.1 Process Flow Diagram</b></p>	
+                <p>The Process flow of PMP is given below.</p>	
+                <img width="375" height="869" src="/QMS/pages/QMS/Downloads/ProjectProcedures/PR17-Fig1.gif" alt="PMP_01" v:shapes="Picture_x0020_9" /><br/><br/>
+                <img width="375" height="869" src="/QMS/pages/QMS/Downloads/ProjectProcedures/PR17-Fig2.gif" alt="PMP_01" v:shapes="Picture_x0020_9" />
+                <p><b>17.3.2 Tasks</b><br/>The project management practices are listed below:</p>
+                <p><b>17.3.2.1 Plan stakeholder involvement (PP/SP2.6)</b></p>
+                <p>Plan the involvement of identified stakeholders.</p>
+                <p><b><u>Process Steps:</u></b></p>
+                <div class="box-body">
+                <ol>
+                <li>List relevant stakeholders in the project plan.</li>
+                <li>Specify the roles and responsibilities of the relevant stakeholders in the project for each project life-cycle phase.</li>
+                <li>Record the activities of the different stakeholders and inter-dependencies in the WBS.</li>
+                </ol>
+                </div>
+                <p><b>17.3.2.3 Identify Project Risks (PP/SP2.2)</b><br/>Identify and analyze project risks.</p>
+                <p><b><u>Process Steps:</u></b></p>
+                <div class="box-body">
+                <ol>
+                <li>Specify the dates on which risk planning will take place in the project schedule.</li>
+                <li>Identify and list risks associated with configuration management, quality management, cost management, supplier management and other support functions.</li>
+                <li>Analyze the risks to determine the impact, probability of occurrence, and time frame in which problems are likely to occur. Prioritize the risks. Document the identified risks, impact, probability, time frame and prioritization of risks.</li>
+                <li>Review and obtain agreement with relevant stakeholders on the completeness and correctness of the documented risks.</li>
+                </ol>
+                </div>
+                <p><b>17.3.2.4 Estimate Scope of the Project (PP/SP1.1)</b></p>
+                <p>Establish a top-level work breakdown structure (WBS) to estimate the scope of the project</p>	
+                <p><b><u>Process Steps:</u></b></p>
+                <div class="box-body">
+                <ol>
+                <li>  After project kick-off, top level WBS is prepared and entered in PCC. </li>
+                  <li>  Prepare detailed WBS using the estimation sheet prepared after completion of SRS.</li>
+                
+                    <li>  Record the tasks, descriptions, dependencies and work products in the WBS.</li>
+                </ol>
+                </div>
+                <p><b>17.3.2.5 Define Project Life Cycle (PP/SP1.3), Project Defined Process (IPM/SP1.1) and Plan for Project Work Environment (IPM/SP1.3)</b></p>  
+                <p>Define the project life-cycle phases upon which to scope the planning effort.  The project phases for software typically include selection and refinement of a software development model to address interdependencies and appropriate sequencing of software project activities.</p>
+                
+                <p>Establish and maintain the project's defined process from project start-up through the life of the project. The project’s defined process consists of processes that form an integrated and coherent lifecycle for the project.</p>
+                
+                <p>Establish and maintain the project work environment based on the organization’s work environment standards</p>
+                <p><b><u>Process Steps:</u></b></p>
+                <div class="box-body">
+                <ol>
+                <li>Integra has developed lifecycle models called i-FI Model (Integra Fractal Integrated Model), testing model and i-LANG model for software development, testing and localization projects respectively. Other standards SDLC models like Agile, Spiral have been customised to suite the need to the organisation. Exploratory model has been developed for projects with new technology involving R&D. The process models are available in the process model section of the QMS.</li>
+                
+                <li>     Select an appropriate project lifecycle model from the list of process models available in the QMS.</li>
+                <li>      Record the lifecycle model selected for the project in the project plan.</li>
+                 <li>     Tailor the lifecycle model according to tailoring guidelines to meet a specific project needs</li>
+                 <li>     In case the available lifecycle model is inadequate to meet the specific needs of the project, then select the project process from the organization set of standard processes that fits the needs of the project.</li>
+                 <li>     Tailor the organization set of standard processes to create the project defined process</li>
+                <li>      Conduct SEPG meeting so that the tailoring and deviations to the organization standard process is approved.</li>
+                 <li>    The Project Manager will use Project Control Centre to enter WBS, track issues, record minutes of meeting, reports, and infrastructure request for IT requests, among other features.</li>
+                <li>      The Project Manager will use SVN for Configuration Management.  Wherever appropriate, use alternate tools such as applicable for the specific project.</li>
+                 <li> The Project Manager will take the support of Information Technology Department and Admin Department in supporting the project in the areas of maintenance and troubleshooting of Hardware, Software, Networking, Access Control, Configuration Management Systems, and interaction with Vendors. The requests to IT department and Admin department are logged and tracked to closure. Pending issues are reported in the weekly meetings and resolved. Urgent action items are informed to the BU head for resolution.</li>
+                </ol>
+                </div>	
+                <p><b>17.3.2.6 Plan Project Resources (PP/SP2.4) and Identify Knowledge and Skills (PP/SP2.5)</b></p>
+                <p>Plan for necessary resources to perform the project. Plan for knowledge and skills needed to perform the project. Plan for knowledge and skills needed to perform the project.</p>
+                <p><b><u>Process Steps:</u></b></p>
+                <div class="box-body">
+                <ol>
+                <li>The initial effort, cost and schedule estimates along with initial WBS prepared during proposal phase is used to define the project resources.</li>
+                <li>Expand initial or high level WBS to create a detailed WBS. Decompose into work packages that can be separately assigned, performed and tracked.</li>
+                <li>The PM will request for infrastructure as per <u><a href="#" onclick="changeContent('QMS03PR11')">Infrastructure Request and Release.</a></u></li>
+                <li>All customer-supplied material will be handled as per procedure for <u><a href="#" onclick="changeContent('QMS03PR12')">Customer Supplied Material.</a></u></li>
+                  <li>    At project closure, Infrastructure is released as per Infrastructure Request and Release. Customer supplied material is returned as per the Control of Customer Supplied Material.</li>
+                
+                  <li>   Identify the knowledge and skills needed to perform the project and document in the project plan.</li>
+                
+                  <li>    Refer to the respective PA document to identify skills required by the processes followed by the project.</li>
+                
+                  <li>    Refer to the HR manual for specific skills required for specific jobs and roles. This information is scheduled to be made part of the QMS.</li>
+                
+                  <li>    Assess the knowledge and skills available and document in the project plan</li>
+                
+                 <li>  Raise a training request to the training department to provide needed knowledge and skills.</li>
+                </ol>
+                </div>	
+                <p><b>17.3.2.7 Use Organizational Process Assets to Plan Project Activities (IPM/SP1.2), Establish Estimates of Work Product and Task Attributes (PP/SP1.2) and Determine Estimates of Effort and Cost (PP/SP1.4)</b></p>
+                <p>Use the organizational process assets and measurement repository for estimating and planning the project activities. Establish and maintain estimates of the attributes of the work products and tasks. Estimate the project effort and cost for the work products and tasks based on estimation rationale.</p>
+                <p><b><u>Process Steps:</u></b></p>
+                <div class="box-body">
+                <ol>
+                <li>Refer to the organization measurement repository to compare the current project with past projects to identify differences and similarities. Project planning parameters include application domain, and experience of the staff.</li>
+                <li>Historical data include size of work product, work product attributes, effort, cost, schedule, staffing, defects, response time, supplier performance, service capacity, etc. Record the assumptions and rationale used to select the historical data.</li>
+                <li>Size estimation</li>
+                <li>Effort estimation</li>
+                <li>Cost estimation</li>
+                <li>Schedule</li>
+                <li>Marketing-Head will ensure that proposal and estimation is prepared on time for all accepted RFPs.</li>
+                <li>Effort and cost estimates are prepared during the proposal preparation stage. For any new project, CMG/DH will study the request, and estimate the effort, cost and schedule. For existing project, the DH/PM will estimate the effort, cost and schedule, and forward the same to the CMG and Account In-Charge.</li>
+                <li>After project kick-off and identifying a Project Manager for the project, re-estimate the effort, cost and schedule for the project using Estimation Worksheet (TPPPL02/ TPPPL02a) After completion of SRS, the PM will re-estimate the effort, cost and schedule for the project using Estimation Worksheet (TPPPL02/ TPPPL02a).</li>
+                <li>Re-estimation of effort, cost and schedule is carried out whenever there is any change request for the requirement, either from the customer’s side or by the project team itself. The SPMP is updated, reviewed and approved.</li>
+                <li>The basis or justification of the schedule is recorded.</li>
+                <li>The estimates will be prepared as per the Guidelines and using Estimation Worksheet <u><a href='downloads\QMS\pp\TPPPL02.xls' download>(TPPPL02</a></u>/ <u><a href='downloads\QMS\pp\TPPPL02A.xlsx' download>TPPPL02a).</a></u> Please refer estimation guidelines to estimate effort, cost and critical computer resources (CCR).</li>
+                </ol>
+                </div>	
+                <p><b>17.3.2.8 Establish the Budget and Schedule (PP/SP2.1)</b></p>
+                <p>Establish and maintain the project’s budget and schedule.</p>
+                <p><b><u>Process Steps:</u></b></p>
+                <div class="box-body">
+                <ol>
+                <li>List major and intermediate milestones in the project plan.</li>
+                <li>Define the schedule. The dependencies between tasks should be captured in the project schedule. The assumptions and constraints associated with the schedule are listed.</li>
+                <li>Define the budget using the template XX. The template will include a management reserve. The incremental funding requirements, if any, will be listed with the due date in the project plan.</li>
+                <li>The project schedule and budget is approved as part of the project plan approval.</li>
+                <li>The PM will present the schedule, effort, risks and the requirements from other support groups in the kick-off meeting.</li>
+                <li>After completion of SRS the PM will re-estimate the effort and update the schedule for the project.</li>
+                </ol>
+                </div>	
+                <p><b>17.3.2.9 Plan for Data Management (PP/SP2.3)</b></p>
+                <p>Plan for the management of project data.</p>
+                <p><b><u>Process Steps:</u></b></p>
+                <div class="box-body">
+                <ol>
+                <li>Determine the project data to be identified, collected, and distributed in the configuration management section of the project plan. Document the access privileges to project data in the configuration management section of the project plan.</li>
+                <li>The PM, with the help of CTL will prepare and maintain the MLD <u><a href='downloads\QMS\pp\FRPDM02.xls' download>FRPDM01</a></u> in PCC. The MLD will list both the "Internal" and "External" documents such as customer supplied documents and user manuals of the tools used for project execution.</li>
+                <li>The documents will be reviewed and approved as per the <u><a href="#" onclick="changeContent('QMS03PR07')">Verification procedure (PR07).</a></u> The approval authorities for documents will be as described in the SPMP for the project.</li>
+                  <li>    The PM will ensure that the approved SRS, SDD, ATP, ATS, STP, STS, ITP, and ITS are put in the controlled library (baseline) of the project as per Configuration Management (PR-03) process area.</li>
+                
+                   <li>  The various records applicable to any particular project will be mentioned in FRPDM02. The PM will control access to quality records during project execution. If contractually required, access to quality records will be provided to the customer for the agreed period.</li>
+                
+                <li>Refer to Project Document Control for the list of configuration items and non-configuration items. The PM will create a Project Folder for the project as per Project document control (PR-01) . Use Project Kick-off Checklist CH35.</li>
+                <li>    Customer supplied material is handled as per the Control of Customer Supplied Material (PR-14).</li>
+                
+                <li>Document the mechanism to archive data, access to archived data and restoration of data in the backup and restore section of the project plan.</li>
+                <li>The PM will maintain the master copy of project documents. Project documents will be archived as per the Archival Maintenance procedure.</li>
+                   <li>The PM will submit the quality records for archival as per the Archival Maintenance procedure. The suggested retention period for the quality records is three years from the date of archival or till the end of warranty, whichever is earlier, unless otherwise stated by the customer.</li>
+                </ol>
+                </div>
+                <p><b>17.3.2.10 Integrate Plans (IPM/SP1.4)</b></p>
+                <p>Integrate the project plans and other plans that affect the project to describe the project’s defined process.</p>
+                <p><b><u>Process Steps:</u></b></p>
+                <div class="box-body">
+                <ol>
+                <li>Integrate the quality assurance plan. Check the definition of measures. Plan the measurement activities.</li>
+                <li>Integrate risk management plan. Check if the product and project interface risks are recorded. Check the schedule for proper sequence of tasks to account for critical development factors and interface risks.</li>
+                <li>Incorporate the plan for peer reviews</li>
+                <li>Include the training plan. Include training on the project defined software process.</li>
+                <li>Check for objective entry and exit criteria to authorize the initiation and completion of tasks.</li>
+                <li>Check compatibility of the project plan with the stakeholder plan</li>
+                <li>Include conflict resolution plan to manage stakeholders</li>
+                </ol>
+                </div>
+                <p><b>17.3.2.11 Review Plans that Affect the Project (PP/SP3.1)</b></p>
+                <p>Review all plans that affect the project to understand project commitments.</p>
+                <p><b><u>Process Steps:</u></b></p>
+                <div class="box-body">
+                <ol>
+                <li> Review the PPQA plan, Configuration Management plan and Risk Management plan.</li>
+                </ol>
+                </div>
+                <p><b>17.3.2.12 Establish the Project Plan (PP/SP2.7) and Obtain Plan Commitment (PP/SP3.3)</b></p>
+                <p>Establish and maintain the overall project plan content. Obtain commitment from relevant stakeholders responsible for performing and supporting plan execution.</p>
+                <p><b><u>Process Steps:</u></b></p>
+                <div class="box-body">
+                <ol>
+                <li>The PM will prepare the Software Project Management Plan (SPMP) by using the <u><a href='downloads\QMS\pp\TPPPL03A.doc' download>SPMP TEMPLATE.</a></u> The PM can tailor the SPMP to meet the project requirement with approval from the MR/SQA.</li>
+                
+                 <li>    For multiple projects, the PM will prepare a project plan and customize the document as per requirement for the project.</li>
+                
+                 <li>      The DH will review and approve the SPMP and sub-project plan (if applicable) to ensure that the commitments stated in the plan are pragmatic and can be met. DH will record the review findings using the Inspection and Review Record and the record will be kept in the Project folder /PCC. Please use checklist CH-02 while reviewing the SPMP if the review is not done using PCC.</li>
+                
+                  <li>     The SPMP has to be updated if re-estimation of the project occurs, major scope changes to the contract occur, changes occur due to Formal / Informal Reviews and Audits (Internal/External), and changes occur due to Requirement Change Request.</li>
+                
+                  <li>     The revisions made in the SPMP will be reflected in the Revision History and will require approval from the same authorities that reviewed and approved the plan initially.</li>
+                  </ol>
+                <div class="box-body">
+                <ol>
+                <p><b><u>Commitment at contract sign-off milestone</u></b></p>
+                
+                <li>      On signing the contract the CMG will create PCC entry for the project. The Marketing In-Charge of the project or the PM of the project will call for project kick-off meeting. The PM will present the schedule, effort, risks and the requirements from other support groups in the kick-off meeting.
+                
+                <p><b><u>Commitment at project induction milestone</u></b></p>
+                
+                 <li>      The PM will organize Project Induction for all the team members. Induction will be conducted in two parts: Part A will cover Project overview, Client overview, Project milestones and responsibilities.
+                
+                <p><b><u>Commitment at URS sign-off milestone</u></b></p>
+                
+                <li> On signing the contract to develop the software, the customer provides the Document of Understanding (DOU), containing the above. If the customer is unable to document the same then the PM will prepare the DOU using and get approval of the customer.
+                <p><b><u>Commitment at SPMP approval milestone</u></b></p>
+                
+                 <li>      The DH will review and approve the SPMP and sub-project plan (if applicable) to ensure that the commitments stated in the plan are pragmatic and can be met.
+                
+                <p><b><u>Commitment at Design approval milestone</u></b></p>
+                
+                <li> After completion of the SRS document, the PM will call for a seminar and present the SRS to the expert group of people for review. The Review leader (DH) will identify a recorder and get the review finding recorded as per Inspection and Review Record.
+                <li> The PM will call for a seminar and present the Software Design Document to the expert group of people for review. The Review leader (DH) will identify a recorder and get the review finding recorded as per Inspection and Review Record
+                <li> During this phase the ATP, ATS, STP, STS, ITP and ITS are developed, reviewed and approved from the associated stakeholders.
+                <li> The PM will get the ATP and ATS approved by the customer and keep all the review and approval record in the Project folder.
+                <p><b><u>Commitment at Delivery and Package milestone</u></b></p>
+                
+                <li> The release readiness review report is reviewed and approved by the Delivery Head before packaging and delivering to the Customer.
+                <p><b><u>Commitment at Acceptance Test Milestone</u></b></p>
+                
+                 <li>   Customer Signoff is obtained after completing the Acceptance Test successfully.</li>
+                </ol>
+                </div>
+                <p><b>17.3.2.13 Manage the Project using the Integrated Plans (IPM/SP1.5), Manage Stakeholder Involvement (IPM/SP2.1), Manage Dependencies (IPM/SP2.2)</b></p>
+                <p>Manage the project using the project plan, the other plans that affect the project and the project’s defined process. Manage the involvement of the relevant stakeholders in the project.Participate with relevant stakeholders to identify, negotiate and track critical dependencies. Establish and maintain collaboration among interfacing teams</p>
+                <p><b><u>Process Steps:</u></b></p>
+                <div class="box-body">
+                <ol>
+                <li> Implement the project’s defined process</li>
+                  <li>   Monitor and control project activities using the project plan, other plans and the project’s defined process. Check if entry and exit criteria are being satisfied for key tasks and phases.</li>
+                 <li>      Track project activities using measurable thresholds (metrics) that will trigger investigation and action. Obtain and analyze measures to manage the project and support the organization needs.</li>
+                  <li>    Monitor product and project interfaces</li>
+                  <li>    Manage external and internal commitments</li>
+                   <li>    Every fortnight or monthly, depending on the duration of the project, align the project performance with current or planned needs, objectives, requirements of the Customer, organization and end users. Aligning performance can be achieved by adjusting project planning parameters and project risks.</li>
+                   <li>   Changes to key configuration items, for example, Project Plan, must go through review and approval.</li>
+                   <li>    Document the observations and results of managing the project in appropriate forms available in the QMS.</li>
+                  <li>    Monitor project progress against plan every week or a defined periodicity based on the specific project. Internal stakeholders involved in the progress review meeting include the project team members, integrated team, quality assurance team and configuration management team. Document the issues, impacts and results of the internal stakeholder involvement progress review.</li>
+                <li>    Review of the Integrated team structure</li>
+                 <li>   Review the team composition, any changes in team lead or team member, changes in team responsibility as part of the review of the integrated team structure.</li>
+                 <li>  Specify the periodicity of review of the Integrated team structure</li>
+                 <li>   Review the team composition, any changes in team lead or team member, changes in team responsibility as part of the review of the integrated team structure.</li>
+                <li>    Review the capability of the integrated team to meet project objectives based on initial staffing.</li>
+                <li>    Measure team performance, individual performance and critical success factors.</li>
+                </ol>
+                </div>
+                <p><b>17.3.2.14 Monitor Project Risks (PMC/SP 1.3), Monitor Stakeholder Involvement (PMC/SP1.5), Monitor Commitments (PMC/SP1.2) and Monitor Data Management (PMC/SP1.4)</b></p>
+                <p>Monitor risks against those identified in the plan. Monitor stakeholder involvement against the project plan. Monitor commitments against those identified in the project plan. Monitor the management of project data against the project plan.</p>
+                <p><b><u>Process Steps:</u></b></p>
+                <div class="box-body">
+                <ol>
+                <li> Revise the risks document or template when new risk is identified, when risks become problems, when risks are retired and when project circumstances change significantly.</li>
+                 <li>     Project Manager will follow the risk management process/PA.</li>
+                <li>      Project team members will report potential risks</li>
+                 <li>    Review the risks during weekly team meetings.</li>
+                  <li>    Review risk management status with stakeholders during formal progress review meeting held monthly or on the planned event date or planned milestone date.</li>
+                </ol>
+                </div>
+                <p><b><u>Monitor Stakeholders:</u></b></p>
+                <div class="box-body">
+                <ol>
+                <li>Review the involvement of the external stakeholder every week or at a defined frequency or as per participation required in specific project activities. Document the issues, impacts and results of the internal stakeholder involvement progress review.</li>
+                <li>     Review the work products with the stakeholder to confirm if it is meeting the requirements of the stakeholder. Document the recommendations and actions to resolve problems in the product or deliverable requirements and design.</li>
+                </ol>
+                </div>
+                <p><b><u>Monitor Commitments:</u></b></p>
+                <div class="box-body">
+                <ol>
+                <li> List the commitments from external and internal stakeholders.</li>
+                  <li>    List each of these milestones as part of the project schedule so that stakeholders can plan and attend. The stakeholders required to participate in each of these milestone meetings is listed in the project plan. MOM is circulated to all stakeholders after the meeting to document the commitments, actionable and action date.</li>
+                <li>       Review external and internal commitments every week in the internal and external stakeholder meeting. Review commitments that have not been satisfied and commitment having high risk of not being satisfied.</li>
+                 <li>      Document the results of the commitment review.</li>
+                </ol>
+                </div>
+                <p><b><u>Monitor Data Management:</u></b></p>
+                <div class="box-body">
+                <ol>
+                <li>Changes to approved documents will be initiated based on the Change Request Form .The changes to the document will be reviewed as per the verification procedure. The reviewed document will be approved before execution.</li>
+                
+                 <li>     Ensure review data management activities are defined in the project schedule.</li>
+                 <li>    The project team will enter data for measures associated with project issues.</li>
+                 <li>     Identify and document significant issues and the impact.</li>
+                 <li>     The SQA or Quality Department will review measurement data for accuracy and consistency.</li>
+                 <li>    Document the results of data management activity review.</li>
+                </ol>
+                </div>
+                <p><b>17.3.2.15 Conduct Progress Reviews (PMC/SP1.6), Conduct Milestone Reviews (PMC/SP1.7) and Monitor Project Planning Parameters (PMC/SP1.1)</b></p>
+                <p>Periodically review the project progress, performance and issues. Review the accomplishments and results of the project at selected project milestones. Monitor the actual values of the project planning parameters against the project plan.</p>
+                <p><b><u>Process Steps:</u></b></p>
+                <div class="box-body">
+                <ol>
+                <li> Every week, the Project Manager will monitor tasks starting and ending dates, deliverables with content and quality, effort as planned, size of software work products as planned, costs as budgeted, critical computer resources as planned, risks, issues and actions along with the integrated team. Document the results of the review meeting in the minutes of meeting form.</li>
+                 
+                   <li>   Every week, there is internal review project work products and activities, identifying any exceptions to the project plan and/or organization processes, review measurement data for accuracy and consistency, discuss deviations with project team and project manager and raise non-compliance items with management, if unresolved. Document the results of the review meeting in the minutes of meeting form.</li>
+                 
+                  <li>   For change requests, document the change requested, along with priority of the change, (optional) approaches to handle the change and workaround if the change is not implemented. Enter change request into the change tracking system or/and change request template. Review the change request. Estimate the impact of the change on the project effort, cost, schedule, resources.  Using the estimate, decide whether or not to authorize the change. If the change is denied, communicate that decision to the requestor and terminate this process. Incorporate the change into the project work plan and adjust resources and schedule as needed, to accommodate the change. Perform the work needed to address the change, and conduct the associated verification activities to ensure correctness. Update change request records to document the changes made and the completion status. Communicate completion status to the Change Control Board. Inform the requestor of the final status.</li>
+                 
+                  <li>    Determine what kinds of information need to be exchanged. Decide what medium of communication is best – meeting, electronic exchange, other. Determine frequency of communication. Identify the stakeholders who will need to receive the information. Communicate status information, current action items, issues, risks, and status of technical activities.</li>
+                 
+                  <li>    The Project Manager and the Configuration Management team member will accept items for configuration management as planned after checking if they meet the conditions set by the project and by organization processes for configuration management. Report on status and content of baselines.</li>
+                 
+                 <li>     On reaching milestone, event, or date for review, the Project Manager identifies information that needs to be prepared and/or presented. Identify participants for the review. Establish tasks and assignments for the review. Establish review logistics.  Prepare information for the review, including items such as list of accomplishments in last period, list of plans for next period, milestone progress reports (planned to actual), staffing profile (planned to actual), cost profile (planned to actual), size and critical computer resources (if appropriate), risk management status, issues, impacts, and action items status, quality assurance status , configuration management status, requirements management status, updated cost-benefit analysis, and milestones being met as planned. Document the results, action-items and decisions of the review meeting.</li>
+                 
+                 <li>     The Project Manager determines that a significant change in the plan is needed. Changes can include life cycle approach, effort variance, schedule variance, change in requirements, or an alternate approach to the work, and tools and methods to be used are different from what was initially planned. Develop updates to project plan and review with all affected parties. The DH approves the updated plan.  Establish commitments to the approved plan. Place the updated plan under configuration management.</li>
+                 
+                 <li>    Track change requests, problem reports and action items to closure.</li>
+                </ol>
+                </div>
+                <p><b>17.3.2.16 Analyze Issues (PMC/SP2.1), Resolve Coordination Issues (IPM/SP2.3), Take Corrective Action (PMC/SP2.2) and Manage Corrective Action (PMC/SP2.3)</b></p>
+                <p>Collect and analyze the issues and determine the corrective actions necessary to address the issues. Resolve coordination issues with relevant stakeholders. Take corrective action on identified issues. Manage corrective actions to closure.</p>
+                <p><b><u>Process Steps:</u></b></p>
+                <div class="box-body">
+                <ol>
+                <li>Gather issues for analysis from sources such as verification activities, validation activities, deviations from project planning parameters, changes in risk status, unsatisfied commitments, data security issues and stakeholder involvement issues</li>
+                 <li>     Analyze issues, and determine corrective action.</li>
+                  <li>   Communicate status of issues and resolve issues with the relevant stakeholders.</li>
+                 <li>    Escalate unresolved issues.</li>
+                  <li>    Document the issues and corrective action.</li>
+                 <li>     Review and agree upon the corrective actions to be taken with stakeholders</li>
+                 <li>     Monitor and track corrective actions to completion</li>
+                  <li>    Analyze corrective actions for effectiveness</li>
+                 <li>     Update the issue log to capture the completion of corrective action and effectiveness of corrective actions.</li>
+                 <li>  Track issues to closure.</li>
+                </ol>
+                </div>
+                <p><b>17.3.2.17 Contribute to the Organizational Process Assets (IPM/SP1.7)</b></p>
+                <p>Contribute work products, measures and documented experiences to the organizational process assets</p>
+                <p><b><u>Process Steps:</u></b></p>
+                <div class="box-body">
+                <ol>
+                <li> The Project Manager and the project team (including integrated team) will recommend improvements to the organizational process assets</li>
+                 <li>     The Project and Product measures will be submitted to the organization process assets at project closure or termination.</li>
+                <li>     The Project Manager and project team will contribute the following documents to the organization process assets: New process effectively used in the project, project plan, supporting plans, new training modules that are specific to the project and not part of organization process assets, improved or new checklists, and lessons learned.</li>
+                 <li>     The Project Manager will contribute effective tailored processes specific to the project.</li>
+                 <li>     The Project Manager will contribute estimates, revised estimates, associated information to assess the reasonable estimates and ability to derive estimates for new work, measures, contextual information that relates measures to the project activities,  in which the</li>
+                
+                </ol>
+                </div><p><b>17.3.2.18 Measurement (Monitor and Control the Process and Collect Improvement Information (GP2.8 and GP3.2))</b></p>
+                <p>Monitor and control the project planning, project monitoring and control and integrated project management process against the plan for performing the process and taking appropriate corrective action.</p>
+                
+                <p>Collect work products, measures, measurement results, and improvement information derived from planning and performing the project planning process to support the future use and improvement of the organization process and process assets.</p>
+                
+                <p>Monitor and control the organization process definition against the plan to perform the process and take appropriate corrective action.</p>
+                
+                <p>The Project Monitoring and Control PA implements the generic practice of “Monitor and Control the Process”.</p>
+                
+                <p>Refer to the Measurement and Analysis PA and record details related to measurement, recording, analysis and monitoring actual performance of the project planning, monitoring and control and integrated project management processes.</p>
+                
+                <p>The specific practice of “Contribute Work Products, Measures and Documented Experiences to the Organizational Process Assets” can implement the generic practice “Collect Improvement Information”.</p>
+                <p><b><u>Process Steps:</u></b></p>
+                <div class="box-body">
+                <ol>
+                <li>The Project Manager will list the project planning, project monitoring and control, and integrated project management activities in the schedule.</li>
+                <li>The Project Manager will track the schedule, effort and cost variance and report the same in the weekly/fortnightly/monthly and other planned meetings.</li>
+                <li>Record the schedule, cost and effort variance for every revision of the project plan.</li>
+                <li>The Project Manager will identify project deviations based on established criteria that are documented in the Project Management guidelines. The number of tailoring options exercised is tracked and discussed with the quality department to ensure relevance and project success is not compromised.</li>
+                <li>The approval of the revised plan is an indication of the approval of the revised schedule, cost and effort variance.</li>
+                <li>The Project Manager will monitor and control the progress of the tasks assigned to create the work products and deliverables. Performance review will be conducted for both the project team and the integrated team.</li>
+                <li>The Project Manager will monitor and control the project’s shared vision and effectiveness, integrated team structure and effective and integrated team structure and effectiveness. Expensive meetings, in case of international calls, video-conferencing, etc. are tracked and reported to ensure cost variances of the integrated team is under control.</li>
+                <li>The Project Manager will monitor the timely execution of reviews, implementation of review comments and closure of review comments.</li>
+                <li>Ensure Configuration Audit and Quality Audit is conducted so that work products, measure, measurement results and improvement information are compliant to organization processes.</li>
+                <li>The Project Manager will ensure that the Configuration Items identified in the project plan are compliant to Configuration Management processes. The Configuration Items of integrated project management processes such as shared vision, integrated team structure and integrated team charter as defined in the project plan.</li>
+                <li>The Project Manager will monitor and control the project using the measures and measurement results identified in the project plan and auxiliary plan such as the Quality Management plan.</li>
+                <li> The Project Manager will monitor risks, probability of occurrence, impact and execute risk response measures.</li>
+                <li>The project Manager will track the open and closed corrective actions. The results of corrective action will be documented. Interface coordination issues are tracked and closed.</li>
+                <li>The Project Manager will track changes to the project defined process. The schedule and effort required to tailor the organization set of standard process is recorded. The project tailoring activities is planned and included in the project schedule.</li>
+                <li>The Project Manager will track process and product measures and plan actions to ensure project success.</li>
+                <li>The Project Manager will ensure that the improvement information, lessons learned, measurement data, change request to modify the organization standard process and non-standard tailoring undertaken in the project is added to the organization process assets.</li>
+                <li>The Project Manager will ensure that the project complies with the processes obtained from the organization set of standard processes.</li>
+                </ol>
+                </div>
+                <p><b>17.3.2.19 Verification (Objectively Evaluate Adherence and Review Status with Higher Level Management GP2.9 and GP2.10))</b></p>
+                <p>Objectively evaluate adherence to the project planning, project monitoring, project control and integrated project management processes against its process description, standards, and procedures and address non-compliance.</p>
+                
+                <p>Review the activities, status and results of the project planning process, project monitoring and control processes and integrated project management process with higher level management and resolve issues.</p>
+                
+                <p>Project will collect work products, measures, measurement results, derived from project planning, project monitoring and control, and integrated project management activities to support the future use and improvement of the organization processes and process assets.</p>
+                
+                <p>Refer to the Process and Product Quality Assurance (PPQA) PA to implement and support the generic practice “Objectively Evaluate Adherence”. Record the details of the activities to objectively evaluate adherence in the project plan.</p>
+                
+                <p>Refer to the specific practices of “Conduct Progress Review” and “Conduct Milestone Review” in the Project Monitoring and Control PA. Involve senior management in the progress and milestone reviews. This will support the generic practice of “Review Status with Higher Level Management”.</p>
+                <p><b><u>Process Steps:</u></b></p>
+                <div class="box-body">
+                <ol>
+                <li>The Project Manager will review the implementation of the project defined process. The artefacts generated using the project defined process will be listed in the Configuration Items section of the project plan and serve as evidence of process compliance.</li>
+                <li>The Project Manager will review the project planning activities, project monitoring and controlling activities and integrated project management activities such as establishing estimates, developing the project plan and obtaining commitments to the plans.</li>
+                <li>The Project Manager will ensure the review and approval of project planning, project monitoring and control and integrated project management artefacts such as Estimation Sheet, WBS, Quality Assurance Plan, Configuration Management Plan, Risk Management Plan and Project Plan.</li>
+                <li>The Project Manager will be guided by the shared project vision and use Integrated teams. The integrated team structure, team charter and shared vision statements will be recorded to serve as evidence of process compliance.</li>
+                <li>The Project Manager will obtain commitment to the project plan from all project Stakeholders and record it in the minutes of meeting.</li>
+                <li>The Project Manager will identify and collaborate with all relevant stakeholders for successful execution of project tasks. The minutes of meeting, actions planned, action taken, results, and effectiveness will be tracked using appropriate forms, communicated to stakeholders, reported to Sr. Management in the planned meetings and archived to serve as evidence.</li>
+                <li>The Project Manager will record significant deviations from the plan using appropriate criteria and take corrective action. The results of the corrective action are documented.</li>
+                </ol>
+                </div>
+                
+                                
+                                
+                                        
+                </div>						
+              
+                

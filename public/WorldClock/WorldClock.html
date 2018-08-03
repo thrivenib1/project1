@@ -1,0 +1,126 @@
+<script src="/QMS/bower_components/clock/coolclock.js" type="text/javascript">
+</script>
+<script>
+
+    document.getElementById("lblHeaderTitle").innerHTML = "World Clock";
+    $(function() {
+        startTime();
+    });
+
+    function startTime() {
+        var today = new Date();
+        var today1 = today.toLocaleString({
+            timeZone: 'Asia/Kolkata'
+        });
+        var today2 = today.toLocaleString('en-UK', {
+            timeZone: 'Europe/London'
+        });
+        var today3 = today.toLocaleString('en-SG', {
+            timeZone: 'Asia/Singapore'
+        });
+        var today4 = today.toLocaleString('en-SG', {
+            timeZone: 'Asia/Qatar'
+        });
+        var today5 = today.toLocaleString('en-UK', {
+            timeZone: 'America/Los_Angeles'
+        });
+        var today6 = today.toLocaleString('en-UK', {
+            timeZone: 'Asia/Bishkek'
+        });
+
+        if(document.getElementById('timeBangalore'))
+        {
+            document.getElementById('timeBangalore').innerHTML = "<b>" + today1 + "</b>";
+            document.getElementById("timeLondon").innerHTML = "<b>" + today2 + "</b>";
+            document.getElementById("timeSingapore").innerHTML = "<b>" + today3 + "</b>";
+            document.getElementById('timeDubai').innerHTML = "<b>" + today4 + "</b>";
+            document.getElementById('timeBoston').innerHTML = "<b>" + today5 + "</b>";
+            document.getElementById('timekyrgyzstan').innerHTML = "<b>" + today6 + "</b>";
+            var t = setTimeout(startTime, 500);
+        }
+
+    }
+</script>
+
+<div class="row col-lg-12">
+    <div class="col-lg-4 col-md-6 col-xs-12">
+        <div class="box box-default">
+            <div class="box-header with-border">
+                <h3 class="box-title"><b>Bangalore (IST) </b></h3>
+            </div>
+            <div class="box-body" style="text-align: center">
+                <canvas class="CoolClock:swissRail:85"></canvas>
+            </div>
+            <div id="timeBangalore" class="box-footer">
+
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-xs-12">
+        <div class="box box-default">
+            <div class="box-header with-border">
+                <h3 class="box-title"><b>London (BST)</b></h3>
+            </div>
+            <div class="box-body" style="text-align: center">
+                <canvas class="CoolClock:swissRail:85:0:0"></canvas>
+            </div>
+            <div id="timeLondon" class="box-footer">
+
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-xs-12">
+        <div class="box box-default">
+            <div class="box-header with-border">
+                <h3 class="box-title"><b>Singapore (SGT)</b></h3>
+            </div>
+            <div class="box-body" style="text-align: center">
+                <canvas class="CoolClock:swissRail:85:0:152"></canvas>
+            </div>
+            <div id="timeSingapore" class="box-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row col-lg-12">
+    <div class="col-lg-4 col-md-6 col-xs-12">
+        <div class="box box-default">
+            <div class="box-header with-border">
+                <h3 class="box-title"><b>Dubai (GST)</b></h3>
+            </div>
+            <div class="box-body" style="text-align: center">
+                <canvas class="CoolClock:swissRail:85:0:159"></canvas>
+            </div>
+            <div id="timeDubai" class="box-footer">
+
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-xs-12">
+        <div class="box box-default">
+            <div class="box-header with-border">
+                <h3 class="box-title"><b>Los Angeles (ET)</b></h3>
+            </div>
+            <div class="box-body" style="text-align: center">
+                <canvas class="CoolClock:swissRail:85:0:160"></canvas>
+            </div>
+            <div id="timeBoston" class="box-footer">
+
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-xs-12">
+        <div class="box box-default">
+            <div class="box-header with-border">
+                <h3 class="box-title"><b>Kyrgyzstan (KGT)</b></h3>
+            </div>
+            <div class="box-body" style="text-align: center">
+                <canvas class="CoolClock:swissRail:85:0:162"></canvas>
+            </div>
+            <div id="timekyrgyzstan" class="box-footer">
+
+            </div>
+        </div>
+    </div>
+</div>

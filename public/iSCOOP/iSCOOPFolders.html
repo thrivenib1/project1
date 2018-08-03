@@ -1,0 +1,44 @@
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "i'm SCOOP";
+    function changeclass(element) {
+        clearClass();
+        $(element).addClass('fa fa-folder-open fa-2x');
+        $("#scoopDetail").load("/qms/iscoopMain", data);
+    }
+
+    function clearClass() {
+        $('div>a>i', $('#scoopDiv')).each(function() {
+            $(this).removeClass('fa fa-folder-open fa-2x');
+            $(this).addClass('fa fa-folder fa-2x');
+        });
+    }
+</script>
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-xs-12">
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">i'm SCOOP</h3>
+
+            </div>
+            <div class="box-body">
+                <div class="col-lg-12 col-md-12 col-xs-12" style="color:#263d66;font-size:15px;font-weight:bold;" id="scoopDiv">
+                    <div id="first" class="col-lg-1 col-md-3 col-sm-6">
+                        <a onclick="changeclass(fol1);" href="#"><i id="fol1" class="fa fa-folder fa-2x"></i><br/>2018</a>
+                    </div>
+                    <div class="col-lg-1">
+                        <a onclick="changeclass(fol2);" href="#"><i id="fol2" class="fa fa-folder fa-2x"></i><br/>2017</a>
+                    </div>
+                    <div class="col-lg-1">
+                        <a onclick="changeclass(fol3);" href="#"><i id="fol3" class="fa fa-folder fa-2x"></i><br/>2016</a>
+                    </div>
+                </div>
+                <div style="overflow-y:scroll; height:15%">
+
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12" style="height:50%" id="scoopDetail">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

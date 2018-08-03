@@ -1,0 +1,707 @@
+{
+    "message": "Success",
+    "status": 200,
+    "data": {
+        "Questions": [
+            {
+                "ques_code": "A1",
+                "ques_desc": "Integra has clear Vision / Mission & Values.",
+                "ques_section": "A",
+                "ques_num": "1"
+            },
+            {
+                "ques_code": "A2",
+                "ques_desc": "I understand Integra's Vision / Mission & Values.",
+                "ques_section": "A",
+                "ques_num": "2"
+            },
+            {
+                "ques_code": "B1",
+                "ques_desc": "Integra fulfils its customer needs and expectations.",
+                "ques_section": "B",
+                "ques_num": "1"
+            },
+            {
+                "ques_code": "B2",
+                "ques_desc": "Integra stands by its commitment to its customers.",
+                "ques_section": "B",
+                "ques_num": "2"
+            },
+            {
+                "ques_code": "B3",
+                "ques_desc": "Integra cares about its people.",
+                "ques_section": "B",
+                "ques_num": "3"
+            },
+            {
+                "ques_code": "B4",
+                "ques_desc": "In Integra people get ahead primarily on the merit of their work.",
+                "ques_section": "B",
+                "ques_num": "4"
+            },
+            {
+                "ques_code": "B5",
+                "ques_desc": "Men and women are given equal opportunities to fulfil their career potential.",
+                "ques_section": "B",
+                "ques_num": "5"
+            },
+            {
+                "ques_code": "C1",
+                "ques_desc": "Integra's leadership provides the necessary guidance aligning with the companies vision and focus.",
+                "ques_section": "C",
+                "ques_num": "1"
+            },
+            {
+                "ques_code": "C2",
+                "ques_desc": "Integra's leadership promotes competitive spirit in key growth areas, within and between groups.",
+                "ques_section": "C",
+                "ques_num": "2"
+            },
+            {
+                "ques_code": "C3",
+                "ques_desc": "Integra's leadership create and establish positive changes for Integra.",
+                "ques_section": "C",
+                "ques_num": "3"
+            },
+            {
+                "ques_code": "C4",
+                "ques_desc": "Integra's leadership has made changes which are positive for me.",
+                "ques_section": "C",
+                "ques_num": "4"
+            },
+            {
+                "ques_code": "C5",
+                "ques_desc": "Integra's leadership respond proactively to important external issues.",
+                "ques_section": "C",
+                "ques_num": "5"
+            },
+            {
+                "ques_code": "C6",
+                "ques_desc": "Integra's leadership respond proactively to important internal issues.",
+                "ques_section": "C",
+                "ques_num": "6"
+            },
+            {
+                "ques_code": "D1",
+                "ques_desc": "Communication at all levels is open at Integra.",
+                "ques_section": "D",
+                "ques_num": "1"
+            },
+            {
+                "ques_code": "D2",
+                "ques_desc": "Frequency of communication is adequate.",
+                "ques_section": "D",
+                "ques_num": "2"
+            },
+            {
+                "ques_code": "E1",
+                "ques_desc": "Integra's HR team is responsive to my queries and concerns.",
+                "ques_section": "E",
+                "ques_num": "1"
+            },
+            {
+                "ques_code": "E2",
+                "ques_desc": "The HR - Performance Appraisal System is objective.",
+                "ques_section": "E",
+                "ques_num": "2"
+            },
+            {
+                "ques_code": "E3",
+                "ques_desc": "My compensation package is competitive.",
+                "ques_section": "E",
+                "ques_num": "3"
+            },
+            {
+                "ques_code": "E4",
+                "ques_desc": "Integra hires the right people for the right job.",
+                "ques_section": "E",
+                "ques_num": "4"
+            },
+            {
+                "ques_code": "E5",
+                "ques_desc": "My issues are addressed adequately by my superior and the HR.",
+                "ques_section": "E",
+                "ques_num": "5"
+            },
+            {
+                "ques_code": "E6",
+                "ques_desc": "HR Policies are fair and employee-friendly.",
+                "ques_section": "E",
+                "ques_num": "6"
+            },
+            {
+                "ques_code": "E7",
+                "ques_desc": "My performance appraisal is done on time.",
+                "ques_section": "E",
+                "ques_num": "7"
+            },
+            {
+                "ques_code": "H1",
+                "ques_desc": "Integra's  Quality Management System is comprehensive.",
+                "ques_section": "H",
+                "ques_num": "1"
+            },
+            {
+                "ques_code": "H2",
+                "ques_desc": "I am able to contribute effectively to process improvement.",
+                "ques_section": "H",
+                "ques_num": "2"
+            },
+            {
+                "ques_code": "H3",
+                "ques_desc": "SQA is enabling better quality and timeliness of deliverables.",
+                "ques_section": "H",
+                "ques_num": "3"
+            },
+            {
+                "ques_code": "H4",
+                "ques_desc": "We adhere to the QMS in letter and spirit.",
+                "ques_section": "H",
+                "ques_num": "4"
+            },
+            {
+                "ques_code": "I1",
+                "ques_desc": "I am provided with adequate hardware/software to perform my job.",
+                "ques_section": "I",
+                "ques_num": "1"
+            },
+            {
+                "ques_code": "I2",
+                "ques_desc": "The System Admin team is responsive.",
+                "ques_section": "I",
+                "ques_num": "2"
+            },
+            {
+                "ques_code": "I3",
+                "ques_desc": "The General Admin department provides prompt service.",
+                "ques_section": "I",
+                "ques_num": "3"
+            },
+            {
+                "ques_code": "J1",
+                "ques_desc": "Integra provides adequate training to perform my job effectively.",
+                "ques_section": "J",
+                "ques_num": "1"
+            },
+            {
+                "ques_code": "J2",
+                "ques_desc": "The training provided is adequate.",
+                "ques_section": "J",
+                "ques_num": "2"
+            },
+            {
+                "ques_code": "K1",
+                "ques_desc": "My salary is paid on time.",
+                "ques_section": "K",
+                "ques_num": "1"
+            },
+            {
+                "ques_code": "K2",
+                "ques_desc": "I am provided with requisite information and assistance for Taxation issues.",
+                "ques_section": "K",
+                "ques_num": "2"
+            },
+            {
+                "ques_code": "K3",
+                "ques_desc": "The finance and accounts team is responsive.",
+                "ques_section": "K",
+                "ques_num": "3"
+            },
+            {
+                "ques_code": "K4",
+                "ques_desc": "My claims / reimbursements are settled on time.",
+                "ques_section": "K",
+                "ques_num": "4"
+            },
+            {
+                "ques_code": "K5",
+                "ques_desc": "Details pertaining to pay-slips, tour settlements and all other information  pertaining to payments / re-imbursements are received.",
+                "ques_section": "K",
+                "ques_num": "5"
+            },
+            {
+                "ques_code": "L1",
+                "ques_desc": "I am optimistic about a successful future with Integra.",
+                "ques_section": "L",
+                "ques_num": "1"
+            },
+            {
+                "ques_code": "L2",
+                "ques_desc": "I am clear about my roles and responsibilities.",
+                "ques_section": "L",
+                "ques_num": "2"
+            },
+            {
+                "ques_code": "L3",
+                "ques_desc": "I am proud to work with Integra.",
+                "ques_section": "L",
+                "ques_num": "3"
+            },
+            {
+                "ques_code": "M1",
+                "ques_desc": "How satisfied are you with your job?",
+                "ques_section": "M",
+                "ques_num": "1"
+            },
+            {
+                "ques_code": "M10",
+                "ques_desc": "How satisfied are you with your overall job security?",
+                "ques_section": "M",
+                "ques_num": "1"
+            },
+            {
+                "ques_code": "M11",
+                "ques_desc": "How satisfied are you with Integra as a place to work?",
+                "ques_section": "M",
+                "ques_num": "1"
+            },
+            {
+                "ques_code": "M2",
+                "ques_desc": "How satisfied are you that leaders in your work environment are positive role models?",
+                "ques_section": "M",
+                "ques_num": "2"
+            },
+            {
+                "ques_code": "M3",
+                "ques_desc": "How satisfied are you with your direct supervisor?",
+                "ques_section": "M",
+                "ques_num": "3"
+            },
+            {
+                "ques_code": "M4",
+                "ques_desc": "How satisfied are you that your supervisor keeps you well informed about what's going on in Integra?",
+                "ques_section": "M",
+                "ques_num": "4"
+            },
+            {
+                "ques_code": "M5",
+                "ques_desc": "How satisfied are you that your views and participation are valued?",
+                "ques_section": "M",
+                "ques_num": "5"
+            },
+            {
+                "ques_code": "M6",
+                "ques_desc": "How satisfied are you that your supervisor cares about and is senstive to issues of prime importance to you?",
+                "ques_section": "M",
+                "ques_num": "6"
+            },
+            {
+                "ques_code": "M7",
+                "ques_desc": "How satisfied are you that you receive appropriate recognition for your contribution?",
+                "ques_section": "M",
+                "ques_num": "7"
+            },
+            {
+                "ques_code": "M8",
+                "ques_desc": "How satisfied are you with your ability to maintain a reasonable balance between family and work?",
+                "ques_section": "M",
+                "ques_num": "8"
+            },
+            {
+                "ques_code": "M9",
+                "ques_desc": "How satisfied are you that your compensation matches your responsibilities?",
+                "ques_section": "M",
+                "ques_num": "9"
+            },
+            {
+                "ques_code": "N1",
+                "ques_desc": "Compared with a year ago/since the time you joined Integra (in case you joined during the past one year), how would you rate your overall job satisfaction today?",
+                "ques_section": "N",
+                "ques_num": "1"
+            },
+            {
+                "ques_code": "N2",
+                "ques_desc": "How would you rate your overall job satisfaction today in comparison with the previous year?",
+                "ques_section": "N",
+                "ques_num": "2"
+            },
+            {
+                "ques_code": "N3",
+                "ques_desc": "Please comment on your desire to stay with Integra?",
+                "ques_section": "N",
+                "ques_num": "3"
+            },
+            {
+                "ques_code": "N4",
+                "ques_desc": "Would you advise a friend to apply for a job in Integra?",
+                "ques_section": "N",
+                "ques_num": "4"
+            }
+        ],
+        "Token": "2b3dbed592e0cb70c070ffc9468a3d7b54fb257c99b6e1786fc6f617e20c1d9d7d37f9a900caab0e+12819",
+        "Rating": [
+            {
+                "rat_code": "A  ",
+                "rat_desc": "Strongly Disagree                       ",
+                "rat_value": 1
+            },
+            {
+                "rat_code": "A  ",
+                "rat_desc": "Disagree                                ",
+                "rat_value": 2
+            },
+            {
+                "rat_code": "A  ",
+                "rat_desc": "Neutral                                 ",
+                "rat_value": 3
+            },
+            {
+                "rat_code": "A  ",
+                "rat_desc": "Agree                                   ",
+                "rat_value": 4
+            },
+            {
+                "rat_code": "A  ",
+                "rat_desc": "Strongly Agree                          ",
+                "rat_value": 5
+            },
+            {
+                "rat_code": "B  ",
+                "rat_desc": "Strongly Disagree                       ",
+                "rat_value": 1
+            },
+            {
+                "rat_code": "B  ",
+                "rat_desc": "Disagree                                ",
+                "rat_value": 2
+            },
+            {
+                "rat_code": "B  ",
+                "rat_desc": "Neutral                                 ",
+                "rat_value": 3
+            },
+            {
+                "rat_code": "B  ",
+                "rat_desc": "Agree                                   ",
+                "rat_value": 4
+            },
+            {
+                "rat_code": "B  ",
+                "rat_desc": "Strongly Agree                          ",
+                "rat_value": 5
+            },
+            {
+                "rat_code": "C  ",
+                "rat_desc": "Strongly Disagree                       ",
+                "rat_value": 1
+            },
+            {
+                "rat_code": "C  ",
+                "rat_desc": "Disagree                                ",
+                "rat_value": 2
+            },
+            {
+                "rat_code": "C  ",
+                "rat_desc": "Neutral                                 ",
+                "rat_value": 3
+            },
+            {
+                "rat_code": "C  ",
+                "rat_desc": "Agree                                   ",
+                "rat_value": 4
+            },
+            {
+                "rat_code": "C  ",
+                "rat_desc": "Strongly Agree                          ",
+                "rat_value": 5
+            },
+            {
+                "rat_code": "D  ",
+                "rat_desc": "Strongly Disagree                       ",
+                "rat_value": 1
+            },
+            {
+                "rat_code": "D  ",
+                "rat_desc": "Disagree                                ",
+                "rat_value": 2
+            },
+            {
+                "rat_code": "D  ",
+                "rat_desc": "Neutral                                 ",
+                "rat_value": 3
+            },
+            {
+                "rat_code": "D  ",
+                "rat_desc": "Agree                                   ",
+                "rat_value": 4
+            },
+            {
+                "rat_code": "D  ",
+                "rat_desc": "Strongly Agree                          ",
+                "rat_value": 5
+            },
+            {
+                "rat_code": "E  ",
+                "rat_desc": "Strongly Disagree                       ",
+                "rat_value": 1
+            },
+            {
+                "rat_code": "E  ",
+                "rat_desc": "Disagree                                ",
+                "rat_value": 2
+            },
+            {
+                "rat_code": "E  ",
+                "rat_desc": "Neutral                                 ",
+                "rat_value": 3
+            },
+            {
+                "rat_code": "E  ",
+                "rat_desc": "Agree                                   ",
+                "rat_value": 4
+            },
+            {
+                "rat_code": "E  ",
+                "rat_desc": "Strongly Agree                          ",
+                "rat_value": 5
+            },
+            {
+                "rat_code": "F  ",
+                "rat_desc": "Strongly Disagree                       ",
+                "rat_value": 1
+            },
+            {
+                "rat_code": "F  ",
+                "rat_desc": "Disagree                                ",
+                "rat_value": 2
+            },
+            {
+                "rat_code": "F  ",
+                "rat_desc": "Neutral                                 ",
+                "rat_value": 3
+            },
+            {
+                "rat_code": "F  ",
+                "rat_desc": "Agree                                   ",
+                "rat_value": 4
+            },
+            {
+                "rat_code": "F  ",
+                "rat_desc": "Strongly Agree                          ",
+                "rat_value": 5
+            },
+            {
+                "rat_code": "G  ",
+                "rat_desc": "Strongly Disagree                       ",
+                "rat_value": 1
+            },
+            {
+                "rat_code": "G  ",
+                "rat_desc": "Disagree                                ",
+                "rat_value": 2
+            },
+            {
+                "rat_code": "G  ",
+                "rat_desc": "Neutral                                 ",
+                "rat_value": 3
+            },
+            {
+                "rat_code": "G  ",
+                "rat_desc": "Agree                                   ",
+                "rat_value": 4
+            },
+            {
+                "rat_code": "G  ",
+                "rat_desc": "Strongly Agree                          ",
+                "rat_value": 5
+            },
+            {
+                "rat_code": "H  ",
+                "rat_desc": "Strongly Disagree                       ",
+                "rat_value": 1
+            },
+            {
+                "rat_code": "H  ",
+                "rat_desc": "Disagree                                ",
+                "rat_value": 2
+            },
+            {
+                "rat_code": "H  ",
+                "rat_desc": "Neutral                                 ",
+                "rat_value": 3
+            },
+            {
+                "rat_code": "H  ",
+                "rat_desc": "Agree                                   ",
+                "rat_value": 4
+            },
+            {
+                "rat_code": "H  ",
+                "rat_desc": "Strongly Agree                          ",
+                "rat_value": 5
+            },
+            {
+                "rat_code": "I  ",
+                "rat_desc": "Strongly Disagree                       ",
+                "rat_value": 1
+            },
+            {
+                "rat_code": "I  ",
+                "rat_desc": "Disagree                                ",
+                "rat_value": 2
+            },
+            {
+                "rat_code": "I  ",
+                "rat_desc": "Neutral                                 ",
+                "rat_value": 3
+            },
+            {
+                "rat_code": "I  ",
+                "rat_desc": "Agree                                   ",
+                "rat_value": 4
+            },
+            {
+                "rat_code": "I  ",
+                "rat_desc": "Strongly Agree                          ",
+                "rat_value": 5
+            },
+            {
+                "rat_code": "J  ",
+                "rat_desc": "Strongly Disagree                       ",
+                "rat_value": 1
+            },
+            {
+                "rat_code": "J  ",
+                "rat_desc": "Disagree                                ",
+                "rat_value": 2
+            },
+            {
+                "rat_code": "J  ",
+                "rat_desc": "Neutral                                 ",
+                "rat_value": 3
+            },
+            {
+                "rat_code": "J  ",
+                "rat_desc": "Agree                                   ",
+                "rat_value": 4
+            },
+            {
+                "rat_code": "J  ",
+                "rat_desc": "Strongly Agree                          ",
+                "rat_value": 5
+            },
+            {
+                "rat_code": "K  ",
+                "rat_desc": "Strongly Disagree                       ",
+                "rat_value": 1
+            },
+            {
+                "rat_code": "K  ",
+                "rat_desc": "Disagree                                ",
+                "rat_value": 2
+            },
+            {
+                "rat_code": "K  ",
+                "rat_desc": "Neutral                                 ",
+                "rat_value": 3
+            },
+            {
+                "rat_code": "K  ",
+                "rat_desc": "Agree                                   ",
+                "rat_value": 4
+            },
+            {
+                "rat_code": "K  ",
+                "rat_desc": "Strongly Agree                          ",
+                "rat_value": 5
+            },
+            {
+                "rat_code": "L  ",
+                "rat_desc": "Strongly Disagree                       ",
+                "rat_value": 1
+            },
+            {
+                "rat_code": "L  ",
+                "rat_desc": "Disagree                                ",
+                "rat_value": 2
+            },
+            {
+                "rat_code": "L  ",
+                "rat_desc": "Neutral                                 ",
+                "rat_value": 3
+            },
+            {
+                "rat_code": "L  ",
+                "rat_desc": "Agree                                   ",
+                "rat_value": 4
+            },
+            {
+                "rat_code": "L  ",
+                "rat_desc": "Strongly Agree                          ",
+                "rat_value": 5
+            },
+            {
+                "rat_code": "M  ",
+                "rat_desc": "Very Dissatisfied                       ",
+                "rat_value": 1
+            },
+            {
+                "rat_code": "M  ",
+                "rat_desc": "Dissatisfied                            ",
+                "rat_value": 2
+            },
+            {
+                "rat_code": "M  ",
+                "rat_desc": "Neutral                                 ",
+                "rat_value": 3
+            },
+            {
+                "rat_code": "M  ",
+                "rat_desc": "Satisfied                               ",
+                "rat_value": 4
+            },
+            {
+                "rat_code": "M  ",
+                "rat_desc": "Very Satisfied                          ",
+                "rat_value": 5
+            },
+            {
+                "rat_code": "N  ",
+                "rat_desc": "Very Low                                ",
+                "rat_value": 1
+            },
+            {
+                "rat_code": "N  ",
+                "rat_desc": "Low                                     ",
+                "rat_value": 2
+            },
+            {
+                "rat_code": "N  ",
+                "rat_desc": "Not Sure                                ",
+                "rat_value": 3
+            },
+            {
+                "rat_code": "N  ",
+                "rat_desc": "High                                    ",
+                "rat_value": 4
+            },
+            {
+                "rat_code": "N  ",
+                "rat_desc": "Much High                               ",
+                "rat_value": 5
+            }
+        ],
+        "Importance": [
+            {
+                "imp_code": 1,
+                "imp_desc": "Not Applicable      "
+            },
+            {
+                "imp_code": 2,
+                "imp_desc": "Not Important       "
+            },
+            {
+                "imp_code": 3,
+                "imp_desc": "Important           "
+            },
+            {
+                "imp_code": 4,
+                "imp_desc": "Very Important      "
+            },
+            {
+                "imp_code": 5,
+                "imp_desc": "Extremely Important "
+            }
+        ]
+    }
+}

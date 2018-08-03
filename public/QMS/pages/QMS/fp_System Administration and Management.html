@@ -1,0 +1,373 @@
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script>
+<!-- design starts here ...-->
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Quality Management System
+    </h1>
+    <ol class="breadcrumb">
+        <li>
+            </b>
+            <a href="#" onclick="changeContent('home')">
+                <i class="fa fa-home"></i> Home</a>
+            </b>
+        </li>
+        <li>
+            <b>
+        <a href="#" onclick="changeContent('qmsMain')">Integra Quality Manual</a>
+      </b>
+        </li>
+        <li>
+            <b>
+        <a href="#" onclick="changeContent('FuncProc')">Functional Procedures</a>
+      </b>
+        </li>
+    </ol>
+</section>
+
+<table class="table table-bordered">
+    <thead>
+        <tr align="center">
+            <th colspan="4">System Administration and Management</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>ISO Clause: 6.3</th>
+            <th>
+                FP10</th>
+            <th>Version : 3.60</th>
+            <th>
+                Date : 30th March 2015</th>
+        </tr>
+    </tbody>
+</table>
+<div class="Section1">
+
+    <p>
+        <b>10.1 Introduction</b>
+    </p>
+    <p>
+        <b>10.1.1 Purpose</b>
+    </p>
+    <p>The purpose of this procedure is to define how the hardware and software infrastructure will be managed.</p>
+    <p>
+        <b>10.1.2 Policy</b>
+    </p>
+    <p>This process is applicable to the System administration team for maintaining the HW and software in the organisation. The same process will be applicable across all locations of the company.</p>
+    <p>
+        <b>10.1.3 Scope</b>
+    </p>
+    <p>This procedure will be applicable to all computer hardware and software used in the organization.</p>
+    <p>
+        <b>10.2 Stakeholders</b>
+    </p>
+    <p>
+        <b>10.2.1 Responsibilities</b>
+    </p>
+    <div class="box-body">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Sl. No.</th>
+                    <th>Role</th>
+                    <th>Responsibility</th>
+                    <th>Authority</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>System Administrator</td>
+                    <td>
+                        Backup and Retrieval, Maintain Inventory of Hardware and Software, Allocate and Maintain Hardware and Software, Account Creation ,Account Deletion, Password Policy, Privilege Password,Guest Account, Patch updates, Preventive Maintenance, Release of Hardware
+                        and Software, OS Hardening, Account Change Request for Systems, Infrastructure Status Reporting, Downtime Tracking ,Software Audit, Maintenance of Records, MLD and MLR, Metric Collection and Analysis, Retention and disposition
+                        of records
+                    </td>
+                    <td>
+                        Conduct Software audit and remove unauthorized software installation
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <p>
+        <b>10.2.2 Backup and Retrieval</b>
+    </p>
+    <p>The System Administrator will ensure backup and retrieval of software on the servers as per the
+        <u><a href="#" onclick="changeContent('QMS03PR10')">Backup, Recovery and Archive (PR10)</a></u> procedure.</p>
+    <p>The System Administrator will ensure disaster recovery process and backup restoration documents will be maintained on monthly basis as per
+        <u>
+        <a href='/QMS/pages/workaids/downloads/forms/FRBAR01.doc' download>FRBAR01.</a>
+      </u>
+    </p>
+    <p>
+        <b>10.2.3 Maintain Inventory of Hardware and Software</b>
+    </p>
+    <p>The System Administrator will maintain the inventory of hardware as per the
+        <u>
+        <a href='/QMS/pages/workaids/downloads/forms/FRSYA01.xls' download>Inventory of Hardware (FRSYA01)</a>
+      </u> The System Administrator will track the equipment requiring the AMC renewals.</p>
+    <p>The System Administrator will maintain the inventory of software as per the
+        <u>
+        <a href='/QMS/pages/workaids/downloads/forms/FRSYA02.doc' download>Software Register (FRSYA02).</a>
+      </u>
+    </p>
+    <p>AMC requirements for the maintenance of hardware, if any, will be identified and controlled by the System Administrator.</p>
+    <p>
+        <b>10.2.4 Allocate and Maintain Hardware and Software</b>
+    </p>
+    <p>
+        <b>For Existing Employees:</b>
+    </p>
+    <p>The System Administrator will process the following requests:</p>
+    <div class="box-body">
+        <ul>
+            <li> Hardware Request</li>
+            <li>Software Request</li>
+            <li>Job Request</li>
+        </ul>
+    </div>
+    <p>The system administrator will ensure the PCs are free of viruses through installing virus scanners in the PCs. If any viruses are reported, the PC will be isolated from the network till the virus is cleared from the PC.</p>
+    <p>
+        <b>Hardware Request [2]</b>
+    </p>
+    <p>The PM can raise a request for additional hardware such as PC, server, RAM and disk space using PCC / E-mail /
+        <u>
+        <a href='/QMS/pages/workaids/downloads/forms/FRIFR01.doc' download>Hardware Request (FRIFR01).</a>
+      </u> The System Administrator is responsible to take action on the request. In case the hardware is not available, the System Administrator will initiate purchase as per the
+      <u><a href="#" onclick="changeContent('FP08')">Purchase(FP08)</a></u>
+    </p>
+    <p>
+        <b>Software Request</b>
+    </p>
+    <p>The PM can raise a request for software using PCC/
+        <u>
+        <a href='/QMS/pages/workaids/downloads/forms/FRIFR02.doc' download>Software Request (FRIFR02).</a>
+      </u> The System Administrator is responsible for installing the software as per the request. In case the software is not available, the System Administrator will initiate purchase as per the
+      <u><a href="#" onclick="changeContent('FP08')">Purchase(FP08)</a></u> procedure. The software issue will be recorded using
+        <u>
+        <a href='/QMS/pages/workaids/downloads/forms/FRSYA03.doc' download>Software Issue Register (FRSYA03)</a>
+      </u>/ using 'Soft manage'.</p>
+    <p>
+        <b>10.3.1 Job Request</b>
+    </p>
+    <p>Any employee can report either a hardware or software problem by using PCC / Job request (FR-11C). The System Administrator is responsible to take action on these requests.</p>
+    <p>
+        <b>10.3.2 For Newly Joined Employees:</b>
+    </p>
+    <p>Whenever a new employee joins, the Personnel dept. will send an e-mail request to System Administrator to allocate an e-mail id, HW, SW and any other resource required depending on the role of the employee.</p>
+    <p>
+        <b>10.3.3 Account Creation</b>
+    </p>
+    <p>The PCC will be used to indicate the creation of the account. Account Creation request will be made by the PM, DH or the reporting head for their team members. System Administrator will ensure that the account is created as per the request made. The
+        user account login name on the system will be same as email ID. The software required for Installation should be filled in the form. </p>
+    <p>The System Admin will maintain the
+        <u>
+        <a href='/QMS/pages/workaids/downloads/forms/FR62G.doc' download>User Account Creation (FR62G).</a>
+      </u>
+    </p>
+    <p>
+        <b>10.3.4 Account Deletion</b>
+    </p>
+    <p>The PCC will be used to request for deletion of the account.</p>
+    <p>Deletion of account will be initiated by the PM or the reporting head of the employee, when the employee is moved out of a project or assignment. Before releasing the System from the project, the Project Manager will ensure:</p>
+    <div class="box-body">
+        <ul>
+            <li>To take all necessary project work related documents, source code and any other backup from the employee in case Project Repository does not exist on a repository server.</li>
+            <li>Check for the correctness of the provided backup.</li>
+            <li>The System Admin will maintain the
+                <u>
+            <a href='/QMS/pages/workaids/downloads/forms/FR62G.doc' download>User Account Deletion (FR62G).</a>
+          </u>
+            </li>
+        </ul>
+    </div>
+    <p>
+        <b>10.3.5 Password Policy</b>
+    </p>
+    <div class="box-body">
+        <ul>
+            <li> For better security of the password, all users will create alphanumeric passwords of length eight at least for their respective login account.</li>
+            <li>The password list will be updated every 90 days and kept with the Head Engineering as well as a copy with the HRD.</li>
+            <li>The password should not be repeated.</li>
+        </ul>
+    </div>
+    <p>
+        <b>10.3.6 Privilege Password</b>
+    </p>
+    <p>Privilege passwords can be created based on specific request from the PM. The PM can log the request through PCC. The system administrator will create the privilege password for the user on the advice of the PM.</p>
+    <p>
+        <b>10.3.7 Guest Account</b>
+    </p>
+    <p>The system administrator will ensure that by default the guest account in all the PCs is disabled. The guest account will be enabled only on specific request of the PM. The PM can log the request through PCC.</p>
+    <p>
+        <b>10.3.8 Patch Updates</b>
+    </p>
+    <div class="box-body">
+        <ul>
+            <li> OS update patches will be downloaded from the authenticated site by the system admin team regularly.</li>
+            <li> System admin team will ensure that automatic update is enabled on all systems.</li>
+        </ul>
+    </div>
+    <p>
+        <b>10.3.9 Preventive Maintenance</b>
+    </p>
+    <p>The system admin team will carry out periodic preventive maintenance work of the workstations. The System Admin will prepare a preventive maintenance plan covering all the computers in the organisation once in every quarter. The System Admin will
+        maintain the
+        <u>
+        <a href='/QMS/pages/workaids/downloads/forms/FRSYA06.xls' download>Preventive Maintenance Record FRSYA06.</a>
+      </u>
+    </p>
+    <p>Preventive maintenance will include:</p>
+    <div class="box-body">
+        <ul>
+            <li>Running anti-virus software</li>
+            <li>Delete cookies (Temp cookies)</li>
+            <li> Delete Temp files</li>
+            <li>Delete Temporary Internet Files</li>
+        </ul>
+    </div>
+    <p>
+        <b>10.3.10 Release Hardware and Software</b>
+    </p>
+    <p>The PM will release the hardware and software resources used by the project using
+        <u>
+        <a href='/QMS/pages/workaids/downloads/forms/FRIFR04.doc' download>Hardware /Software Release (FRIFR04).</a>
+      </u>
+    </p>
+    <p>PM will release the Hardware and software using PCC for the project members.</p>
+    <p>The system administrator will acquire the released resources for re-allocation. The system administrator will uninstall the released software prior to reallocation.</p>
+    <p>The system Admin to ensure following on release of Project PC.</p>
+    <div class="box-body">
+        <ul>
+            <li> Remove all project related software installations.</li>
+            <li>Create a Login with the name Integra with Local User Rights and make the Pc available for free pool</li>
+            <li> Format the System if required.</li>
+        </ul>
+    </div>
+    <p>
+        <b>10.3.11 Account Change Request for Systems</b>
+    </p>
+    <p>All system and software related change request would be made using form, Change Request for Software And Hardware . The change request will be made when the following changes are required</p>
+    <div class="box-body">
+        <ul>
+            <li>Change in Software Requirement. Installation/Removal or Movement of License.</li>
+            <li>Change of System due to configuration issue.</li>
+            <li> Change in User Account Type/Permission/Policy.</li>
+            <li>Change in Security policy </li>
+            <li> Configurations of a mail ID other than the end users default mail ID. </li>
+        </ul>
+    </div>
+    <p>
+        <b>10.3.12 OS hardening</b>
+    </p>
+    <p>System Administrator shall update the system with latest patch and antivirus definition before allotment of the system.</p>
+    <p>
+        <b>10.3.13 Report Infrastructure Status</b>
+    </p>
+    <p>
+        <b>Monthly</b>
+    </p>
+    <p>System Administrator will prepare an
+        <u>
+        <a href='/QMS/pages/workaids/downloads/forms/FRSYA05.doc' download>Infrastructure Monthly Status Report (FRSYA05)</a>
+      </u> and submit it to Head–Engineering. The Head-Engineering will forward the status report to the director for discussion in the operational review meeting as stated in the
+      <u><a href="#" onclick="changeContent('FP15')">Management Review procedure</a></u>
+    </p>
+    <p>
+        <b>10.3.14 Tracking Downtime</b>
+    </p>
+    <p>The System Administrator will monitor the Network and Server-downtime by using the
+        <u>
+        <a href='/QMS/pages/workaids/downloads/forms/FRSYA04.doc' download>Equipment Downtime Log (FRSYA04)</a>
+      </u> and take suitable corrective action.</p>
+    <p>
+        <b>Logical Security</b>
+    </p>
+    <p>The Head-Engineering will ensure that the super-user / root password for servers and routers are changed periodically. The Head-Engineering will maintain a changed password list. The Head-Engineering will maintain a hard copy of the router's configuration.
+    </p>
+    <p>
+        <b>10.3.15 Conduct Software Audits</b>
+    </p>
+    <p>Through software audits the System Administrator will ensure the following:</p>
+    <div class="box-body">
+        <ul>
+            <li>No un-licensed or unnecessary software is installed on any PC</li>
+            <li>PCs are free of viruses</li>
+        </ul>
+    </div>
+    <p>The System Administrator will audit workstations once in three months. The result of the audit will be recorded using
+        <u>
+        <a href='/QMS/pages/workaids/downloads/forms/FRSEC01.doc' download>Software Audit Report (FRSEC01).</a>
+      </u>
+    </p>
+    <p>If any usage of unauthorized software is found, the same would be deleted and the Department Head would take appropriate action against the employee.</p>
+    <p>However, employees can use any freeware available on the corporate Intranet.</p>
+    <p>Software audits will be done on a random sampling basis.</p>
+    <p>
+        <b>10.3.16 Maintain Records</b>
+    </p>
+    <p>The following folders will be maintained:</p>
+    <div class="box-body">
+        <ul>
+            <li> Backup Log</li>
+            <li>Equipment Downtime Log</li>
+            <li>Job Requests</li>
+            <li>Hardware Requests</li>
+            <li>Software Requests</li>
+        </ul>
+    </div>
+    <p>Head -Engineering will maintain the following documents:</p>
+    <div class="box-body">
+        <ul>
+            <li>Router Configuration</li>
+            <li>Network Diagram</li>
+            <li> Inventory of Hardware</li>
+            <li> Infrastructure Monthly Status Report</li>
+            <li>Software Audit Report</li>
+        </ul>
+    </div>
+    <p>
+        <b>10.3.17 MLD and MLR</b>
+    </p>
+    <p>The System Admin will maintain
+        <u>
+        <a href='/QMS/pages/workaids/downloads/forms/FRPDM01.xls' download>MLD (FRPDM01)</a>
+      </u> and
+        <u>
+        <a href='/QMS/pages/workaids/downloads/forms/FRPDM02.xls' download>MLR (FRPDM02)</a>
+      </u> for the function.</p>
+    <p>
+        <b>10.3.18 Metrics for Infrastructure Management</b>
+    </p>
+    <p>The Metrics pertaining to the function will be collected as per Metric Plan and analyzed (monthly) for corrective / preventive action. Internal customer satisfaction index can be calculated once in a year by pertaining records from HR(ESS).</p>
+    <p>
+        <b>10.3.19 Retention and Disposition of Records
+
+      </b>
+    </p>
+    <div class="box-body">
+        <ul>
+            <li>The owner of the record will maintain the records for a period of one year or as required by the contract if applicable.</li>
+            <li> In January every year, each Function Head will identify all records pertaining to the function which are more than a year old. All such records will be packed and suitably labelled and handed over to the General Admin In-Charge for storage.
+            </li>
+            <li> In January every year, the General Admin In-Charge will identify all records, which are more than three years old and will destroy them as applicable.</li>
+            <li> The General Admin In-Charge will maintain the list of the stored item using
+                <u>
+            <a href='/QMS/pages/workaids/downloads/forms/FRSEC01.doc' download>Archival Register FRARC01.</a>
+          </u>
+            </li>
+        </ul>
+    </div>
+    <p>[1]</p>
+    <p>Inventory of hardware and software register will be maintained in PCC. In case of non-availability of PCC, the respective forms can be used as a backup.</p>
+    <p>[2]</p>
+    <p>Hardware and software requests will be maintained in PCC. In case of non-availability of PCC, the respective forms can be used as a substitute.</p>
+
+
+</div>

@@ -1,0 +1,151 @@
+<script>
+  document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script><script src="/dependency/script.js"></script>
+
+<section class="content-header">
+    <h1>
+        Quality Management System
+    </h1>
+    <ol class="breadcrumb">
+        <li>
+            </b><a href="#" onclick="changeContent('home')"><i class="fa fa-dashboard"></i> Home</a></b>
+        </li>
+        <li><b><a href="#" onclick="changeContent('qmsMain')" >Integra Quality Manual</a></b></li>
+        <li><b><a href="#" onclick="changeContent('FuncProc')" >Functional Procedures</a></b></li>
+    </ol>
+</section>
+<div class="box">
+            <div class="box-header with-border">
+              <h3 class="box-title">Guidelines for Test Planning</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table class="table table-bordered">
+              
+              <tr>
+                <th>GLVAR01</th>
+                <th>Version: 3.00</th>
+                <th>	
+                  Date: 17th May 2010</th>
+              </tr>                
+              </table>
+            </div>
+            </div>
+            
+            <div class="Section1">
+              <p><b>1 Overview and Objectives</b></p>
+              <p>This document gives guidelines for planning and execution of testing for a project.</p>
+              <p><b>2 Overview of Software Testing</b></p>
+              <p>Software testing identifies errors at an early stage and hence, prevents a breakdown at a later stage, where it might be costlier. It is not unusual for a software development organization to expend 40% of the total project effort on testing. In the extreme, the testing of mission-critical software (e.g., flight control, nuclear reactor monitoring) can cost three to five times as much as all the other software engineering activities combined.</p>
+              <p>A planned testing identifies the difference between the expected results and the actual results. Since, the main objective of software testing is to find errors, the person who does it must work to prove that the software fails.</p>
+              <p>A successful testing is one that uncovers, as many as yet undiscovered errors, which helps to make the software more rugged and reliable. However, it should be clear that testing cannot show the absence of defects, it can only highlight that the defects are present in software.</p>
+              <p><b>3 Testing Techniques</b></p>
+              <p>We must design tests that have the highest likelihood of finding the most errors with a minimum amount of time and effort. Testing methods provide a mechanism that can help ensure the completeness of tests and provide the highest likelihood of uncovering errors in the software.</p>
+              <p><b>3.1     White Box testing</b></p>
+              <p>White box testing is a test case design method that uses the control structure of the procedural design to derive test cases. This method can derive test cases that:</p>
+              <div class="box-body">
+                  <ul>
+                    <li>Guarantee that all independent paths within a module have been exercised at least once.</li>
+                    <li> Exercise all logical decisions on both true and false sides.</li>
+                    <li>Execute all loops at their boundaries and within their operational bounds.</li>
+                    <li> Exercise internal data structures to ensure their validity.</li>
+                    </ul>
+                    </div>
+                    <p><b>3.2     Black Box Testing</b></p>
+                    <p>Black box testing methods focus on the functional requirements of the software. This method attempts to find errors in the following categories:</p>
+                    <div class="box-body">
+                        <ul>
+                          <li>  Incorrect or missing functions</li>
+                          <li>Interface errors</li>
+                          <li>Errors in data structures or external database access</li>
+                          <li>Performance errors</li>
+                          <li>Initialization and termination errors</li>
+                          </ul>
+                          </div>
+              <p><b>4. Levels of Testing</b></p>
+              <p>Testing is done at different levels in the software development life cycle, but the testing done is different in nature and has different objectives at each level. The focus of all testing is to find errors, but different types of error are looked for at each level.</p>
+              <p>The levels of testing in a Development Project could be:</p>
+              <div class="box-body">
+                  <ul>
+                    <li>  Unit Testing: To test individual source items</li>
+                    <li>Integration Testing: To test the interfaces between the source items</li>
+                    <li>System Testing: To validate the entire product</li>
+                    <li> Acceptance Testing: To test the product for acceptance</li>
+  
+                    <li>System Testing: To validate the entire product</li>
+                    
+                    <li>Alpha Testing: Testing by users at the developer site or on a test environment</li>
+                    <li>Beta Testing: Testing by a large number of users at the user site</li>
+                    <li>Field Testing: To test the system on the target environment</li>
+                    </ul>
+                    </div>
+              <p><b>5 Types of Testing</b></p>
+              <p><b>5.1 Unit Testing</b></p>
+              <p>At the lowest level, the functioning of the basic units of the software is tested in isolation. This is where the most detailed investigation of the internal working of individual units is carried out. The programmer who wrote the code usually performs unit testing.</p>
+              <p>The purpose of unit testing is to find errors in the individual units, which could be data or logic related errors. The test can be derived from the program specification or Software design document. Units, which cannot be tested in isolation, may require the creation of small test programs known as test harnesses.</p>
+              <p>In unit testing, white box testing is done. The initial testing (testing done on the fly by the programmer without using a Unit Test Plan) will not be recorded. However, any testing against the Unit Test Plan will be recorded using Unit Test Report (FR-07A).</p>
+              <p><b>5.2 Integration Testing</b></p>
+              <p>When two or more tested units are combined, the tests should look for errors in two ways; in the interfaces between the units and in the functions which can be performed by the integrated unit which could not be assessed during unit testing.</p>
+              <p>The tests are derived from the Software design document.</p>
+              <p>Bugs will be Recorded using Software Problem Reports (SPRs)/BCC and resolved during this phase, if any problem is found or any enhancement is required.</p>
+              <p><b>5.3 System Testing</b></p>
+              <p>After the integration testing is completed, the entire system is tested as a whole. System testing looks for errors in the end-to-end functionality of the system and also for errors in non-functional quality attributes such as performance, reliability, volume, usability, maintainability, security etc.</p>
+              <p>The tests are derived from the Software Requirement Specification document.</p>
+              <p>In System testing, black box testing is done. The system testing verifies that the tests meet the specification but do not probe into the internal logic to achieve this.</p>
+              <p>Also as part of System testing, the following nonfunctional attributes of the software are verified.</p>
+              <div class="box-body">
+                  <ul>
+                    <li>Performance - Execution and response times, minimal resource usage</li>
+                    <li> Reliability - Mean time between failures, reliable data interchange between modules</li>
+                    <li> Availability - tests to ensure maximum uptime</li>
+                    <li>Security - test factors that prevent malicious or accidental access or use of the system</li>
+                    <li>Portability & Maintainability - verify aspects which facilitate a quicker turnaround time on resolving problems, enhancing the functionality of the system, hardware and software independence if intended</li>
+                    </ul>
+                    </div>
+                    <p>Bugs found will be recorded using The Software Problem Reports (SPRs)/BCC and resolved during this phase if any problem is found or any enhancement is required.</p>
+              <p><b>5.4 Regression Testing</b></p>
+              <p>Regression testing is a testing process that is applied after the programs are modified. Typically, regression testing is one of the phases in the maintenance projects.</p>
+              <p>Modifying a program involves creating new logic to correct an error or implement a change, and incorporating that logic into an existing program. The new logic may involve minor modifications such as adding, deleting or rewriting a few lines of code or may involve major modifications such as adding, deleting or replacing one or more modules or sub-systems. Regression testing aims to check the correctness of the new logic, to ensure the working of the unmodified portions of a program and to validate that the whole system functions correctly as before.</p>
+              <p><b>5.5 Acceptance Testing</b></p>
+              <p>After the system testing is completed, the system is handed over to the customer or the user, and acceptance testing marks the transition of ownership from the developers to the users. The acceptance testing is different in nature in three ways:</p>
+              <div class="box-body">
+                  <ul>
+                    <li>The acceptance testing is the responsibility of the accepting organization rather than the developing organization.</li>
+                    <li>  The purpose of acceptance testing is to give confidence that the system is working rather than trying to find errors. The acceptance testing is a demonstration rather than a test.</li>
+                    <li>Acceptance testing also includes testing of the user organization working practices, to ensure that the computer system will fit the operational procedures. The acceptance test gives confidence to the users that the system is ready for operational use.</li>
+                    </ul>
+                    </div>
+                    <p><b>6.        Test Planning Activities</b></p>
+                    <p>All the levels of testing and the categories of testing for each level should be planned in advance and conducted systematically.</p>
+                    <p>The activities to be carried out include:</p>
+                    <p>Test planning - A testing strategy will be formulated to identify the types of tests</p>
+                    <div class="box-body">
+                        <ul>
+                          <li>Test case preparation – Test cases will be prepared from the project specifications</li>
+                          <li> Test execution - Tests will be run and the actual results will be compared with the expected results</li>
+                          
+                          </ul>
+                          </div>
+                          <p><b>7.        General Tips</b></p>
+                          <div class="box-body">
+                              <ul>
+                                <li>  For every testing activity, planning should be done. Test plan should be prepared, reviewed and approved before testing commences. Test plan should be documented and testing should be done as per the approved plan.</li>
+                                <li>Test cases should be prepared, reviewed and approved prior to testing and must be based on the test plan. A good test case should have a reasonable probability of catching an error and should not be redundant.</li>
+                                <li>Tests must be documented for their description, expected results and actual results.</li>
+                                <li> For system or regression testing, it is preferable to install the system afresh.</li>
+                                <li> For multi-user systems, aspects such as security measures, integrity and recovery measures must be thoroughly tested.</li>
+                              
+                                </ul>
+                                </div>
+                                <p><b>8.        Test Plan Contents</b></p>
+                                <p>The test plans are developed as per the software test plan template (TP-07).</p>
+                                <p><b>9.        Test Execution</b></p>
+                                <p>Testing is carried out based on the test cases. For each test case executed, the actual results should be compared with the expected results/behavior. All failures observed during testing (except failures during unit tests) should be recorded as a Software Problem Report (SPR)/ BCC All the SPRs raised during testing should be resolved before delivery to the customer.</p>
+                                <p>In case of unit testing, the failures that are detected should be corrected immediately by the programmer. The tests should be repeated till all the test cases are successfully executed before exiting from that phase.</p>
+                                <p><b>10.     References</b></p>
+                                <p><i>1. Software Engineering - A Practitioner's Approach, Pressman Roger S., McGraw-Hill Inc., 1992.<br/>
+                                    2. Encyclopedia of Software Engineering, John J. Marcinaik, 1994 edition.</i></p>
+  
+  
+  
+            </div>

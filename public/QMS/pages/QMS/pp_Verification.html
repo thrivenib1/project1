@@ -1,0 +1,291 @@
+<script>
+  document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script>
+  <!-- design starts here ...-->
+
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+              Quality Management System
+            </h1>
+            <ol class="breadcrumb">
+              <li></b><a href="#" onclick="changeContent('qmsMain')" ><i class="fa fa-dashboard"></i> Home</a></b></li>
+              <li><b><a href="#" onclick="changeContent('qmsMain')" >Integra Quality Manual</a></b></li>
+              <li class="active"><b><a href="#" onclick="changeContent('ProjProc')" >Project Procedures</a></b></li>
+            </ol>
+            </section>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th align="center" colspan="4">Verification</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ISO Clause: 8.2.4</td>
+                        <td>PR07</td>
+                        <td>Version: 3.00</td>
+                        <td>Date: 17th May 2010</td>
+                    </tr>
+                </tbody>
+            </table>
+         
+                  <div class="Section1">
+              
+                    <p><b>7.0 Introdution </b></p>
+                    <p><b>7.1.1 Purpose </b><br/>This process defines the method used within Integra for performing Verification (VER). The purpose of the VER process area is to:<br/>Ensure that the selected work products meet their specified requirements</p>
+                            
+                    <p><b>7.1.2 Policy </b><br/>The VER ensures that the verification of product and product components (services and their components) against all selected requirements and identification of corrective action.</p>
+                    
+                    <p><b>7.1.3 Scope</b><br/>This process is applicable to all work products. </p>
+                          
+                   <p><b>7.1.4 Entry criteria </b></p>
+                   <p>The basic criterion for initiating the VER process is:</p>
+                     <div class="box-body">
+                      <ul>
+                        <li>Completion of any of the work products before being released to the intended users (internal or external)</li>
+                      </ul>
+                    </div>		
+                        <!-- /.box-body -->   
+                    <p><b>7.2 Stakeholders </b></p>
+                    <p><b>7.2.1 Responsibilities </b><br/>
+                    <p>The roles, responsibilities and authorities for the VER process are defined in the table below.</p>
+                 
+                  <table class="table table-bordered">
+                    <thead>
+                            <tr>
+                              <th>No.</th>
+                              <th>Role</th>
+                              <th>Responsibilities</th>
+                              <th>Authority</th>
+                            </tr>  
+                  </thead>	
+                  <tbody>			
+                    <tr>
+                      <td>1.</td>
+                      <td>Project Manager/ Function Head</td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li>Identifying the work products for verification</li>
+                            <li>  Establishing Verification environment</li>
+                            <li>  Identifying the verification team</li>
+                            <li>Analyze review and verification data</li>
+                            <li> Corrective action</li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li>   Approve verification environment</li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2.</td>
+                      <td>Software Architect</td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li>   Review of the URS, SRS,  HLD, LLD</li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li>Approve SRS, HLD, LLD</li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3.</td>
+                      <td>Project Lead</td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li>Perform Verification</li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li>Approve UTP, UTS</li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>4.</td>
+                      <td>Project Team</td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li>Perform peer review</li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td>
+                        NIL
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>5.</td>
+                      <td>Delivery Head</td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li>Ensure work products get verified as per the defined process</li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li> Approve Work Products</li>
+                            <li>Approve Estimates</li>
+                            <li>Approve training needs</li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>	
+                    <tr>
+                      <td>6.</td>
+                      <td>PQA</td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li>Ensure the verification, closure of action items</li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="box-body">
+                          <ul>
+                            <li>Report findings to the senior management</li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    </tbody>
+                          </table>
+               
+                    <p><b>7.3  Task Details</b></p>
+                    <p><b>7.3.1 Process Flow Diagram</b><br/>The Process flow of VER process is given below.</p>
+                   
+                      <img class="img-responsive pad" alt="Photo" src="/QMS/pages/QMS/Downloads/ProjectProcedures/PR07-Verification.gif">
+                 				
+                    <p><b>7.3.2 Tasks</b><br/>The steps of the VER process are described below:</p>
+                    <p><b>7.3.2.1  Select Work Products for Verification (SP 1.1)</b><br/>			
+                    <div class="box-body">
+                      <ul>
+                        <li>The PM will identify the work products for verification based on their contribution to meeting project objectives and requirements</li>				
+                      </ul>
+                      <p>The work products can be:</p>
+                      <ul>
+                        <li>Document of understanding (DOU)</li>
+                        <li>Technical Proposal.</li>
+                        <li>User requirement specifications (URS).</li>
+                        <li>Software requirement specifications (SRS).</li>
+                        <li>  Effort estimates.</li>
+                        <li>High level design document.</li>
+                        <li>Low level design document.</li>
+                        <li>Source code.</li>
+                        <li>Project Management Plan.</li>
+                        <li>   Configuration Management Plan.</li>
+                        <li>Quality Assurance Plan.</li>
+                        <li> Risk Management Plan.</li>
+                        <li>    Software test plan.</li>
+                        <li>  Software test specification.</li>
+                        <li> Software test reports</li>						
+                      </ul>
+                      <p>PM will also identify the methods for the verification of the each of the products identified.<br/>The methods of verification can be:</p>
+                      <ul>
+                        <li>   Offline review</li>
+                        <li> Seminar (Online review)</li>
+                        <li>   Code walk through</li>
+                        <li> Prototyping</li>
+                        <li>Simulation</li>
+                        <li>Modelling</li>
+                      </ul>
+                    </div>
+                    <p><b>7.3.2.2  Establish the Verification Environment (SP 1.2)</b></p>
+                    <p>PM will identify and establish the verification environment to verify the work product<br/>The verification environment can be:</p>
+                    <div class="box-body">
+                      <ul>
+                        <li>Any specific tools required verification.</li>
+                        <li>Simulators.</li>
+                        <li>Interfaces with external systems</li>
+                      </ul>
+                    </div>	
+                    <p><b>7.3.2.3 Establish Verification Procedures and Criteria (SP 1.3)</b></p>
+                    <p>The PM will establish the verification procedures and criteria to ensure the products meet their requirements.<br/>The criteria can be:</p>
+                    <div class="box-body">
+                      <ul>
+                        <li> Product / Product Component requirements.</li>
+                        <li>Standards.</li>
+                        <li>Organizational Policies.</li>
+                        <li> Test parameters.</li>
+                        <li>  Test data.</li>
+                        <li> Proposals and agreements</li>
+                      </ul>
+                    </div>
+                            
+                    <p><b>7.3.2.4 Prepare for Peer reviews (SP 2.1)</b></p>
+                    <div class="box-body">
+                      <ul>
+                        <li> PM will identify the key reviewers for the work products, prepare and update any material that will be used in the peer review such as check lists, templates, and guidelines.</li>				
+                        <li>PM will prepare the review schedule</li>
+                        <li> PM will identify the entry and exit criteria for the work products</li>
+                        <li>PM will define the criteria requiring another peer review</li>
+                        <li> Peer review training material</li>
+                        <li> Select the work products for peer review</li>
+                        <li> Identify the goals for the peer review</li>
+                      </ul>
+                    </div>
+                    <p><b>7.3.2.5  Conduct peer reviews (SP 2.2)</b></p>
+                    <p>Conduct peer review to identify and eliminate the defects in the early stages.<br/>	The peer review team will conduct the review with the following goals:</p>
+                    <div class="box-body">
+                      <ul>
+                        <li>Identify and document defects and other issues in the work product.</li>
+                        <li>Record the results of the peer review including the action items using <u><a href='downloads/projectProcedures/FRVER01.xls' download>FRVER01.</a></u></li>
+                        <li>Collect peer review data.</li>
+                        <li>Identify action items and communicate the issues to the relevant stake holders.</li>
+                        <li>  Conduct the additional peer review if there is a need.</li>
+                        <li>Ensure the exit criteria for the peer review are satisfied</li>
+                      </ul>
+                    </div>
+                    <p><b>7.3.2.6  Analyze peer review data (SP 2.3)</b></p>	
+                    <p>Analyze the data which is the outcome of the peer review</p><p>Record the data related to the peer review in the form of IRR <u><a href='downloads/projectProcedures/FRVER01.xls' download>(FRVER01)</a></u><br/>Analyze the peer review data for the following:</p>
+                    <div class="box-body">
+                      <ul>
+                        <li>Number of defects versus number expected.</li>
+                        <li>Types of defects detected.</li>
+                        <li>Causes of defects.</li>
+                        <li> Defect resolution impact</li>
+                      </ul>
+                      <p>Protect the peer review data</p>
+                    </div>
+                    <p><b>7.3.2.7  Perform Verification (SP 3.1)</b></p>
+                    <p>Perform verification to identify and remove the defects in the early stages.</p>
+                    <div class="box-body">
+                      <ul>
+                        <li>Perform verification of the products against their requirements.</li>
+                        <li>Record the verification results using <u><a href='downloads/projectProcedures/FRVER01.xls' download>(FRVER01).</a></u></ul>
+                        <ul>Identify action items based on the results of the verification</li>
+                    </div>		
+                    <p><b>7.3.2.8 Analyze Verification results (SP 3.2)</b></p>
+                    <p>Analyze Verification results to ensure the product meets the requirements.</p>
+                    <div class="box-body">
+                      <ul>
+                        <li> Compare the actual results with the expected results.</li>
+                        <li>  Provide information on how the defects can be resolved and initiate the corrective action</li>
+                      </ul>
+                    </div>	
+            </div>
+            
+        

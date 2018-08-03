@@ -1,0 +1,138 @@
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "Leave Management System";
+</script>
+<div id="details" class="box box-default">
+    <div class="box box-solid">
+        <div class="box-header with-border">
+            <h3 class="box-title">Online Help</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <div class="box-group" id="accordion">
+                <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
+                <div class="panel box box-primary">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+
+                                <b> Personal Leave Information</b>
+
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="box-body">
+                            This displays the information about the number of personal leaves that an employee can avail. The number of casual leaves and privileged leaves available for the employee for the calendar year is displayed.
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="panel box box-primary">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                        <div class="box-header with-border">
+                            <h4 class="box-title"> <b>Requesting for Leave</b>
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="box-body">
+                            On click of the "Request Leave" button opens up the leave application form. On submission of the Leave Application form a mail will be sent to supervisor, yourself and HRD. The supervisor needs to approve the leave request for making the emplyoyee eligible
+                            for the leave.
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="panel box box-primary">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+
+                                <b> Reapplying for Leave</b>
+
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="box-body">
+                            This gives the details about the pending leaves (leave requests not yet accepted by the supervisor) for an employee. If the supervisor requests the employee to reapply, those leave requests would be listed under pending leave requests section for the
+                            employee. On selecting any of the pending requests listed here, the employee will be required to re-submit the leave application form after modifying the previous leave request details if needed . The leave request could also
+                            be deleted using the "Delete" button if the employee wishes to cancel the leave request.
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="panel box box-primary">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+
+                                <b>Leave Approval</b> (Applicable for supervisors only)
+
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseFour" class="panel-collapse collapse">
+                        <div class="box-body">
+                            Here the login person ( or the supervisor ) who has been requested for leave by the other employees, can approve the leave request using "Approve" button or can reject the leave request using "Reject" button or can ask the employee who has requested for
+                            leave to reapply the request if needed.
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="panel box box-primary">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+
+                                <b>Personal Leave History</b>
+
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseFive" class="panel-collapse collapse">
+                        <div class="box-body">
+                            It displays the detailed history about the approved leaves and rejected leaves for the employee.
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="panel box box-primary">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+
+                                <b> Employee Contact Information</b>
+
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseSix" class="panel-collapse collapse">
+                        <div class="box-body">
+                            This gives the contact information about the employee during the leave period.
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="panel box box-primary">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+
+                                <b>Employee Leave History</b>
+
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseSeven" class="panel-collapse collapse">
+                        <div class="box-body">
+                            It displays the detailed history about the approved leaves and rejected leaves for the employee who has requested leave.
+                        </div>
+                    </div>
+                </div>
+                <br/>
+            </div>
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+</div>

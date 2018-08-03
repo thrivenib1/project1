@@ -1,0 +1,927 @@
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script>
+<section class="content-header">
+    <h1>
+        Quality Management System
+    </h1>
+    <ol class="breadcrumb">
+        <li>
+            </b><a href="#" onclick="changeContent('qmsMain')"><i class="fa fa-home"></i> Home</a></b>
+        </li>
+        <li class="active"><b><a href="#" onclick="changeContent('isecure')" >iSecure</a></b></li>
+        <li class="active"><b><a href="#" onclick="changeContent('ISManual')" >Manual</a></b></li>
+
+    </ol>
+</section>
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr align="center">
+            <th colspan="4">Terms and Definitions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ISMS Clause: 3</td>
+            <td>ISM3</td>
+            <td>
+                Version: 1.00</td>
+            <td>Date: 10th April, 2017</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr align="center">
+            <th>Sl. No.</th>
+            <th>Terms</th>
+            <th>Definition</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1.</td>
+            <td>Access control</td>
+            <td>It means to ensure that access to assets is authorized and restricted based on business and security requirements.</td>
+        </tr>
+        <tr>
+            <td>2.
+            </td>
+            <td> Analytical model
+            </td>
+            <td>
+                Algorithm or calculation combining one or more base measures and/or derived measures with associated decision criteria.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                3.
+            </td>
+            <td>Attack
+            </td>
+            <td>Attempt to destroy, expose, alter, disable, steal or gain unauthorized access to or make unauthorized use of an asset.
+            </td>
+        </tr>
+        <tr>
+            <td>4.
+            </td>
+            <td>Asset Owner
+            </td>
+            <td>Person responsible for the management and accountability of the asset.
+            </td>
+        </tr>
+        <tr>
+            <td>5.
+            </td>
+            <td>Attribute
+            </td>
+            <td>Property or characteristic of an object that can be distinguished quantitatively or qualitatively by human or automated means.
+        </tr>
+        <tr>
+            <td>6.
+            </td>
+            <td>Audit
+            </td>
+            <td>Systematic, independent and documented process for obtaining audit evidence and evaluating it objectively to determine the extent to which the audit criteria are fulfilled.
+            </td>
+        </tr>
+        <tr>
+            <td>7.
+            </td>
+            <td>Audit scope
+            </td>
+            <td>Extent and boundaries of an audit.
+            </td>
+        </tr>
+        <tr>
+            <td> 8.</td>
+            <td>
+                Authentication
+            </td>
+            <td>Provision of assurance that a claimed characteristic of an entity is correct.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                9.
+            </td>
+            <td>
+                Authenticity
+            </td>
+            <td>Property that an entity is what it is claims to be.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                10.
+            </td>
+            <td>
+                Availability
+            </td>
+            <td>Property of being accessible and usable upon demand by an authorized entity.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                11.
+            </td>
+            <td>
+                Base measure
+            </td>
+            <td>Measure defined in terms of an attribute and the method for quantifying it.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                12.
+            </td>
+            <td>
+                Back up
+            </td>
+            <td>Taking back up of information
+            </td>
+        </tr>
+        <tr>
+            <td>
+                13.
+            </td>
+            <td>
+                BYOD
+            </td>
+            <td>Bring your own device.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                14.
+            </td>
+            <td>
+                Competence
+            </td>
+            <td>Ability to apply knowledge and skills to achieve intended results.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                15.
+            </td>
+            <td>
+                Communication
+            </td>
+            <td>a collection of individual communications networks, transmission systems, relay stations, tributary stations, and data terminal equipment (DTE) usually capable of interconnection and interoperation to form an integrated whole.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                16.
+            </td>
+            <td>
+                Confidentiality
+            </td>
+            <td>Property that information is not made available or disclosed to unauthorized individuals, entities, or processes.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                17.
+            </td>
+            <td>
+                Conformity
+            </td>
+            <td>Fulfillment of a requirement.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                18.
+            </td>
+            <td>
+                Consequence
+            </td>
+            <td>Outcome of an event affecting objectives.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                19.
+            </td>
+            <td>
+                Continual improvement
+            </td>
+            <td>Recurring activity to enhance performance.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                20.
+            </td>
+            <td>
+                Control
+            </td>
+            <td>Measure that is modifying risk.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                21.
+            </td>
+            <td>
+                Control objective
+            </td>
+            <td>Statement describing what is to be achieved because of implementing controls
+            </td>
+        </tr>
+        <tr>
+            <td>
+                22.
+            </td>
+            <td>
+                Correction
+            </td>
+            <td>Action to eliminate a detected nonconformity
+            </td>
+        </tr>
+        <tr>
+            <td>
+                23.
+            </td>
+            <td>
+                Corrective action
+            </td>
+            <td>Action to eliminate the cause of a nonconformity and to prevent recurrence.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                24.
+            </td>
+            <td>
+                Cryptography
+            </td>
+            <td>Encryption
+            </td>
+        </tr>
+        <tr>
+            <td>
+                25.
+            </td>
+            <td>
+                Data
+            </td>
+            <td>Collection of values assigned to base measures, derived measures and/or indicators.
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+                26.
+
+            </td>
+            <td>
+                Decision criteria
+            </td>
+            <td>Thresholds, targets, or patterns used to determine the need for action or further investigation, or to describe the level of confidence in each result.
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+                27.
+
+            </td>
+            <td>
+                Derived measure
+            </td>
+            <td>Measure that is defined as a function of two or more values of base measures.
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+                28.
+
+            </td>
+            <td>
+                Documented information
+            </td>
+            <td>Information required to be controlled and maintained by an organization and the medium on which it is contained.
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+                29.
+
+            </td>
+            <td>
+                Effectiveness
+            </td>
+            <td>Extent to which planned activities are realized and planned results achieved.
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+                30.
+
+            </td>
+            <td>
+                Event
+            </td>
+            <td>Occurrence or change of a set of circumstances.
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+                31.
+
+            </td>
+            <td>
+                Executive management
+            </td>
+            <td>Person or group of people who have delegated responsibility from the governing body for implementation of strategies and policies to accomplish the purpose of the organization.
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+                32.
+
+            </td>
+            <td>
+                External context
+            </td>
+            <td>External environment in which the organization seeks to achieve its objectives.
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+                33.
+
+            </td>
+            <td>
+                Governance of information security
+            </td>
+            <td>System by which an organizations information security activities are directed and controlled.
+            </td>
+        </tr>
+        <tr>
+            <td>34.</td>
+            <td>
+                Governing body
+            </td>
+            <td>Person or group of people who are accountable for the performance and conformance of the organization.
+            </td>
+        </tr>
+        <tr>
+            <td>35.</td>
+            <td>
+                Incident
+            </td>
+            <td>is a warning that there may be a threat to information or computer security. The warning could also be that a threat has already occurred. Threats or violations can be identified by unauthorized access to a system.
+            </td>
+        </tr>
+        <tr>
+            <td>36.</td>
+            <td>
+                Indicator
+            </td>
+            <td>Measure that provides an estimate or evaluation of specified attributes derived from an analytical model with respect to defined information needs.
+            </td>
+        </tr>
+        <tr>
+            <td>37.</td>
+            <td>
+                Information
+            </td>
+            <td>The organization, its image, reputation, its business needs (customer info) and requirements. People working in the organization and with the information. Products, Services, media, IT and software that is used to store or process the information.
+            </td>
+        </tr>
+        <tr>
+            <td>38.</td>
+            <td>
+                Information Classification
+
+            </td>
+            <td>
+                Categorizing the information based on the credentials the information / asset carry.
+            </td>
+        </tr>
+        <tr>
+            <td>39.</td>
+            <td>
+                Information processing facilities
+            </td>
+            <td>Any information processing system, service or infrastructure, or the physical location housing it.
+            </td>
+        </tr>
+        <tr>
+            <td>40.</td>
+            <td>
+                Information security
+            </td>
+            <td>Preservation of confidentiality, integrity and availability of information.
+            </td>
+        </tr>
+        <tr>
+            <td>41.</td>
+            <td>
+                Information security continuity
+            </td>
+            <td>Processes and procedures for ensuring continued information security operations.
+            </td>
+        </tr>
+        <tr>
+            <td>42.</td>
+            <td>
+                Information security event
+            </td>
+            <td>Identified occurrence of a system, service or network state indicating a possible breach of information security policy or failure of controls, or a previously unknown situation that may be security relevant.
+            </td>
+        </tr>
+        <tr>
+            <td>43.</td>
+            <td>
+                Information security incident
+            </td>
+            <td>Single or a series of unwanted or unexpected information security events that have a significant probability of compromising business operations and threatening information security
+            </td>
+        </tr>
+        <tr>
+            <td>44.</td>
+            <td>
+                Information security incident management
+            </td>
+            <td>Processes for detecting, reporting, assessing, responding to, dealing with, and learning from information security incidents.
+            </td>
+        </tr>
+        <tr>
+            <td>45.</td>
+            <td>
+                Information sharing community
+            </td>
+            <td>Group of organizations that agree to share information.
+            </td>
+        </tr>
+        <tr>
+            <td>46.</td>
+            <td>
+                Information system
+            </td>
+            <td>Applications, services, information technology assets, or other information handling components.
+            </td>
+        </tr>
+        <tr>
+            <td>47.</td>
+            <td>
+                Integrity
+            </td>
+            <td>Property of accuracy and completeness.
+            </td>
+        </tr>
+        <tr>
+            <td>48.</td>
+            <td>
+                Intellectual property rights (IPR�s)
+            </td>
+            <td>These are the protections granted to the creators of IP, and include trademarks, copyright, patents, industrial design rights, and in some jurisdictions trade secrets.
+
+            </td>
+        </tr>
+        <tr>
+            <td>49.</td>
+            <td>
+                Interested party
+            </td>
+            <td>Person or organization that can affect, be affected by, or perceive themselves to be affected by a decision or activity.
+            </td>
+        </tr>
+        <tr>
+            <td>50.</td>
+            <td>
+                Internal context
+            </td>
+            <td>Internal environment in which the organization seeks to achieve its objectives.
+            </td>
+        </tr>
+        <tr>
+            <td>51.</td>
+            <td>
+                ISMS project
+            </td>
+            <td>Structured activities undertaken by an organization to implement ISMS.
+            </td>
+        </tr>
+        <tr>
+            <td>52.</td>
+            <td>
+                Level of risk
+            </td>
+            <td>Magnitude of a risk expressed in terms of the combination of consequences and their likelihood.
+            </td>
+        </tr>
+        <tr>
+            <td>53.</td>
+            <td>
+                Likelihood
+            </td>
+            <td>Chance of something happening.
+            </td>
+        </tr>
+        <tr>
+            <td>54.</td>
+            <td>
+                Logon
+            </td>
+            <td>logging into a computing system for accessing or obtaining information in the system.
+            </td>
+        </tr>
+        <tr>
+            <td>55.</td>
+            <td>
+                Malware
+            </td>
+            <td>Malware is an umbrella term used to refer to a variety of forms of hostile or intrusive software, including computer viruses, worms, Trojan horses, ransomware, spyware, adware, scareware, and other malicious programs.
+            </td>
+        </tr>
+        <tr>
+            <td>56.</td>
+            <td>
+                Management system
+            </td>
+            <td>A set of interrelated or interacting elements of an organization to establish policies and objectives and processes to achieve those objectives.
+            </td>
+        </tr>
+        <tr>
+            <td>57.</td>
+            <td>
+                Measure
+            </td>
+            <td>Variable to which a value is assigned as the result of measurement.
+            </td>
+        </tr>
+        <tr>
+            <td>58.</td>
+            <td>
+                Measurement
+            </td>
+            <td>A process to determine a value
+            </td>
+        </tr>
+        <tr>
+            <td>59.</td>
+            <td>
+                Measurement function
+            </td>
+            <td>Algorithm or calculation performed to combine two or more base measures.
+            </td>
+        </tr>
+        <tr>
+            <td>60.</td>
+            <td>
+                Measurement method
+            </td>
+            <td>Logical sequence of operations, described generically, used in quantifying an attribute with respect to a specified scale.
+            </td>
+        </tr>
+        <tr>
+            <td>61.</td>
+            <td>
+                Measurement results
+            </td>
+            <td>One or more indicators and their associated interpretations that address information need.
+            </td>
+        </tr>
+        <tr>
+            <td>62.</td>
+            <td>
+                Mobile Device
+            </td>
+            <td>Any Handheld or computing device that carries company information and can be moved out of the physical premises of the organization.
+            </td>
+        </tr>
+        <tr>
+            <td>63.</td>
+            <td>
+                Monitoring
+            </td>
+            <td>Determining the status of a system, a process or an activity.
+            </td>
+        </tr>
+        <tr>
+            <td>64.</td>
+            <td>
+                Nonconformity
+            </td>
+            <td>Non-fulfillment of a requirement.
+            </td>
+        </tr>
+        <tr>
+            <td>65.</td>
+            <td>
+                Non-repudiation
+            </td>
+            <td>Ability to prove the occurrence of a claimed event or action and its originating entities.
+            </td>
+        </tr>
+        <tr>
+            <td>66.</td>
+            <td>
+                Object
+            </td>
+            <td>Item characterized through the measurement of its attributes.
+            </td>
+        </tr>
+        <tr>
+            <td>67.</td>
+            <td>
+                Objective
+            </td>
+            <td>Result to be achieved
+            </td>
+        </tr>
+        <tr>
+            <td>68.</td>
+            <td>Organization:
+            </td>
+            <td>Person or group of people that has its own functions with responsibilities, authorities and relationships to achieve its objectives.
+            </td>
+        </tr>
+        <tr>
+            <td>69.</td>
+            <td>Outcomes
+            </td>
+            <td>
+                Consequence faced by the organization and its process due to the threat exploiting the information/ information process facility (assets) associated vulnerability.
+            </td>
+        </tr>
+        <tr>
+            <td>70.</td>
+            <td>Outsource
+            </td>
+            <td>Arrange where an external organization performs part of an organization's function or process.
+            </td>
+        </tr>
+        <tr>
+            <td>71.</td>
+            <td>Performance:
+            </td>
+            <td>Measurable result.
+            </td>
+        </tr>
+        <tr>
+            <td>72.</td>
+            <td>Personally, identifiable Information
+            </td>
+            <td>Sensitive personal information (SPI), as used in privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context.
+            </td>
+        </tr>
+        <tr>
+            <td>73.</td>
+            <td>Policy
+            </td>
+            <td>Intentions and direction of an organization as formally expressed by its top management.
+            </td>
+        </tr>
+        <tr>
+            <td>74.</td>
+            <td>Process
+            </td>
+            <td>Set of interrelated or interacting activities which transform inputs into outputs.
+            </td>
+        </tr>
+        <tr>
+            <td>75.</td>
+            <td>Reliability
+            </td>
+            <td>Property of consistent intended behaviour and results.
+            </td>
+        </tr>
+        <tr>
+            <td>76.</td>
+            <td>Removable Media
+            </td>
+            <td>It is any type of storage device that can be removed from a computer while the system is running. Examples of removable media include CDs, DVDs and Blu-Ray disks, as well as diskettes and USB drives. Removable media makes it easy for a user
+                to move data from one computer to another.
+            </td>
+        </tr>
+        <tr>
+            <td>77.</td>
+            <td>Requirement
+            </td>
+            <td>Need or expectation that is stated, generally implied or obligatory.
+            </td>
+        </tr>
+        <tr>
+            <td>78.</td>
+            <td>Residual risk
+            </td>
+            <td>Risk remaining after risk treatment.
+            </td>
+        </tr>
+        <tr>
+            <td>79.</td>
+            <td>Review
+            </td>
+            <td>Activity undertaken to determine the suitability, adequacy and effectiveness of the subject matter to achieve established objectives.
+            </td>
+        </tr>
+        <tr>
+            <td>80.</td>
+            <td>Review object
+            </td>
+            <td>Specific item being reviewed.
+            </td>
+        </tr>
+        <tr>
+            <td>81.</td>
+            <td>Review objective
+            </td>
+            <td>Statement describing what is to be achieved as a result of a review.
+            </td>
+        </tr>
+        <tr>
+            <td>82.</td>
+            <td>Risk
+            </td>
+            <td>Effect of uncertainty on objectives.
+            </td>
+        </tr>
+        <tr>
+            <td>83.</td>
+            <td>Risk acceptance
+            </td>
+            <td>Informed decision to take a particular risk
+            </td>
+        </tr>
+        <tr>
+            <td>84.</td>
+            <td>Risk analysis
+            </td>
+            <td>Process to comprehend the nature of risk and to determine the level of risk.
+            </td>
+        </tr>
+        <tr>
+            <td>85.</td>
+            <td>Risk assessment
+            </td>
+            <td>Overall process of risk identification, risk analysis and risk evaluation.
+            </td>
+        </tr>
+        <tr>
+            <td>86.</td>
+            <td>Risk communication and consultation
+            </td>
+            <td>
+                Continual and iterative processes that an organization conducts to provide, share or obtain information, and to engage in dialogue with stakeholders regarding the management of risk.
+            </td>
+        </tr>
+        <tr>
+            <td>87.</td>
+            <td>Risk criteria
+            </td>
+            <td>Terms of reference against which the significance of risk is evaluated.
+            </td>
+        </tr>
+        <tr>
+            <td>88.</td>
+            <td>Risk evaluation
+            </td>
+            <td>Process of comparing the results of risk analysis with risk criteria to determine whether the risk and/or its magnitude are acceptable or tolerable.
+            </td>
+        </tr>
+        <tr>
+            <td>89.</td>
+            <td>Risk identification
+            </td>
+            <td>Process of finding, recognizing and describing risks.
+            </td>
+        </tr>
+        <tr>
+            <td>90.</td>
+            <td>Risk management
+            </td>
+            <td>Coordinated activities to direct and control an organization with regard to risk.
+            </td>
+        </tr>
+        <tr>
+            <td>91.</td>
+            <td>Risk management process
+            </td>
+            <td>Systematic application of management policies, procedures and practices to the activities of communicating, consulting, establishing the context and identifying, analysing, evaluating, treating, monitoring and reviewing risk.
+            </td>
+        </tr>
+        <tr>
+            <td>92.</td>
+            <td>Risk owner
+            </td>
+            <td>Person or entity with the accountability and authority to manage a risk.
+            </td>
+        </tr>
+        <tr>
+            <td>93.</td>
+            <td>Risk treatment
+            </td>
+            <td>Process to modify risk.
+            </td>
+        </tr>
+        <tr>
+            <td>94.</td>
+            <td>Scale
+            </td>
+            <td>Ordered set of values, continuous or discrete, or a set of categories to which the attribute is mapped.
+            </td>
+        </tr>
+        <tr>
+            <td>95.</td>
+            <td>Secure Areas
+            </td>
+            <td>Physical area subjected to the work environment of employees.
+            </td>
+        </tr>
+        <tr>
+            <td>96.</td>
+            <td>Security implementation standard
+            </td>
+            <td>Document specifying authorized ways for realizing security.
+            </td>
+        </tr>
+        <tr>
+            <td>97.</td>
+            <td>Stakeholder
+            </td>
+            <td>Person or organization that can affect, be affected by, or perceive themselves to be affected by a decision or activity
+            </td>
+        </tr>
+        <tr>
+            <td>98.</td>
+            <td>Technical vulnerabilities
+            </td>
+            <td>In information handling, a hardware, software, or firmware weakness, or design deficiency, that leaves a system open to assault, harm, or unauthorized exploitation, externally or internally, thereby resulting in unacceptable risk of information
+                compromise, information alteration, or service denial.
+            </td>
+        </tr>
+        <tr>
+            <td>99.</td>
+            <td>Teleworking
+            </td>
+            <td>Working from anywhere outside the physical premises of the organization and accessing to company information
+            </td>
+        </tr>
+        <tr>
+            <td>100.</td>
+            <td>Threat
+            </td>
+            <td>Potential cause of an unwanted incident, which may result in harm to a system or organization.
+            </td>
+        </tr>
+        <tr>
+            <td>101.</td>
+            <td>Top management
+            </td>
+            <td>Person or group of people who directs and controls an organization at the highest level.
+            </td>
+        </tr>
+        <tr>
+            <td>102.</td>
+            <td>Trusted information communication entity
+            </td>
+            <td>Autonomous organization supporting information exchange within an information sharing community.
+            </td>
+        </tr>
+        <tr>
+            <td>103.</td>
+            <td>Unit of measurement
+            </td>
+            <td>Particular quantity defined and adopted by convention, with which other quantities of the same kind are compared in order to express their magnitude relative to that quantity.
+            </td>
+        </tr>
+        <tr>
+            <td>104.</td>
+            <td>Validation
+            </td>
+            <td>Confirmation, through the provision of objective evidence, that the requirements for a specific intended use or application have been fulfilled.
+            </td>
+        </tr>
+        <tr>
+            <td>105.</td>
+            <td>Verification
+            </td>
+            <td>Confirmation, through the provision of objective evidence, that specified requirements have been fulfilled.
+            </td>
+        </tr>
+        <tr>
+            <td>106.</td>
+            <td>Vulnerability
+            </td>
+            <td>Weakness of an asset or control that can be exploited by one or more threats.
+            </td>
+        </tr>
+    </tbody>
+</table>

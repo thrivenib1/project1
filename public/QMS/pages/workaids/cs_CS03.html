@@ -1,0 +1,1738 @@
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script><section class="content-header">
+    <h1>
+        Quality Management System
+    </h1>
+    <ol class="breadcrumb">
+        <li>
+            </b><a href="#" onclick="changeContent('qmsMain')"><i class="fa fa-dashboard"></i> Home</a></b>
+        </li>
+        <li class="active"><b><a href="#" onclick="changeContent('WorkAids')" >Work Aids</a></b></li>
+        <li class="active"><b><a href="#" onclick="changeContent('WA_Code_STD')" >Coding Stadards</a></b></li>
+    </ol>
+</section>
+
+<div class="Section1">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th align="center" colspan="4">Coding Standard for C++ Language</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CS-03</td>
+                <td>Version: 3.00</td>
+                <td>Date: 17th May 2010</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+0in;text-indent:9.0pt"><b><span style="font-size:13.5pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1">3.0 Introduction<o:p></o:p></span></b></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+0in;text-indent:9.0pt"><b><span style="mso-bidi-font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1">3.1 Purpose<a name="_Toc446129842"></a><o:p></o:p></span></b></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+0in;text-indent:9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">The purpose of this Standard is to
+provide coding standard for C++.</span><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+0in;text-indent:9.0pt">
+        <a name="_Toc4461298421"></a>
+        <a name="_Toc454274890"></a><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">3.2 Scope<o:p></o:p></span></b></p>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in;text-align:justify;text-indent:9.0pt">
+            <a name="_Toc446129843"></a><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">This Standard is applicable for
+developing C++ based projects.</span><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+0in;text-indent:9.0pt">
+        <a name="_Toc4461298431"></a>
+        <a name="_Toc454274891"></a><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">3.3 Source Code in Files<o:p></o:p></span></b></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">The following conventions are
+suggested. The convention used should always be uniform across all the files.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l9 level1 lfo2">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;mso-bidi-font-weight:bold"><span style="mso-list:
+Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Include files in C++ always have the
+file name extension ".hxx". The extension should be consistent across
+all include file names.</span><b><span style="mso-bidi-font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></b></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l9 level1 lfo2">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;mso-bidi-font-weight:bold"><span style="mso-list:
+Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Implementation files in C++ always
+have the file name extension ".cxx".</span><b><span style="mso-bidi-font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></b></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l9 level1 lfo2">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;mso-bidi-font-weight:bold"><span style="mso-list:
+Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Template definition files always
+have the file name extension ".txx".</span>
+        <a name="_Toc373314398"></a><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></b></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l9 level1 lfo2">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;mso-bidi-font-weight:bold"><span style="mso-list:
+Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Every file that contains source code
+must be documented with an introductory comment that provides information on
+the file name and its contents as shown below:</span>
+        <a name="_Toc3733143981"></a><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></b></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">/******************************************************************<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Copyright
+information : Imaje, Inc.<a name="_Toc3733143982"></a><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">File
+name : imajproj.C<a name="_Toc3733143983"></a><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Project
+name : P-API<a name="_Toc3733143984"></a><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Date
+of creation : 09/26/2000<a name="_Toc3733143985"></a><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Version
+number : Ver. 1.0<a name="_Toc3733143986"></a><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Brief
+description : This file contains implementation of<a name="_Toc3733143987"></a><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Author
+name : Vinod<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">************************************************************/<a name="_Toc3733143988"></a><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt">When the code undergoes a
+modification, it should be preceded by documentation about the modification
+Summary as shown below:<a name="_Toc3733143989"></a><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">/*****************************************************************<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Modification
+Summary<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Date:<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Description:<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Author
+name:<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Version:<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">*****************************************************************/<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Every
+class should be documented with introductory comments that provide information
+about the class as shown:<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">/****************************************************************************************************************<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Class
+name : TopicTemplate_i<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Class
+type : Concrete<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Brief
+description : Implementation class for the TopicTemplate IDL<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Super
+classes : TopicTemplateBOAImpl<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Sub
+classes : None<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Classes
+used : None<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Author
+name : Vinod<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">****************************************************************************************************************/<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Every
+method should be documented with introductory comments that provide information
+about the method as shown:<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">/***************************************************************************************************************************<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Name
+: createChampion<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Synopsis
+: gets the user details of a particular user.<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Type
+: instance method<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Input
+parameter : long topicId, const<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><span style="mso-spacerun:yes">&nbsp;</span>char * championId, environment IT_env<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Output
+parameters : None<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Return
+Type : CORBA::ShortGlobal variables : None<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Calling
+Synta<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">x
+: createChampion(topicId, championId);<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Author
+name : Vinod<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">***************************************************************************/<o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l1 level1 lfo4">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;mso-bidi-font-weight:bold"><span style="mso-list:
+Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Every include file must contain a mechanism
+that prevents multiple inclusions of the file. The easiest way to avoid
+multiple includes of files is by using an #ifndef/#define block in the
+beginning of the file and an #endif at the end of the file as shown below:</span></tt><tt><b><span style="mso-ansi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></b></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">#ifndef
+FOO_HXX</span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">#define
+FOO_HXX</span></code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><br>
+<br>
+<code><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">// The rest of the file</span></code><br>
+        <br>
+        <code><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">#endif<o:p></o:p></span></code></span>
+    </p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Never specify relative UNIX names in
+</span><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">#include</span></tt><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"> </span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">directives. </span><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">//
+NOT RECOMMENDED</span></tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><br>
+<tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">#include
+&lt;../include/fnutt.h&gt;<o:p></o:p></span></tt>
+        </span>
+    </p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l1 level1 lfo4">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Every <i>implementation file</i></span></tt><tt><span style="font-size:10.0pt"> </span></tt><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">is to include the relevant files that
+contain:<o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l1 level1 lfo4">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Declarations of types and functions used in
+the functions that are implemented in the file.<o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l1 level1 lfo4">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;mso-bidi-font-weight:bold"><span style="mso-list:
+Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Declarations of variables and member
+functions used in the functions that are implemented in the file. </span></tt><tt><b><span style="mso-ansi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></b></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l1 level1 lfo4">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;mso-bidi-font-weight:bold"><span style="mso-list:
+Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">An include file should not contain more than
+one class definition.</span></tt>
+        <a name="_Toc375452917"></a><tt><b><span style="mso-ansi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></b></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l1 level1 lfo4">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;mso-bidi-font-weight:bold"><span style="mso-list:
+Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Always give a file a name that is unique in
+as large a context as possible.</span></tt><tt><b><span style="mso-ansi-font-size:
+12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></b></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l1 level1 lfo4">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;mso-bidi-font-weight:bold"><span style="mso-list:
+Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">An include file for a class should have a
+file name of the form &lt;class name&gt; + extension. Use uppercase and
+lowercase letters in the same way as in the source code. </span></tt><tt><b><span style="mso-ansi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></b></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l1 level1 lfo4">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;mso-bidi-font-weight:bold"><span style="mso-list:
+Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Write some descriptive comments before every
+function.</span></tt><tt><b><span style="mso-ansi-font-size:12.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></b></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l1 level1 lfo4">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;mso-bidi-font-weight:bold"><span style="mso-list:
+Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Use // for single line <b><i>comments</i></b>.</span></tt><tt><b><span style="mso-ansi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></b></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l1 level1 lfo4">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Use the directive </span><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">#include
+"filename.hxx"</span></tt><span style="mso-fareast-font-family:&quot;Times New Roman&quot;">
+</span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">for user-prepared include files.</span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l1 level1 lfo4">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;mso-bidi-font-weight:bold"><span style="mso-list:
+Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Use the directive </span><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">#include
+&lt;filename.hxx&gt;</span></tt><span style="mso-fareast-font-family:&quot;Times New Roman&quot;">
+</span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">for include files from libraries.</span><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></b></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l1 level1 lfo4">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;mso-bidi-font-weight:bold"><span style="mso-list:
+Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Every implementation file should
+declare a local constant string that describes the file so the UNIX command
+"</span><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">what"</span></tt><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"> </span><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;">can be used to obtain information on the file revision.</span><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></b></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">static
+const char* sccsid = </span></tt><span style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;"><br>
+<tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">"@(#) Mail_i.C, rev. A,
+Copyright Imaje, Inc. 1996";</span></tt>
+        </span><b><span style="mso-bidi-font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></b></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt;text-indent:-.5in;mso-list:l5 level2 lfo6">
+        <!--[if !supportLists]--><code><b style="mso-bidi-font-weight:normal"><span style="mso-ansi-font-size:12.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial"><span style="mso-list:Ignore">3.4<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></b></code>
+        <!--[endif]--><code><b><span style="mso-ansi-font-size:
+12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1">Naming
+Standards</span></b></code><code><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt;text-indent:-.25in;mso-list:l0 level1 lfo8">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">In names, which consist of more than one
+word, <i>the words are written together</i></span></tt><tt><span style="font-size:10.0pt"> </span></tt><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">and each word that follows the first is begun
+with an uppercase letter (Hungarian Notation).<o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt;text-indent:-.25in;mso-list:l0 level1 lfo8">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Do not use identifiers which begin with one
+or two underscores (`_' or `__').</span></tt><tt><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt;text-indent:-.25in;mso-list:l0 level1 lfo8">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Do not use typenames that differ only by the
+use of uppercase and lowercase letters.</span></tt><tt><span style="font-size:
+16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt;text-indent:-.25in;mso-list:l0 level1 lfo8">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Names should not include abbreviations that
+are not generally accepted.</span></tt><tt><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt;text-indent:-.25in;mso-list:l0 level1 lfo8">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Choose variable names that suggest the usage.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt;text-indent:-.25in;mso-list:l0 level1 lfo8">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Variables local to a method will be named as</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><tt><i><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&lt;data
+type specifier&gt;&lt;meaningful name in hungarian notation&gt;<o:p></o:p></span></i></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Variables
+at class level will be named as<o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><tt><i><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&lt;underscore&gt;&lt;data
+type specifier&gt;&lt;meaningful name in hungarian notation<o:p></o:p></span></i></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><tt><i><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">The
+data type specifiers could be<o:p></o:p></span></i></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">i �
+integer<o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">b �
+Boolean<o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">s �
+string<o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">c �
+character<o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">p �
+pointers etc.<o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l14 level1 lfo10">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Any Object instance should be prefixed by its
+class name. The class name however will start with a lowercase character in
+this case.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l14 level1 lfo10">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Methods should be named in the format:
+firstWordLowerCaseButInternalWordsCapitalized</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l14 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><tt><span style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;">The table below describes the rules for identifying
+constants, classes, and Exception classes.</span></tt></p>
+
+    <div align="center">
+
+        <table class="MsoNormalTable" border="1" cellspacing="1" cellpadding="0" width="681" style="width:510.75pt;mso-cellspacing:.7pt;mso-yfti-tbllook:1184;mso-padding-alt:
+ 5.25pt 5.25pt 5.25pt 5.25pt">
+            <tbody>
+                <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+                    <td width="208" valign="top" style="width:156.0pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+  0in;text-indent:9.0pt"><tt><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Identifier</span></b></tt></p>
+                    </td>
+                    <td width="437" valign="top" style="width:327.75pt;background:aqua;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+  0in;text-indent:9.0pt"><tt><b><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Naming
+  Convention</span></b></tt></p>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:1">
+                    <td width="208" valign="top" style="width:156.0pt;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+  0in;text-indent:9.0pt"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">constants
+  </span></tt></p>
+                    </td>
+                    <td width="437" valign="top" style="width:327.75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+  0in;text-indent:9.0pt"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">UPPER_CASE_WITH_UNDERSCORES</span></tt></p>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:2">
+                    <td width="208" valign="top" style="width:156.0pt;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+  0in;text-indent:9.0pt"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Classes</span></tt></p>
+                    </td>
+                    <td width="437" valign="top" style="width:327.75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+  0in;text-indent:9.0pt"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">FirstWordCapitalizedWithInternalWordsAlsoCapitalized</span></tt></p>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:3">
+                    <td width="208" valign="top" style="width:156.0pt;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+  0in;text-indent:9.0pt"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Class
+  Member Variables</span></tt></p>
+                    </td>
+                    <td width="437" valign="top" style="width:327.75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+  0in;text-indent:9.0pt"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">_&lt;VariableName&gt;</span></tt></p>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:4;mso-yfti-lastrow:yes">
+                    <td width="208" valign="top" style="width:156.0pt;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+  0in;text-indent:9.0pt"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Exception
+  class</span></tt></p>
+                    </td>
+                    <td width="437" valign="top" style="width:327.75pt;padding:5.25pt 5.25pt 5.25pt 5.25pt">
+                        <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+  0in;text-indent:9.0pt"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&lt;ClassName&gt;Exception</span></tt></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt;text-indent:-.5in;mso-list:l5 level2 lfo6">
+        <!--[if !supportLists]--><code><b style="mso-bidi-font-weight:normal"><span style="mso-ansi-font-size:12.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">3.5<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></b></code>
+        <!--[endif]--><code><b><span style="mso-ansi-font-size:
+12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1">Style</span></b></code><code><span style="mso-ansi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"> </span></code><code><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l17 level1 lfo12">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">The public, protected, and private sections
+of a class are to be declared in that order (the public section is declared before
+the protected section, which is declared before the private section). List the
+member function prototypes in the header file in the same order they occur in
+the source file.<o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l17 level1 lfo12">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">No member functions are to be defined within
+the class definition. See example below:</span></tt><tt><span style="font-size:
+16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">//
+Instead of writing like this:</span></tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><br>
+<tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">class String</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">{</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">public:</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">int length() const // No !!</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">{ </span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">return _iLen; </span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">} </span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">// ...</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">private:</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">int _iLen;</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">};</span></tt><br>
+        <br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">// Do it this way:</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">class String </span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">{</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">public:</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">int length() const; </span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">// ...</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">private:</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">int _iLen;</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">};</span></tt><br>
+        <br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">inline </span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">int </span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">String::length() const </span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">{</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">return _iLen;</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">}<o:p></o:p></span></tt></span>
+    </p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l13 level1 lfo14">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Always create a default constructor for a new
+class, especially when the class contains pointers or references as data
+members. Don�t rely on the compiler to do what you want.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l13 level1 lfo14">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Include a short comment in the class header
+file that describes each member function.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l13 level1 lfo14">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Always provide the return type of a function
+explicitly.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l13 level1 lfo14">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">When declaring functions, the leading
+parenthesis and the first argument (if any) are to be written on the same line
+as the function name. If space permits, other arguments and the closing
+parenthesis may also be written on the same line as the function name.
+Otherwise, each additional argument is to be written on a separate line (with
+the closing parenthesis directly after the last argument). </span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l13 level1 lfo14">
+        <!--[if !supportLists]--><code><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></code>
+        <!--[endif]--><tt><span style="font-size:10.0pt">Right
+and wrong ways of declaring formal arguments for a function (in function
+definition) are shown below:</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">//
+Right:</span></tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><br>
+<tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">int</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">myComplicatedFunction(
+unsigned uValue,</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">int iValue,</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">char* pCharValue,</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">int* pIntValue,</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">myClass* pmyClassValue,</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">unsigned* pUnsignedValue );</span></tt><br>
+        <br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">// Wrong:</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">int</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">myComplicatedFunction(
+unsigned uValue, int iValue,</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">char* pCharValue, int*
+pIntValue,</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">myClass* pmyClassValue,
+unsigned* pUnsignedValue );<o:p></o:p></span></tt></span>
+    </p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l8 level1 lfo16">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">In a function definition, the return type of
+the function should be written on a separate line directly above the function
+name as in the previous example.</span></tt><tt><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l8 level1 lfo16">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Always write the left parenthesis directly
+after a function name as shown.</span></tt><tt><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">void
+foo (); // No!!</span></tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><br>
+<tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">void foo(); // Better<o:p></o:p></span></tt>
+        </span>
+    </p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l8 level1 lfo16">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Braces ("{}") which enclose a block
+are to be placed in the same column, on separate lines directly before and
+after the block.<o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l8 level1 lfo16">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><code><span style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;">The flow control primitives </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">if</span></tt><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">, </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">else</span></tt><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">, </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">while</span></tt><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">, </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">for</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">and </span></code><tt><span style="font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">do</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">should be followed by a <i>block</i>, even if
+it is an empty block.</span></code><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l8 level1 lfo16">
+        <!--[if !supportLists]--><code><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></code>
+        <!--[endif]--><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">The de-reference operator `</span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">*</span></tt><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">' and the address-of
+operator `</span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">&amp;</span></tt><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">' should be directly
+connected with the <b><i>type names</i></b></span></code><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">in declarations and definitions.</span></code><code><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l8 level1 lfo16">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><tt><span style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;">Do not use <i>spaces</i></span></tt><tt><span style="font-size:10.0pt"> </span></tt><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">around `.' or `-&gt;', nor between unary
+operators and operands.</span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt;text-indent:-.5in;mso-list:l5 level2 lfo6">
+        <!--[if !supportLists]--><code><b style="mso-bidi-font-weight:normal"><span style="mso-ansi-font-size:12.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial"><span style="mso-list:Ignore">3.6<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></b></code>
+        <!--[endif]--><code><b><span style="mso-ansi-font-size:
+12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1">Classes</span></b></code><code><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo18">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Avoid <i>public</i></span></tt><tt><span style="font-size:10.0pt"> </span></tt><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">or <i>protected member</i></span></tt><tt><span style="font-size:10.0pt"> </span></tt><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">data where <i>private</i></span></tt><tt><span style="font-size:10.0pt"> </span></tt><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">data will suffice.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo18">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Access functions are to be inline.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo18">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Forwarding functions are to be inline.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo18">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Constructors and destructors must not be
+inline. This is because we should always avoid calling inline functions from
+within inline functions.</span></tt><tt><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo18">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><b><i><span style="font-size:10.0pt">Friends</span></i></b></tt><tt><span style="font-size:10.0pt"> of a class should be used to provide additional
+functions that are best kept outside of the class.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo18">
+        <!--[if !supportLists]--><code><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></code>
+        <!--[endif]--><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">A member function that does not affect the
+state of an object (its instance variables) is to be declared </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">const</span></tt><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">.</span></code><code><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo18">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">If the behaviour of an object is dependent on
+data outside the object, this data is not to be modified by const member
+functions. (same as above)</span></tt><tt><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo18">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">A class which uses "new" to
+allocate instances managed by the class, i.e. instances bound to member
+variables of pointer or reference type that are de-allocated by the object,
+must define a <b><i>copy constructor</i></b>.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo18">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">All classes, which are used as, base classes
+and which have virtual functions, must define a virtual destructor.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo18">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">A class which uses "new" to
+allocate instances managed by the class, i.e. instances bound to member
+variables of pointer or reference type that are de-allocated by the object,
+must define an <b><i>assignment operator</i></b>.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo18">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Use operator overloading sparingly and in a
+uniform manner.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo18">
+        <!--[if !supportLists]--><code><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></code>
+        <!--[endif]--><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">When two operators are opposites (such as </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">==</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">and </span></code><tt><span style="font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">!=</span></tt><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">), it is appropriate
+to define both.</span></code><code><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo18">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">A public member function must never return a
+non-const reference or pointer to member data.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo18">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">A public member function must never return a
+non-const reference or pointer to data outside an object, unless the object
+shares the data with other objects.</span></tt><tt><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo18">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><code><span style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;">A derived class often requires access to base class
+member data in order to create useful member functions. The advantage in using
+protected member functions is that the names of base class member data are not
+visible in the derived classes and thus may be changed. Such access functions
+should only return the values of member data (read-only access). This is best
+done by simply invoking </span></code><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">const</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">functions for the member data.</span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt;text-indent:-.5in;mso-list:l5 level2 lfo6">
+        <!--[if !supportLists]--><code><b style="mso-bidi-font-weight:normal"><span style="mso-ansi-font-size:12.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial"><span style="mso-list:Ignore">3.7<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></b></code>
+        <!--[endif]--><code><b><span style="mso-ansi-font-size:
+12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1">Functions</span></b></code><code><span style="mso-ansi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"> </span></code><code><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l12 level1 lfo20">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Do not use unspecified function arguments
+(ellipsis notation).</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l12 level1 lfo20">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Always specify the return type of a function
+explicitly.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l12 level1 lfo20">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">A public function must never return a
+reference or a pointer to a local variable.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l12 level1 lfo20">
+        <!--[if !supportLists]--><code><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></code>
+        <!--[endif]--><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Avoid the use of preprocessor directive </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">#define</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">to obtain more efficient code; instead, use
+inline functions where appropriate. E.g.:</span></code><code><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">//
+Example of problems with #define "functions"</span></tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><br>
+<tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">#define SQUARE(x) ((x)*(x))</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">int a = 2;</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">int b = SQUARE(a++); // b =
+(2 * 3) = 6</span></tt><br>
+        <br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">// Inline functions are
+safer and easier to use than macros if you</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">// need an ordinary function
+that would have been unacceptable for</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">// efficiency reasons.</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">// They are also easier to
+convert to ordinary functions later on.</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">inline int square( int x )</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">{</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">return ( x * x );</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">};</span></tt><br>
+        <br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">int c = 2;</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">int d = square( c++ ); // d
+= ( 2 * 2 ) = 4<o:p></o:p></span></tt></span>
+    </p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l2 level1 lfo22">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Try to avoid long and complex functions.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l2 level1 lfo22">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Try to avoid functions with many arguments.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l2 level1 lfo22">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">If a function stores a pointer to an object,
+which is accessed via an argument let the argument have the type pointer. Use
+reference arguments in other cases.</span></tt><tt><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l2 level1 lfo22">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">When overloading functions, all variations
+should have the same semantics (be used for the same purpose).</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l2 level1 lfo22">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">The names of <b><i>formal arguments</i></b></span></tt><tt><span style="font-size:10.0pt"> </span></tt><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">to functions are to be specified and are to
+be the <b><i>same</i></b></span></tt><tt><span style="font-size:10.0pt"> </span></tt><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">both in the function
+declaration and in the function definition.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l2 level1 lfo22">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><tt><span style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;">Minimize the number of temporary objects that are created
+as return values from functions or as arguments to functions.</span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+0in;text-indent:9.0pt">
+        <a name="_Toc454274896"></a><tt><b><span style="mso-ansi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">3.8 Constants</span></b></tt><span style="font-size:
+16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in;text-align:justify;text-indent:9.0pt"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Avoid the use of
+numeric values in code; use symbolic values instead.</span></tt><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+27.0pt;text-indent:-.25in;mso-list:l11 level2 lfo24">
+        <!--[if !supportLists]--><code><b style="mso-bidi-font-weight:normal"><span style="mso-ansi-font-size:12.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">3.9<span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span></span></b></code>
+        <!--[endif]--><code><b><span style="mso-ansi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">Variables</span></b></code><code><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l7 level1 lfo26">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Variables are to be declared with the
+smallest possible <b><i>scope</i></b>.</span></tt><tt><span style="font-size:
+16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l7 level1 lfo26">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Each variable is to be declared in a <b><i>separate
+declaration statement</i></b>.</span></tt><tt><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l7 level1 lfo26">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Every variable that is declared is to be <b><i>given
+a value</i></b></span></tt><tt><span style="font-size:10.0pt"> </span></tt><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">before it is used.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l7 level1 lfo26">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">If possible, always use initialization
+instead of assignment</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">//
+Do not do this! </span></tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><br>
+<tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">// int i;</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">// ... 1022 lines of code</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">// i = 10; </span></tt><br>
+        <br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">int j = 10; // Better</span></tt></span>
+    </p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt;text-indent:-.5in;mso-list:l11 level2 lfo24">
+        <!--[if !supportLists]--><code><b style="mso-bidi-font-weight:normal"><span style="mso-ansi-font-size:12.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial"><span style="mso-list:Ignore">3.10<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></b></code>
+        <!--[endif]--><code><b><span style="mso-ansi-font-size:
+12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1">Pointers
+and References</span></b></code><code><span style="mso-ansi-font-size:12.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1"> </span></code><code><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l10 level1 lfo28">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Do not compare a pointer to NULL or assign
+NULL to a pointer; use 0 instead.</span></tt><tt><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l10 level1 lfo28">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Pointers to pointers should be avoided
+whenever possible. </span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l10 level1 lfo28">
+        <!--[if !supportLists]--><code><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></code>
+        <!--[endif]--><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Use a </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">typedef</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">to simplify program syntax when declaring function
+pointers. </span></code><code><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">#include
+&lt;math.h&gt;</span></tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><br>
+<br>
+<tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">// Ordinary messy way of
+declaring pointers to functions:</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">// double ( *mathFunc ) (
+double ) = sqrt;</span></tt><br>
+        <br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">// With a typedef, life is
+filled with happiness (Chinese proverb):</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">typedef double MathFuncType(
+double );</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">MathFuncType* mathFunc =
+sqrt;</span></tt><br>
+        <br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">void </span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">main()</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">{</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">// You can invoke the
+function in an easy or complicated way</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">double returnValue1 =
+mathFunc( 23.0 ); // Easy way</span></tt><br>
+        <br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">// No! Correct, but
+complicated</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">double returnValue2 = (
+*mathFunc )( 23.0 );</span></tt><br>
+        <tt><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">}</span></tt></span>
+    </p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt;text-indent:-.5in;mso-list:l11 level2 lfo24">
+        <!--[if !supportLists]--><code><b style="mso-bidi-font-weight:normal"><span style="mso-ansi-font-size:12.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial"><span style="mso-list:Ignore">3.11<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></b></code>
+        <!--[endif]--><code><b><span style="mso-ansi-font-size:
+12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1">Type
+Conversions</span></b></code><code><span style="mso-ansi-font-size:12.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1"> </span></code><code><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo30">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Avoid using explicit type conversions (casts)
+on simple data types.<o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo30">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Avoid functions that use implicit type
+conversions.<o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo30">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><tt><span style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;">Never convert pointers to objects of a derived class to
+pointers to objects of a virtual base class.</span></tt><span style="font-size:
+16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt;text-indent:-.5in;mso-list:l11 level2 lfo24">
+        <!--[if !supportLists]--><code><b style="mso-bidi-font-weight:normal"><span style="mso-ansi-font-size:12.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial"><span style="mso-list:Ignore">3.12<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></b></code>
+        <!--[endif]--><code><b><span style="mso-ansi-font-size:
+12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1">Flow
+Control Structures</span></b></code><code><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l15 level1 lfo32">
+        <!--[if !supportLists]--><code><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></code>
+        <!--[endif]--><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">The code following a </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">case</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">label must <b><i>always</i></b></span></code><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">be terminated by a </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">break</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">statement.</span></code><code><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l15 level1 lfo32">
+        <!--[if !supportLists]--><code><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></code>
+        <!--[endif]--><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">A </span></code><tt><span style="font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">switch</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">statement must <b><i>always</i></b></span></code><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">contain a </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">default</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">branch, which handles unexpected cases.</span></code><code><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l15 level1 lfo32">
+        <!--[if !supportLists]--><code><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></code>
+        <!--[endif]--><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Never use </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">goto</span></tt><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">.</span></code><code><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l15 level1 lfo32">
+        <!--[if !supportLists]--><code><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></code>
+        <!--[endif]--><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">The choice of loop construct (</span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">for</span></tt><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">, </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">while</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">or </span></code><tt><span style="font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">do-while</span></tt><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">) should depend on
+the specific use of the loop.</span></code><code><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l15 level1 lfo32">
+        <!--[if !supportLists]--><code><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></code>
+        <!--[endif]--><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Always use </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">unsigned</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">for variables, which cannot reasonably have,
+negative values.</span></code><code><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l15 level1 lfo32">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Always use inclusive lower limits and
+exclusive upper limits.</span></tt><tt><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l15 level1 lfo32">
+        <!--[if !supportLists]--><code><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></code>
+        <!--[endif]--><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Avoid the use of </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">continue</span></tt><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">.</span></code><code><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l15 level1 lfo32">
+        <!--[if !supportLists]--><code><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></code>
+        <!--[endif]--><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Use </span></code><tt><span style="font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">break</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">to exit a loop if this avoids the use of
+flags.</span></code><code><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l15 level1 lfo32">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><code><span style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;">Do not write logical expressions of the type </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">if(test)</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">or </span></code><tt><span style="font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">if(!test)</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">when </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">test</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">is a pointer.</span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+0in;text-indent:9.0pt">
+        <a name="_Toc454274901"></a><tt><b><span style="mso-ansi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">3.13 Expressions</span></b></tt><span style="font-size:
+16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+        <p class="MsoNormal" style="margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in;text-align:justify;text-indent:9.0pt"><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Use parentheses to
+clarify the order of evaluation for operators in expressions.</span></tt><span style="mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+
+    </blockquote>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt;text-indent:-.5in;mso-list:l11 level2 lfo24">
+        <!--[if !supportLists]--><code><b style="mso-bidi-font-weight:normal"><span style="mso-ansi-font-size:12.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">3.13<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b></code>
+        <!--[endif]--><code><b><span style="mso-ansi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">Memory Allocation</span></b></code><code><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l16 level1 lfo34">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Do not use </span></code><tt><i><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">malloc</span></i></tt><code><i><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">, </span></i></code><tt><i><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">realloc</span></i></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">or </span></code><tt><i><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">free</span></i></tt><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">. Use </span></code><tt><i><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">new </span></i></tt><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">for allocating memory
+and <i>delete</i></span></tt><tt><span style="font-size:10.0pt"> </span></tt><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">for reallocation.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l16 level1 lfo34">
+        <!--[if !supportLists]--><code><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></code>
+        <!--[endif]--><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Always provide empty brackets ("</span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">[]</span></tt><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">") for </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">delete</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">when reallocating arrays.</span></code><code><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l16 level1 lfo34">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Avoid global data usage.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l16 level1 lfo34">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Do not allocate memory and expect that
+someone else will reallocate it later.</span></tt><tt><span style="font-size:
+16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l16 level1 lfo34">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><tt><span style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;">Always assign a 0 value to a pointer that points to
+reallocated memory.</span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt;text-indent:-.5in;mso-list:l11 level2 lfo24">
+        <!--[if !supportLists]--><code><b style="mso-bidi-font-weight:normal"><span style="mso-ansi-font-size:12.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial"><span style="mso-list:Ignore">3.14<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></b></code>
+        <!--[endif]--><code><b><span style="mso-ansi-font-size:
+12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1">Fault
+Handling</span></b></code><code><span style="mso-ansi-font-size:12.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1"> </span></code><code><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo36">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><tt><span style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;">Check the return codes, which may be received from
+library functions even if these functions seem foolproof.</span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt;text-indent:-.5in;mso-list:l11 level2 lfo24">
+        <!--[if !supportLists]--><code><b style="mso-bidi-font-weight:normal"><span style="mso-ansi-font-size:12.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial"><span style="mso-list:Ignore">3.15<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></b></code>
+        <!--[endif]--><code><b><span style="mso-ansi-font-size:
+12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1">Portable
+Code</span></b></code><code><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo36">
+        <!--[if !supportLists]--><code><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></code>
+        <!--[endif]--><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Do not assume that an </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">int</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">and a </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">long</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">have the same size.</span></code><code><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo36">
+        <!--[if !supportLists]--><code><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></code>
+        <!--[endif]--><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Do not assume that an </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">int</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">is 32 bits long (it may be only 16 bits
+long).</span></code><code><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo36">
+        <!--[if !supportLists]--><code><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></code>
+        <!--[endif]--><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Do not assume that a </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">char</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">is </span></code><tt><span style="font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">signed</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">or </span></code><tt><span style="font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">unsigned</span></tt><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">.</span></code><code><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo36">
+        <!--[if !supportLists]--><code><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></code>
+        <!--[endif]--><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Always set char to </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">unsigned</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">if 8-bit ASCII is used.</span></code><code><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo36">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Be careful not to make type conversions from
+a "shorter" type to a "longer" one.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo36">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Do not assume that pointers and integers have
+the same size.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo36">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Use explicit type conversions for arithmetic
+using signed and unsigned values.</span></tt><tt><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo36">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Do not assume that you know how an instance
+of a data type is represented in memory.</span></tt><tt><span style="font-size:
+16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo36">
+        <!--[if !supportLists]--><code><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></code>
+        <!--[endif]--><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Do not assume that </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">longs</span></tt><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">, </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">floats</span></tt><code><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">, </span></code><tt><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">doubles</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">or </span></code><tt><span style="font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">long doubles</span></tt><code><span style="font-size:10.0pt"> </span></code><code><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">may begin at arbitrary addresses.</span></code><code><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></code></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo36">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Do not depend on underflow or overflow
+functioning in any special way.</span></tt><tt><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo36">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Do not assume that an object is initialized
+in any special order in constructors.</span></tt><tt><span style="font-size:
+16.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo36">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Do not assume that static objects are
+initialized in any special order.</span></tt><tt><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo36">
+        <!--[if !supportLists]--><tt><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></tt>
+        <!--[endif]--><tt><span style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;">Do not write code, which is dependent on the
+lifetime of a temporary object.Avoid using shift operations instead of
+arithmetic operations.</span></tt><tt><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></tt></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo36">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><tt><span style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;">Avoid pointer arithmetic.</span></tt><code><span style="font-size:10.0pt">&nbsp;</span></code></p>
+
+</div>

@@ -1,0 +1,242 @@
+<!-- design starts here ...-->
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script>
+
+<section class="content-header">
+    <h1>
+        Quality Management System
+    </h1>
+    <ol class="breadcrumb">
+        <li>
+            </b><a href="#" onclick="changeContent('qmsMain')"><i class="fa fa-dashboard"></i> Home</a></b>
+        </li>
+        <li class="active"><b><a href="#" onclick="changeContent('qmsMain')" >Integra Quality Manual</a></b></li>
+
+    </ol>
+</section>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th align="center" colspan="4">Process Model for Customization Projects</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ISO Clause: 7.1</td>
+            <td>PM07</td>
+            <td>Version: 3.00</td>
+            <td>Date: 17th May 2010</td>
+        </tr>
+    </tbody>
+</table>
+<div class="Section1">
+    <div id="centertext">
+        <p><b>1.0 Introduction</b></p>
+    </div>
+    <div id="content">
+        <p>This process model is suggested for projects having the following history and attributes;</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>1. Code base of the product have been acquired from internal or external sources</p>
+
+        <p><span style="display:inline-block; width: 50px;"></span>2. Management or the customer has approved changes to the existing code base</p>
+    </div>
+    <div id="centertext">
+        <p><b>2.0 Lifecycle</b></p>
+    </div>
+    <div id="content">
+        <p>The product needs modifications, additions and removals of the features. These modifications have been requested or agreed upon with the customer and other relevant stakeholders. At this stage the Customization Project lifecycle starts.
+
+            <p>The project will go through the following phases.
+
+                <p><span style="display:inline-block; width: 50px;"></span>1. Inception</p>
+
+                <p><span style="display:inline-block; width: 50px;"></span>2. Customization</p>
+
+                <p><span style="display:inline-block; width: 50px;"></span>3. Pilot Deployment</p>
+
+                <p><span style="display:inline-block; width: 50px;"></span>4. Pilot Deployment Acceptance</p>
+
+                <p><span style="display:inline-block; width: 50px;"></span>5. Data Migration</p>
+
+                <p><span style="display:inline-block; width: 50px;"></span>6. Production deployment and signoff</p>
+    </div>
+    <div id="centertext1">
+        <p><b>1.    Inception</b></p>
+    </div>
+    <div id="content">
+        <p>The following activities will be carried out at the time of project inception phase :</p>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Phase</th>
+                    <th>Entry criteria</th>
+                    <th>Tasks</th>
+                    <th>Exit Criteria</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Inception</td>
+                    <td>
+                        <p>1. PO/ Contract/ Approval by management to start the project</p>
+                        <p>2. Code base</p>
+                        <p>3. User Manual/ Product Documents </p>
+
+                    </td>
+                    <td>
+                        <p>1. Kickoff</p>
+                        <p>2. Acquire product code base</p>
+                        <p>3. Prepare Project Plan</p>
+                        <p>4. Resource allocation plan</p>
+                        <p> 5. Release plan</p>
+                        <p>6. Configuration Management Plan</p>
+                        <p>7. Acceptance criteria</p>
+                        <p>8. Risk and risk mitigation plan</p>
+                    </td>
+
+                    <td>
+                        <p>1. SPMP</p>
+                        <p>2. Baseline code base</p>
+                        <p>3. Baseline product documents</p>
+                    </td>
+
+
+                </tr>
+            </tbody>
+        </table>
+
+
+
+    </div>
+    <div id="centertext1">
+        <p><b>2.    Customisation</b></p>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Phase</th>
+                    <th>Entry criteria</th>
+                    <th>Tasks</th>
+                    <th>Exit Criteria</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gap Analysis</td>
+                    <td>
+                        <p>1. Baseline code</p>
+                        <p>2. Product documents</p>
+                    </td>
+                    <td>
+                        <p>1. Gap Analysis</p>
+                    </td>
+
+                    <td>
+                        <p>1. Gap Analysis Report</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Requirements Analysis</td>
+                    <td>
+                        <p>1. Gap Analysis Report,</p>
+                        <p>2. Requirements Specification document</p>
+                    </td>
+                    <td>
+                        <p>1. Prepare/update Requirements Document</p>
+                    </td>
+
+                    <td>
+                        <p>1. Approved SRS</p>
+                        <p>2. SRS Review record</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Design</td>
+                    <td>
+                        <p>1. SRS</p>
+                        <p>2. Design document</p>
+                    </td>
+                    <td>
+                        <p>1. Prepare/Update system design, architecture</p>
+                    </td>
+
+                    <td>
+                        <p>1. Approved Design Document</p>
+                        <p>2. Test Plan</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Development and Unit Test</td>
+                    <td>
+                        <p>1. Design document,</p>
+                        <p>2. Baseline code</p>
+                        <p>3. Gap analysis report</p>
+                    </td>
+                    <td>
+                        <p>1. Coding and </p>
+                        <p>2. unit testing</p>
+                        <p>3. System Test Specification </p>
+                    </td>
+
+                    <td>
+                        <p>1. Unit tested and debugged code</p>
+                        <p>2. System Test specification</p>
+                        <p>3. Installable</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>System Test</td>
+                    <td>
+                        <p>1. Installable</p>
+                        <p>2. User manual</p>
+                    </td>
+                    <td>
+                        <p>1. System testing </p>
+                    </td>
+
+                    <td>
+                        <p>1. System Test Report</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="content">
+        <p>Various project activities of this phase are given in the table below :</p>
+
+
+    </div>
+    <div id="centertext1">
+        <p><b>3.    Pilot Deployment</b></p>
+    </div>
+    <div id="content">
+        <p>On completion of customisation of the product, the product is deployed in the pre-production environment at the client’s environment. The users training (optional) is provided to the end users of the systems. Detailed tasks and schedule of the
+            pilot phase will be defined in the SPMP; if it is not possible to define the tasks during the preparation of the SPMP, a separate pilot plan should be prepared with activities list with resource allocated for each tasks in consultation with
+            the client before starting the pilot phase. The plan should have clear entry and exit criteria for pilot phase.</p>
+    </div>
+    <div id="centertext1">
+        <p><b>4.    Pilot Deployment Acceptance</b></p>
+    </div>
+    <div id="content">
+        <p>Pilot deployment signoff will mark completion of the phase. Signoff will be obtained from the client PM or client representative designated to the project.</p>
+    </div>
+    <div id="centertext1">
+        <p><b>5.    Data Migration (Optional)</b></p>
+    </div>
+    <div id="content">
+        <p>The PM will prepare a plan for migration of the relevant data into the application. The plan will identify the data for migration in consultation with the client or/and as identified in the project scope. The plan will clearly mention what type
+            of data, how much to be migrated, period from which the data needs to be migrated with the schedule of activities and resources responsible for the activities.</p>
+    </div>
+    <div id="centertext1">
+        <p><b>6.    Production deployment and signoff</b></p>
+    </div>
+    <div id="content">
+        <p>After completion of pilot signoff and data migration the application and the database will be deployed on the production environment. The installation and support team will ensure that the application is functioning as expected. Key stakeholders
+            will be involved in release readiness review of the application on the production environment and traceability between the requirements and the application will be established. After meeting the criteria the application will be live in the
+            production environment and production deployment signoff will be obtained.</p>
+
+        <p>The project can be closed after the signoff. If support and maintenance is applicable as per the contract, the PM will arrange for necessary resource allocation for these activities. Other resources will be released and project closure will be
+            conducted as per the process defined in the QMS.</p>
+    </div>
+</div>

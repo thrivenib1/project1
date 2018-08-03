@@ -1,0 +1,242 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IMSSWiki</title>
+    <link rel="icon" type="image/png" href="/images/icon.png" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="/QMS/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/QMS/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/QMS/bower_components/Ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="/QMS/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="/QMS/bower_components/fullcalendar/dist/fullcalendar.min.css">
+    <link rel="stylesheet" href="/QMS/bower_components/fullcalendar/dist/fullcalendar.print.min.css" media="print">
+    <link rel="stylesheet" href="/QMS/bower_components/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="/QMS/bower_components/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="/QMS/bower_components/dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="/QMS/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <link rel="stylesheet" href="/imswiki.css">
+    <link rel="stylesheet" href="/QMS/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/QMS/bower_components/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+
+
+</head>
+<!--<script>-->
+    <!--window.onclick = function (e) {-->
+        <!--if (e.target.localName == 'a') {-->
+            <!--console.log(e.target);-->
+            <!--console.log(e.target.href);-->
+        <!--}-->
+    <!--}-->
+<!--</script>-->
+
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+    <div class="wrapper">
+
+        <header class="main-header">
+            <a href="" class="logo">
+                <span class="logo-lg"><img src="/images/myim.png" class="headerlogo"></span>
+            </a>
+            <nav class="navbar navbar-static-top">
+                <a href="location.href.split('#')[1]" class="sidebar-toggle hidden-lg, hidden-md, visible-sm, visible-xs" data-toggle="push-menu" role="button">
+                </a>
+                <label style="font-size:30px;padding-top:13px;vertical-align:middle;text-align:center" id="lblHeaderTitle">Leave Management System</label>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown user user-menu" style="
+    padding-top: 12px;
+">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="true">
+                                <img  id="empImgSmall" class="user-image" alt="User Image">
+                                <label style="font-weight:normal;margin-bottom: 0px;margin-top: -13px;" id="empNameDesginationDtl">  </label>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header">
+                                    <img class="img-circle" src="" id="empImg" />
+                                    <p style="text-align:center" id="designation"></p>
+                                         <small id="empCode"></small>
+                                        <!-- <small>Member since Nov. 2012</small> -->
+                                </li>
+                                <!-- Menu Body -->
+
+                                <!-- Menu Footer-->
+                                <li class="user-body">
+                                    <div class="row">
+                                        <div class="col-xs-12" style="margin:5px">
+                                            <label>Mobile Number</label><br/>
+                                            <label style="font-weight: 400" id="userMobile"></label>
+                                        </div>
+                                        <div class="col-xs-12" style="margin:5px">
+                                            <label>DOB</label><br/>
+                                            <label style="font-weight: 400" id="userDob"></label>
+                                        </div>
+                                        <div class="col-xs-12" style="margin:5px">
+                                            <label>PAN Number</label><br/>
+                                            <label style="font-weight: 400" id="pan"></label>
+                                        </div>
+
+                                        <div class="col-xs-12" style="margin:5px">
+                                            <label>AADHAR</label><br/>
+                                            <label style="font-weight: 400" id="aadhar"></label>
+                                        </div>
+
+                                        <div class="col-xs-12" style="margin:5px;">
+                                            <div class="col-xs-12" style="padding-top:5px; text-align:center;border:2px dashed gray">
+                                                <label style="text-align:center">Manager Details</label><br/>
+                                                <label style="font-weight: 400" id="managerName"></label><br/>
+                                                <label style="font-weight: 400" id="managerEmail"></label><br/>
+                                                <label style="font-weight: 400" id="managerPhone"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.row -->
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <aside class="main-sidebar">
+            <section class="sidebar">
+                <div class="user-panel">
+                    <div class="pull-left info">
+                        <p id="empNameDtl"></p>
+                        <!-- <a  ><i class="fa fa-circle text-success"></i> Online</a> -->
+                    </div>
+                </div>
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li>&nbsp;</li>
+                    <li class="header">
+                        <h4 style="padding-left:10px;color:#fff; font-size: small;">An Integra Group Company</h4>
+                    </li>
+                    <li class="treeview active menu-open">
+
+                        <ul class="treeview-menu">
+                            <!--<li><a class='session' id='session'+session onclick="location.href='http://localhost:4110/IMSS/ILTS/dashboard'+'{session:'+session+'}'"><i class="fa fa-circle-o"></i>ILTS</a></li>-->
+                            <!-- <li><a onclick="renderHtml('/IMSWiki/ILTS')"><i class="fa fa-envelope"></i>ILTS</a></li> -->
+                            <li><a href="#" onclick="changeContent('dashBoard')"><i class="fa fa-dashboard"></i>DASH BOARD</a></li>
+                            <li class="treeview">
+                                <a href="#">
+                                    <i class="fa fa-chain"></i> <span>i'M Services</span>
+                                    <span class="pull-right-container">
+                                        <i class="fa fa-angle-left pull-right"></i>
+                                        </span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class="treeview"><a href="#"><i class="fa fa-envelope"></i>iLTS <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                                        <ul class="treeview-menu" id='empMenuDtl'>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" onclick="changeContent('essConsign')" style="color:#eb7e7e"><i class="fa fa-line-chart"></i>&nbsp;PAS</a></li>
+                                    <li><a href="#" onclick="changeContent('mrbs')" ><i class="fa fa-users"></i>MRBS</a></li>
+                                    <li><a href="#" onclick="changeContent('essConsign')"><i class="fa fa-star-half-full"></i>ESS</a></li>
+                                    <li><a href="#" onclick="changeContent('essConsign')" style="color:#eb7e7e"><i class="fa fa-file-text-o"></i>Time Sheet</a></li>
+                                    <li class="treeview"><a href="#" onclick="changeContent('hrmain')"><i class="fa fa-ticket"></i>Support<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                                        <ul class="treeview-menu">
+                                            <li>
+                                                <a href="#" onclick="changeContent('essConsign')" style="color:#eb7e7e"></i>HR</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="changeContent('essConsign')" style="color:#eb7e7e"></i>Admin</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="changeContent('ITTicketRegister')" style="color:#eb7e7e"></i>IT</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" onclick="changeContent('essConsign')" style="color:#eb7e7e"></i>BU</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="treeview">
+                                <a href="#">
+                                    <i class="fa fa-legal"></i> <span>Policies</span>
+                                    <span class="pull-right-container">
+                                            <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class="treeview menu">
+                                        <a href="#">
+                                            <i class="fa fa-book"></i> <span>QMS</span>
+                                            <span class="pull-right-container">
+                                                            <i class="fa fa-angle-left pull-right"></i>
+                                                            </span>
+                                        </a>
+                                        <ul class="treeview-menu">
+                                            <li><a href="#" onclick="changeContent('home')"><i class="fa fa-home"></i>Home Page</a></li>
+                                            <li><a href="#" onclick="changeContent('qmsMain')"><i class="fa fa-dot-circle-o"></i>QMS V03.90</a></li>
+                                            <li><a href="#" onclick="changeContent('isecure')"><i class="fa fa-expeditedssl"></i>iSecure</a></li>
+                                            <li><a href="#" onclick="changeContent('WorkAids')"><i class="fa fa-download"></i>Work Aids</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" onclick="changeContent('hrmain')"><i class="fa fa-user"></i>HR</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" onclick="changeContent('iscoopFolder')"><i class="fa fa-bullhorn"></i>i'm SCOOP</a></li>
+                            <li><a href="#" onclick="changeContent('iTicket')"><i class="fa fa-ticket"></i>iTicketing</a></li>
+                            <li><a href="#" onclick="changeContent('worldClock')"><i class="fa fa-hourglass-half"></i>World Clock</a></li>
+                            <li><a href="#" onclick="changeContent('TravelAllowance')"><i class="fa fa-hourglass-half"></i>Travel Allowance</a></li>
+                            <li><a href="#" onclick="logout()"><i class="fa fa-sign-out"></i>Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section id="content" class="content">
+            </section>
+        </div>
+
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                <b>Version</b> 1.0
+            </div>
+            <div style="text-align:center">Copyright &copy; 2018-2019 <a href="http://imss.co.in"><b>IMSS (P) Ltd.</b></a>. All rights reserved.</div>
+        </footer>
+
+    </div>
+
+    <script src="/QMS/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/QMS/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/QMS/bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="/QMS/bower_components/jquery/dist/jquery.form-validator.min.js"></script>
+
+    <!-- FastClick -->
+    <script src="/QMS/bower_components/fastclick/lib/fastclick.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/QMS/bower_components/dist/js/adminlte.min.js"></script>
+    <!-- Slimscroll -->
+    <script src="/QMS/bower_components/select2/dist/js/select2.full.min.js"></script>
+    <script src="/QMS/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/QMS/bower_components/moment/min/moment.min.js"></script>
+    <script src="/QMS/bower_components/dist/js/pages/dashboard.js"></script>
+    <script src="/QMS/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="/QMS/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="/QMS/bower_components/shorten/shorten.js"></script>
+    <script src="/QMS/bower_components/bootstrap/dist/js/notify.min.js"></script>
+    <script src="/QMS/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+    <script src="/QMS/bower_components/fullcalendar/dist/fullcalendar.js"></script>
+    <script src="/QMS/bower_components/confirm/jquery.confirm.js"></script>
+    <script type="text/javascript" src="/QMS/bower_components/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="/dependency/script.js"></script>
+    <script src="/dependency/api.js"></script>
+
+
+
+    <script>
+        changeContent("dashBoard");
+    </script>
+</body>
+
+</html>

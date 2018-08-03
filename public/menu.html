@@ -1,0 +1,28 @@
+<ul class="sidebar-menu" data-widget="tree">
+    <li class="treeview active menu-open">
+        <ul class="treeview-menu">
+            <!--<li><a class='session' id='session'+session onclick="location.href='http://localhost:4110/IMSS/ILTS/dashboard'+'{session:'+session+'}'"><i class="fa fa-circle-o"></i>ILTS</a></li>-->
+            <!-- <li><a onclick="renderHtml('/IMSWiki/ILTS')"><i class="fa fa-envelope"></i>ILTS</a></li> -->
+            <li><a href="#" onclick="changeContent('dashBoard')"><i class="fa fa-dashboard"></i>DASH BOARD</a></li>
+            <li class="treeview menu">
+                <a>
+
+                    <i class="fa fa-envelope"></i> <span>ILTS</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                </a>
+                <ul class="treeview-menu" id='empMenuDtl'>
+
+                </ul>
+            </li>
+            <!--<li><a onclick="sendSession(localStorage.getItem('session'))"><i class="fa fa-circle-o"></i>ILTS</a></li>-->
+            <li><a href="#" onclick="changeContent('home')"><i class="fa fa-book"></i>QMS</a></li>
+            <li><a href="#" onclick="renderHtml('#')"><i class="fa fa-sign-out"></i>Logout</a></li>
+        </ul>
+    </li>
+
+</ul>
+<script>
+    document.getElementById('empMenuDtl').innerHTML = localStorage.getItem('empMenuDtl');
+</script>

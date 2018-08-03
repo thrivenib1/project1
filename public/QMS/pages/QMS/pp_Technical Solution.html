@@ -1,0 +1,302 @@
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script>
+  <!-- design starts here ...-->
+
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+                <h1>
+                  Quality Management System
+                </h1>
+                <ol class="breadcrumb">
+                  <li></b><a href="#" onclick="changeContent('qmsMain')" ><i class="fa fa-dashboard"></i> Home</a></b></li>
+                  <li><b><a href="#" onclick="changeContent('qmsMain')" >Integra Quality Manual</a></b></li>
+                  <li class="active"><b><a href="#" onclick="changeContent('ProjProc')" >Project Procedures</a></b></li>
+                </ol>
+                </section>
+                <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th align="center" colspan="4">Technical Solution</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ISO Clause: 7.3.1</td>
+                                <td>PR06</td>
+                                <td>Version: 3.00</td>
+                                <td>Date: 17th May 2010</td>
+                            </tr>
+                        </tbody>
+                    </table>
+              
+                  <div class="Section1">
+                  
+                <p><b>6.0 Introdution </b></p>
+                                <p><b>6.1.1 Purpose </b><br/>This process defines the procedure used within Integra for providing Technical Solution (TS) for internal and external projects. <br/>The purpose of Technical Solution is to design, develop, and implement solutions to requirements as specified in the SRS. Solutions, designs, and implementations encompass products, product components, and product-related lifecycle processes either singly or in combinations as appropriate.</p>
+                                                
+                                <p><b>6.1.2 Policy </b><br/>All software development projects will develop design specification for the project as stipulated in this process document.</p>
+                                
+                                <p><b>6.1.3 Scope</b><br/>This process is applicable to all product, product component, product related life-cycle process across the organization.</p>
+                                                
+                             <p><b>6.1.4 Entry criteria </b><br/>The basic criteria for initiating the TS process are:</p>
+                                 <div class="box-body">
+                                    <ul>
+                                        <li>RFP</li>				
+                                        <li>SRS</li>
+                                    </ul>
+                                </div>		
+                            <!-- /.box-body -->   
+                                <p><b>6.2 Stakeholders </b></p>
+                                <p><b>6.2.1 Responsibilities </b><br/>
+                                <p>The roles, responsibilities and authorities for the TS process are defined in the table below.</p>
+                            
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                  <th>Sl.No.</th>
+                                  <th>Role</th>
+                                  <th>Responsibilities</th>
+                                  <th>Authority</th>
+                                </tr>  
+                            </thead>	
+                            <tbody>			
+                                <tr>
+                                    <td>1.</td>
+                                    <td>Delivery Head</td>
+                                    <td>
+                                         <div class="box-body">
+                                            <ul>
+                                                <li>   Review DOU </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="box-body">
+                                            <ul>
+                                                <li> Internally approve the DOU </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <td>Architect</td>
+                                    <td>
+                                        <div class="box-body">
+                                            <ul>
+                                                <li>  Prepare DOU </li>
+                                                <li>Review HLD</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="box-body">
+                                            <ul>
+                                                <li> Peer approval of DOU </li>
+                                                <li>Approve HLD</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3.</td>
+                                    <td>PM</td>
+                                    <td>
+                                        <div class="box-body">
+                                            <ul>
+                                                <li>   Monitor process TS </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        NIL
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4.</td>
+                                    <td>CPC</td>
+                                    <td>
+                                        <div class="box-body">
+                                            <ul>
+                                                <li> Review and approve </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="box-body">
+                                            <ul>
+                                                <li> Approve HLD,DOU </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5.</td>
+                                    <td>PL</td>
+                                    <td>
+                                        <div class="box-body">
+                                            <ul>
+                                                <li>   Prepare HLD </li>
+                                                <li>Review LLD</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="box-body">
+                                            <ul>
+                                                <li> Internally approve LLD </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>		
+                                <tr>
+                                    <td>6.</td>
+                                    <td>TM</td>
+                                    <td>
+                                        <div class="box-body">
+                                            <ul>
+                                                <li>     Prepare LLD</li>
+                                                <li>Implement design</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        NIL
+                                    </td>
+                                </tr>
+                                </tbody>
+                              </table>
+                             
+                                <p><b>6.3  Task Details</b></p>
+                                <p><b>6.3.1 Process Flow Diagram</b><br/>The Process flow of TS is given below.</p>
+                                
+                                    <img class="img-responsive pad" alt="Photo" src="/QMS/pages/QMS/Downloads/ProjectProcedures/PR06-Fig1.gif">
+                               
+                                <p><b>6.3.2 Tasks</b><br/>The steps of the TS process are described below:</p>
+                                <p><b>6.3.2.1    Develop alternative solutions and selection criteria (SP 1.1)</b></p>
+                              
+                                    <img class="img-responsive pad" alt="Photo" src="/QMS/pages/QMS/Downloads/ProjectProcedures/PR06-Fig2.gif">
+                             
+                                <div class="box-body">
+                                    <ul>
+                                        <li>The architect will prepare the DOU using <u><a href='downloads/projectProcedures/TPREQ01.doc' download>TPREQ01</a></u></li>
+                                        <li>The screening criteria of the alternate solution will be defined and documented in the DOU.</li>
+                                        <li>The architect will develop alternate solution for the requirement document in the DOU.</li>
+                                        <li>Identify and evaluate if any COTS products can be used in the solution architecture.</li>
+                                        <li> The architect will define the selection criteria of the alternate solution and document in the DOU.</li>
+                                        <li>   A requirement traceability matrix will be prepared using <u><a href='downloads/projectProcedures/TPRQ02.doc' download>TPREQ02</a></u> to ensure the traceability between the requirements and the alternate solution.</li>
+                                        <li>The DOU will be reviewed and approved internally by the BUH or peer architect.</li>
+                                        <li>Verification procedure, <u><a href="#" onclick="changeContent('QMS03PR07')">PR07</a></u> will be used for the review process.</li>
+                                    </ul>
+                                </div>
+                                <p><b>6.3.2.2   Select product component solution (SP 1.2)</b></p>
+                              
+                                    <img class="img-responsive pad" alt="Photo" src="/QMS/pages/QMS/Downloads/ProjectProcedures/PR06-Fig3.gif">
+                              
+                                <div class="box-body">
+                                    <ul>
+                                        <li>Based on the evaluation of alternative solutions the architect will update the selection criteria as required.</li>
+                                        <li>The architect will identify the re-usable components to be used/developed in the project [B1].</li>
+                                        <li>The architect will prepare the document of understanding (DOU) <u><a href='downloads/projectProcedures/TPREQ01.doc' download>TPREQ01</a></u> for the proposed solution and obtain an endorsement from the customer.</li>
+                                        <li> The DOU is sent to the customer after review by a peer architect.</li>
+                                        <li>  A requirement traceability matrix will be prepared by the architect using <u><a href='downloads/projectProcedures/TPRQ02.doc' download>TPREQ02</a></u>, which will have the traceability of requirements to the proposed solution.</li>
+                                        <li>All the work products viz DOU, RTM and re-usable component document[B2]  will be reviewed and approved before base lining them in the project repository[B3].</li>
+                                    </ul>
+                                </div>	
+                                <p><b>6.3.2.3 Develop design for the product or product component (SP 2.1, 2.2 and 2.3)</b></p>
+                               
+                                    <img class="img-responsive pad" alt="Photo" src="/QMS/pages/QMS/Downloads/ProjectProcedures/PR06-Fig4.gif">
+                                </div>  <p><b>6.3.2.3.2 HLD</b></p>
+                                <div class="box-body">
+                                    <ul>
+                                        <li> The architect will prepare the HLD keeping the following in mind:
+                                            <div class="box-body">
+                                                <ol>
+                                                    <li> Use data flow diagrams and control flow diagrams to diagrammatically represent the design.</li>
+                                                    <li> Make the design modular by adapting suitable design methodology like object oriented design.</li>
+                                                    <li>Update the traceability matrix to establish traceability between software requirements and HLD.</li>
+                                                </ol>
+                                            </div>
+                                        </li>		
+                                        <li>The input for preparing the HLD <u><a href='downloads/projectProcedures/TPDES01.doc' download>TPDES01</a></u> would be SRS, DOU, re-usable comp. doc, design guidelines.</li>
+                                        <li>The architect will call for a review seminar to review the HLD and baseline the HLD after approval. Refer to verification procedure for more detail on review process.</li>
+                                        <li>The HLD will be baseline after approval.</li>
+                                    </ul>
+                                </div>
+                                <p><b>6.3.2.3.3  LLD</b></p>
+                                <div class="box-body">
+                                    <ul>
+                                        <li> The technical lead of the project will be responsible for preparing the LLD <u><a href='downloads/projectProcedures/TPDES02.doc' download>TPDES02</a></u> with the help of the team members.</li>
+                                        <li>Document the low level design using diagrammatic representation like sequence diagram and class diagram.</li>
+                                        <li> Identify the unit test cases required to test the code.</li>
+                                        <li>The technical lead will update the RTM.</li>
+                                        <li>  Identify coding language and appropriate coding standards to be used in the project.</li>
+                                        <li>  The LLD will be reviewed and approved by the architect.</li>
+                                        <li>The LLD will be baseline after approval.</li>
+                                    </ul>
+                                </div>
+                                <p><b>6.3.2.3.3  Perform make, buy or reuse analyses (SP 2.4)</b></p>				
+                                <div class="box-body">
+                                    <ul>
+                                        <li>  The architect will perform make buy analysis.</li>
+                                        <li> The make buy analysis will be reviewed by peer architect before taking the final decision</li>
+                                    </ul>
+                                </div>
+                                <p><b>6.3.2.5   Implement the design (coding) (SP 3.1)</b></p>
+                                
+                                    <img class="img-responsive pad" alt="Photo" src="/QMS/pages/QMS/Downloads/ProjectProcedures/PR06-Fig5.gif">
+                               
+                                <div class="box-body">
+                                    <ul>
+                                        <li>The project team members will code as per the LLD in the identified language/s.</li>
+                                        <li>All the algorithms, data structures, data schema are converted into code.</li>
+                                        <li>Coding standards will be followed while developing the code.</li>
+                                        <li>Peer review of the code will be carried out and code review records will be maintained.</li>
+                                        <li>The team members will test the units as per the unit test cases identified. The team members will establish the traceability of code with LLD at class/file level with appropriate file headers and function headers as necessary.</li>
+                                    </ul>
+                                    <p>Refer Verification procedure for further details on reviews and testing.</p>
+                                    <p>Refer product integration process (PI) for integrating components together to form the system.</p>
+                                </div>		
+                                <p><b>6.3.2.6  Develop Product Support Documentation (SP 3.2)</b></p>
+                               
+                                    <img class="img-responsive pad" alt="Photo" src="/QMS/pages/QMS/Downloads/ProjectProcedures/PR06-Fig6.gif">
+                             
+                                <div class="box-body">
+                                    <ul>
+                                        <li>  Develop necessary support documents for the end product that helps rebuilding, installation, and usage of the system with the help of the technical writers.</li>
+                                        <li>The technical documents may include the following as applicable:
+                                            <div class="box-body">
+                                                <ol>
+                                                    <li>Build notes</li>
+                                                    <li>Installation guide <u><a href='downloads/projectProcedures/TPDES03.doc' download>(TPDES03)</a></u></li>
+                                                    <li>User manual <u><a href='downloads/projectProcedures/TPDES04.doc' download>(TPDES04)</a></u></li>
+                                                    <li>Online help <u><a href='downloads/projectProcedures/TPDES05.doc' download>(TPDES05)</a></u></li>
+                                                </ol>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>	
+                                <p>The PM will assign the tasks to the technical writers.</p>
+                                <div class="box-body">
+                            <table class="table table-bordered">
+                                    
+                            <tbody>	
+                                <tr>
+                                    <td>[B1]</td>
+                                    <td>The re-usable components so identified needs to be documented. This will have cost implications and hence should be done during the proposal stage itself. Yet it need not be shared with the customer.</td>
+                                <tr>
+                                <tr>
+                                    <td>[B2]</td>
+                                    <td>give name of the document having this section.</td>
+                                <tr>
+                                <tr>
+                                    <td>[B3]</td>
+                                    <td>We can push all pre-sales work products into the knowledge repository.</td>
+                                <tr>
+                            </tbody>
+                            </table>
+                            </div>
+                </div>
+       
+                

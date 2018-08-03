@@ -1,0 +1,997 @@
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script><section class="content-header">
+    <h1>
+        Quality Management System
+    </h1>
+    <ol class="breadcrumb">
+        <li>
+            </b><a href="#" onclick="changeContent('qmsMain')"><i class="fa fa-dashboard"></i> Home</a></b>
+        </li>
+        <li class="active"><b><a href="#" onclick="changeContent('WorkAids')" >Work Aids</a></b></li>
+        <li class="active"><b><a href="#" onclick="changeContent('WA_Code_STD')" >Coding Stadards</a></b></li>
+    </ol>
+</section>
+
+<div class="Section1">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th align="center" colspan="4">Coding Standard for Shell Scripts</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CS-01</td>
+                <td>Version: 3.00</td>
+                <td>Date: 17th May 2010</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.25in;text-indent:-9.0pt"><b><span style="font-size:13.5pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1">1.0 Introduction<o:p></o:p></span></b></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.25in;text-indent:-9.0pt;mso-list:l0 level2 lfo2">
+        <!--[if !supportLists]--><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">1.1<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b>
+        <!--[endif]--><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">Purpose<o:p></o:p></span></b></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.25in;text-indent:-9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">The purpose of the Standards is to
+provide the coding standard for UNIX Shell Scripts.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.25in;text-indent:-9.0pt;mso-list:l0 level2 lfo2">
+        <a name="_Toc454275077"></a>
+        <!--[if !supportLists]--><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">1.2<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b>
+        <!--[endif]--><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">Scope<o:p></o:p></span></b></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.25in;text-indent:-9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">This standard is applicable for
+developing UNIX Shell Scripts.</span><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.25in;text-indent:-9.0pt;mso-list:l0 level2 lfo2">
+        <a name="_Toc454275078"></a>
+        <!--[if !supportLists]--><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial;color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">1.3<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></b>
+        <!--[endif]--><b><span style="mso-bidi-font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1">When to
+use a shell procedure</span></b><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1"> <o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l2 level1 lfo4">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Doing the same task repeatedly.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l2 level1 lfo4">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">A complex program using many command
+lines</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;
+mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.25in;text-indent:-9.0pt;mso-list:l0 level2 lfo2">
+        <a name="_Toc454275079"></a>
+        <!--[if !supportLists]--><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial;color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">1.4<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></b>
+        <!--[endif]--><b><span style="mso-bidi-font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1">When not
+to use a shell procedure</span></b><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+9.0pt"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">When the requirement is too complex
+for the shell procedure to achieve.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l7 level1 lfo6">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Requires high efficiency.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l7 level1 lfo6">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Requires a different Hardware
+environment.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l7 level1 lfo6">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Requires different software tools.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.25in;text-indent:-9.0pt;mso-list:l0 level2 lfo2">
+        <a name="_Toc454275080"></a>
+        <!--[if !supportLists]--><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial;color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">1.5<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></b>
+        <!--[endif]--><b><span style="mso-bidi-font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1">Standards
+for shell procedure Designing</span></b><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l5 level1 lfo8">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">A shell program should be based on a
+logical division of functions</span><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1">.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l5 level1 lfo8">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">For each logical division, create a
+separate function or program that will work to accomplish that task. These shell
+programs and functions can call other functions and programs as needed.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l5 level1 lfo8">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">A shell procedure should have the
+following features.</span><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l5 level1 lfo8">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Reliability</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l5 level1 lfo8">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Efficiency</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l5 level1 lfo8">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Portability</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l5 level1 lfo8">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Usability</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l5 level1 lfo8">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">In any shell program simplicity
+should prevail over complexity.</span><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.25in;text-indent:-9.0pt;mso-list:l0 level2 lfo2">
+        <a name="_Toc454275081"></a>
+        <!--[if !supportLists]--><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">1.6<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b>
+        <!--[endif]--><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">How to write a shell procedure<o:p></o:p></span></b></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.5in"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Try to make the script a generic one
+by passing the variables from the command line.</span><span style="font-size:
+16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.25in;text-indent:-9.0pt;mso-list:l0 level2 lfo2">
+        <a name="_Toc454275082"></a>
+        <!--[if !supportLists]--><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial;color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">1.7<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></b>
+        <!--[endif]--><b><span style="mso-bidi-font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1">Make a
+shell procedure structured</span></b><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1"> <o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Divide the program in to manageable
+chunks to derive the following advantages</span><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Makes the program easier to
+understand.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Reduces redundant code (calls the
+function instead of repeating the code many times).</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Makes debugging easier.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Increases maintainability.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Encourages reusing code.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Decreases testing time</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Don't define a function with a name,
+which is aliased.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Define all the functions in one file
+and execute the same in the program where you want to use the functions or
+assign the path the filename, which contain all the functions to FPATH and
+export it.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Use return statement in functions
+when you want to come out the function rather than exit which will exit out
+from the program.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">When functions are used in a shell
+program, care should be taken to store all the arguments passed to the shell
+program because when a function is called with arguments inside a shell program,
+the function arguments will replace the originally passed arguments to the
+shell program.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Don't define a function using a name
+that already exists, one of the two things will happen. If the name is a
+function you will redefine the function. If the name is an alias you will not
+redefine the alias but will instead run the alias.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Use "typeset" command to
+define variables in a function, if they are not used in the main program.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Any time that if we find copying or
+duplicating code, we should consider utilizing a function. Some things that
+often end up being function in many of the shell programs are :</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Error routines - No need to produce
+the same codes for every error; make it in a function.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Input/output routines - Often we
+read/write to/from the terminal or a file in several places. No need to copy
+the same codes; make it a function.</span><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Any repeated process - Any procedure
+that repeat more than 2 times should be a function</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">When we are writing a new function
+or program to accomplish some task there are 2 question's to ask ourselves:</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Is there some way that we could
+generalize this function or procedure?</span><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Is there a way to make the module
+independent from the current calling program so that other programs can share
+the code?</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l3 level1 lfo10">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">When you are repeatedly performing
+the statements in the function call by calling the function multiple times, go
+for recursive functions. </span><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.25in;text-indent:-9.0pt;mso-list:l0 level2 lfo2">
+        <a name="_Toc454275083"></a>
+        <!--[if !supportLists]--><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial;color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">1.8<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></b>
+        <!--[endif]--><b><span style="mso-bidi-font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1">Standards
+for shell procedures</span></b><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Always use the Bold Brackets
+compared to test command.</span><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Use curly braces when retrieving the
+value of the variable.</span><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Re direct unnecessary errors
+messages to /dev/null</span><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Never take the return status from
+the pipe, as the status returned from the pipe command only tells about the how
+the last command executed but not the status of the whole pipe command.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Use case statements when many
+decisions are made rather than if-else loop.</span><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">It is always recommended to use $@
+to $*.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Use exit/return commands with proper
+return codes, as these return codes have some meaning to operating system.
+(Refer to Unix manual for return codes).</span><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Use ${parameter:-, $parameter:=;
+$parameter:?, $parameter:+ rather than going in to a if else loop, to set or
+unset a parameter.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">A shell programmer can improve the
+efficiency by running large complex programs during non-prime time by using
+"at" command.</span><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Shell-procedure efficiency depends
+on the number of bins searched for commands and their ordering is often prime
+candidates for efficiency improvement. Reduce the length of the value of PATH
+variable to the minimum possible.</span><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Use to change in to a directory
+rather than use a long path name repeatedly.</span><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Reduce the number of temporary files
+used in a shell program. Pipes and better selection of commands can reduce the
+number of temporary files.</span><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">There are many Unix commands where
+one can be substituted for several others. The usage of a particular command to
+reduce complexity is left to programmer discretion.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Try to use the built-in commands of
+shell instead of called programs (like awk etc ).</span><span style="font-size:
+16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Put reducing filters (example grep,
+cut, awk ) in a pipe first to reduce the transfer of data from one command to
+the other in a pipe.</span><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">To reduce portability of shell
+programs from one machine to other, stick to the standard Unix commands
+contained in /bin and /usr/bin</span><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Take the value of $? (Return code of
+some command) to some variable before it is changed by some other command.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Variable names should derive the use
+of variables for easy understanding and maintenance of any procedure.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">The choice between the
+"for" and "while" loops is left to the programmer style,
+but the choice should affect the simplicity of the program.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.25in;text-indent:-9.0pt;mso-list:l0 level2 lfo2">
+        <a name="_Toc454275084"></a>
+        <!--[if !supportLists]--><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial;color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">1.9<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></b>
+        <!--[endif]--><b><span style="mso-bidi-font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1">Comments</span></b><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Use comment wherever required.
+Comments should be meaningful and sufficient not cryptic or verbose.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Comments are required for each data
+item, logical data group and logical block of the program code.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">All comments must precede the actual
+program code described, except for the line comments on the same line as that
+of the code they describe.</span><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Comments should be placed at the
+same indentation level as that of the code they describe.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Code, which is machine dependent, should
+be commented to facilitate its portability.</span><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l6 level1 lfo12">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Judicious use of comments is
+recommended as it helps to make shell programs easier to debug and to maintain</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.25in;text-indent:-9.0pt;mso-list:l0 level2 lfo2">
+        <a name="_Toc454275085"></a>
+        <!--[if !supportLists]--><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial;color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">1.10<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span></span></span></b>
+        <!--[endif]--><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">Testing/Debugging</span></b><span style="font-size:
+16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l1 level1 lfo14">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Script need to be tested before it
+is delivered</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;
+color:#4F81BD;mso-themecolor:accent1">.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l1 level1 lfo14">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">The options shell provides for
+debugging are -v and -x options</span><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l1 level1 lfo14">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">-v option: Shell will display every
+command line as it is written in the shell procedure</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l1 level1 lfo14">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">-x option: Shell will display each
+command executed and the values substituted for variables.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l1 level1 lfo14">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Use a global variable to turn
+debugging ON and OFF in shell procedures</span><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l1 level1 lfo14">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">There are 2 major types of error
+conditions that you should check in your shell script if it to be well behaved
+and of high quality.</span><span style="font-size:16.0pt;mso-bidi-font-size:
+12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l1 level1 lfo14">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Internal errors in the script</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l1 level1 lfo14">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">External errors</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l1 level1 lfo14">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Internal errors are caused by some
+command failing to perform as expected or the user is not providing the
+necessary information to the shell program.</span><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l1 level1 lfo14">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">External errors are sent to shell
+procedure in the form of a signal sent by the system telling that some
+system-level event has occurred that will have an effect on your shell
+procedure.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.25in;text-indent:-9.0pt;mso-list:l0 level2 lfo2;tab-stops:right 27.0pt">
+        <a name="_Toc454275086"></a>
+        <!--[if !supportLists]--><b style="mso-bidi-font-weight:
+normal"><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">1.11<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span></span></span></b>
+        <!--[endif]--><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">How to Handle Internal Errors</span></b><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo16">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">In general a programmer needs to
+insure that the user is not allowed to provide invalid input that will cause
+the shell to behave independently</span><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo16">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">An integral part of well designed
+user interface is the quality of error messages provided as well as the degree
+to which the shell procedure protects the user from erroneous input that will
+cause the problems in the procedure.</span><span style="font-size:16.0pt;
+mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.75in;text-indent:-.25in;mso-list:l4 level1 lfo16">
+        <!--[if !supportLists]--><span style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Each time a shell command is
+executed the special variable $? is set to the return status of the command
+which provides you with the ability to check and ensure that the command worked
+properly.</span><span style="font-size:16.0pt;mso-bidi-font-size:12.0pt;
+color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+.25in;text-indent:-9.0pt;mso-list:l0 level2 lfo2">
+        <a name="_Toc454275087"></a>
+        <!--[if !supportLists]--><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;color:#4F81BD;mso-themecolor:accent1"><span style="mso-list:Ignore">1.12<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span></span></span></b>
+        <!--[endif]--><b><span style="mso-bidi-font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1">How to Handle External Errors<o:p></o:p></span></b></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+45.0pt;text-indent:-.5in"><span style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Use TRAP command to handle the
+external errors (for example signals). TRAP can handle increasingly complex
+jobs as required.</span><b><span style="mso-bidi-font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1"><o:p></o:p></span></b></p>
+
+    <p style="margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;margin-left:
+0in">&nbsp;</p>
+
+</div>

@@ -1,0 +1,282 @@
+<!-- Main content -->
+<!--<script type="text/javascript">-->
+    <!--document.getElementById('casualLeaveDtl').innerHTML = localStorage.getItem('cl');-->
+    <!--document.getElementById('privilegedLeaveDtl').innerHTML = localStorage.getItem('pl');-->
+    <!--var data = JSON.parse(localStorage.getItem('userDetails'));-->
+    <!--document.getElementById("txtManager").value = data.approvedByName;-->
+    <!--window.onload = leaveHistoryOfEmp();-->
+<!--</script>-->
+
+
+<!--<script type="text/javascript">
+    // For demo to fit into DataTables site builder...
+    $('#example')
+            .removeClass('display')
+            .addClass('table table-striped table-bordered');
+</script>-->
+
+<script>
+    document.getElementById('id').innerHTML = "content";
+
+    document.getElementsByClassName()
+
+    document.getElementsByClassName('class').innerHTML = "content";
+</script>
+
+
+<script type="text/javascript">
+    $('#startDate').datetimepicker({
+        disabledDates: JSON.parse(localStorage.getItem("disDateDtl")),
+        format : "YYYY-MM-DD",
+        daysOfWeekDisabled: [0,6]
+    });
+    $('#endDate').datetimepicker({
+        disabledDates: JSON.parse(localStorage.getItem("disDateDtl")),
+        format : "YYYY-MM-DD",
+        daysOfWeekDisabled: [0,6]
+    });
+    document.getElementById("lblHeaderTitle").innerHTML = "Leave Management System";
+    document.getElementById('casualLeaveDtl').innerHTML = localStorage.getItem('cl');
+    document.getElementById('privilegedLeaveDtl').innerHTML = localStorage.getItem('pl');
+    var data = JSON.parse(localStorage.getItem('userDetails'));
+    document.getElementById("txtManager").value = data.approvedByName;
+    document.getElementById("startDate").value = "2018-01-01";
+    var chkDate = new Date();
+    var ckMonth = (1 + chkDate.getMonth()).toString();
+    ckMonth = ckMonth.length > 1 ? ckMonth : '0' + ckMonth;
+    var ckDay = (1+chkDate.getDay()).toString();
+    ckDay = ckDay.length > 1 ? ckDay : '0' + ckDay;
+    var ckYear = chkDate.getFullYear();
+    var customDate = ckYear+"-"+ckMonth+"-"+ckDay;
+    document.getElementById("endDate").value = customDate;
+
+    window.onload = leaveHistoryOfEmp();
+</script>
+
+<div class="row">
+    <div class="col-lg-3 col-xs-6">
+        <!-- small box -->
+        <div class="small-box bg-yellow">
+            <div class="inner">
+                <h3 id="casualLeaveDtl" style="text-align: center;"></h3>
+                <p style="align:center">Casual Leaves</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-xs-6">
+        <!-- small box -->
+        <div class="small-box bg-green">
+            <div class="inner">
+                <h3 id="privilegedLeaveDtl" style="text-align: center;"></h3>
+
+                <p>Privileged Leaves </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ./col -->
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title"><b>Recent History</b></h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+                <div class="form-group">
+                    <label>Date range:</label>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <input type="text" class="form-control pull-right" id="startDate">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <input type="text" class="form-control pull-right" id="endDate">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <button type="button" class="btn btn-primary btn-normal" id="btnSubmit" onclick="LeaveHistoryOfEmpByDates()">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.input group -->
+                </div>
+                <table id="example2" class="table table-bordered table-hover">
+                    <thead>
+                    <tr>
+                        <th>Ref No.</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Total Days</th>
+                        <th>Leave Type</th>
+                        <th>Manager</th>
+                        <th>Reason</th>
+                        <th>Status</th>
+                    </tr>
+                    </thead>
+                    <tbody id="leaveHistoryDtl">
+                    <tr>
+                        <td colspan="8" id="leaveHistoryDtlEmptyMsg"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.box-body -->
+        </div>
+
+        <!-- /.box -->
+    </div>
+</div>
+<!-- /.col -->
+<div class="modal fade" id="modal-default">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Update Leave</h4>
+            </div>
+            <div class="modal-body">
+                <!-- Content Here -->
+                <div class="box-body">
+                    <input type='hidden' id='reqNum' />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Manager </label>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" readonly="readonly" value="" id="txtManager" />
+                                </div>
+                            </div>
+                            <!-- Date range -->
+                            <div class="form-group">
+                                <label>Date range:</label>
+                                <div class="row">
+
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <input type="date" class="form-control pull-right" id="startDate">
+                                    </div>
+                                    <hr/>
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <input type="date" class="form-control pull-right" id="endDate">
+                                    </div>
+
+                                </div>
+                                <!-- /.input group -->
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number </label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i>+91</i>
+                                    </div>
+                                    <input type="text" class="form-control" id="txtPhone" />
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <div class="form-group">
+                                <label>Leave Type</label>
+                                <div class="form-group">
+                                    <div class="col-md-4">
+                                        <label>
+                                            <input type="radio" name="r3" class="flat-red" checked value="1">
+                                            Regular CL
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="r3" class="flat-red" value="4">
+                                            Regular PL
+                                        </label>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <label>
+                                            <input type="radio" name="r3" class="flat-red" value="2">
+                                            LTC
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="r3" class="flat-red" value="5">
+                                            Maternity
+                                        </label>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <label>
+                                            <input type="radio" name="r3" class="flat-red" value="3">
+                                            Compensatory
+                                        </label>
+                                        <label>
+                                            <input type="radio" data-toggle="modal" data-target="#modal-leaveTypeInfo" name="r3" class="flat-red">
+                                            Leave Type Information
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Reason</label>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="3" id="txtReason"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Address</label>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="3" id="txtAddress"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content End Here -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                <button type="button" onclick='updateLeave();' class="btn btn-primary">Update Leave</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<div class="modal fade" id="modal-leaveTypeInfo">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="radioClear();">
+                    <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Leave Type Information</h4>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Regular CL : Should be less than or equal to 3 days</li>
+                    <li>Regular PL : Should be greater than 3 days is PL</li>
+                    <li>Compensatory Leave : Should be less than or equal to 3 days</li>
+                    <li>LTC : Condition goes here</li>
+                    <li>Maternity leave : Condition goes here</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

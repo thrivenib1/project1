@@ -1,0 +1,439 @@
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script><!-- design starts here ...-->
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Quality Management System
+    </h1>
+    <ol class="breadcrumb">
+        <li>
+            </b><a href="#" onclick="changeContent('qmsMain')"><i class="fa fa-dashboard"></i> Home</a></b>
+        </li>
+        <li><b><a href="#" onclick="changeContent('qmsMain')" >Integra Quality Manual</a></b></li>
+        <li class="active"><b><a href="#" onclick="changeContent('QualityManual')" >Quality Manual</a></b></li>
+    </ol>
+</section>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th align="center" colspan="3">QMS Overview Document</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>QM-A03</td>
+            <td>Version : 3.80</td>
+            <td>Date: 17th May 2010</td>
+        </tr>
+    </tbody>
+</table>
+<div class="Section1">
+    <p><b>1 Purpose</b></p>
+    <p>The organization of QMS at INTEGRA is described in the following sections</p>
+
+    <p><b>2.        Scope</b></p>
+    <p>All projects executed at INTEGRA.</p>
+
+
+    <p><b>3. Statutory requirements</b></p>
+    <p>1. IT Act </p>
+    <p>2. eKYC Data Security</p>
+
+    <p><b>4.        Process Description</b></p>
+    <p><b>Defining PDP (Project’s Defined Process)</b></p>
+    <p>All the Projects executed at INTEGRA shall follow the processes defined as part of the INTEGRA QMS, throughout the life cycle of the Project</p>
+    <p>INTEGRA has authorized MR (Management Representative) to make the necessary changes to the QMS (OSP) and is the custodian of all the process assets of INTEGRA. The process changes are defined and recommended by the SEPG.</p>
+    <p>Based on Project requirements the processes, methodologies, standards, guidelines and checklists may be tailored using the tailoring guidelines.</p>
+    <p>All the Projects of INTEGRA should follow the below mentioned processes with necessary tailoring as appropriate. Also, these processes are supported by other process assets such as templates, forms, and guidelines. Project should use these process
+        assets.
+    </p>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th colspan="2">SDLC Process</th>
+            </tr>
+            <tr>
+                <th>Process</th>
+                <th>Purpose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Requirements Elicitation and Management</td>
+                <td>To lay out a procedure that is to be followed in Projects to produce, analyze and manage requirements and to identify the inconsistencies between those requirements and Project’s plans and work products.</td>
+            </tr>
+            <tr>
+                <td>Design</td>
+                <td>Being a software solution provider to the customers as well for internal products, INTEGRA doesn’t buy the software solutions from outside and they make their own solutions with their resources at INTEGRA. However, if there are any reusable
+                    components identified in the process of making, the same will be documented in the respective Project Plans and re-used at the Project level if applicable. The process gives guidelines that help to come out with various designs such
+                    as High Level Design (HLD), Low Level Design (LLD), Unit Test Plan (UTP) preparation, System Test Plan (STP) etc.</td>
+            </tr>
+            <tr>
+                <td>Development</td>
+                <td>
+                    <p>This process provides guidelines that one can use for coding, reviewing the code and unit testing. The major activities include:</p>
+                    <p>· Program specification and UTP understanding</p>
+                    <p>· Code development</p>
+                    <p>· Code review</p>
+                    <p>· Preparation for Unit Testing activities, like test bed creation, test data preparation etc.</p>
+                    <p>· Unit testing</p>
+                    <p>· Unit test result review and defects closure</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Testing</td>
+                <td>
+                    <p>This process is to provide guidelines for performing Integration Testing & System Testing using individually tested program units. The major activities include:</p>
+                    <p>· Test data preparation</p>
+                    <p>· Testing and test results logging</p>
+                    <p>· Test Results Review</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br/>
+    <br/>
+    <br/>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th colspan="2">Support Processes</th>
+            </tr>
+            <tr>
+                <th>Process</th>
+                <th>Purpose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Project Planning</td>
+                <td>
+                    <p>This process helps to establish detailed plans for performing the various tasks of software engineering in a Project as also for managing it. The major activities of this process include:</p>
+                    <p>· Re-estimation</p>
+                    <p></p>
+                    <p>· Resource allocation</p>
+                    <p>· Risk Management (Through Risk Management Methodology of INTEGRA and Risk planning and management)</p>
+                    <p>· Preparation of the plans for the Projects.</p>
+                    <p>· Data management planning</p>
+                    <p>· Project Kick-Off</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Project Monitoring and Control</td>
+                <td>
+                    <p>This process is aimed at giving the stakeholders adequate visibility to the progress and issues in the Project’s as also ensures the Projects are executed as per the plan. This process will give guidelines, for what metrics are to
+                        be collected so that managers of the project can take appropriate preventive and corrective actions. </p>
+                    <p>Typically the Projects are tracked for:</p>
+                    <p>· Size</p>
+                    <p>· Effort</p>
+                    <p>· Schedule</p>
+                    <p>· Software and Hardware resources</p>
+                    <p>· Quality of work products</p>
+                    <p>· Risks</p>
+                    <p>· Issues</p>
+                    <p>· Commitments</p>
+                    <p>· Training requirements</p>
+                    <p>· The tracking of these parameters is done normally on a weekly basis, as well as on event driven basis.</p>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Configuration Management</td>
+                <td>
+                    <p>The purpose of this process is to establish and maintain the integrity of work products using configuration identification, configuration control, configuration status accounting, and configuration audits. This process consists of
+                        the following major activities:</p>
+                    <p>1. Identification of configurable items</p>
+                    <p>2. Preparation of Configuration Management Plan</p>
+                    <p>3. Establishing baselines</p>
+                    <p>4. Performing baseline audits</p>
+                    <p>5. Change management </p>
+                    <p>6. Status accounting</p>
+                </td>
+            </tr>
+            <tr>
+                <td>PCM Process</td>
+                <td>
+                    <p>The purpose of this process is to ensure that the Quality system is established, implemented, maintained and continuously improved in accordance with INTEGRA best practices as well as in alignment with market proven models such as
+                        ISO and CMMi.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Review Process</td>
+                <td>
+                    <p>The Purpose of this document is to describe the Review Process for all technical reviews conducted for the Projects executed in INTEGRA.</p>
+                    <p>Some of the critical work products covered under the technical reviews includes:</p>
+                    <p>· Project Plan/Operational Framework</p>
+                    <p>· Project management procedure document(s)</p>
+                    <p>· Configuration Management Plan</p>
+                    <p>· Work specification document/Statement of work/ system specification/requirement specification document</p>
+                    <p>· Design Document (High level design / Low level design)</p>
+                    <p>· Test Plans / Test results</p>
+                    <p>· Source Code</p>
+                    <p>· User Manuals/ Delivery Documents</p>
+                    <p>Three types of Technical Reviews are conducted at INTEGRA. These are Self-Review, Peer review, One-on-one review </p>
+                </td>
+            </tr>
+            <tr>
+                <td>Metrics Management</td>
+                <td>
+                    <p>The purpose of Metrics Management Process is to describe all metrics related activities at INTEGRA. The activities include data collection, data analysis, corrective and preventive action to be taken based on the analysis done. This
+                        covers both process quality and product quality metrics.</p>
+                    <p>All the metrics related activities are planned and executed at both Project level and at Organizational level to help the Project and INTEGRA to quantitatively control the process and product quality. </p>
+                    <p>The major activities in this process are:</p>
+                    <p>· Planning for the metrics suitable for the Project and the organization</p>
+                    <p>· Data Collection, analysis & reporting</p>
+                    <p>· Creation of process capability baseline</p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </td>
+            </tr>
+            <tr>
+                <td>PPQA</td>
+                <td>
+                    <p>The IQA (Internal Quality Audit) procedure is established to assure that software developed at INTEGRA complies with the processes defined in the QMS and provides visibility to the management about the procedures used & product built
+                        by the Project team.</p>
+                    <p>Periodic Activities includes</p>
+                    <p> Carry out Verification activities as per the IQA schedule.</p>
+                    <p>· Report the findings of this verification, through IQA report</p>
+                    <p>· Discuss and assist Project teams in resolving issues, taking corrective actions</p>
+                    <p>· Analyze the defect trend & customer complaints and assist the team in carrying out Causal Analysis and taking preventive/corrective actions.</p>
+                    <p>· Ensuring that Project Metrics are collected from Project’s.</p>
+                    <p>· Conduct quality related awareness / training programs as per the requirements of the Project’s</p>
+                    <br/><br/>
+                    <p>Project -end activities includes</p>
+                    <p>· Ensuring that Project end appraisals are completed for all the members</p>
+                    <p>· Identify the best practices, areas of improvement and tools that were used</p>
+                    <p>· Consolidate the metrics</p>
+                    <p>· Initiate archival of Project documents/media</p>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Closure and Archival process</td>
+                <td>
+                    <p>The Purpose of this document is to describe the procedure to be followed when a Project comes to a closure. The end of Project is normally reached when all the Project deliverables are transferred to the client organization.</p>
+                    <p>The main activities of this process include:</p>
+                    <p>· Review and update the Project Work Plan with all required details.</p>
+                    <p>· Review and complete contractual obligations, including:</p>
+                    <p>o Intellectual property protection or transfer</p>
+                    <p>o Licenses, royalties and copyrights</p>
+                    <p>o Facilities transfer or dismantling</p>
+                    <p>o Obligations to subcontractors</p>
+                    <p>o Warranty periods;</p>
+                    <p>· Confirm delivery completion to INTEGRA accounting services</p>
+                    <p>· Conduct the Project end audit</p>
+                    <p>o Problems / challenges faced and how they are resolved</p>
+                    <p>o Lessons learnt</p>
+                    <p>· Review the contract assessment with the customer's representative:</p>
+                    <p>o Ascertain customer satisfaction with project outcome</p>
+                    <p>o Apply Customer Satisfaction Assessment Program Update the Project description form</p>
+                    <p>· Archival</p>
+                    <p>o The important documents of the Project should be archived periodically and after the end of the Project</p>
+
+                    <p>Typically the following can be archived for Project’s:</p>
+                    <p>· Retrieval</p>
+                    <p>· Disposal of Records</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Training Process</td>
+                <td>The purpose of training Process is to continuously upgrade the knowledge of the individuals to enable them to perform their roles effectively and efficiently.</td>
+            </tr>
+            <tr>
+                <td>Decision Analysis and Resolution Process</td>
+                <td>
+                    <p>Decision Analysis and Resolution Process (DAR) is used at INTEGRA for Tool evaluation, Technical alternatives, senior management strategic decisions (such as Bid / no bid decisions, Vendor selection, Critical resource allocation /
+                        role allocation), Process improvement proposals evaluation and any other decision for Project’s where cost of reversal of decision is heavy or irreversible decision or client sensitivity.</p>
+                    <p>The purpose of Decision Analysis and Resolution (DAR) process is to analyze possible decisions using a formal evaluation process that evaluates identified alternatives against established criteria.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><b>5.  Environment Required for Development at INTEGRA</b></p>
+    <p><b>Hardware</b></p>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Hardware Description</th>
+                <th>Specification / Configuration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Laptop / Developer Machine</td>
+                <td>Pentium Core2Duo and above, 4 GB RAM, 320GB HDD, Windows/ Linux / Mac</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Desktop / Developer Machine</td>
+                <td>Pentium Core2Duo processor 4 GB RAM, 320GB HDD, Windows/ Linux / Mac</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Server</td>
+                <td>Intel Xeon Quad Core Processor and above 8 GB RAM, Linux / Windows</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><b>Software and Tools</b></p>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Software / Tool</th>
+                <th>Version</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Microsoft Office</td>
+                <td>2003 and above</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Microsoft Visual Studio</td>
+                <td>2005 and above</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>SQLServer</td>
+                <td>2005 and above</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>MongoDb</td>
+                <td>3.0 and above</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>MySQL</td>
+                <td>5.0 and above</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>PostgreSQL</td>
+                <td>9.2 and above</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Oracle</td>
+                <td>11g and above</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><b>6. Roles & Responsibilities</b></p>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Sl.No</th>
+                <th>Role</th>
+                <th>Responsibilities</th>
+                <th>Authority</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Project Manager</td>
+                <td>
+                    <p>· Prepare Project Plan, QMP, RMP, CMP</p>
+                    <p>· Initiate Project</p>
+                    <p>· Execute Project</p>
+                    <p>· Monitor Project</p>
+                    <p>· Control Project</p>
+                    <p>· Close Project</p>
+                </td>
+                <td>Project Manager</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Project Lead</td>
+                <td>
+                    <p> Prepare Scope of the Project</p>
+                    <p>· Prepare Effort Estimates</p>
+                    <p>· Prepare WBS</p>
+                    <p>· Identify Risks and Analyze</p>
+                    <p>· Identify Skills and Knowledge required in the Integrated Team</p>
+                    <p>· Qualify Team Member based on the skill requirement</p>
+                    <p>· Identify Product Metrics (e.g. performance metrics)</p>
+                    <p>· Identify Engineering Contributions to Organizational Process Assets (OPA) in the form of reusable components</p>
+                </td>
+                <td>Project Manager</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Technical Architect</td>
+                <td>
+                    <p>· Review Scope, Effort Estimates, WBS, Risks, Skills, Product Metrics, and Engineering Contributions to OPA.</p>
+                </td>
+                <td>Technical Architect</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Project Team</td>
+                <td>
+                    <p>· Participates in building and reviewing the plan</p>
+                </td>
+                <td>Project Manager</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Configuration Management Manager</td>
+                <td>
+                    <p>· Prepare Configuration Management Plan</p>
+                </td>
+                <td>Project Manager</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Risk Manager/Project Manager</td>
+                <td>
+                    <p>· Prepare Risk Management Plan</p>
+                </td>
+                <td>Project Manager</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Quality Manager</td>
+                <td>
+                    <p>· Identify process contributions to the OPA database</p>
+                    <p>· Reviews processes used in performing the project, to ensure the project plan and activities defined comply with the organization standards and processes.</p>
+                </td>
+                <td>Quality Manager</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>BU Head / Delivery Head</td>
+                <td>
+                    <p>· Review and Approve the Project Plan</p>
+                    <p>· Approve contributions to the OPA database</p>
+                    <p>· Authorizes the project and provides personnel and other resources</p>
+                    <p>· Reviews project progress against plan</p>
+                    <p>· Approves changes to plans</p>
+                    <p>· Approve change requests</p>
+                </td>
+                <td>BU Head</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><b>7.  Role of MR</b></p>
+    <p>Management representative has the following responsibilities</p>
+    <p>· Ensure that the processes needed for the Quality management system are established, implemented and maintained </p>
+    <p>· Reporting to Senior Management on the performance of the Quality management system and liaise with SEPG for any improvements</p>
+    <p>· Ensuring the promotion of awareness of customer requirements throughout the organization</p>
+
+
+    <p><b>8.   Appendix A</b></p>
+    <p>Flow diagram for defining the PDP</p>
+
+</div>

@@ -1,0 +1,76 @@
+<!-- Main content -->
+<script type="text/javascript">
+    document.getElementById("lblHeaderTitle").innerHTML = "Leave Management System";
+    window.onload = employeeListFun();
+</script>
+<div class="content" id="employeeListId">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title"><b>List Of Employees Under You</b></h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <table id="example2" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Employee Code</th>
+                                <th>Employee Name</th>
+                                <th>Joining Date</th>
+                                <th>Designation</th>
+                                <th>Leave Details</th>
+                            </tr>
+                        </thead>
+                        <tbody id="employeeListDtl">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.box -->
+</div>
+
+<div class="modal fade" id="modal-empList">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Employee Leave History</h4>
+            </div>
+            <div class="modal-body">
+                <div class="box">
+                    <div class="box-body">
+
+                        <table id="tblLeaveHistory" class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Ref No</th>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
+                                    <th>Total Days</th>
+                                    <th>Leave Type</th>
+                                    <th>Reason</th>
+                                    <th>Approved By</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="allLeaveDtl">
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary pull-right" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>

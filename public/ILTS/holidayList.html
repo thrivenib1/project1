@@ -1,0 +1,37 @@
+<script type="text/javascript">
+    document.getElementById("lblHeaderTitle").innerHTML = "Leave Management System";
+    defaultSelectYearInHoliList();
+    getListHoidays();
+</script>
+<div class="row">
+
+    <div class="box">
+        <div class="box-header">
+
+            <div class="col-md-8">
+                <h3 class="box-title">Holiday List</h3>
+            </div>
+            <div class="col-md-4">
+                <select id="year" class="form-control" onchange="getListHoidays();">                                            
+                     </select>
+            </div>
+
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Sl.No.</th>
+                        <th>Holiday</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="holidayDtl">
+
+                </tbody>
+            </table>
+        </div>
+        <!-- /.box-body -->
+    </div>
+</div>

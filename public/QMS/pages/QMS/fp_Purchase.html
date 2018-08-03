@@ -1,0 +1,432 @@
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script>
+<!-- design starts here ...-->
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Quality Management System
+    </h1>
+    <ol class="breadcrumb">
+        <li>
+            </b>
+            <a href="#" onclick="changeContent('home')">
+                <i class="fa fa-home"></i> Home</a>
+            </b>
+        </li>
+        <li>
+            <b>
+        <a href="#" onclick="changeContent('qmsMain')">Integra Quality Manual</a>
+      </b>
+        </li>
+        <li>
+            <b>
+        <a href="#" onclick="changeContent('FuncProc')">Functional Procedures</a>
+      </b>
+        </li>
+    </ol>
+</section>
+
+<table class="table table-bordered">
+    <thead>
+        <tr align="center">
+            <th colspan="4">Purchase</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>ISO Clause: 7.4</th>
+            <th>
+                FP08</th>
+            <th>Version : 3.50</th>
+            <th>Date : 17th September 2014</th>
+        </tr>
+    </tbody>
+</table>
+<div class="Section1">
+
+    <p>
+        <b>8.1 Introduction</b>
+    </p>
+    <p>
+        <b>8.1.1 Purpose</b>
+    </p>
+    <p>The purpose of this procedure is to manage the acquisition of product and services from suppliers. </p>
+    <p>
+        <b>8.1.2 Policy</b>
+    </p>
+    <p>The purchase procedure will be followed to ensure acquisition of quality product and services at minimum cost and shortest time. However exemptions to this process are included in section 8.3.1.8 of this document.</p>
+    <p>
+        <b>8.1.3 Scope</b>
+    </p>
+    <p>This process will be followed for purchases of products, services and product components.</p>
+    <p>
+        <b>8.1.4 Entry criteria</b>
+    </p>
+    <p>This process takes care of all purchases for the organisation including those intended for the product/ services offered by the organisation to its customers. For projects, products and services this process starts after the project kick-off.</p>
+    <p>
+        <b>8.2 Stakeholders</b>
+    </p>
+    <p>
+        <b>8.2.1 Roles and Responsibilities</b>
+    </p>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Sl. No.</th>
+                <th>Role</th>
+                <th>Responsibilities</th>
+                <th>Authorities</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Vendor Manager</td>
+                <td>
+                    <div class="box-body">
+                        <ul>
+                            <li>dentify possible suppliers for each product (product type) or service. Collect and analyze market data</li>
+                            <li>Obtain and maintain information of supplier sources</li>
+                            <li>Get the vendor evaluation done by a PM/Architect/FH</li>
+                            <li> Execute, review and renew supplier agreements</li>
+                            <li>Evaluate, accept and transit the acquired product</li>
+                            <li>Maintain the performance records of the suppliers</li>
+                            <li> Monitor the supplier processes with the help of internal users</li>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div class="box-body">
+                        <ul>
+                            <li>Blacklist vendors based on performance records or non-compliance with the agreement.</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Delivery Head</td>
+                <td>
+                    <div class="box-body">
+                        <ul>
+                            <li>Allot budget for acquiring</li>
+                            <li> Identify sources (internal or external)</li>
+
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div class="box-body">
+                        <ul>
+                            <li> Approve the acquisition needs and type of acquisition.</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <td>3.</td>
+            <td>CTO or VP</td>
+            <td>
+                <div class="box-body">
+                    <ul>
+                        <li> Review the selection</li>
+                        <li>Review SA</li>
+                        <li>Review suppliers/vendor performance data</li>
+
+                    </ul>
+                </div>
+            </td>
+            <td>
+                <div class="box-body">
+                    <ul>
+                        <li>Approve the list of suppliers</li>
+                        <li>Approve SA and revisions</li>
+                    </ul>
+                </div>
+            </td>
+            </tr>
+            <td>4.</td>
+            <td>Project Manager</td>
+            <td>
+                <div class="box-body">
+                    <ul>
+                        <li>Raise an acquisition request for a product or service</li>
+                        <li>Suggest an acquisition type</li>
+                        <li>Evaluate and accept the customer supplied material with the help of the purchase group, software architect or the project team</li>
+                        <li>Maintain the Customer Supplied material</li>
+                        <li>Help the vendor manager in preparing the SA</li>
+                        <li>Monitor relevant supplier processes</li>
+
+                    </ul>
+                </div>
+            </td>
+            <td>
+                <div class="box-body">
+                    <ul>
+                        <li>Recommend the blacklisting of a supplier</li>
+                    </ul>
+                </div>
+            </td>
+            </tr>
+            <td>5.</td>
+            <td>Architect</td>
+            <td>
+                <div class="box-body">
+                    <ul>
+                        <li> Define and maintain the evaluation criteria and rationale for selection</li>
+                        <li> Evaluate the prospective suppliers</li>
+                        <li>Evaluate the performance after the service is provided</li>
+                        <li>Give feedback on supplier performance</li>
+                        <li>Help in preparing SAs</li>
+                        <li>Evaluate the supplier’s faculty and course material</li>
+
+                    </ul>
+                </div>
+            </td>
+            <td>
+                <div class="box-body">
+                    <ul>
+                        <li> Modify the evaluation criteria and rationale for selection</li>
+                        <li>Recommend the blacklisting of a supplier</li>
+                    </ul>
+                </div>
+            </td>
+            </tr>
+            <td>6.</td>
+            <td>Competency Manager</td>
+            <td>
+                <div class="box-body">
+                    <ul>
+                        <li>Evaluate the suppliers for training services and course material</li>
+                        <li>Organize or coordinate the training</li>
+                        <li>Provide feedback to the vendor manager (Take from internal user</li>
+                        <li>Maintain performance records of the suppliers</li>
+
+                    </ul>
+                </div>
+            </td>
+            <td>
+                <div class="box-body">
+                    <ul>
+                        <li> Modify the evaluation criteria and rationale for selection</li>
+                        <li>Monitor relevant supplier processes</li>
+                        <li> Recommend the blacklisting of a supplier</li>
+                    </ul>
+                </div>
+            </td>
+            </tr>
+            <td>7.</td>
+            <td>Finance Head</td>
+            <td>
+                <div class="box-body">
+                    <ul>
+                        <li> Approve the payments</li>
+
+
+                    </ul>
+                </div>
+            </td>
+            <td>
+
+            </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        <b>8.3 Process Description</b>
+    </p>
+    <p>
+        <b>8.3.1 Tasks</b>
+    </p>
+    <p>
+        <b>8.3.1.1 Determine the Acquired Products and Acquisition Types</b>
+    </p>
+    <div class="box-body">
+        <ul>
+            <li>The vendor manager will prepare the list of possible product components or services to be acquired based on the current experience and define the acquisition type(s) for these product types.</li>
+            <li> For project specific requirements, the PM raises an acquisition request using Material Indent form
+                <u>
+            <a href='/QMS/pages/workaids/downloads/forms/FRSAM01.xls' download>FRSAM01</a>
+          </u> or the soft copy (e-mail) for a product or service. The CTO will approve the acquisition request.</li>
+            <li>For general business needs, the senior management or function head raises the request using Material Indent form
+                <u>
+            <a href='/QMS/pages/workaids/downloads/forms/FRSAM01.xls' download>FRSAM01</a>
+          </u> or the soft copy (e-mail). The CTO will approve the acquisition request.</li>
+        </ul>
+    </div>
+    <p>
+        <b>8.3.1.2 Identify and Select Suppliers</b>
+    </p>
+    <div class="box-body">
+        <ul>
+            <li>The vendor manager will identify sources for acquiring product components or services.</li>
+            <li>The vendor manager will collect information about possible suppliers by consulting trade reports, market data and past performance data</li>
+            <li>The vendor manager will analyse the data and maintain the information about the likely suppliers.</li>
+            <li>Assess the suppliers based on the evaluation criteria by using
+                <u>
+            <a href='/QMS/pages/workaids/downloads/forms/fr64d.doc' download>FR64D</a>
+          </u>
+            </li>
+            <li> Maintain Approved Supplier List (ASL) using
+                <u>
+            <a href='/QMS/pages/workaids/downloads/forms/FRSAM02.doc' download>FRSAM02.</a>
+          </u>
+            </li>
+
+        </ul>
+    </div>
+    <p>
+        <b>8.3.1.3 Establish Supplier Agreements</b>
+    </p>
+    <div class="box-body">
+        <ul>
+            <li>After selecting the vendor for the particular acquisition the vendor manager will prepare the purchase order (PO).</li>
+            <li>The terms and conditions and the specification of the requirements will be mentioned in the PO along with the acceptance condition.
+            </li>
+            <li>The PO will be signed by the CTO or VP</li>
+            <li>A copy of PO will be sent to Finance head for planning for the vendor payment.</li>
+        </ul>
+    </div>
+    <p>
+        <b>8.3.1.4 Execute and Supplier Agreements</b>
+    </p>
+    <div class="box-body">
+        <ul>
+            <li>Suppliers are monitored once in year with minimum 3 purchases based on following three parameters:</li>
+            <li> Competitiveness: - By calling the quotations from other suppliers, capable of providing equivalent products / services.</li>
+            <li>Service Quality: - The services provided by the supplier are evaluated based on the information in
+                <u>
+            <a href='/QMS/pages/workaids/downloads/forms/FRSYA04.doc' download>Equipment Downtime Log (FRSYA04)</a>
+          </u> and
+                <u>
+            <a href='/QMS/pages/workaids/downloads/forms/fr65c.doc' download>Suppliers Issue Log fr65c.</a>
+          </u>
+            </li>
+            <li>Turn-around Time: The average delivery time taken for the supply of products / services is calculated for each supplier.</li>
+            <li>The periodic monitoring of the supplier will be based on the criteria using the
+                <u>
+            <a href='/QMS/pages/workaids/downloads/forms/fr65a.doc' download>"Supplier Monitoring"</a>
+          </u> form. Minimum of 60% is needed to be an approved supplier.</li>
+            <li>The suppliers will be categorized in to the following categories as per the assessment:</li>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Rating</th>
+                        <th>Decision</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A</td>
+                        <td>> 80%</td>
+                        <td>The supplier will continue to be an Approved Supplier</td>
+                    </tr>
+                    <tr>
+                        <td>B</td>
+                        <td>60-79 %</td>
+                        <td>The supplier will continue to be an Approved Supplier</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>40-59 %</td>
+                        <td>The supplier will be given a warning to raise the service level to 60 % within the next 2 supplies.</td>
+                    </tr>
+                    <tr>
+                        <td>D</td>
+                        <td>
+                            < 40 %</td>
+                                <td>The supplier will be removed from the "Approved list of Suppliers"</td>
+                    </tr>
+                </tbody>
+            </table>
+            <li>While doing any purchase, Category A supplier will be preferred, if all product features under consideration, and price are found to be equal as compared to a Category B supplier.</li>
+        </ul>
+    </div>
+    <p>
+        <b>8.3.1.5 Acquire the Product or Service</b>
+    </p>
+    <div class="box-body">
+        <ul>
+            <li>When an acquisition request is received, the vendor manager refers to the ASL and acquires the product or service. The most preferred supplier is given the first choice. The VM evaluates the product acquired and hands it over to the internal
+                user.
+            </li>
+            <li> If an approved supplier is not available, identify a source and follow the process to identify a supplier.</li>
+            <li>Acquire the product or service after the approval from the authorised person (BU Head or Senior Management) and maintain the records</li>
+            <li>Evaluate the quality of the delivery.</li>
+        </ul>
+    </div>
+    <p>
+        <b>8.3.1.6 Monitor the Product or Service</b>
+    </p>
+    <p>Handover the product to the internal customer after the acquired product is certified to be acceptable. Maintain a record of the transition.</p>
+    <div class="box-body">
+        <ul>
+            <li>Monitor the performance of the service.</li>
+        </ul>
+    </div>
+    <p>
+        <b>8.3.1.7 Monitor the Supplier Processes</b>
+    </p>
+    <p>Monitor the processes of the suppliers that affect the projects executed or services rendered by Integra. Example: Selection, Verification or review, Support by using
+        <u>
+        <a href='/QMS/pages/workaids/downloads/forms/fr65a.doc' download>FR65A</a>
+      </u>
+    </p>
+    <div class="box-body">
+        <ul>
+            <li> <b>Verification</b></li>
+            <p>The verification of the vendor management process area is done on the following criteria:</p>
+            <div class="box-body">
+                <ul>
+                    <li>Updates of the records as per the process.</li>
+                    <li> Values of the process measures.</li>
+                    <li>Organisation of quality records.</li>
+                </ul>
+            </div>
+        </ul>
+    </div>
+    <div class="box-body">
+        <ul>
+            <li> <b>Quality Records</b></li>
+
+            <div class="box-body">
+                <ul>
+                    <li>Periodically evaluated performance records.</li>
+                    <li>Rating of selected suppliers before approving a supplier.</li>
+                    <li> Supplier Agreements.</li>
+                    <li>Monthly reports </li>
+                </ul>
+            </div>
+        </ul>
+    </div>
+    <p>
+        <b>8.3.1.8 Exemptions of the Purchase Process</b>
+    </p>
+    <p>Purchase process is exempted under the following conditions:</p>
+    <div class="box-body">
+        <ol>
+            <li>If the PO value for the following product/services is less than rupees five thousand (Rs 5000/-).However appropriate approval will be taken from the CTO/ Department head.</li>
+            <div class="box-body">
+                <ul>
+                    <li> Supplying of ID cards, Visiting cards, Badges, Banners and ID card Tags.</li>
+                    <li>Gift Items, Mobile handset.</li>
+                    <li>Desktop & adaptor servicing.</li>
+                    <li>Taxi services and company vehicle repairs etc.</li>
+                </ul>
+            </div>
+            <li>Purchase of general materials like stationery, housekeeping and pantry materials will be purchased directly from METRO by cash and will not follow the PO procedure.</li>
+            <li>Procuring of one time work contract will be made for the following product/services but this procedure may be exempted.</li>
+            <div class="box-body">
+                <ul>
+                    <li> Xerox and printer services.</li>
+                    <li>Package drinking water.</li>
+                    <li>Milk Supply.</li>
+                    <li>Courier services.</li>
+                    <li>Caterer services.</li>
+                </ul>
+            </div>
+        </ol>
+    </div>
+</div>

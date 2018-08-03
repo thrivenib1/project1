@@ -1,0 +1,2549 @@
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script><section class="content-header">
+    <h1>
+        Quality Management System
+    </h1>
+    <ol class="breadcrumb">
+        <li>
+            </b><a href="#" onclick="changeContent('qmsMain')"><i class="fa fa-dashboard"></i> Home</a></b>
+        </li>
+        <li class="active"><b><a href="#" onclick="changeContent('WorkAids')" >Work Aids</a></b></li>
+        <li class="active"><b><a href="#" onclick="changeContent('WA_Code_STD')" >Coding Stadards</a></b></li>
+    </ol>
+</section>
+
+<div class="Section1">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th align="center" colspan="4">Coding Standard for C#</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CS-06</td>
+                <td>Version: 3.00</td>
+                <td>Date: 17th May 2010</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p style="margin-left:9.0pt"><b><span lang="EN-US" style="font-size:13.5pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1;
+mso-ansi-language:EN-US">6.0 Introduction<o:p></o:p></span></b></p>
+
+    <p style="margin-left:9.0pt"><b><span lang="EN-US" style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1;mso-ansi-language:EN-US">6.1 Purpose</span></b><span lang="EN-US" style="color:#4F81BD;mso-themecolor:accent1;mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:5.0pt;margin-right:0cm;margin-bottom:5.75pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">The purpose of this Standard is to provide coding
+standard for C#.</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-left:9.0pt"><b><span lang="EN-US" style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1;mso-ansi-language:EN-US">6.2 Scope</span></b><span lang="EN-US" style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:
+accent1;mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:5.0pt;margin-right:0cm;margin-bottom:5.75pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">This Standard is applicable for developing C# language
+based projects.</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-left:9.0pt"><b><span lang="EN-US" style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1;mso-ansi-language:EN-US">6.3 Naming
+Conventions</span></b><span lang="EN-US" style="color:#4F81BD;mso-themecolor:
+accent1;mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-left:9.0pt"><b><span lang="EN-GB" style="mso-bidi-font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1;
+mso-ansi-language:EN-GB">6.3.1 Capitalization Styles</span></b><span lang="EN-GB" style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;
+mso-themecolor:accent1;mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-left:9.0pt"><b><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Pascal Casing</span></b><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-left:9.0pt"><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">The first letter of
+an identifier and the first letter of each subsequent concatenated word are
+capitalized. (eg: TestCounter)</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-left:9.0pt"><b><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Camel Casing</span></b><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-left:9.0pt"><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">The first letter of
+an identifier is lowercase and the first letter of each subsequent concatenated
+word is capitalized. (eg: testCounter)</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-left:9.0pt"><b><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Uppercase</span></b><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-left:9.0pt"><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">All letters in the
+identifier are capitalized only if it consists of an abbreviation</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-left:9.0pt"><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Which is one or two
+characters long (eg: PI) otherwise use Pascal casing instead.</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-left:9.0pt"><b><span lang="EN-GB" style="mso-bidi-font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1;
+mso-ansi-language:EN-GB">6.3.2</span></b><span lang="EN-GB" style="font-size:
+16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:accent1;
+mso-ansi-language:EN-GB"> </span><b><span lang="EN-GB" style="mso-bidi-font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;mso-themecolor:accent1;
+mso-ansi-language:EN-GB">Naming Guidelines</span></b><span lang="EN-US" style="font-size:16.0pt;mso-bidi-font-size:12.0pt;color:#4F81BD;mso-themecolor:
+accent1;mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-left:9.0pt"><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Use <i>English</i></span><span lang="EN-GB" style="mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">for naming identifiers.</span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-left:9.0pt"><b><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Do not</span></b><span lang="EN-GB" style="mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">use Hungarian notation. (In earlier days most of the programmers liked
+it - having the data type as a prefix for the variable name and using m_ as
+prefix for member variables. However, in .NET coding standards, this is not
+recommended. Usage of data type and m_ to represent member variables should not
+be used. All variables should use Camel Casing<span style="color:black">.)</span></span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:2.15pt;margin-right:0cm;margin-bottom:2.15pt;margin-left:
+9.0pt"><b><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Do use</span></b><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Camel Casing for <i>member</i></span><span lang="EN-GB" style="mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">variables, <i>local</i></span><span lang="EN-GB" style="mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">variables and <i>parameters</i>.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:2.15pt;margin-right:0cm;margin-bottom:2.15pt;margin-left:
+9.0pt"><b><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Do use</span></b><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Pascal Casing for <i>property</i>, <i>method</i>, <i>event</i>,
+<i>class</i></span><span lang="EN-GB" style="mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">etc.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:2.15pt;margin-right:0cm;margin-bottom:2.15pt;margin-left:
+9.0pt"><b><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Do not </span></b><span lang="EN-GB" style="font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">use a prefix
+for identifiers( _ , m_ , s_ etc).</span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-left:9.0pt"><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">If you want to distinguish
+between local and member variables you should use �this�.</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-left:9.0pt"><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Camel Casing:
+newImage</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-left:9.0pt"><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Pascal Casing:
+NewImage</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <div align="center">
+
+        <table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="mso-cellspacing:0cm;mso-yfti-tbllook:1184;mso-padding-alt:0cm 0cm 0cm 0cm">
+            <tbody>
+                <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+                    <td width="168" valign="top" style="width:100.5pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border:solid black 1.0pt;padding:
+  1.0pt 1.0pt 1.0pt 1.0pt;margin-left:9.0pt;margin-right:0cm">
+                            <h3 style="border:none;mso-border-alt:solid black 1.0pt;padding:0cm;
+  mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt"><span lang="EN-GB" style="font-size:
+  10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-ansi-language:EN-GB">Type</span><span lang="EN-GB" style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-GB"><o:p></o:p></span></h3>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border:solid black 1.0pt;border-left:
+  none;padding:1.0pt 1.0pt 1.0pt 0cm;margin-left:9.0pt;margin-right:0cm">
+                            <h3 style="border:none;mso-border-top-alt:solid black 1.0pt;mso-border-bottom-alt:
+  solid black 1.0pt;mso-border-right-alt:solid black 1.0pt;padding:0cm;
+  mso-padding-alt:1.0pt 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:
+  10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-ansi-language:EN-GB">Case</span><span lang="EN-GB" style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-GB"><o:p></o:p></span></h3>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border:solid black 1.0pt;border-left:
+  none;padding:1.0pt 1.0pt 1.0pt 0cm;margin-left:9.0pt;margin-right:0cm">
+                            <h3 style="border:none;mso-border-top-alt:solid black 1.0pt;mso-border-bottom-alt:
+  solid black 1.0pt;mso-border-right-alt:solid black 1.0pt;padding:0cm;
+  mso-padding-alt:1.0pt 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:
+  10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-ansi-language:EN-GB">Note</span><span lang="EN-GB" style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-GB"><o:p></o:p></span></h3>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border:solid black 1.0pt;border-left:
+  none;padding:1.0pt 1.0pt 1.0pt 0cm;margin-left:9.0pt;margin-right:0cm">
+                            <h3 style="border:none;mso-border-top-alt:solid black 1.0pt;mso-border-bottom-alt:
+  solid black 1.0pt;mso-border-right-alt:solid black 1.0pt;padding:0cm;
+  mso-padding-alt:1.0pt 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:
+  10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-ansi-language:EN-GB">Example</span><span lang="EN-GB" style="font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:
+  EN-GB"><o:p></o:p></span></h3>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:1">
+                    <td width="168" valign="top" style="width:100.5pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border:solid black 1.0pt;border-top:
+  none;padding:0cm 1.0pt 1.0pt 1.0pt;margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-left-alt:solid black 1.0pt;
+  mso-border-bottom-alt:solid black 1.0pt;mso-border-right-alt:solid black 1.0pt;
+  padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 1.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+  EN-GB">Class/Struct</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">Pascal</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm">&nbsp;</p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">AppDomain</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:2">
+                    <td width="168" valign="top" style="width:100.5pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border:solid black 1.0pt;border-top:
+  none;padding:0cm 1.0pt 1.0pt 1.0pt;margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-left-alt:solid black 1.0pt;
+  mso-border-bottom-alt:solid black 1.0pt;mso-border-right-alt:solid black 1.0pt;
+  padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 1.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+  EN-GB">Enum type</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">Pascal</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm">&nbsp;</p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">ErrorLevel</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:3">
+                    <td width="168" valign="top" style="width:100.5pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border:solid black 1.0pt;border-top:
+  none;padding:0cm 1.0pt 1.0pt 1.0pt;margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-left-alt:solid black 1.0pt;
+  mso-border-bottom-alt:solid black 1.0pt;mso-border-right-alt:solid black 1.0pt;
+  padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 1.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+  EN-GB">Enum values</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">Pascal</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm">&nbsp;</p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">FatalError</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:4">
+                    <td width="168" valign="top" style="width:100.5pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border:solid black 1.0pt;border-top:
+  none;padding:0cm 1.0pt 1.0pt 1.0pt;margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-left-alt:solid black 1.0pt;
+  mso-border-bottom-alt:solid black 1.0pt;mso-border-right-alt:solid black 1.0pt;
+  padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 1.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+  EN-GB">Event</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">Pascal</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm">&nbsp;</p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">StateChange</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:5">
+                    <td width="168" valign="top" style="width:100.5pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border:solid black 1.0pt;border-top:
+  none;padding:0cm 1.0pt 1.0pt 1.0pt;margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-left-alt:solid black 1.0pt;
+  mso-border-bottom-alt:solid black 1.0pt;mso-border-right-alt:solid black 1.0pt;
+  padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 1.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+  EN-GB">Exception</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">Pascal</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">End with Exception</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">AccessException</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:6">
+                    <td width="168" valign="top" style="width:100.5pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border:solid black 1.0pt;border-top:
+  none;padding:0cm 1.0pt 1.0pt 1.0pt;margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-left-alt:solid black 1.0pt;
+  mso-border-bottom-alt:solid black 1.0pt;mso-border-right-alt:solid black 1.0pt;
+  padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 1.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+  EN-GB">Interface</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">Pascal</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;margin-right:0cm;margin-bottom:2.15pt;margin-left:
+  0cm;border:none;mso-border-bottom-alt:solid black 1.0pt;mso-border-right-alt:
+  solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">Starts with �I� followed</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">by a capital letter</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">IExample</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:7">
+                    <td width="168" valign="top" style="width:100.5pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border:solid black 1.0pt;border-top:
+  none;padding:0cm 1.0pt 1.0pt 1.0pt;margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-left-alt:solid black 1.0pt;
+  mso-border-bottom-alt:solid black 1.0pt;mso-border-right-alt:solid black 1.0pt;
+  padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 1.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+  EN-GB">Methods</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">Pascal</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm">&nbsp;</p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">ToString</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:8">
+                    <td width="168" valign="top" style="width:100.5pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border:solid black 1.0pt;border-top:
+  none;padding:0cm 1.0pt 1.0pt 1.0pt;margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-left-alt:solid black 1.0pt;
+  mso-border-bottom-alt:solid black 1.0pt;mso-border-right-alt:solid black 1.0pt;
+  padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 1.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+  EN-GB">Namespace</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">Pascal</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm">&nbsp;</p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">System.Drawing</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:9">
+                    <td width="168" valign="top" style="width:100.5pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border:solid black 1.0pt;border-top:
+  none;padding:0cm 1.0pt 1.0pt 1.0pt;margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-left-alt:solid black 1.0pt;
+  mso-border-bottom-alt:solid black 1.0pt;mso-border-right-alt:solid black 1.0pt;
+  padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 1.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+  EN-GB">Property</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">Pascal</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm">&nbsp;</p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">BackColor</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:10">
+                    <td width="168" valign="top" style="width:100.5pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border:solid black 1.0pt;border-top:
+  none;padding:0cm 1.0pt 1.0pt 1.0pt;margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-left-alt:solid black 1.0pt;
+  mso-border-bottom-alt:solid black 1.0pt;mso-border-right-alt:solid black 1.0pt;
+  padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 1.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+  EN-GB">Public fields</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">Pascal</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm">&nbsp;</p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">ListItem</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:11">
+                    <td width="168" valign="top" style="width:100.5pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border:solid black 1.0pt;border-top:
+  none;padding:0cm 1.0pt 1.0pt 1.0pt;margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-left-alt:solid black 1.0pt;
+  mso-border-bottom-alt:solid black 1.0pt;mso-border-right-alt:solid black 1.0pt;
+  padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 1.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+  EN-GB">Protected/Private fields</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">Camel</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm">&nbsp;</p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">listItem</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:12">
+                    <td width="168" valign="top" style="width:100.5pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border:solid black 1.0pt;border-top:
+  none;padding:0cm 1.0pt 1.0pt 1.0pt;margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-left-alt:solid black 1.0pt;
+  mso-border-bottom-alt:solid black 1.0pt;mso-border-right-alt:solid black 1.0pt;
+  padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 1.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+  EN-GB">Parameter</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">Camel</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm">&nbsp;</p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">typeName</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow:13;mso-yfti-lastrow:yes">
+                    <td width="168" valign="top" style="width:100.5pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border:solid black 1.0pt;border-top:
+  none;padding:0cm 1.0pt 1.0pt 1.0pt;margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-left-alt:solid black 1.0pt;
+  mso-border-bottom-alt:solid black 1.0pt;mso-border-right-alt:solid black 1.0pt;
+  padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 1.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+  EN-GB">Read-Only static field</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">Pascal</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm">&nbsp;</p>
+                        </div>
+                    </td>
+                    <td width="185" valign="top" style="width:111.0pt;padding:0cm 0cm 0cm 0cm">
+                        <div style="mso-element:para-border-div;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.0pt 1.0pt 0cm;
+  margin-left:9.0pt;margin-right:0cm">
+                            <p style="margin-top:2.15pt;border:none;mso-border-bottom-alt:solid black 1.0pt;
+  mso-border-right-alt:solid black 1.0pt;padding:0cm;mso-padding-alt:0cm 1.0pt 1.0pt 0cm"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+  mso-ansi-language:EN-GB">redValue</span><span lang="EN-GB" style="mso-ansi-language:
+  EN-GB"><o:p></o:p></span></p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <p style="margin-top:2.15pt;margin-right:0cm;margin-bottom:2.15pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;<o:p></o:p></span></p>
+
+    <p style="margin-top:2.15pt;margin-right:0cm;margin-bottom:2.15pt;margin-left:
+9.0pt"><b><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Do not</span></b><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">contract words in identifiers, but do use well-known
+abbreviations.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Example:</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Use GetWindow&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/// Not
+GetWin</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Use UI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>/// Not UserInterface</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><b><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Avoid</span></b><span lang="EN-GB" style="mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">using langauge specific terminology in names of identifiers.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Example:</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Use void Write (double value); ///Not void Write
+(double doubleValue);</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Name namespaces
+according to a well-defined pattern. The general rule is to use the company
+name fololwed by the technology name and optionally the feature and design.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><b><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">CompanyName.TechnologyName.[.Feature][.Design]</span></b><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Do not add suffix,
+prefix or underscore char to a class or struct name. Use a noun or noun phrase
+to name a class or struct.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Do prefix interface
+names with the letter I. Use a noun(IComponent),&nbsp; a noun
+phrase(ICustomeAttributeProvider) or an adjective(IPersistable) to name an
+interface.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Use similar names
+when you define class/interface pair. For eg : a class implementing IComponent
+could be Component.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Do suffix attribute
+name with Attribute. /// For eg : ObsoleteAttribute.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Enumeration Names:<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><b><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Do not</span></b><span lang="EN-GB" style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">add an <i>Enum</i></span><span lang="EN-GB" style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">suffix to an
+enumeration type</span><b><i><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Helvetica-BoldOblique&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial;
+mso-ansi-language:EN-GB">.</span></i></b><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Helvetica-BoldOblique&quot;,&quot;serif&quot;;mso-bidi-font-family:Arial;
+mso-ansi-language:EN-GB">Use <b>singular</b></span><span lang="EN-GB" style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Helvetica-BoldOblique&quot;,&quot;serif&quot;;
+mso-bidi-font-family:Arial;mso-ansi-language:EN-GB">names for <i>enumaration</i></span><span lang="EN-GB" style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Helvetica-BoldOblique&quot;,&quot;serif&quot;;
+mso-bidi-font-family:Arial;mso-ansi-language:EN-GB">type.&nbsp;&nbsp;&nbsp; ///
+</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">For eg : Use Protocol instead of Protocols.Use</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Use <b>plural</b>
+name for <i>bit fields</i>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+/// For eg : SearchOptions</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Name static fields
+with nouns, noun phrases or abbreviations for nouns.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Do use descriptive
+names, which should be enough to determine the variable meaning and it�s type.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Name methods with
+verbs or verb phrases.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Name properties using
+nouns or noun phrases. Consider naming a property with the same name as it�s
+type.&nbsp; <o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">�&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Event Names:<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo4">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;mso-ansi-language:EN-US"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">Use an <b>EventHandler suffix</b> on event handler names. </span><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo4">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;mso-ansi-language:EN-US"><span style="mso-list:Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">Add <b>Callback</b> to delegates related to callback methods.</span><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo4">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;mso-ansi-language:EN-US"><span style="mso-list:Ignore">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">Specify two parameters named <i>sender </i>and <i>e</i>.</span><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo4">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;mso-ansi-language:EN-US"><span style="mso-list:Ignore">4.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">Name an event argument class with the <b>EventArgs suffix</b>. </span><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo4">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;mso-ansi-language:EN-US"><span style="mso-list:Ignore">5.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">Consider naming <i>events</i> using a verb. </span><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-US">&nbsp;<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Suffix exception
+classes with <b>Exception</b>. For e.g. : ISomeException</span><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Source File Name:</span><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l4 level1 lfo6">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;mso-ansi-language:EN-US"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">Use Pascal casing for naming source files.</span><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l4 level1 lfo6">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;mso-ansi-language:EN-US"><span style="mso-list:Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">Do not use the underscore character and do not use casing to
+differentiate names of files.</span><span lang="EN-US" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l4 level1 lfo6">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;mso-ansi-language:EN-US"><span style="mso-list:Ignore">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">Name the source file to the main class.</span><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><b><span lang="EN-GB" style="font-size:13.5pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1;mso-ansi-language:EN-GB">6.4 File
+Organization</span></b><span lang="EN-GB" style="font-size:13.5pt;color:#4F81BD;
+mso-themecolor:accent1;mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Source files should
+contain only one public type, although multiple internal classes are allowed.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Directory names should
+follow the namespace for the class.</span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">For e.g. : For
+MyProject.TestSuite.TestTier use MyProject/TestSuite/TestTier as the path, do
+not use the namespace name with dots.</span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Source files should
+be given the name of the public class in the file </span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Organize the material
+in each source file as follows: </span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo8">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial;mso-ansi-language:EN-US"><span style="mso-list:
+Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">A file header </span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo8">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial;mso-ansi-language:EN-US"><span style="mso-list:
+Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">using statements </span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo8">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial;mso-ansi-language:EN-US"><span style="mso-list:
+Ignore">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">namespace statement,
+if appropriate </span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo8">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial;mso-ansi-language:EN-US"><span style="mso-list:
+Ignore">4.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">A class, struct, or
+enum </span><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><b><span lang="EN-GB" style="font-size:13.5pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1;mso-ansi-language:EN-GB">6.5 Declarations</span></b><span lang="EN-GB" style="font-size:13.5pt;color:#4F81BD;mso-themecolor:accent1;
+mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Declare and
+initialize variables close to where they are used.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">If possible initialize
+variables at the point of declaration.</span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Declare each variable
+on a separate line.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Use <i>const</i></span><span lang="EN-GB" style="mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">field to define constant values.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Use public static
+read-only fields for predefined object instances.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><b><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Avoid</span></b><span lang="EN-GB" style="mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">implementing destructor. If needed also use GC.SuperFinalize.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><b><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Do not</span></b><span lang="EN-GB" style="mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">access any reference in destructor since it is possible that references
+may be garbage collected and it may cause exception to be thrown.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><b><span lang="EN-GB" style="font-size:13.5pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1;mso-ansi-language:EN-GB">6.6
+Statements/Control Flow</span></b><span lang="EN-GB" style="font-size:13.5pt;
+color:#4F81BD;mso-themecolor:accent1;mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Each line should
+contain only one statement.</span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">All flow control primitives
+(<i>if, else, for,while, do, switch</i>) shall be followed by a block , even if
+it is empty.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">All switch statements
+shall have a <i>default</i></span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">label as a last <i>case</i></span><span lang="EN-GB" style="mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">label.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Avoid multiple
+conditional return statements.</span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">If, if-else, if
+else-if else Statements should look like this:</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">if (condition) </span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">{ </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">DoSomething(); </span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">... </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">} else if (condition) </span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">{</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">DoSomethingOther(); </span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">... </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">} else </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">{</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">DoSomethingOtherAgain(); </span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">... </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">} </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">�</span><span lang="EN-US" style="mso-ansi-language:
+EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">For / For each Statement should look like this:</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">for (initialization; condition; update) </span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">{</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">- - - - - ;</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">}</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">�</span><span lang="EN-US" style="mso-ansi-language:
+EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">While/do-while Statements should have the following form:</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">while (condition) </span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">{</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">...</span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">}</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">do </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">{</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">...</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">} while (condition); </span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">�</span><span lang="EN-US" style="mso-ansi-language:
+EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">Switch Statements should have the following form:</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">switch (condition) </span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">{ </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">case A: </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">... </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">break; </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">case B: </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">... </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">break; </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">default:</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">...</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">break; </span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">} </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">�</span><span lang="EN-US" style="mso-ansi-language:
+EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">Try-catch Statements should have the following form:</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">try </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">{ </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">... </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">} catch (Exception) </span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">{</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">} </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">or </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">try </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">{ </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">... </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">} catch (Exception e) </span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">{</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">...</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">} </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">or </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">try </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">{</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">... </span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">} catch (Exception e) </span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">{ </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">... </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">} finally </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">{ </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">...</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">} </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><b><span lang="EN-GB" style="font-size:13.5pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1;mso-ansi-language:EN-GB">6.7 Indentation</span></b><span lang="EN-GB" style="font-size:13.5pt;color:#4F81BD;mso-themecolor:accent1;
+mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">The contents of all code blocks should be indented to
+improve readability. A single tab or four spaces are recommended as the
+standard indentation. Braces should be placed to show the level of indentation
+of the code block. Make it as readable as possible.</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">int main() </span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">{</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">doSomething()</span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">}</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">struct myStruct </span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">{</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">int x;</span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">int y;</span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">}</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">if ( value == 0 ) </span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">{</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">doSomething();</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">}</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">else if ( value == 2 ) /* note position of cascaded if statement */</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">{&nbsp;&nbsp; </span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">doSomething2();</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">} </span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">else </span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">{</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">doSomething3();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">}</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">while ( value &lt; 300 ) </span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">{</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">doSomething();</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">}</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">do </span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">{</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">doSomething();</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">} while ( value &lt; 300 )&nbsp;&nbsp; /* ending brace and control on
+same line*/</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">switch ( value ) </span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">{</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">case 1:</span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">doSomething();</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:
+10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">break;</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;</span><span lang="EN-GB" style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">case 2:</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;</span><span lang="EN-GB" style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">case 3:</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">doSomething2();</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">break;</span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">default:</span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">break;</span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">}</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">When an expression will not fit on a single line, break it up according
+to following principles:</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l5 level1 lfo10">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial;mso-ansi-language:EN-US"><span style="mso-list:
+Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Break after a comma.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l5 level1 lfo10">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial;mso-ansi-language:EN-US"><span style="mso-list:
+Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Break after an
+operator.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l5 level1 lfo10">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial;mso-ansi-language:EN-US"><span style="mso-list:
+Ignore">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Align the new line
+with the beginning of the expression at the same level on the previous line.</span><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Eg :</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">longMethodCall(expr1, expr2,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+expr3, expr4, expr5); </span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">var = a * b / (c - g + f)
++&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /// Avoid var = a * b / (c -
+g +<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4 *
+z;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+f) + 4 * z; </span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:black;mso-ansi-language:EN-GB">Use
+SPACES for indentation. Do not use TABS. </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">Tabs are interpreted differently in each software depending on the
+setting</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:black;mso-ansi-language:EN-GB">Comments
+should be in the same level as the code.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:black;mso-ansi-language:EN-GB">Use one
+blank line to separate logical groups of code.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Braces
+("{}") which enclose a block are to be placed in the same column, on
+separate lines directly before and after the block. <span style="color:black">The
+curly braces should be on a separate line and not in the same line as </span>if, for
+        </span><span lang="EN-GB" style="color:black;mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:black;
+mso-ansi-language:EN-GB">etc.</span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="font-size:13.5pt;color:#4F81BD;mso-themecolor:
+accent1;mso-ansi-language:EN-US">&nbsp;</span><b><span lang="EN-GB" style="font-size:13.5pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#4F81BD;
+mso-themecolor:accent1;mso-ansi-language:EN-GB">6.8&nbsp; Comments and embedded
+documentation</span></b><span lang="EN-US" style="font-size:13.5pt;color:#4F81BD;
+mso-themecolor:accent1;mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">All comments shall be
+written in <b>US English</b>.</span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Each file with must
+be documented with an introductory comment that provides information on the
+copy right information and description:</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">/******************************************************************</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">Copyright information&nbsp;&nbsp;&nbsp;&nbsp; : Imaje, Inc.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Brief description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: This file contains implementation of</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">________.</span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">******************************************************************/</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">�</span><span lang="EN-US" style="mso-ansi-language:
+EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">When the code undergoes a modification, it should be preceded by
+documentation about the Revision Summary as shown below. The change code is
+repeated in the file where ever changes are done:</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">/*****************************************************************</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Revision Summary</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Date&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+change code&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Description</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">*****************************************************************/</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">�</span><span lang="EN-US" style="mso-ansi-language:
+EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">Add code comments in each file with XML tags, to that Code Comment Web
+Reports for each function/method of each file are created. The details of
+comments to be added are given below.</span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">�</span><span lang="EN-US" style="mso-ansi-language:
+EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">Every class should be documented with introductory comments that provide
+information about the class as shown:</span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">/*******************************************************************</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Class
+name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+TopicTemplate_i</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Class type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: Concrete</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Brief description&nbsp;&nbsp;&nbsp; : Implementation
+class for the TopicTemplate IDL</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Super
+classes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : TopicTemplateBOAImpl</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Sub
+classes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : None</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Classes
+used&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : None</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">********************************************************************/</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">�</span><span lang="EN-US" style="mso-ansi-language:
+EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">Every method should be documented with introductory comments that
+provide information about the method as shown:</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">/***********************************************************************</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: createChampion</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Synopsis&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: gets the user details of a particular user.</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: instance method</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Input parameter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+&nbsp;&nbsp;&nbsp;&nbsp; long topicId - description, </span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">const char * championId - description, </span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">environment IT_env - description</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Output parameters&nbsp;&nbsp;&nbsp; :&nbsp; type
+param1 � description</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Return
+Type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Short -
+description</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Global variables&nbsp;&nbsp;&nbsp;&nbsp; :&nbsp; var1,
+var2</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Calling Syntax&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+createChampion(topicId, championId);</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">*********************************************************************/</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">�</span><span lang="EN-US" style="mso-ansi-language:
+EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">Use XML tags for documenting types and members.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">�</span><span lang="EN-US" style="mso-ansi-language:
+EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">Use #<i>region</i></span><span lang="EN-GB" style="mso-ansi-language:EN-GB">
+</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">to group non-public members.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><b><span lang="EN-GB" style="font-size:13.5pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1;mso-ansi-language:EN-GB">6.9 Coding style</span></b><span lang="EN-GB" style="font-size:13.5pt;color:#4F81BD;mso-themecolor:accent1;
+mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">The public,
+protected, and private sections of a <i>class</i></span><span lang="EN-GB" style="mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">or <i>struct</i></span><span lang="EN-GB" style="mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">shall be declared in that order.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Write <i>unary,
+increment, decrement, function call, subscript</i>, and <i>access operators</i></span><span lang="EN-GB" style="mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">together with their operands.</span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Eg : </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">a&nbsp; =&nbsp; --b;&nbsp;&nbsp; // not a = -- b;</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">�</span><span lang="EN-US" style="mso-ansi-language:
+EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">Do not</span></b><span lang="EN-GB" style="mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">create source lines longer than 80 characters.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><b><span lang="EN-GB" style="font-size:13.5pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1;mso-ansi-language:EN-GB">6.10
+Miscellaneous</span></b><span lang="EN-GB" style="font-size:13.5pt;color:#4F81BD;
+mso-themecolor:accent1;mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo12">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Declare all fields
+(data members) private.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo12">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Provide a default private
+constructor if there are only static methods and properties on a class.</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo12">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">All variants of an
+overloaded method shall be used for the same purpose and have similar
+behaviour.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo12">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Do not overload any
+�modifying� operators on a class type.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo12">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">In this context the �modifying�
+operators are those that have a corresponding assignment operator, i.e. the
+nonunary versions of +, -, *, /, %, &amp;, |, ^, &lt;&lt; and &gt;&gt;.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo12">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Overloading operators
+on a struct type is good practice, since it is a value type.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo12">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">If you implement one
+of operator==(), the Equals method or GetHashCode(), implement all three.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo12">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Also override this
+trio when you implement the IComparable interface.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo12">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Use a property rather
+than a method when the member is a logical data member.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo12">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Do not create a
+constructor that does not yield a fully initialized object.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo12">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Use explicit
+interface implementation only to prevent nameclashing or to support optional
+interfaces.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo12">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:
+EN-US"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Exceptions :</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+63.0pt;text-indent:-27.0pt;mso-list:l7 level1 lfo14">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial;mso-ansi-language:EN-US"><span style="mso-list:
+Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB;mso-bidi-font-weight:
+bold">Do not</span><span lang="EN-GB" style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">throw exceptions from
+inside destructors.</span><span lang="EN-US" style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+63.0pt;text-indent:-27.0pt;mso-list:l7 level1 lfo14">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial;mso-ansi-language:EN-US"><span style="mso-list:
+Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Use standard
+exceptions.</span><span lang="EN-US" style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+63.0pt;text-indent:-27.0pt;mso-list:l7 level1 lfo14">
+        <!--[if !supportLists]--><span lang="EN-US" style="font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Arial;mso-ansi-language:EN-US"><span style="mso-list:
+Ignore">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Throw the most specific
+exception if possible.</span><span lang="EN-US" style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">�</span><span lang="EN-US" style="mso-ansi-language:
+EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">Delegates :</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l6 level1 lfo16">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;mso-ansi-language:EN-GB;mso-bidi-font-weight:bold"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB;mso-bidi-font-weight:
+bold">Do not make assumptions on the object�s state after raising an event.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l6 level1 lfo16">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;mso-ansi-language:EN-GB;mso-bidi-font-weight:bold"><span style="mso-list:Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB;mso-bidi-font-weight:
+bold">Raise events through protected virtual methods.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l6 level1 lfo16">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Arial;mso-ansi-language:EN-GB;mso-bidi-font-weight:bold"><span style="mso-list:Ignore">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB;mso-bidi-font-weight:
+bold">Use the sender / arguments signature for event handlers.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo12">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Use an enum to
+strongly type parameters , properties and return types.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo12">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Do not use �magic
+numbers�.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo12">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Floating point values
+shall not be compared using either = = or != operators.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo12">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Do not cast types
+where a loss of precisions is possible.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo12">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Use the [Flags]
+attribute on an enum if a bitwise operation is to be performed on the numeric
+values.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo12">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">When displaying error
+messages, in addition to telling what is wrong, the message should also tell
+what should the user do to solve the problem. Instead of message like
+"Failed to update database.", suggest what should the user do:
+"Failed to update database. Please make sure the login id and password are
+correct." <o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+54.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo12">
+        <!--[if !supportLists]--><span lang="EN-GB" style="font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB"><span style="mso-list:Ignore">�<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>
+        </span>
+        <!--[endif]--><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">Show short and
+friendly message to the user. But log the actual error with all possible
+information. This will help a lot in diagnosing problems.<o:p></o:p></span></p>
+
+    <p style="margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+9.0pt"><b><span lang="EN-GB" style="font-size:13.5pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:#4F81BD;mso-themecolor:accent1;mso-ansi-language:EN-GB">6.11 Reference:</span></b><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;</span><span lang="EN-GB" style="font-size:13.5pt;color:#4F81BD;mso-themecolor:accent1;mso-ansi-language:
+EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-left:9.0pt"><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">1.</span><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://msdn.microsoft.com/"><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">http://msdn.microsoft.com</span></a>
+        <o:p></o:p>
+        </span>
+    </p>
+
+    <p style="margin-left:9.0pt"><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">2.</span><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">C# Coding Style Guide.</span><span lang="EN-US" style="mso-ansi-language:
+EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-left:9.0pt"><span lang="EN-US" style="mso-ansi-language:EN-US"><a href="http://www.csharpfriends.com/"><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">http://www.csharpfriends.com</span></a>
+        <o:p></o:p>
+        </span>
+    </p>
+
+    <p style="margin-left:9.0pt"><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">3.</span><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">C# Coding Standards and Best Programming Practices</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-left:9.0pt"><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">http://www.dotnetspider.com/technology/tutorials/BestPractices.aspx</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+    <p style="margin-left:9.0pt"><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">4.</span><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;</span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-ansi-language:EN-GB">Internal coding guidelines by Brad Abrams</span><span lang="EN-US" style="mso-ansi-language:EN-US"><o:p></o:p></span></p>
+
+    <p style="margin-left:9.0pt"><span lang="EN-GB" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:EN-GB">5.</span><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="EN-GB" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-ansi-language:
+EN-GB">Coding standard: C#.&nbsp;&nbsp;&nbsp;&nbsp; Philips</span><span lang="EN-US" style="mso-ansi-language:EN-US">&nbsp;<o:p></o:p></span></p>
+
+</div>

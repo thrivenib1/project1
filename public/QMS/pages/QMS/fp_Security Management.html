@@ -1,0 +1,230 @@
+<script>
+    document.getElementById("lblHeaderTitle").innerHTML = "QMS - Quality Management System";
+</script>
+<!-- design starts here ...-->
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Quality Management System
+    </h1>
+    <ol class="breadcrumb">
+        <li>
+            </b>
+            <a href="#" onclick="changeContent('home')">
+                <i class="fa fa-home"></i> Home</a>
+            </b>
+        </li>
+        <li>
+            <b>
+        <a href="#" onclick="changeContent('qmsMain')">Integra Quality Manual</a>
+      </b>
+        </li>
+        <li>
+            <b>
+        <a href="#" onclick="changeContent('FuncProc')">Functional Procedures</a>
+      </b>
+        </li>
+    </ol>
+</section>
+<table class="table table-bordered">
+    <thead>
+        <tr align="center">
+            <th colspan="4">Security Management</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>ISO Clause: 6.4</th>
+            <th>FP07</th>
+            <th>Version: 3.00</th>
+            <th>Date: 17th May 20107</th>
+        </tr>
+    </tbody>
+</table>
+<div class="Section1">
+
+    <p>
+        <b>7.0 Introdution </b>
+    </p>
+    <p>
+        <b>7.1.1 Purpose </b>
+        <br/>The purpose of this procedure is to define the policies for Security Management.</p>
+
+    <p>
+        <b>7.1.2 Policy </b>
+        <br/>This process will be applicable for maintaining the security of the premises and the facility of the organization.</p>
+
+    <p>
+        <b>7.1.3 Scope</b>
+        <br/>This procedure addresses the security of the Office premises and the data / information handled in Integra.</p>
+
+    <!-- /.box-body -->
+    <p>
+        <b>7.2 Stakeholders </b>
+    </p>
+    <p>
+        <b>7.2.1 Responsibilities </b></p>
+    <br/>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Sl. No.</th>
+                <th>Role</th>
+                <th>Responsibilities</th>
+                <th>Authority</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>CTO</td>
+                <td>
+                    Internet Security
+                </td>
+                <td>
+                    Approve policy
+                </td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>System Administrator</td>
+                <td>
+                    Router Security, Virus Protection and Unauthorized Software
+                </td>
+                <td>
+                    Implement this policy
+                </td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>General Admin In-Charge</td>
+                <td>
+                    Physical Security and Safety procedure
+                </td>
+                <td>
+                    Implement this policy
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        <b>7.3 Process Description</b>
+    </p>
+    <p>
+        <b>7.3.1 Internet Security</b>
+        <br/>The Head- Engineering will ensure the following:</p>
+    <p>
+        <b>Inbound Policy</b>Inbound IP services such as Telnet and FTP are disabled.</p>
+    <p>
+        <b>Outbound Policy</b>Outbound Telnet services are disabled.</p>
+    <p>For any Inbound or Outbound services that are disabled, the requestor will raise a request through PCC or
+        <u>
+          <a href='/QMS/pages/workaids/downloads/forms/FRIFR03.doc'>Job Request (FRIFR03)</a>
+        </u> and submit it to PM / DH for approval. The Infrastructure team will service the approved request.</p>
+
+    <p>
+        <b>7.3.2 Router Security</b>
+        <br/>
+    </p>
+    <p>The System Administrator will ensure that all the routers are secured with user passwords and "enable" passwords. The System Administrator will manage these passwords and a list of the same is handed over to the Head- Engineering. The router configuration
+        details will be updated once in 3 months, if required or whenever routing configuration changes.
+    </p>
+
+    <p>
+        <b>7.3.3 Virus Protection</b></p>
+    <br/>
+    <p>The System Administrator will ensure that all the workstations will have approved anti-virus software installed.</p>
+    <p>Automatic update will be enables on all systems. In the event that automatic update is not available for the installed anti-virus software, the System Administrator will provide updates/patches for the anti-virus software, which will be intimated
+        and made available to the employees. The employees are responsible for updating their workstations with the new anti-virus updates/patches.</p>
+    <p>The System Administrator will verify the effectiveness of the anti-virus software updates/patches during the Software Audit.
+    </p>
+
+    <p>
+        <b>7.3.4 Un-authorized Software Policy</b>
+    </p>
+    <p>The employees are not allowed to download or install any unauthorized software from the Internet or from any other source.
+    </p>
+    <p>The System Administrator is responsible for installing all the software in the organization.</p>
+    <p>The System Administrator will audit workstations once in three months to ensure that no unauthorized software is being used. The result of the audit will be recorded using <u><a href='Downloads\FunctionalProcedures\FRSEC01.doc' download>Software Audit Report (FRSEC01).</a></u></p>
+    <p>If any usage of unauthorized software is found, the same would be deleted and the Functional Head would take appropriate action against the employee.</p>
+    <p>However, employees can use any freeware available on the corporate Intranet.</p>
+
+    <p>
+        <b>7.3.5 Physical Security</b>
+    </p>
+    <p>The General Admin In-Charge will ensure that the Development Center will have round-the-clock manned security personnel.</p>
+    <p>The System Administrator will ensure that the Server Rooms have restricted access.</p>
+
+    <p>
+        <b>7.3.6 Safety Procedure</b>
+    </p>
+    <p>Safety precautions have been in place in the office premise. Fire alarm systems have been installed in the office premises and fire extinguishers are placed in select locations of the building. The General Admin personnel are trained in safety measures
+        to follow in case of any accident. The General Admin In-Charge will verify proper functioning of all the safety instruments installed in the premises in January every year. </p>
+    <div class="box-body">
+        <p>The following steps are to be followed in case of fire alarm:</p>
+        <ul>
+            <li>All the Admin will reach the Admin Section on hearing the fire alarm siren.</li>
+            <li>Security personnel will identify the zone and raise an alarm informing the Admin In-Charge and any admin personnel in the admin area.</li>
+            <li>Admin In-Charge will enable the emergency exit in the access system to open all doors</li>
+            <li>Technical In-Charge will reach the switchgear room and immediately switch off the power supply pertaining to the identified zone.</li>
+            <li> The housekeeping boys along with the housekeeping Supervisor will ensure that all the doors are open and fire marshal in each section should alert the employees and force them to move outside the building.</li>
+            <li> Security personnel after identifying the zone will alert other guards and open the back exit leaving one guard at the post.</li>
+            <li>Housekeeping boys will reach the fire zone with the extinguishers / sand buckets and douse the fire.</li>
+            <li>The Admin In-Charge will ensure that the fire extinguisher are refilled on a regular basis and firs safety steps will be displayed at prominent location of the building.</li>
+            <li> The Admin In-Charge will ensure that the employees are trained on safety precautions.</li>
+        </ul>
+    </div>
+    <p>
+        <b>7.4 Quality Records</b>
+    </p>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Form/Template No.</th>
+                <th>Form/Template Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>FRIFR03</td>
+                <td>
+                    <u>
+                      <a href='/QMS/pages/workaids/downloads/forms/FRIFR03.doc' download>Job request</a>
+                    </u>
+                </td>
+            </tr>
+            <tr>
+                <td>FRSEC01</td>
+                <td>
+                    <u>
+                      <a href='/QMS/pages/workaids/downloads/forms/FRSEC01.doc' download>Software Audit Report</a>
+                    </u>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+        <b>7.5 References</b>
+    </p>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Procedure/Document ID</th>
+                <th>Procedure/Document Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>FP10</td>
+                <td>
+                    <u>
+                      <a href="#" onclick="changeContent('FP10')">System Administration and Management</a>
+                    </u>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
